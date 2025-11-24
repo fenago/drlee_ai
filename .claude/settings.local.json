@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(claude mcp add --scope user --transport stdio context7 -- npx -y @upstash/context7-mcp)",
+      "Bash(claude mcp add:*)",
+      "Bash(claude mcp list:*)",
+      "Bash(claude mcp remove:*)",
+      "Bash(claude mcp:*)",
+      "Bash(npm run build:*)",
+      "Bash(npx:*)",
+      "WebFetch(domain:21st.dev)",
+      "WebFetch(domain:tailwindflex.com)",
+      "WebFetch(domain:www.svgrepo.com)",
+      "WebFetch(domain:www.masterclass.com)",
+      "WebFetch(domain:www.exed.hbs.edu)",
+      "WebFetch(domain:ui.aceternity.com)",
+      "WebFetch(domain:reactbits.dev)",
+      "Bash(npm install:*)",
+      "WebFetch(domain:support.learnworlds.com)",
+      "WebFetch(domain:teachable.com)",
+      "WebFetch(domain:courses.drlee.ai)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
