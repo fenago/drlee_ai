@@ -16,8 +16,8 @@ const courses = [
   // HARDCORE DEVELOPERS (14)
   {
     id: "llm",
-    name: "Large Language Models",
-    subtitle: "Build Production-Ready Language Models from First Principles",
+    name: "Build Your Own LLM",
+    subtitle: "From Tokenization to Training: Own the Technology Behind ChatGPT",
     category: "hardcore",
     rarity: "Extremely Rare",
     description: "The best way to understand AI is to build it yourself.",
@@ -28,8 +28,8 @@ const courses = [
   },
   {
     id: "reasoning",
-    name: "Reasoning Models",
-    subtitle: "Architect Multi-Step Problem Solving into Your AI Systems",
+    name: "Build Your Own Reasoning Model",
+    subtitle: "Train AI That Thinks Before It Answers—No API Required",
     category: "hardcore",
     rarity: "Cutting Edge",
     description: "The models winning today think before they answer. Learn to build that capability.",
@@ -40,8 +40,8 @@ const courses = [
   },
   {
     id: "frontier-arch",
-    name: "Frontier Model Architecture",
-    subtitle: "Engineer the Innovations Behind ChatGPT, Claude, and Gemini",
+    name: "Build Frontier AI Systems",
+    subtitle: "Replicate ChatGPT's Architecture—Own the Innovation Stack",
     category: "hardcore",
     rarity: "Extremely Rare",
     description: "Enterprise-grade AI at startup costs. Build what the giants build.",
@@ -52,8 +52,8 @@ const courses = [
   },
   {
     id: "diffusion",
-    name: "Generative Vision",
-    subtitle: "From Vision Transformers to Latent Diffusion",
+    name: "Build Your Own Image Generator",
+    subtitle: "Train Vision Models from Scratch—Stop Renting, Start Owning",
     category: "hardcore",
     rarity: "Extremely Rare",
     description: "Create images from words. Own the visual AI your competitors rent.",
@@ -64,8 +64,8 @@ const courses = [
   },
   {
     id: "agentic",
-    name: "Agentic Systems",
-    subtitle: "Engineering Autonomous AI Systems That Execute",
+    name: "Build Autonomous AI Agents",
+    subtitle: "Code Agents That Execute Tasks—Not Just Chat",
     category: "hardcore",
     rarity: "Very Rare",
     description: "The difference between a chatbot and an agent is execution. Agents don't just suggest—they do.",
@@ -76,8 +76,8 @@ const courses = [
   },
   {
     id: "multi-agent",
-    name: "Multi-Agent Systems",
-    subtitle: "Orchestrating Distributed AI Intelligence at Scale",
+    name: "Build Multi-Agent AI Teams",
+    subtitle: "Train Agent Swarms That Collaborate and Execute at Scale",
     category: "hardcore",
     rarity: "Frontier AI",
     description: "One agent is powerful. Multiple agents working together are transformative.",
@@ -89,7 +89,7 @@ const courses = [
   {
     id: "product-factory",
     name: "Production AI",
-    subtitle: "The Engineering Discipline of Shipping Models That Last",
+    subtitle: "Ship Models That Last—Build Your Own MLOps Platform",
     category: "hardcore",
     description: "90% of ML projects never make it to production. This course ensures yours does.",
     hours: 45,
@@ -99,8 +99,8 @@ const courses = [
   },
   {
     id: "graphrag",
-    name: "Knowledge-Augmented Retrieval",
-    subtitle: "Graph-Based Systems for Higher-Fidelity AI",
+    name: "Build Your Own GraphRAG System",
+    subtitle: "Knowledge Graphs That Outperform Vector Search—Build, Don't Rent",
     category: "hardcore",
     rarity: "Very Rare",
     description: "RAG only works when you find the right context. Knowledge graphs ensure you always do.",
@@ -123,7 +123,7 @@ const courses = [
   {
     id: "dl-intuition",
     name: "Deep Learning Intuition",
-    subtitle: "Neural Network Architecture from First Principles",
+    subtitle: "Build Neural Networks from Scratch—No TensorFlow, No PyTorch",
     category: "hardcore",
     description: "Understand every detail of training neural networks. No frameworks, no magic—just clarity.",
     hours: 40,
@@ -133,8 +133,8 @@ const courses = [
   },
   {
     id: "slm",
-    name: "Small Language Models",
-    subtitle: "Efficient Models for Targeted Enterprise Applications",
+    name: "Build Domain-Specific LLMs",
+    subtitle: "Train Specialized Models You Own and Control—No API Costs",
     category: "hardcore",
     rarity: "High Demand",
     description: "Bigger isn't always better. Sometimes smaller is smarter, faster, and cheaper.",
@@ -145,8 +145,8 @@ const courses = [
   },
   {
     id: "fine-tuning",
-    name: "The Art of Adaptation",
-    subtitle: "Strategic Model Customization for Enterprise Applications",
+    name: "Fine-Tune Your Own Models",
+    subtitle: "LoRA, QLoRA, and Full Fine-Tuning—Own Your Model Weights",
     category: "hardcore",
     description: "Make any model an expert in your domain. Master LoRA and QLoRA techniques.",
     hours: 25,
