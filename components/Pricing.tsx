@@ -106,28 +106,45 @@ const Pricing = () => {
         </div>
 
         {/* Value proposition */}
-        <div className="mt-16 text-center">
-          <p className="text-sm opacity-70 mb-4">
-            Compare to bootcamps at $10,000-$16,000 or hiring ML engineers at $300,000+/year
-          </p>
+        <div className="mt-16 text-center space-y-6">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg font-semibold mb-4">
+              Stop Renting from OpenAI. Start Owning Your Technology.
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 text-sm">
+              <div className="p-4 bg-base-300 rounded-lg">
+                <p className="font-bold text-base mb-1">Bootcamps</p>
+                <p className="opacity-70">$11K-$17K for API tutorials</p>
+              </div>
+              <div className="p-4 bg-base-300 rounded-lg">
+                <p className="font-bold text-base mb-1">ML Engineer</p>
+                <p className="opacity-70">$200K-$300K/year to hire</p>
+              </div>
+              <div className="p-4 bg-primary text-primary-content rounded-lg">
+                <p className="font-bold text-base mb-1">DrLee.ai</p>
+                <p className="opacity-90">Build frontier AI yourself</p>
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-wrap justify-center gap-8 text-sm">
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>Employer reimbursement friendly</span>
+              <span>10x-100x ROI in Year 1</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>Payment plans available</span>
+              <span>0% interest payment plans</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>Team discounts for 5+</span>
+              <span>Team licenses (20-50% off)</span>
             </div>
           </div>
         </div>

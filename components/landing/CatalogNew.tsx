@@ -23,7 +23,7 @@ const courses = [
     description: "The best way to understand AI is to build it yourself.",
     hours: 45,
     modules: 9,
-    price: { selfPaced: 997, cohort: 2997, founder: 7997 },
+    price: { selfPaced: 1997, cohort: 6997, founder: 19997 },
     slug: "large-language-models",
   },
   {
@@ -35,7 +35,7 @@ const courses = [
     description: "The models winning today think before they answer. Learn to build that capability.",
     hours: 45,
     modules: 9,
-    price: { selfPaced: 897, cohort: 2497, founder: 6997 },
+    price: { selfPaced: 1497, cohort: 5997, founder: 17997 },
     slug: "reasoning-models",
   },
   {
@@ -47,7 +47,7 @@ const courses = [
     description: "Enterprise-grade AI at startup costs. Build what the giants build.",
     hours: 55,
     modules: 10,
-    price: { selfPaced: 997, cohort: 2997, founder: 7997 },
+    price: { selfPaced: 1497, cohort: 5997, founder: 17997 },
     slug: "frontier-model-architecture",
   },
   {
@@ -59,7 +59,7 @@ const courses = [
     description: "Create images from words. Own the visual AI your competitors rent.",
     hours: 50,
     modules: 11,
-    price: { selfPaced: 997, cohort: 2997, founder: 7997 },
+    price: { selfPaced: 1997, cohort: 6997, founder: 19997 },
     slug: "diffusion-models",
   },
   {
@@ -71,7 +71,7 @@ const courses = [
     description: "The difference between a chatbot and an agent is execution. Agents don't just suggest—they do.",
     hours: 40,
     modules: 10,
-    price: { selfPaced: 797, cohort: 2497, founder: 6997 },
+    price: { selfPaced: 1297, cohort: 4997, founder: 14997 },
     slug: "agentic-systems",
   },
   {
@@ -83,7 +83,7 @@ const courses = [
     description: "One agent is powerful. Multiple agents working together are transformative.",
     hours: 45,
     modules: 12,
-    price: { selfPaced: 897, cohort: 2997, founder: 7997 },
+    price: { selfPaced: 1497, cohort: 5997, founder: 17997 },
     slug: "multi-agent-systems",
   },
   {
@@ -94,7 +94,7 @@ const courses = [
     description: "90% of ML projects never make it to production. This course ensures yours does.",
     hours: 45,
     modules: 11,
-    price: { selfPaced: 697, cohort: 1997, founder: 5497 },
+    price: { selfPaced: 997, cohort: 3997, founder: 9997 },
     slug: "the-ai-product-factory",
   },
   {
@@ -106,7 +106,7 @@ const courses = [
     description: "RAG only works when you find the right context. Knowledge graphs ensure you always do.",
     hours: 35,
     modules: 8,
-    price: { selfPaced: 697, cohort: 1997, founder: 5497 },
+    price: { selfPaced: 1197, cohort: 4997, founder: 12997 },
     slug: "graphrag",
   },
   {
@@ -117,7 +117,7 @@ const courses = [
     description: "No PhD required. Just high school algebra and a desire to understand how ML actually works.",
     hours: 35,
     modules: 13,
-    price: { selfPaced: 597, cohort: 1797, founder: 4497 },
+    price: { selfPaced: 697, cohort: 2997, founder: 7997 },
     slug: "machine-learning-intuition",
   },
   {
@@ -128,7 +128,7 @@ const courses = [
     description: "Understand every detail of training neural networks. No frameworks, no magic—just clarity.",
     hours: 40,
     modules: 16,
-    price: { selfPaced: 697, cohort: 1997, founder: 4997 },
+    price: { selfPaced: 897, cohort: 3497, founder: 9997 },
     slug: "deep-learning-intuition",
   },
   {
@@ -140,7 +140,7 @@ const courses = [
     description: "Bigger isn't always better. Sometimes smaller is smarter, faster, and cheaper.",
     hours: 45,
     modules: 15,
-    price: { selfPaced: 697, cohort: 1997, founder: 5497 },
+    price: { selfPaced: 1197, cohort: 4997, founder: 12997 },
     slug: "small-language-models",
   },
   {
@@ -151,7 +151,7 @@ const courses = [
     description: "Make any model an expert in your domain. Master LoRA and QLoRA techniques.",
     hours: 25,
     modules: 8,
-    price: { selfPaced: 697, cohort: 1997, founder: 5497 },
+    price: { selfPaced: 997, cohort: 3997, founder: 9997 },
     slug: "the-art-of-adaptation",
   },
   {
@@ -162,7 +162,7 @@ const courses = [
     description: "Code 10x faster without losing quality. Master AI pair programming.",
     hours: 20,
     modules: 7,
-    price: { selfPaced: 497, cohort: 1497, founder: 3997 },
+    price: { selfPaced: 697, cohort: 2497, founder: 6997 },
     slug: "the-10x-developer",
   },
   {
@@ -173,11 +173,11 @@ const courses = [
     description: "Cut your analysis time by 75%. Do more work, faster, with better results.",
     hours: 35,
     modules: 8,
-    price: { selfPaced: 597, cohort: 1797, founder: 4497 },
+    price: { selfPaced: 897, cohort: 3497, founder: 8997 },
     slug: "automated-insights",
   },
 
-  // CITIZEN DEVELOPER (4)
+  // CITIZEN DEVELOPER (7)
   {
     id: "agentic-automation",
     name: "Agentic Automation",
@@ -186,7 +186,7 @@ const courses = [
     description: "Your personal AI workforce, no coding required. Automate repetitive workflows.",
     hours: 18,
     modules: 6,
-    price: { selfPaced: 497, cohort: 1497, founder: 3997 },
+    price: { selfPaced: 697, cohort: 2497, founder: 6997 },
     slug: "agentic-automation",
   },
   {
@@ -197,7 +197,7 @@ const courses = [
     description: "Predict the future with your data. Make better decisions without complex math.",
     hours: 16,
     modules: 6,
-    price: { selfPaced: 397, cohort: 1297, founder: 3497 },
+    price: { selfPaced: 497, cohort: 1997, founder: 4997 },
     slug: "predictive-insight",
   },
   {
@@ -208,7 +208,7 @@ const courses = [
     description: "Stop guessing. Start knowing. One validated decision can pay for this 1000x over.",
     hours: 15,
     modules: 5,
-    price: { selfPaced: 497, cohort: 1497, founder: 3997 },
+    price: { selfPaced: 697, cohort: 2497, founder: 6997 },
     slug: "the-decision-engine",
   },
   {
@@ -220,11 +220,9 @@ const courses = [
     description: "Scale your team without scaling headcount. Build custom AI agents for your domain.",
     hours: 22,
     modules: 7,
-    price: { selfPaced: 697, cohort: 1997, founder: 4997 },
+    price: { selfPaced: 997, cohort: 3997, founder: 9997 },
     slug: "agentic-sdk",
   },
-
-  // CITIZEN DEVELOPER (continued)
   {
     id: "vibe-marketing",
     name: "Vibe Marketing",
@@ -234,7 +232,7 @@ const courses = [
     description: "Replace your entire marketing stack with AI agents. Marketing that runs while you sleep.",
     hours: 35,
     modules: 11,
-    price: { selfPaced: 997, cohort: 2997, founder: 7997 },
+    price: { selfPaced: 1497, cohort: 5997, founder: 17997 },
     slug: "vibe-marketing",
   },
   {
@@ -245,7 +243,7 @@ const courses = [
     description: "Lead the future of education. Design AI-enhanced curricula and policies.",
     hours: 24,
     modules: 8,
-    price: { selfPaced: 697, cohort: 1997, founder: 4997 },
+    price: { selfPaced: 997, cohort: 3997, founder: 9997 },
     slug: "the-ai-native-university",
   },
   {
@@ -257,7 +255,7 @@ const courses = [
     description: "Design, build, and launch successful token-based ecosystems. From tokenomics to DAOs to community building.",
     hours: 28,
     modules: 10,
-    price: { selfPaced: 697, cohort: 1997, founder: 5497 },
+    price: { selfPaced: 997, cohort: 3997, founder: 9997 },
     slug: "the-token-economy",
   },
 ];

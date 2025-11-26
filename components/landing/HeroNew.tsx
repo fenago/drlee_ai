@@ -131,13 +131,13 @@ export default function HeroNew() {
           transition={{ duration: 0.6, delay: 1.2 }}
           className="text-xl md:text-2xl text-slate-600 dark:text-white/70 max-w-3xl mx-auto mb-8 leading-relaxed"
         >
-          Premium masterclasses for{" "}
+          The <span className="text-slate-900 dark:text-white font-semibold">only platform</span> teaching{" "}
           <span className="text-slate-900 dark:text-white font-semibold">founders</span> and{" "}
-          <span className="text-slate-900 dark:text-white font-semibold">tech leaders</span>{" "}
-          who want to build AI from first principles—not just use APIs.
+          <span className="text-slate-900 dark:text-white font-semibold">engineers</span>{" "}
+          to build frontier AI from scratch. Own your technology. Stop renting from OpenAI.
         </motion.p>
 
-        {/* Value Props - Identity focused */}
+        {/* Value Props - Technological Sovereignty */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -148,19 +148,19 @@ export default function HeroNew() {
             <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
-            Build Your Career Moat
+            No API Dependency
           </span>
           <span className="flex items-center gap-2">
             <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
-            Build Your Company Moat
+            Own Your Model Weights
           </span>
           <span className="flex items-center gap-2">
             <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
-            Reclaim Your Builder Identity
+            Build Defensible Moats
           </span>
         </motion.div>
 

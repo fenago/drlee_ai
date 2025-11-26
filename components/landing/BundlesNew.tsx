@@ -14,14 +14,14 @@ const bundles = [
     hours: 220,
     featured: true,
     pricing: {
-      selfPaced: { price: 2997, original: 5182, savings: "42%" },
-      cohort: { price: 9997, original: 15882, savings: "37%" },
-      founder: { price: 24997, original: 42982, savings: "42%" },
+      selfPaced: { price: 4997, original: 9279, savings: "46%" },
+      cohort: { price: 19997, original: 34982, savings: "43%" },
+      founder: { price: 49997, original: 99982, savings: "50%" },
     },
     includes: [
-      "Large Language Models",
+      "Build Your Own LLM",
       "Reasoning Models",
-      "Mixture of Experts",
+      "Mixture of Experts (MoE)",
       "Agentic Systems",
       "Multi-Agent Systems",
       "AI Product Factory",
@@ -35,9 +35,9 @@ const bundles = [
     courses: 14,
     hours: 420,
     pricing: {
-      selfPaced: { price: 4997, original: 9729, savings: "49%" },
-      cohort: { price: 14997, original: 29175, savings: "49%" },
-      founder: { price: 39997, original: 79475, savings: "50%" },
+      selfPaced: { price: 8997, original: 16759, savings: "46%" },
+      cohort: { price: 34997, original: 62958, savings: "44%" },
+      founder: { price: 89997, original: 176958, savings: "49%" },
     },
     includes: [
       "All 14 Hardcore Developer courses",
@@ -56,9 +56,9 @@ const bundles = [
     courses: 21,
     hours: 560,
     pricing: {
-      selfPaced: { price: 6997, original: 14813, savings: "53%" },
-      cohort: { price: 19997, original: 45333, savings: "56%" },
-      founder: { price: 54997, original: 120927, savings: "55%" },
+      selfPaced: { price: 11997, original: 23138, savings: "48%" },
+      cohort: { price: 49997, original: 87937, savings: "43%" },
+      founder: { price: 119997, original: 243937, savings: "51%" },
     },
     includes: [
       "All 21 masterclasses",

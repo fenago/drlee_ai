@@ -29,9 +29,9 @@ const config = {
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
         description: "Learn at your own pace with lifetime access",
         // The price you want to display, the one user will be charged on Stripe.
-        price: 997,
+        price: 1997,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 1497,
+        priceAnchor: 2997,
         features: [
           { name: "15-20 hours of video content" },
           { name: "Complete source code & notebooks" },
@@ -49,8 +49,8 @@ const config = {
         isFeatured: true,
         name: "Cohort-Based",
         description: "Live instruction with accountability",
-        price: 2997,
-        priceAnchor: 4997,
+        price: 6997,
+        priceAnchor: 11997,
         features: [
           { name: "Everything in Self-Paced" },
           { name: "12 weeks of live sessions" },
@@ -67,8 +67,8 @@ const config = {
             : "price_789",
         name: "Founder's Edition",
         description: "For serious founders building AI companies",
-        price: 7997,
-        priceAnchor: 12997,
+        price: 19997,
+        priceAnchor: 29997,
         features: [
           { name: "Everything in Cohort-Based" },
           { name: "6x 1:1 architecture sessions" },
