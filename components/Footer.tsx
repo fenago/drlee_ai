@@ -6,6 +6,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
+    paths: [
+      { label: "For Founders", href: "/founders" },
+      { label: "For Engineers", href: "/career-advancers" },
+      { label: "The AI Sovereignty Stack", href: "/ai-sovereignty-stack" },
+    ],
     curriculum: [
       { label: "Hardcore Developers", href: "/#catalog" },
       { label: "Citizen Developer", href: "/#catalog" },
@@ -37,9 +42,9 @@ const Footer = () => {
 
       <div className="relative max-w-7xl mx-auto px-8 pt-20 pb-12">
         {/* Main footer content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
           {/* Brand column */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 md:col-span-2">
             <Link href="/" className="inline-block mb-6 group">
               <Image
                 src="/DrLeeAI_Logo.png"
@@ -109,6 +114,25 @@ const Footer = () => {
                 Subscribe to Newsletter
               </a>
             </div>
+          </div>
+
+          {/* Paths links */}
+          <div>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              For You
+            </h4>
+            <ul className="space-y-3">
+              {footerLinks.paths.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-white/50 hover:text-white transition-colors text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Curriculum links */}
