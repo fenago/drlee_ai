@@ -111,22 +111,22 @@ export default function BundlesNew() {
         </motion.div>
 
         {/* Bundle Cards */}
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8 pt-6">
           {bundles.map((bundle, i) => (
             <motion.div
               key={bundle.id}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 + i * 0.1 }}
-              className={`relative rounded-3xl overflow-hidden ${
+              className={`relative rounded-3xl ${
                 bundle.featured
                   ? "bg-gradient-to-b from-amber-500 to-orange-600 p-[2px]"
                   : "bg-slate-200 dark:bg-white/10 p-[1px]"
               }`}
             >
               {bundle.featured && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
-                  <span className="px-4 py-1 bg-amber-500 text-white text-sm font-bold rounded-full shadow-lg">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
+                  <span className="px-4 py-1 bg-amber-500 text-white text-sm font-bold rounded-full shadow-lg whitespace-nowrap">
                     Most Popular
                   </span>
                 </div>
