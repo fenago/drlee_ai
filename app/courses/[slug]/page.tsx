@@ -573,6 +573,8 @@ function SuccessMetrics({ course }: { course: Course }) {
               ? 'Real outcomes from students who completed The Reasoning Sovereignty Stack™ and built their competitive moats'
               : course.slug === 'small-language-models'
               ? 'Real outcomes from students who mastered The Domain SLM Mastery Stack™ and eliminated API costs entirely'
+              : course.slug === 'agentic-systems'
+              ? 'Real outcomes from students who completed The Agent Architecture Blueprint™ and built production agent systems'
               : 'Real outcomes from students who completed The LLM Sovereignty Stack™ and built their competitive moats'
             }
           </p>
@@ -780,6 +782,8 @@ function PricingModalities({ course }: { course: Course }) {
               ? 'All modalities include the complete Reasoning Sovereignty Stack™. Choose based on your learning style and goals.'
               : course.slug === 'small-language-models'
               ? 'All modalities include the complete Domain SLM Mastery Stack™. Choose based on your learning style and goals.'
+              : course.slug === 'agentic-systems'
+              ? 'All modalities include the complete Agent Architecture Blueprint™. Choose based on your learning style and goals.'
               : 'All modalities include the complete LLM Sovereignty Stack™. Choose based on your learning style and goals.'
             }
           </p>
