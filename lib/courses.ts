@@ -1083,8 +1083,7 @@ export const courses: Course[] = [
           "Priority access to new techniques",
           "Lifetime access to all future updates",
           "Annual Frontier AI Summit invitation",
-          "Private mastermind (Founder's Edition alumni)",
-          "ROI Guarantee: Save $100K+ or we work with you until you do"
+          "Private mastermind (Founder's Edition alumni)"
         ]
       }
     }
@@ -2416,23 +2415,29 @@ export const courses: Course[] = [
   {
     id: "slm",
     slug: "small-language-models",
-    name: "Build Your Own Domain-Specific LLMs",
-    subtitle: "Train Specialized Models You Own and Control—No API Costs",
+    name: "Build Your Own Domain Specific Small Language Model (SLM)",
+    subtitle: "The Domain SLM Mastery Stack™ — Bigger Isn't Always Better, Focused Is Faster",
     category: "Hardcore Developers",
     categoryId: "hardcore",
     rarity: "High Demand",
     price: 1997,
-    hook: "Bigger isn't always better. Sometimes smaller is smarter, faster, and cheaper.",
-    description: "When you need a language model to respond accurately and quickly about a specific field of knowledge, the sprawling capacity of an LLM may hurt more than it helps. This masterclass teaches you to build generative AI models optimized for specific domains—models that run on commodity hardware while delivering high-quality results for specialized tasks. You'll learn quantization, fine-tuning, ONNX optimization, and deployment strategies that minimize computational requirements while maximizing performance. Perfect for cost- or hardware-constrained environments where you need AI that just works.",
+    hook: "The ONLY masterclass teaching domain-specific SLMs that outperform frontier LLMs by 20-40% on specialized tasks—while running on a $2K laptop with zero API costs.",
+    description: "This is not another course on API integration. This is executive business education (Harvard/MIT/Stanford caliber) merged with a masterclass for tech founders and AI architects. Using the DrLee.AI Shu-Ha-Ri learning method, you'll go from API consumer burning $50K-$500K/month to SLM architect owning specialized models in 9 transformative steps. Each module begins with a TedTalk-style presentation on strategy, then you immediately build it yourself with hands-on coding. You'll master fine-tuning, quantization (4-bit/8-bit), ONNX optimization, and cross-platform deployment from cloud to edge to mobile. By the end, you won't just understand domain-specific AI—you'll own production-ready specialized models that eliminate vendor dependency, run anywhere, and become your competitive moat. Available in 4 modalities: 9-Week Live Cohort, 5-Day Immersive Bootcamp, Self-Paced Mastery, or Founder's Edition (1:1 mentorship/Fractional CTO).",
     outcomes: [
-      "Build domain-specific small language models from scratch",
-      "Fine-tune transformers for specialized tasks with custom datasets",
-      "Implement LoRA for efficient fine-tuning",
-      "Quantize models to 8-bit and 4-bit precision",
-      "Run inference on commodity hardware (laptops, edge devices)",
-      "Deploy SLMs with vLLM, FastAPI, and local runtimes",
-      "Build RAG systems and AI agents powered entirely by SLMs",
-      "Profile and optimize ONNX models for production"
+      "Build domain-specific SLMs that outperform frontier LLMs by 20-40% on specialized tasks while using 1/100th the compute",
+      "Fine-tune transformers for any domain (legal, medical, code, finance) using LoRA (train with 0.1% of parameters, 10x faster)",
+      "Master quantization: compress models 75-87.5% with 4-bit/8-bit precision while maintaining 90%+ performance",
+      "Deploy production SLMs with ONNX Runtime achieving 2-5x faster inference vs standard PyTorch",
+      "Eliminate $50K-$500K/month API costs by running frontier-quality models on $2K laptops",
+      "Run inference on commodity hardware: laptops, Raspberry Pi, mobile devices, edge servers, air-gapped systems",
+      "Deploy with vLLM (PagedAttention for 24x throughput), FastAPI (production REST APIs), Ollama/LM Studio (local execution)",
+      "Build specialized models for code generation (GitHub Copilot-quality) and biomolecular AI (protein/antibody design)",
+      "Implement advanced compression: FlexGen (offload to CPU/disk), SmoothQuant (activation-aware), BitNet (1-bit models)",
+      "Create production RAG systems and agentic AI powered entirely by owned SLMs (no API dependency)",
+      "Profile and optimize ONNX graphs to identify bottlenecks and achieve maximum performance",
+      "Deploy cross-platform: Android, iOS, web browsers, edge devices using MLC LLM and mobile frameworks",
+      "Build Graph RAG with knowledge graphs for multi-hop reasoning without sending data to third-party APIs",
+      "Integrate test-time compute and reasoning enhancement (chain-of-thought, self-consistency) into specialized SLMs"
     ],
     hours: 45,
     modules: 15,
@@ -2636,7 +2641,180 @@ export const courses: Course[] = [
         question: "How is this different from the Fine-Tuning course?",
         answer: "The Fine-Tuning course focuses on adapting any model with LoRA and QLoRA. This course goes deeper into SLMs specifically—quantization, ONNX optimization, mobile deployment, and domain-specific applications."
       }
-    ]
+    ],
+    signatureSolution: {
+      stages: [
+        {
+          title: "PHASE 1: Foundation",
+          subtitle: "Specialization & Optimization Mastery",
+          weeks: "Weeks 1-3",
+          from: "API consumer burning cash, no control over models, vendor-dependent",
+          to: "Domain SLM builder fine-tuning specialized models, optimizing with ONNX, eliminating API costs",
+          moat: "Domain Specialization Capability",
+          moatDesc: "Ability to build focused models that outperform general LLMs for specific tasks while running on commodity hardware",
+          color: "blue"
+        },
+        {
+          title: "PHASE 2: Optimization",
+          subtitle: "Compression & Deployment Excellence",
+          weeks: "Weeks 4-6",
+          from: "Models too large for production, can't deploy to edge/mobile, limited by cloud GPUs",
+          to: "Compression expert quantizing to 4-bit, deploying anywhere (laptop, mobile, edge, air-gapped)",
+          moat: "Cross-Platform Deployment Expertise",
+          moatDesc: "Master quantization and ONNX optimization to deploy frontier-quality models on $2K laptops and mobile devices",
+          color: "purple"
+        },
+        {
+          title: "PHASE 3: Production Mastery",
+          subtitle: "Complete Systems & Advanced Capabilities",
+          weeks: "Weeks 7-9",
+          from: "Standalone models with limited capabilities, no RAG/agent integration, basic inference only",
+          to: "Complete AI systems architect building production RAG, agentic AI, and reasoning-enhanced SLMs",
+          moat: "The Domain SLM Ownership Stack™",
+          moatDesc: "End-to-end capability from fine-tuning → quantization → deployment → production systems—own your AI stack completely",
+          color: "green"
+        }
+      ],
+      steps: [
+        {
+          title: "Step 1: Domain-Specific AI Strategy & Architecture",
+          from: "Use general LLMs through APIs, no understanding of when smaller models outperform larger ones",
+          to: "Architect domain-specific AI strategy, understand transformer internals, choose right model for each use case",
+          moat: "Strategic SLM architecture expertise—know when to specialize vs generalize",
+          stage: 1
+        },
+        {
+          title: "Step 2: Data Mastery & Model Specialization",
+          from: "Rely on pre-trained general models, no custom domain data, limited to API capabilities",
+          to: "Prepare domain-specific datasets, fine-tune transformers with LoRA, create specialized models for your field",
+          moat: "Domain fine-tuning expertise—transform general models into specialized experts",
+          stage: 1
+        },
+        {
+          title: "Step 3: Production Inference & Generation Techniques",
+          from: "Basic text generation, no optimization, inefficient GPU usage, high inference costs",
+          to: "Master inference optimization, code generation, few-shot learning, batching strategies, DeepSpeed acceleration",
+          moat: "Production inference optimization—10x throughput at 1/10th the cost",
+          stage: 1
+        },
+        {
+          title: "Step 4: Runtime Optimization & Cross-Platform Deployment",
+          from: "PyTorch-only models, cloud GPU dependency, can't deploy to production edge/mobile environments",
+          to: "Master ONNX conversion, runtime providers (CPU/CUDA/TensorRT), I/O binding, cross-platform optimization",
+          moat: "ONNX deployment mastery—run anywhere from cloud to Raspberry Pi",
+          stage: 2
+        },
+        {
+          title: "Step 5: Applied SLMs: Code & Biomolecular Intelligence",
+          from: "Generic models for specialized tasks, no domain-specific applications for code or science",
+          to: "Build GitHub Copilot-quality code generators, protein/antibody design models, scientific AI applications",
+          moat: "Applied domain SLM expertise—solve real-world problems with specialized models",
+          stage: 2
+        },
+        {
+          title: "Step 6: Advanced Compression & Performance Analysis",
+          from: "Large models requiring expensive GPUs, no compression techniques, can't run on commodity hardware",
+          to: "Master 4-bit/8-bit quantization, FlexGen, SmoothQuant, BitNet (1-bit), achieve 75-87.5% compression",
+          moat: "Extreme compression expertise—run frontier-quality models on laptops and edge devices",
+          stage: 2
+        },
+        {
+          title: "Step 7: Production Deployment & Local Execution",
+          from: "Cloud-only deployment, API dependency, can't run offline or on-premise, privacy concerns",
+          to: "Deploy with vLLM/FastAPI for production, run locally with Ollama/LM Studio, enable on-premise/air-gapped execution",
+          moat: "Complete deployment autonomy—eliminate vendor lock-in, deploy anywhere",
+          stage: 3
+        },
+        {
+          title: "Step 8: End-to-End AI Systems & Intelligent Retrieval",
+          from: "Standalone models, no RAG integration, limited context, can't build agentic systems",
+          to: "Build production RAG with vector DBs, Graph RAG for multi-hop reasoning, agentic AI with memory management",
+          moat: "Complete AI systems architecture—build enterprise-grade applications with owned SLMs",
+          stage: 3
+        },
+        {
+          title: "Step 9: Reasoning Enhancement & Test-Time Optimization",
+          from: "Basic inference only, no reasoning capabilities, limited to model's base performance",
+          to: "Integrate test-time compute (chain-of-thought, self-consistency), build reasoning-enhanced SLMs, OptiLLM proxy",
+          moat: "The Domain SLM Ownership Stack™—complete mastery from fine-tuning to reasoning-enhanced production systems",
+          stage: 3
+        }
+      ],
+      millionDollarMessages: {
+        careerAdvancers: "I help ML engineers and AI specialists build production-ready domain-specific language models that run on commodity hardware, so they can command $250K-$400K salaries and eliminate $50K-$200K monthly API costs without being commoditized as API integrators or locked into vendor dependencies.",
+        founders: "I help technical founders and CTOs build proprietary domain-specific AI models that eliminate 90-99% of API costs, so they can raise funding at 2-3x premium valuations with defensible moats without burning $500K/month on vendor APIs or settling for commodity 'wrapper' business models."
+      }
+    },
+    pricingModalities: {
+      selfPaced: {
+        price: 1997,
+        description: "Complete self-paced mastery with lifetime access to all 9 modules, 80+ videos, 36 hands-on segments, and production code templates.",
+        features: [
+          "Lifetime access to 40-60 hours of comprehensive video content",
+          "36 hands-on coding segments with Shu-Ha-Ri methodology (Learn → Build → Transcend)",
+          "Complete code repositories, datasets, and model checkpoints",
+          "Production deployment templates and ONNX optimization toolkits",
+          "Community forum access with peer support",
+          "Monthly group Q&A calls with instructors",
+          "Email support (48-hour response time)",
+          "Lifetime updates to all course materials",
+          "SLM Deployment Checklist and Model Compression Toolkit bonuses"
+        ]
+      },
+      cohort: {
+        price: 6997,
+        description: "9-week live cohort with 2× weekly sessions, office hours, peer learning, and accountability—master domain SLMs with expert guidance.",
+        features: [
+          "Everything in Self-Paced PLUS:",
+          "18 live 2-hour sessions (Tuesdays/Thursdays) over 9 weeks",
+          "Weekly 1-hour office hours every Friday",
+          "Private Discord community with 30-50 cohort peers",
+          "3 milestone project reviews (weeks 3, 6, 9) with detailed feedback",
+          "1:1 mid-program check-in (30 minutes) to ensure you're on track",
+          "Career Accelerator Workshop ($497 value) — resume, portfolio, interview prep",
+          "Founder's Pitch Deck Template ($297 value) — fundraise with 'owned AI moat' positioning",
+          "Alumni network access (400+ SLM architects and founders)",
+          "Priority email/Discord support (24-hour response)",
+          "Certificate of completion with portfolio showcase"
+        ]
+      },
+      bootcamp: {
+        price: 4997,
+        description: "Immersive 5-day in-person bootcamp (8-10 hours/day) in major cities—accelerated SLM mastery for time-constrained executives.",
+        features: [
+          "5 intense days of hands-on instruction (40-50 hours total)",
+          "Day 1: Foundation (Transformers, fine-tuning, domain specialization)",
+          "Day 2: Optimization (Quantization, compression, performance analysis)",
+          "Day 3: Deployment (ONNX runtime, cross-platform execution, edge devices)",
+          "Day 4: Advanced Applications (Code generation, biomolecular AI, RAG)",
+          "Day 5: Production Systems (Complete pipeline, testing, monitoring, reasoning)",
+          "In-person labs every 2 hours with immediate instructor feedback",
+          "Catered meals and networking events included",
+          "Quarterly bootcamps in SF, NYC, Boston, Seattle",
+          "30-day post-bootcamp email support",
+          "Bootcamp alumni network access",
+          "6-month access to online platform with recordings",
+          "SLM Production Toolkit with production-ready templates"
+        ]
+      },
+      founders: {
+        price: 19997,
+        description: "9-week cohort + 1:1 coaching, architecture review, code review, and deployment support—premium hands-on implementation guidance.",
+        features: [
+          "Everything in Cohort PLUS:",
+          "6× private 1-hour coaching sessions (biweekly) with SLM expert",
+          "Custom SLM architecture design for your specific domain/use case",
+          "3× detailed code reviews of your implementations with optimization guidance",
+          "Hands-on deployment support for your first production SLM",
+          "Hiring guidance (for founders): JDs, interview questions, candidate assessment",
+          "Career strategy (for engineers): job search, interview prep, salary negotiation",
+          "Priority instructor access (24-hour response on Slack/email)",
+          "Unlimited support during program + 90-day post-program support",
+          "SLM Hiring Playbook ($997 value) — hire and assess SLM talent",
+          "Enterprise Sales Kit ($1,497 value) — pitch on-premise AI to Fortune 500"
+        ]
+      }
+    }
   },
   {
     id: "fine-tuning",

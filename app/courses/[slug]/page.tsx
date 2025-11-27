@@ -121,6 +121,21 @@ function CourseHero({ course }: { course: Course }) {
                     By the end, you won't just understand how reasoning models work—you'll <span className="font-semibold text-brand-green">own production-ready reasoning systems that become your competitive moat</span>.
                   </p>
                 </>
+              ) : course.slug === 'small-language-models' ? (
+                <>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    This is not another course on API integration. This is <span className="font-semibold text-brand-blue">executive business education (Harvard/MIT/Stanford caliber)</span> merged with a masterclass for tech founders and AI architects. Using the <span className="font-semibold text-brand-green">DrLee.AI Shu-Ha-Ri learning method</span>, you'll go from API consumer burning $50K-$500K/month to SLM architect owning specialized models in 9 transformative steps.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    Each module begins with a <span className="font-semibold">TedTalk-style presentation</span> on strategy, then you immediately <span className="font-semibold">build it yourself with hands-on coding</span>. You'll master fine-tuning, quantization (4-bit/8-bit), ONNX optimization, and cross-platform deployment from cloud to edge to mobile.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-yellow">Different from our Frontier AI masterclass:</span> While "Build Frontier AI Systems" teaches you to build and scale large production systems with MoE and MLA, this course focuses on <span className="font-semibold">making models smaller, faster, and specialized</span>—achieving 75-87.5% compression while maintaining 90%+ performance. Instead of building bigger to serve millions, you're building smarter to run on $2K laptops with zero API costs. Bigger isn't always better. Focused is faster.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed">
+                    By the end, you won't just understand domain-specific AI—you'll <span className="font-semibold text-brand-green">own production-ready specialized models that eliminate vendor dependency, run anywhere, and become your competitive moat</span>.
+                  </p>
+                </>
               ) : (
                 <p className="text-white/90 text-sm leading-relaxed">
                   {course.description}
@@ -137,6 +152,11 @@ function CourseHero({ course }: { course: Course }) {
                     <>
                       <div className="text-white font-medium">API Integrator</div>
                       <div className="text-white/60 text-sm">$500K/month costs · Commoditized</div>
+                    </>
+                  ) : course.slug === 'small-language-models' ? (
+                    <>
+                      <div className="text-white font-medium">API Consumer</div>
+                      <div className="text-white/60 text-sm">$50K-$500K/month burn · Vendor Lock-In</div>
                     </>
                   ) : (
                     <>
@@ -155,6 +175,11 @@ function CourseHero({ course }: { course: Course }) {
                       <div className="text-brand-green font-medium">Production Architect</div>
                       <div className="text-brand-green/80 text-sm">$50K/month costs · 90% Savings</div>
                     </>
+                  ) : course.slug === 'small-language-models' ? (
+                    <>
+                      <div className="text-brand-green font-medium">SLM Architect</div>
+                      <div className="text-brand-green/80 text-sm">$0 API costs · Complete Ownership</div>
+                    </>
                   ) : (
                     <>
                       <div className="text-brand-green font-medium">Model Builder</div>
@@ -166,6 +191,8 @@ function CourseHero({ course }: { course: Course }) {
               <div className="text-xs text-white/40">
                 {course.slug === 'frontier-model-architecture'
                   ? '9 weeks · 50 hours · Serve millions at 90% lower cost'
+                  : course.slug === 'small-language-models'
+                  ? '9 weeks · 45 hours · Run frontier-quality models on $2K laptops'
                   : '9 weeks · 50 hours · Own your model weights forever'
                 }
               </div>
@@ -209,6 +236,12 @@ function CourseHero({ course }: { course: Course }) {
                   { label: "Cost Elimination", value: "$120K-$600K Saved", icon: "💰", desc: "Eliminate annual reasoning API costs completely" },
                   { label: "Career Impact", value: "$150K-$250K Premium", icon: "📈", desc: "Reasoning architects earn 2x API-skilled devs" },
                   { label: "Irreplaceability", value: "Reasoning Expert", icon: "🛡️", desc: "Own o1-class systems—unmatched competitive moat" }
+                ] : course.slug === 'small-language-models' ? [
+                  { label: "Domain Specialization", value: "20-40% Better Performance", icon: "🧠", desc: "Build focused models that outperform frontier LLMs on specific tasks at 1/100th the cost" },
+                  { label: "Extreme Compression", value: "75-87.5% Size Reduction", icon: "⚡", desc: "Master 4-bit/8-bit quantization with 90%+ performance retention" },
+                  { label: "Cost Elimination", value: "$50K-$500K/Month → $0", icon: "💰", desc: "Eliminate API dependency completely—run on $2K laptops" },
+                  { label: "Cross-Platform Deployment", value: "Anywhere Execution", icon: "📈", desc: "Deploy on laptops, mobile, edge, Raspberry Pi, air-gapped systems" },
+                  { label: "Complete AI Ownership", value: "Domain SLM Stack", icon: "🛡️", desc: "End-to-end mastery: fine-tuning → quantization → ONNX → production" }
                 ] : [
                   { label: "Knowledge Depth", value: "99th Percentile", icon: "🧠", desc: "Understand LLMs better than 90% of 'AI engineers'" },
                   { label: "Implementation Ability", value: "From Scratch", icon: "⚡", desc: "Build GPT without libraries or abstractions" },
@@ -260,6 +293,8 @@ function SignatureSolution({ course }: { course: Course }) {
               ? 'The Frontier AI Sovereignty Stack™'
               : course.signatureSolution && course.slug === 'reasoning-models'
               ? 'The Reasoning Sovereignty Stack™'
+              : course.signatureSolution && course.slug === 'small-language-models'
+              ? 'The Domain SLM Mastery Stack™'
               : 'The LLM Sovereignty Stack™'}
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -497,6 +532,8 @@ function SuccessMetrics({ course }: { course: Course }) {
               ? 'Real outcomes from students who completed The Frontier AI Sovereignty Stack™ and built production-grade systems'
               : course.slug === 'reasoning-models'
               ? 'Real outcomes from students who completed The Reasoning Sovereignty Stack™ and built their competitive moats'
+              : course.slug === 'small-language-models'
+              ? 'Real outcomes from students who mastered The Domain SLM Mastery Stack™ and eliminated API costs entirely'
               : 'Real outcomes from students who completed The LLM Sovereignty Stack™ and built their competitive moats'
             }
           </p>
@@ -702,6 +739,8 @@ function PricingModalities({ course }: { course: Course }) {
               ? 'All modalities include the complete Frontier AI Sovereignty Stack™. Choose based on your learning style and goals.'
               : course.slug === 'reasoning-models'
               ? 'All modalities include the complete Reasoning Sovereignty Stack™. Choose based on your learning style and goals.'
+              : course.slug === 'small-language-models'
+              ? 'All modalities include the complete Domain SLM Mastery Stack™. Choose based on your learning style and goals.'
               : 'All modalities include the complete LLM Sovereignty Stack™. Choose based on your learning style and goals.'
             }
           </p>

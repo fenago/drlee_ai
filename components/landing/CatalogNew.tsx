@@ -29,7 +29,7 @@ const courses = [
   {
     id: "reasoning",
     name: "Build Your Own Reasoning Model",
-    subtitle: "Train AI That Thinks Before It Answers—No API Required",
+    subtitle: "Create AI That Thinks Before it Answers—Stop Using AI, Start Owning It",
     category: "hardcore",
     rarity: "Cutting Edge",
     description: "The models winning today think before they answer. Learn to build that capability.",
@@ -40,14 +40,14 @@ const courses = [
   },
   {
     id: "frontier-arch",
-    name: "Build Frontier AI Systems",
-    subtitle: "Replicate ChatGPT's Architecture—Own the Innovation Stack",
+    name: "Build Your Own Frontier AI",
+    subtitle: "Master Mixture-of-Experts, Advanced Attention, 64x Efficiency—Own Production-Grade AI",
     category: "hardcore",
     rarity: "Extremely Rare",
-    description: "Enterprise-grade AI at startup costs. Build what the giants build.",
+    description: "The ONLY masterclass teaching you to build production-grade frontier AI systems from scratch—cut API costs 90%, own your stack, stop renting from OpenAI.",
     hours: 55,
     modules: 10,
-    price: { selfPaced: 1497, cohort: 5997, founder: 17997 },
+    price: { selfPaced: 1997, cohort: 6997, founder: 19997 },
     slug: "frontier-model-architecture",
   },
   {
@@ -64,8 +64,8 @@ const courses = [
   },
   {
     id: "agentic",
-    name: "Build Autonomous AI Agents",
-    subtitle: "Code Agents That Execute Tasks—Not Just Chat",
+    name: "Build Your Own Autonomous AI Agents",
+    subtitle: "Code Agents That Execute Tasks—Own Your Automation, Not Just Chat",
     category: "hardcore",
     rarity: "Very Rare",
     description: "The difference between a chatbot and an agent is execution. Agents don't just suggest—they do.",
@@ -76,8 +76,8 @@ const courses = [
   },
   {
     id: "multi-agent",
-    name: "Build Multi-Agent AI Teams",
-    subtitle: "Train Agent Swarms That Collaborate and Execute at Scale",
+    name: "Build Your Own Multi-Agent AI Teams",
+    subtitle: "Train Agent Swarms That Collaborate at Scale—Own Your AI Workforce",
     category: "hardcore",
     rarity: "Frontier AI",
     description: "One agent is powerful. Multiple agents working together are transformative.",
@@ -112,7 +112,7 @@ const courses = [
   {
     id: "ml-intuition",
     name: "Machine Learning Intuition",
-    subtitle: "Foundational Machine Learning for Technical Leaders",
+    subtitle: "Master ML Fundamentals—Build Models You Own from First Principles",
     category: "hardcore",
     description: "No PhD required. Just high school algebra and a desire to understand how ML actually works.",
     hours: 35,
@@ -123,7 +123,7 @@ const courses = [
   {
     id: "dl-intuition",
     name: "Deep Learning Intuition",
-    subtitle: "Build Neural Networks from Scratch—No TensorFlow, No PyTorch",
+    subtitle: "Build Neural Networks from Scratch—Own Every Layer, No Dependencies",
     category: "hardcore",
     description: "Understand every detail of training neural networks. No frameworks, no magic—just clarity.",
     hours: 40,
@@ -133,7 +133,7 @@ const courses = [
   },
   {
     id: "slm",
-    name: "Build Domain-Specific LLMs",
+    name: "Build Your Own Domain Specific Small Language Model (SLM)",
     subtitle: "Train Specialized Models You Own and Control—No API Costs",
     category: "hardcore",
     rarity: "High Demand",
