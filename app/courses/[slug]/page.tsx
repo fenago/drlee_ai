@@ -139,6 +139,9 @@ function CourseHero({ course }: { course: Course }) {
               ) : course.slug === 'agentic-systems' ? (
                 <>
                   <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-blue">LLMs can answer questions, but agents can complete tasks.</span> This masterclass teaches you to build the <span className="font-semibold text-brand-blue">infrastructure that transforms a language model into an autonomous system</span> capable of using <span className="font-semibold text-brand-green">tools</span>, maintaining <span className="font-semibold text-brand-green">memory</span>, and executing <span className="font-semibold text-brand-green">multi-step workflows</span>. <span className="font-semibold text-brand-yellow">You won't rely on frameworks</span>—you'll build the foundations yourself: the <span className="font-semibold text-brand-green">processing loop, tool orchestration, memory modules, and human-in-the-loop patterns</span>. By the end, you'll have a complete, working agent system and the deep understanding to extend it for research, business automation, or production deployment.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
                     This is not another course on using agent frameworks. This is <span className="font-semibold text-brand-blue">executive business education (Harvard/MIT/Stanford caliber)</span> merged with a masterclass for tech founders and autonomous systems architects. Using the <span className="font-semibold text-brand-green">DrLee.AI Shu-Ha-Ri learning method</span>, you'll go from framework-dependent to autonomous systems architect in 9 transformative modules.
                   </p>
                   <p className="text-white/90 text-sm leading-relaxed mb-3">
