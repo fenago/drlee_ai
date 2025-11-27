@@ -156,8 +156,8 @@ const courses = [
   },
   {
     id: "10x-developer",
-    name: "AI-Augmented Engineering",
-    subtitle: "Amplifying Developer Impact with Intelligent Tools",
+    name: "Professional Vibe Coding with Claude Code",
+    subtitle: "Build AI-Augmented Development Infrastructure—Own Your Productivity, Stop Renting",
     category: "hardcore",
     description: "Code 10x faster without losing quality. Master AI pair programming.",
     hours: 20,
@@ -284,7 +284,7 @@ export default function CatalogNew() {
   const displayedCourses = showAll ? filteredCourses : filteredCourses.slice(0, 6);
 
   return (
-    <section ref={ref} id="catalog" className="relative py-24 md:py-32 bg-slate-50 dark:bg-slate-900/50 overflow-hidden">
+    <section ref={ref} id="catalog" className="relative py-24 md:py-32 bg-slate-50 dark:bg-slate-900/50 overflow-hidden scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <motion.div

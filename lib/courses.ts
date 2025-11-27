@@ -3560,24 +3560,6 @@ export const courses: Course[] = [
     faqs: []
   },
   {
-    id: "10x-developer",
-    slug: "the-10x-developer",
-    name: "AI-Augmented Engineering",
-    subtitle: "Amplifying Developer Impact with Intelligent Tools",
-    category: "Hardcore Developers",
-    categoryId: "hardcore",
-    price: 1497,
-    hook: "Code 10x faster without losing quality.",
-    description: "Master AI pair programming and multiply your output without sacrificing code quality.",
-    outcomes: ["Master AI pair programming", "Build custom coding workflows", "Automate repetitive tasks", "Review and refactor with AI"],
-    hours: 20,
-    modules: 7,
-    technologies: ["Claude", "Cursor", "GitHub Copilot", "Cody"],
-    curriculum: [{title: "AI-Assisted Development", lessons: ["Effective Prompting for Code", "Review and Refactoring", "Test Generation", "Documentation"]}],
-    instructor: {name: "Dr. Lee", title: "AI Architect & Educator", bio: "Former ML lead at a Fortune 500 company."},
-    faqs: []
-  },
-  {
     id: "automated-insights",
     slug: "automated-insights",
     name: "Automated Insights",
@@ -3863,6 +3845,374 @@ export const courses: Course[] = [
     curriculum: [{title: "Token Economics", lessons: ["Beyond Bitcoin: Blockchain Evolution", "The Tokenomics Canvas", "Utility vs Security Tokens", "Incentive Design Psychology", "Governance Models & DAOs", "Launch Playbook", "Community Building"]}],
     instructor: {name: "Dr. Lee", title: "AI Architect & Educator", bio: "Former ML lead at a Fortune 500 company."},
     faqs: []
+  },
+  {
+    id: "10x-dev",
+    slug: "the-10x-developer",
+    name: "Professional Vibe Coding with Claude Code",
+    subtitle: "Build AI-Augmented Development Infrastructure—Own Your Productivity, Stop Renting",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "Medium",
+    price: 697,
+    hook: "You're losing to engineers half as skilled because they're building 10x faster.",
+    description: "While you're debugging transformers and writing boilerplate, competitors who barely understand the math are shipping AI features faster than you can review PRs. The difference? They've mastered AI-augmented development infrastructure. This isn't a course about 'using Claude Code.' This is executive education in building AI-augmented development systems from first principles. You'll build autonomous agent systems, custom command libraries, plugin frameworks, and production CI/CD automation. By the end, you'll have complete AI infrastructure that compounds your productivity monthly—and the deep understanding to own your technology stack instead of renting it.",
+    outcomes: [
+      "Build autonomous sub-agent systems that work 24/7 on research, testing, and optimization",
+      "Engineer custom command libraries and plugin frameworks that encode your expertise",
+      "Master context engineering and context stuffing techniques for 10x agent effectiveness",
+      "Integrate MCP (Model Context Protocol) servers to connect your entire toolchain",
+      "Implement production-grade CI/CD automation with headless AI execution",
+      "Build 6 complete React applications using multi-agent orchestration",
+      "Create persistent memory architectures that preserve organizational knowledge",
+      "Design enterprise-grade security and governance for AI systems"
+    ],
+    hours: 80,
+    modules: 9,
+    technologies: ["Claude Code", "React", "Node.js", "MCP", "PostgreSQL", "Git", "CI/CD", "Terminal"],
+    curriculum: [
+      {
+        title: "Module 1: Claude Code Fundamentals",
+        lessons: [
+          "What is Claude Code? Terminal-Native AI vs IDE Plugins",
+          "Installation Methods: NPM, Homebrew, Standalone Binary",
+          "Authentication & Initial Configuration",
+          "Core Tools: Read, Write, Edit, Bash, Grep, Glob",
+          "Understanding Context Windows and Token Management",
+          "Hands-On: Build Your First To-Do List (HTML/CSS/JS or React)",
+          "Multi-File Operations: Adding Task Persistence",
+          "Git Integration: AI-Powered Commits and PRs",
+          "Customizing Your Claude Code Workflow"
+        ]
+      },
+      {
+        title: "Module 2: MCP Server Integration",
+        lessons: [
+          "What are MCP Servers? Model Context Protocol Explained",
+          "MCP Architecture: Servers, Clients, Resources, Tools",
+          "Available MCP Servers: PostgreSQL, MongoDB, GitHub, Stripe",
+          "Installing Your First MCP Server",
+          "Hands-On: Add PostgreSQL MCP Server to To-Do App",
+          "Hands-On: Migrate from localStorage to Postgres Database",
+          "Hands-On: Add Stripe API Integration for Payments",
+          "Hands-On: Add GitHub MCP Server for Issue Syncing",
+          "Building Custom MCP Servers for Internal Tools",
+          "MCP Security, Permissions, and Best Practices"
+        ]
+      },
+      {
+        title: "Module 3: Sub-Agent Systems",
+        lessons: [
+          "What are Sub-Agents? Specialization and Parallel Execution",
+          "Sub-Agent Architecture: Context Isolation and Independence",
+          "Context Engineering: Structuring Information for Agents",
+          "Context Stuffing: Loading Agents with Optimal Information",
+          "Hands-On: Create Research Sub-Agent for Feature Discovery",
+          "Hands-On: Create Testing Sub-Agent for Automated Tests",
+          "Hands-On: Create Deployment Sub-Agent for CI/CD",
+          "Multi-Agent Coordination Patterns",
+          "Advanced: Agent Communication and State Sharing",
+          "Performance Monitoring and Optimization for Agent Systems"
+        ]
+      },
+      {
+        title: "Module 4: Skills Development",
+        lessons: [
+          "What are Skills? Model-Invoked vs User-Invoked Capabilities",
+          "Skills vs Commands: When to Use Each",
+          "YAML-Based Skill Definitions",
+          "Skill Discovery and Execution Flow",
+          "Hands-On: Build Code Review Skill",
+          "Hands-On: Build Testing Skill (Unit, Integration, E2E)",
+          "Hands-On: Build Deployment Skill with Rollback",
+          "Skill Composition and Chaining",
+          "Building Domain-Specific Skill Libraries",
+          "Self-Improving Skills and Learning Patterns"
+        ]
+      },
+      {
+        title: "Module 5: Meta Agent Architecture",
+        lessons: [
+          "What are Meta Agents? Agents Managing Agents",
+          "Meta Agent Patterns: Supervisor, Delegator, Coordinator",
+          "Agent Lifecycle Management",
+          "Resource Allocation and Optimization",
+          "Hands-On: Build Supervisor Meta Agent",
+          "Hands-On: Build Coordinator Meta Agent for Parallel Work",
+          "Hands-On: Build Learning Meta Agent with Adaptation",
+          "Advanced: Recursive Meta Agents (Agents Managing Meta Agents)",
+          "Self-Organizing Agent Systems",
+          "Production Deployment and Scaling Strategies"
+        ]
+      },
+      {
+        title: "Module 6: Orchestration Agent Patterns",
+        lessons: [
+          "What is Agent Orchestration? Centralized Control vs Coordination",
+          "Orchestration Patterns: Sequential, Parallel, Conditional, Loops",
+          "State Machines and Workflow Engines",
+          "Event-Driven vs Request-Driven Patterns",
+          "Hands-On: Build Feature Development Orchestrator (Research → Design → Code → Test → Deploy)",
+          "Hands-On: Build CI/CD Pipeline Orchestrator (Lint → Test → Build → Deploy → Monitor)",
+          "Hands-On: Build Code Review Orchestrator (Syntax → Security → Performance → Style)",
+          "Dynamic Orchestration Based on Context",
+          "Self-Healing Orchestration Systems",
+          "Production-Scale Orchestration and Observability"
+        ]
+      },
+      {
+        title: "Module 7: Production Agent Systems",
+        lessons: [
+          "Production Requirements: Reliability, Observability, Scalability",
+          "Understanding Production Failure Modes for Agents",
+          "Logging and Monitoring for Agent Systems",
+          "Agent-Specific Observability Patterns",
+          "Hands-On: Implement Production Logging with Structured Logs",
+          "Hands-On: Implement Performance Monitoring and Cost Tracking",
+          "Hands-On: Deploy Agents to Production with Blue-Green Deployment",
+          "Automated Rollback on Agent Failures",
+          "Self-Healing Agent Systems",
+          "Chaos Engineering and Cost Optimization at Scale"
+        ]
+      },
+      {
+        title: "Module 8: Context Engineering & Memory",
+        lessons: [
+          "What is Context Engineering? Windows, Stuffing, Optimization",
+          "How Context Affects Agent Performance (10x Gains)",
+          "Memory Systems: Short-Term vs Long-Term",
+          "Vector Databases and Semantic Search",
+          "Hands-On: Implement Context Optimization (Pruning, Summarization)",
+          "Hands-On: Add Vector Database for Agent Memory",
+          "Hands-On: Implement Semantic Search Over Past Interactions",
+          "Hands-On: Build Stateful Agent Sessions with Persistence",
+          "Advanced Context Patterns: Hierarchical Context, Multi-Agent Sharing",
+          "Production Memory Management and Cost Optimization"
+        ]
+      },
+      {
+        title: "Module 9: CI/CD & Headless Automation",
+        lessons: [
+          "What is Headless Claude Code? Interactive vs Non-Interactive",
+          "Understanding stdin/stdout Protocol",
+          "CI/CD Integration: GitHub Actions, GitLab CI, Jenkins",
+          "Automation Patterns: Pre-Commit Hooks, Post-Deploy Validation",
+          "Hands-On: Build Automated Code Review in CI/CD Pipeline",
+          "Hands-On: Build Automated Test Generation and Execution",
+          "Hands-On: Build Automated Deployment to Production",
+          "Zero-Downtime Deployments and Automated Rollback",
+          "End-to-End Autonomous Pipeline: PR Creation to Production Monitoring",
+          "Production Mastery Capstone: Complete AI-Augmented Infrastructure"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Infrastructure Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI infrastructure from first principles. His approach: build the systems yourself to truly understand how AI-augmented development works—and own your productivity instead of renting it."
+    },
+    faqs: [
+      {
+        question: "Is this just a 'how to use Claude Code' tutorial?",
+        answer: "No. This is executive education in building AI-augmented development infrastructure from first principles. You'll learn architecture patterns, context engineering, agent orchestration, and production deployment—skills that apply across any AI development platform."
+      },
+      {
+        question: "Do I need to know Claude Code before taking this?",
+        answer: "No. We start from installation and authentication. However, you should be proficient in JavaScript/React and comfortable with terminal/command-line interfaces."
+      },
+      {
+        question: "What's the difference between this and using GitHub Copilot or Cursor?",
+        answer: "Copilot gives you autocomplete. Cursor gives you an IDE plugin. Claude Code gives you a platform for building autonomous agent systems, custom workflows, and production automation. This course teaches you to build infrastructure, not just use tools."
+      },
+      {
+        question: "Will I actually build production applications?",
+        answer: "Yes. You'll build 6 complete React applications: Authentication System, E-Commerce Catalog, Analytics Dashboard, Multi-Tenant SaaS, CMS Platform, and Social Media App—all using sub-agents, MCP integrations, and context engineering."
+      },
+      {
+        question: "How is this different from your other AI courses?",
+        answer: "Other courses teach you how to build LLMs, agents, or ML systems. This course teaches you how to build the development infrastructure that builds those systems—meta-level productivity engineering."
+      },
+      {
+        question: "What if I'm already using Claude Code at work?",
+        answer: "Perfect. This course will 10x your effectiveness by teaching context engineering, sub-agent orchestration, custom command libraries, plugin development, and production automation patterns you won't discover through trial-and-error."
+      }
+    ],
+    signatureSolution: {
+      stages: [
+        {
+          title: "STAGE 1-3: Foundation & Integration",
+          subtitle: "Terminal Command Center, Workflow Acceleration, Cross-Platform Mastery",
+          weeks: "Weeks 1-3",
+          from: "Opening multiple tools (IDE, terminal, browser, ChatGPT), manually switching contexts, writing every line of code by hand",
+          to: "Single terminal environment where AI handles multi-file operations, git workflows, and autonomous task completion across Terminal, Desktop, and VS Code",
+          moat: "Terminal-Native AI Infrastructure",
+          moatDesc: "Understanding terminal-native AI architecture gives you 10x more control than IDE plugin users—workflow efficiency that saves 2-3 hours per day and enables automation impossible in GUI tools",
+          color: "blue"
+        },
+        {
+          title: "STAGE 4-6: Infrastructure & Automation",
+          subtitle: "Memory Architecture, Command Engineering, Agent Orchestration",
+          weeks: "Weeks 4-6",
+          from: "Starting every coding session from zero context, writing same prompts repeatedly, doing every task manually",
+          to: "Four-tier memory systems preserving organizational knowledge, library of 50+ custom commands, sub-agents autonomously handling research/testing/optimization",
+          moat: "Custom Development Infrastructure",
+          moatDesc: "Proprietary command libraries, autonomous agent systems working 24/7, and memory architectures that compound productivity monthly—infrastructure competitors can't replicate by hiring",
+          color: "purple"
+        },
+        {
+          title: "STAGE 7-9: Enterprise & Mastery",
+          subtitle: "Plugin Development, CI/CD Automation, Security & Sovereignty",
+          weeks: "Weeks 7-9",
+          from: "Manual testing, deployment, code review processes taking hours, security bolted on at the end",
+          to: "Plugin packages scaling expertise across organization, headless AI automating entire development pipeline, enterprise-grade security from day one",
+          moat: "Production AI Infrastructure Sovereignty",
+          moatDesc: "Complete organizational AI infrastructure with plugins as IP, fully automated CI/CD, and defense-in-depth security—technology ownership that creates $1M-$3M in value",
+          color: "green"
+        }
+      ],
+      steps: [
+        {
+          title: "Module 1: Claude Code Fundamentals",
+          from: "Opening multiple tools (IDE, terminal, browser, ChatGPT) and manually switching contexts, writing CRUD routes by hand for 2 hours",
+          to: "Single terminal environment with terminal-native AI workflows, building complete REST API with sub-agents in 20 minutes, 6x productivity increase on Day 1",
+          moat: "Terminal-native AI mastery—deep understanding of tool execution, context windows, agent decision-making from first principles enables building custom systems",
+          stage: 1
+        },
+        {
+          title: "Module 2: MCP Server Integration",
+          from: "Manual API integrations, disconnected tools requiring context switching, weeks to integrate databases and payment systems",
+          to: "Model Context Protocol connecting entire toolchain (PostgreSQL, Stripe, GitHub), one-command integrations, unified development platform",
+          moat: "MCP integration expertise—ability to connect any service to AI agents using open protocol, creating seamless toolchain impossible for API-wrapper developers",
+          stage: 1
+        },
+        {
+          title: "Module 3: Sub-Agent Systems",
+          from: "Doing every task manually even with AI assistance, single AI context handling everything sequentially, limited by hours in day",
+          to: "Specialized sub-agents with independent contexts for research, testing, refactoring working in parallel, agents working 24/7 while you sleep",
+          moat: "Sub-agent orchestration mastery—parallel execution patterns that enable 10x faster development than sequential workflows, team-level output from individual contributor",
+          stage: 2
+        },
+        {
+          title: "Module 4: Skills Development",
+          from: "Manually invoking every AI action, no autonomous agent behavior, AI waits for constant human direction",
+          to: "Model-invoked skills that AI uses autonomously, domain-specific skill libraries in .claude/skills, AI takes initiative while you're in meetings",
+          moat: "Skills architecture expertise—building autonomous capabilities that agents invoke without prompting, enabling truly hands-off automation",
+          stage: 2
+        },
+        {
+          title: "Module 5: Meta Agent Architecture",
+          from: "Single-agent limitations (one agent does everything), no specialization, manual agent management for each task",
+          to: "Meta agents managing other agents (supervisor, delegator, coordinator patterns), agent hierarchies, self-improving systems that compound monthly",
+          moat: "Meta agent design mastery—systems where agents manage agents enable recursive scaling and self-organizing architectures worth $100K+ in productivity",
+          stage: 2
+        },
+        {
+          title: "Module 6: Orchestration Agent Patterns",
+          from: "Ad-hoc workflows, manual coordination between development stages, no systematic approach to complex features",
+          to: "Orchestration patterns (sequential, parallel, conditional, loops), state machines for feature development (Research → Design → Code → Test → Deploy)",
+          moat: "Orchestration architecture expertise—centralized control patterns that coordinate multi-agent workflows for production-scale feature development",
+          stage: 3
+        },
+        {
+          title: "Module 7: Production Agent Systems",
+          from: "Local-only agents, no production deployment, no monitoring, unpredictable production behavior, catastrophic failures",
+          to: "Production-deployed agents, full observability, performance monitoring, blue-green deployments, automated rollback, self-healing systems",
+          moat: "Production deployment mastery—operating autonomous agent systems at scale with reliability, monitoring, and cost optimization that enterprises require",
+          stage: 3
+        },
+        {
+          title: "Module 8: Context Engineering & Memory",
+          from: "Every session is blank slate, hitting token limits, slow responses, AI forgets conversation after 2 hours",
+          to: "Four-tier memory hierarchy (Enterprise → Project → User → Local), context optimization (pruning, summarization), vector databases, persistent knowledge",
+          moat: "Context engineering mastery—memory architectures that preserve organizational knowledge permanently, enabling agents 10x more effective than competitors starting from zero",
+          stage: 3
+        },
+        {
+          title: "Module 9: CI/CD & Headless Automation",
+          from: "Manual code reviews taking 2 hours, manual deployments, no automation, development pipeline requires constant human intervention",
+          to: "Headless AI automating entire development pipeline end-to-end, automated code review in 5 minutes, zero-touch deployments, self-healing CI/CD",
+          moat: "Headless automation mastery—AI in production running 24/7 unsupervised, deploying 10x per day vs competitors' 1x per week, $100K-$500K in labor savings",
+          stage: 3
+        }
+      ],
+      millionDollarMessages: {
+        careerAdvancers: "I help AI engineers and ML practitioners build production-ready AI-augmented development infrastructure from first principles, so they can deploy autonomous sub-agent systems and ship 10-100x faster earning $250K-$400K salaries without being commoditized as 'prompt engineers' or stuck debugging tools they don't understand.",
+        founders: "I help technical founders and CTOs build proprietary AI-augmented development infrastructure from first principles, so they can save $200K-$500K/year in engineering costs and ship 10x faster without burning cash on API dependencies or hiring expensive engineers who can't keep pace with AI-augmented teams."
+      }
+    },
+    pricingModalities: {
+      selfPaced: {
+        price: 697,
+        description: "Self-Paced Mastery",
+        features: [
+          "All 9 modules available immediately (80+ hours)",
+          "Lifetime access to content and updates",
+          "Build 6 production React applications",
+          "Command library templates (50+ pre-built commands)",
+          "Sub-agent architecture templates",
+          "Plugin scaffolding and MCP examples",
+          "Private Discord community (peer support)",
+          "Monthly live office hours with Q&A",
+          "Certificate of completion",
+          "Learn on your own schedule"
+        ]
+      },
+      cohort: {
+        price: 2497,
+        description: "9-Week Live Cohort",
+        features: [
+          "Weekly live workshops with Dr. Lee (2 hours each)",
+          "Cohort accountability and peer learning (30-50 students)",
+          "Direct instructor access (24-hour response)",
+          "Weekly code reviews (instructor + peer feedback)",
+          "Pair programming sessions",
+          "Career advancement coaching",
+          "Resume and LinkedIn optimization",
+          "Interview prep for $300K+ roles",
+          "Alumni network access (1,000+ students)",
+          "Job board access (companies hiring AI-augmented engineers)",
+          "Graduation certificate",
+          "Fixed start dates (4 cohorts per year)"
+        ]
+      },
+      bootcamp: {
+        price: 9997,
+        description: "5-Day Immersive Bootcamp",
+        features: [
+          "Executive format (Monday-Friday intensive)",
+          "8am-4pm daily with hands-on labs (70% building)",
+          "Build 3-4 production React apps in 5 days",
+          "Small group (max 25 people)",
+          "1-on-1 architecture review with Dr. Lee",
+          "Teaching assistant support during all sessions",
+          "Daily code reviews of your implementations",
+          "Capstone project (deploy your custom system)",
+          "4 weeks post-bootcamp support",
+          "Career acceleration (resume, LinkedIn, interviews)",
+          "Recordings of all sessions",
+          "Early bird pricing: $7,997 (save $2,000)"
+        ]
+      },
+      founders: {
+        price: 6997,
+        description: "Founder's Edition (1:1 Implementation + Fractional CTO)",
+        features: [
+          "One-on-one implementation partnership (12-24 sessions)",
+          "Weekly architecture sessions (1 hour private with Dr. Lee)",
+          "Custom curriculum for YOUR specific tech stack",
+          "Hands-on pair programming (we code together)",
+          "Production deployment support",
+          "Fractional CTO services (3-6 months)",
+          "Team training (up to 5 members included)",
+          "Architecture design document (custom)",
+          "Code review (every pull request)",
+          "Direct Slack/WhatsApp access to Dr. Lee",
+          "Custom MCP servers for your company tools",
+          "Enterprise security and compliance configuration",
+          "Long-term partnership opportunities available"
+        ]
+      }
+    }
   }
 ];
 
