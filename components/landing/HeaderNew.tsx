@@ -8,10 +8,10 @@ import config from "@/config";
 import { useTheme, ThemeToggle } from "@/components/ThemeProvider";
 
 const navItems = [
-  { href: "#intrapreneurs", label: "For Careers" },
-  { href: "#entrepreneurs", label: "For Founders" },
-  { href: "#catalog", label: "Masterclasses" },
-  { href: "#pricing", label: "Pricing" },
+  { href: "/#intrapreneurs", label: "For Careers" },
+  { href: "/#entrepreneurs", label: "For Founders" },
+  { href: "/#catalog", label: "Masterclasses" },
+  { href: "/#pricing", label: "Pricing" },
 ];
 
 export default function HeaderNew() {
@@ -69,32 +69,32 @@ export default function HeaderNew() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
                 className={`relative px-4 py-2 text-sm font-medium transition-colors rounded-full ${
-                  activeSection === item.href.replace("#", "")
+                  activeSection === item.href.replace("/#", "")
                     ? "text-slate-900 dark:text-white"
                     : "text-slate-600 dark:text-white/60 hover:text-slate-900 dark:hover:text-white"
                 }`}
               >
                 {item.label}
-                {activeSection === item.href.replace("#", "") && (
+                {activeSection === item.href.replace("/#", "") && (
                   <motion.div
                     layoutId="activeNav"
                     className="absolute inset-0 bg-slate-100 dark:bg-white/10 rounded-full -z-10"
                     transition={{ type: "spring", duration: 0.5 }}
                   />
                 )}
-              </Link>
+              </a>
             ))}
           </div>
 
           {/* Right side - Theme toggle & CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <ThemeToggle />
-            <Link
-              href="#catalog"
+            <a
+              href="/#catalog"
               className="group relative px-6 py-2.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold text-sm overflow-hidden transition-all hover:scale-105"
             >
               <motion.span
@@ -114,7 +114,7 @@ export default function HeaderNew() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </span>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -167,13 +167,13 @@ export default function HeaderNew() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.05 }}
                 >
-                  <Link
+                  <a
                     href={item.href}
                     onClick={() => setIsOpen(false)}
                     className="block px-4 py-3 rounded-xl text-slate-700 dark:text-white/80 hover:bg-slate-100 dark:hover:bg-white/5 font-medium transition-colors"
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 </motion.div>
               ))}
               <motion.div
@@ -182,13 +182,13 @@ export default function HeaderNew() {
                 transition={{ delay: 0.2 }}
                 className="pt-4"
               >
-                <Link
-                  href="#catalog"
+                <a
+                  href="/#catalog"
                   onClick={() => setIsOpen(false)}
                   className="block w-full text-center px-6 py-3 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold"
                 >
                   Start Building
-                </Link>
+                </a>
               </motion.div>
             </div>
           </motion.div>

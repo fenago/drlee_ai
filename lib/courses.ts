@@ -1092,13 +1092,13 @@ export const courses: Course[] = [
     id: "diffusion",
     slug: "diffusion-models",
     name: "Build Your Own Image Generator",
-    subtitle: "Train Vision Models from Scratch—Stop Renting, Start Owning",
+    subtitle: "The Visual AI Sovereignty Stack™ — Master Text-to-Image Generation from First Principles",
     category: "Hardcore Developers",
     categoryId: "hardcore",
     rarity: "Extremely Rare",
-    price: 2997,
-    hook: "Create images from words. Own the visual AI your competitors rent.",
-    description: "This masterclass takes you inside the powerful models behind DALL-E and Stable Diffusion. You'll explore two distinct approaches to image generation—vision transformers and diffusion models—building each from scratch. Learn how transformers turn images into sequences of patches, and how diffusion models refine noise into coherent images. By the end, you'll have built models that classify images, add captions automatically, and generate high-resolution content from text prompts. You'll understand not just how to use these tools, but how they work—because you built them yourself.",
+    price: 1997,
+    hook: "Stop using DALL-E 3's API. Build your own image generator instead. The ONLY masterclass teaching text-to-image systems from vision transformers to modern diffusion architectures—own your visual AI, stop renting from OpenAI, Google, and Replicate.",
+    description: "Build production text-to-image systems from scratch—from vision transformers and diffusion models to Stable Diffusion and Flux-class architectures. Master the visual AI stack that powers DALL-E 3, Nano Banana Pro, Flux, Ideogram, and cutting-edge generative AI platforms. For AI engineers: Command $250K-$400K salaries with irreplaceable visual AI expertise. For technical founders: Eliminate $100K-$300K/year API costs and build fundable technical moats. 9 modules. Live instruction. From first principles to production deployment.",
     outcomes: [
       "Build and train models to generate high-resolution images from text descriptions",
       "Implement vision transformers (ViT) to classify images",
@@ -1111,7 +1111,7 @@ export const courses: Course[] = [
       "Better differentiate real images from AI-generated deepfakes"
     ],
     hours: 50,
-    modules: 11,
+    modules: 9,
     technologies: ["PyTorch", "Vision Transformers", "CLIP", "VQGAN", "Stable Diffusion", "DistilBERT", "Diffusers"],
     curriculum: [
       {
@@ -1263,7 +1263,215 @@ export const courses: Course[] = [
         question: "Does this cover detecting AI-generated images?",
         answer: "Yes. The final module includes fine-tuning models to detect deepfakes—increasingly important as visual AI becomes more prevalent."
       }
-    ]
+    ],
+    signatureSolution: {
+      stages: [
+        {
+          title: "PHASE 1: Foundation",
+          subtitle: "Vision Transformers & Attention Mechanisms",
+          weeks: "Weeks 1-3",
+          from: "Using DALL-E 3, Nano Banana Pro, and Flux APIs without understanding the underlying architectures—stuck debugging black boxes with zero customization ability",
+          to: "Building complete vision transformer and encoder-decoder architectures from scratch—understanding how images are processed by modern visual AI systems",
+          moat: "Vision Transformer Mastery",
+          moatDesc: "95% of computer vision engineers only know CNNs. By mastering transformer architectures for vision, you gain access to cutting-edge techniques that power modern visual AI systems.",
+          color: "blue"
+        },
+        {
+          title: "PHASE 2: Diffusion & Conditioning",
+          subtitle: "Build Diffusion Models & Text-to-Image Systems",
+          weeks: "Weeks 4-6",
+          from: "No understanding of diffusion mathematics, can't control image generation with text, limited to pre-built models",
+          to: "Building DDPM, implementing text conditioning with CLIP, constructing complete text-to-image systems with cross-attention",
+          moat: "Text-to-Image Generation Expertise",
+          moatDesc: "This is where you build modern text-to-image systems from scratch. Less than 1,000 people globally truly understand these systems end-to-end.",
+          color: "purple"
+        },
+        {
+          title: "PHASE 3: Production & Scale",
+          subtitle: "Advanced Architectures & Deployment",
+          weeks: "Weeks 7-9",
+          from: "Models work in notebooks but are too slow for production, no deployment experience, limited to single architecture approach",
+          to: "Deploying optimized production visual AI with TensorRT, implementing alternative architectures (VQGAN, CLIP), serving 1000s of requests/hour",
+          moat: "Production Visual AI Systems",
+          moatDesc: "Most AI practitioners never ship to production. You'll build deployable, profitable visual AI that solves real business problems at scale.",
+          color: "green"
+        }
+      ],
+      steps: [
+        {
+          title: "Module 1: Visual Attention Foundations",
+          from: "I understand text transformers but don't know how attention mechanisms work for images—confused by patch embeddings and positional encodings for 2D data",
+          to: "I've implemented attention mechanisms for images from scratch, built complete Vision Transformer architectures, understanding patches, embeddings, and multi-head attention",
+          moat: "Vision transformer mastery—rare knowledge that separates you from 95% of CV engineers who only know CNNs",
+          stage: 1
+        },
+        {
+          title: "Module 2: Transformer Architectures for Vision",
+          from: "I've seen ViT for classification but don't understand encoder-decoder architectures for vision or how image captioning models work",
+          to: "I've implemented encoder-decoder transformer architectures, built image captioning systems, understanding how attention bridges visual and textual modalities",
+          moat: "Multimodal architecture expertise—understanding the 'glue' that 98% of developers skip when building text-to-image systems",
+          stage: 1
+        },
+        {
+          title: "Module 3: Diffusion Process Fundamentals",
+          from: "I've heard of diffusion models (DALL-E 3, Flux) but don't understand the math, can't explain how noise is added and removed",
+          to: "I've built Denoising Diffusion Probabilistic Models (DDPM) from scratch—understanding forward diffusion, reverse diffusion, and noise schedules",
+          moat: "DDPM implementation mastery—this alone separates you from 99.5% of developers who only call APIs",
+          stage: 2
+        },
+        {
+          title: "Module 4: Advanced Diffusion Engineering",
+          from: "My DDPM models are slow and produce mediocre results—don't know how to optimize training or speed up sampling",
+          to: "I've mastered DDIM fast sampling, classifier guidance, improved architectures—producing high-quality 512x512 images in seconds",
+          moat: "Production diffusion expertise—bridging the gap from academic papers to deployable products",
+          stage: 2
+        },
+        {
+          title: "Module 5: Conditional Image Synthesis",
+          from: "I can generate random images but can't control generation with text prompts—don't understand text conditioning",
+          to: "I've built text-to-image diffusion systems with CLIP/T5 encoding, cross-attention conditioning, and controllable generation",
+          moat: "Text-to-image generation mastery—the billion-dollar capability that less than 1,000 people globally understand end-to-end",
+          stage: 2
+        },
+        {
+          title: "Module 6: Latent Diffusion Systems",
+          from: "My text-to-image models are slow and memory-intensive (512x512 takes 40 seconds)—don't understand latent space",
+          to: "I've built latent diffusion architecture with VAE encoding—achieving 8x speed improvements and 16x memory reductions",
+          moat: "Latent diffusion mastery—the architectural breakthrough that powers Stable Diffusion, Flux, and modern generative systems",
+          stage: 2
+        },
+        {
+          title: "Module 7: Token-Based Visual Generation",
+          from: "I only know continuous diffusion models—don't understand discrete token approaches or VQGAN",
+          to: "I've implemented VQGAN and autoregressive transformer generation—mastering both diffusion and token-based paradigms",
+          moat: "Multi-paradigm expertise—versatility that makes you invaluable as most practitioners only know one approach",
+          stage: 3
+        },
+        {
+          title: "Module 8: Multimodal Understanding with CLIP",
+          from: "I don't understand how CLIP aligns text and images or why it's critical for text-to-image models",
+          to: "I've built CLIP from scratch—dual encoders, contrastive loss, and understanding how CLIP powers modern multimodal systems",
+          moat: "Multimodal AI foundations—knowledge that unlocks entire categories of AI products beyond just image generation",
+          stage: 3
+        },
+        {
+          title: "Module 9: Production Visual AI Systems",
+          from: "My models work in notebooks but are too slow, memory-intensive, and unstable for production",
+          to: "I've deployed production visual AI with TensorRT/ONNX optimization, built scalable APIs, implemented monitoring and cost control",
+          moat: "Production deployment mastery—the rarest skill that most AI practitioners never achieve, transforming research into profit",
+          stage: 3
+        }
+      ],
+      millionDollarMessages: {
+        careerAdvancers: "I help AI engineers build production text-to-image systems from scratch—from vision transformers to latent diffusion—so they can command $250K-$400K salaries as visual AI architects without being limited to API integration skills that commoditize their careers.",
+        founders: "I help technical founders build proprietary visual AI systems that eliminate $100K-$300K/year API costs and create 12-24 month technical moats, so they can raise Series A at premium valuations without hearing 'you're just an API wrapper' from every investor."
+      }
+    },
+    pricingModalities: {
+      selfPaced: {
+        price: 1997,
+        name: "Self-Paced Course",
+        description: "Complete text-to-image generation mastery at your own pace. Build DALL-E 3, Nano Banana Pro, Flux, and modern diffusion systems from first principles.",
+        features: [
+          "All 9 modules (45+ hours of video)",
+          "Complete PyTorch implementations",
+          "Lifetime access to all content",
+          "Private Discord community",
+          "Monthly live office hours",
+          "All future updates included",
+          "Certificate of completion"
+        ],
+        paymentOptions: [
+          { label: "Full payment", amount: 1997 },
+          { label: "2-payment plan", amount: 997, note: "$997 + $1,050 in 30 days" }
+        ]
+      },
+      cohort: {
+        price: 6997,
+        name: "9-Week Live Cohort",
+        description: "9-week live cohort with Dr. Lee. Build production text-to-image systems with weekly workshops, code reviews, and direct instructor access.",
+        features: [
+          "Everything in Self-Paced PLUS:",
+          "9 weekly 3-hour live workshops",
+          "Direct access to Dr. Lee (24-hour response)",
+          "Weekly code reviews on your implementations",
+          "2x 30-minute 1:1 architecture consultations",
+          "Pair programming with cohort peers",
+          "Job board access (companies hiring visual AI engineers)",
+          "Alumni network (500+ engineers and founders)",
+          "Cohort session recordings",
+          "Resume/LinkedIn review (engineers) or pitch deck review (founders)"
+        ],
+        paymentOptions: [
+          { label: "Full payment", amount: 6647, note: "Save 5% = $350" },
+          { label: "3-payment plan", amount: 2332, note: "$2,332/month x 3 (0% interest)" },
+          { label: "6-payment plan", amount: 1195, note: "$1,195/month x 6 (add 3% = $7,207 total)" }
+        ],
+        schedule: [
+          "Q1 Cohort: Starts January 14, 2025",
+          "Q2 Cohort: Starts April 8, 2025",
+          "Q3 Cohort: Starts July 15, 2025",
+          "Q4 Cohort: Starts October 7, 2025"
+        ]
+      },
+      bootcamp: {
+        price: 9997,
+        name: "5-Day Intensive Bootcamp",
+        description: "Executive format for senior engineers and CTOs. Build and deploy a complete production text-to-image system in 5 intensive days.",
+        features: [
+          "5 full days (Monday-Friday, 8am-6pm)",
+          "50 hours of instruction + hands-on building",
+          "Maximum 15 participants (high-touch instruction)",
+          "Build production system by Friday",
+          "Deploy on AWS/GCP with autoscaling",
+          "1:1 architecture review with Dr. Lee (60 min)",
+          "90 days post-bootcamp support",
+          "Catered meals + networking dinner",
+          "Lifetime access to self-paced course",
+          "Certificate of completion"
+        ],
+        paymentOptions: [
+          { label: "Full payment", amount: 9497, note: "Save 5% = $500" },
+          { label: "3-payment plan", amount: 3415, note: "$3,415/month x 3 (0% interest)" },
+          { label: "Corporate pricing", note: "Available for teams of 3+ (contact for quote)" }
+        ],
+        schedule: [
+          "Q1 Intensive: February 24-28, 2025 (San Francisco)",
+          "Q2 Intensive: May 19-23, 2025 (New York)",
+          "Q3 Intensive: August 18-22, 2025 (Austin)",
+          "Q4 Intensive: November 10-14, 2025 (Virtual)"
+        ]
+      },
+      founders: {
+        price: 19997,
+        name: "Founder's Edition",
+        description: "Everything in 9-Week Cohort + Founder-specific support. Build proprietary visual AI for your startup with custom architecture guidance and 6 months of ongoing consultation.",
+        features: [
+          "Everything in 9-Week Cohort PLUS:",
+          "3 additional 1:1 sessions with Dr. Lee (60 min each)",
+          "Custom visual AI architecture for your product",
+          "Pitch deck technical section review",
+          "'Technical Moat' narrative development",
+          "Train up to 5 engineers on your team",
+          "6 months of email/Slack support",
+          "Monthly check-ins (30 min) for 6 months",
+          "Priority response time (<12 hours)",
+          "Hiring support (job descriptions, interview questions)",
+          "Case study feature opportunity"
+        ],
+        paymentOptions: [
+          { label: "Full payment", amount: 18997, note: "Save 5% = $1,000" },
+          { label: "3-payment plan", amount: 6865, note: "$6,865/month x 3 (0% interest)" },
+          { label: "6-payment plan", amount: 3499, note: "$3,499/month x 6 (0% interest)" }
+        ],
+        idealFor: [
+          "Technical founders building AI-first companies",
+          "CTOs at startups preparing for Series A",
+          "Founders who raised seed and need technical differentiation",
+          "Solo technical founders wanting fractional CTO guidance"
+        ]
+      }
+    }
   },
   {
     id: "agentic",
@@ -1612,7 +1820,7 @@ export const courses: Course[] = [
     category: "Hardcore Developers",
     categoryId: "hardcore",
     rarity: "Frontier AI",
-    price: 2997,
+    price: 1497,
     hook: "One agent is powerful. Multiple agents working together are transformative.",
     description: "Single agents are limited by what one LLM can do in one conversation. Multi-agent systems break that barrier—distributing complex tasks across specialized agents that collaborate using protocols like MCP and A2A. This masterclass takes you from single-agent foundations to fully orchestrated multi-agent architectures. You'll build the complete infrastructure: agent loops, tool orchestration, inter-agent communication, shared memory, and distributed task execution. By the end, you'll have a working multi-agent system capable of tackling problems no single agent could solve—and the deep understanding to adapt it for research, business automation, or production deployment.",
     outcomes: [
@@ -1759,6 +1967,173 @@ export const courses: Course[] = [
         ]
       }
     ],
+    signatureSolution: {
+      stages: [
+        {
+          title: "PHASE 1: Foundation",
+          subtitle: "Agent Infrastructure & Coordination Fundamentals",
+          weeks: "Weeks 1-3",
+          from: "Using frameworks like LangChain/AutoGPT without understanding, building single agents only, framework-dependent implementations",
+          to: "Building complete agent infrastructure from scratch, understanding tool orchestration and processing loops, owning the agent architecture",
+          moat: "Agent Infrastructure Mastery",
+          moatDesc: "Ability to design and build autonomous agent systems without framework dependency—understanding tools, LLM integration, and ReAct loops at the architectural level",
+          color: "blue"
+        },
+        {
+          title: "PHASE 2: Enhancement",
+          subtitle: "MCP Protocol, Research Agents & Human-in-the-Loop",
+          weeks: "Weeks 4-6",
+          from: "Custom tool integrations only, basic single-purpose agents, no human oversight capabilities",
+          to: "MCP-compatible agents, production research workflows, human-in-the-loop patterns for critical decisions",
+          moat: "Production Agent Capabilities",
+          moatDesc: "Building agents that integrate with tool ecosystems, handle complex research workflows, and include appropriate human oversight for business-critical operations",
+          color: "purple"
+        },
+        {
+          title: "PHASE 3: Coordination",
+          subtitle: "Memory, Multi-Agent Systems & Production Deployment",
+          weeks: "Weeks 7-9",
+          from: "Stateless single agents, no coordination between agents, local deployments only",
+          to: "Multi-agent coordination with A2A protocols, shared memory systems, production-scale deployments with monitoring",
+          moat: "Multi-Agent Systems Architecture",
+          moatDesc: "Enterprise-ready multi-agent architectures with coordinated agent teams, shared state management, and production deployment expertise",
+          color: "green"
+        }
+      ],
+      steps: [
+        {
+          title: "Module 1: Agent Foundations & Tool Integration",
+          from: "Call APIs and chain prompts without understanding agent autonomy or tool architecture fundamentals",
+          to: "Built complete tool orchestration system with BaseTool architecture, function tools, and Pydantic validation—understanding exactly how agents interact with tools",
+          moat: "Tool integration foundation—ability to integrate ANY API, database, or system as agent-accessible tools without framework limitations",
+          stage: 1
+        },
+        {
+          title: "Module 2: LLM Integration & Inference Control",
+          from: "Call LLM APIs with default settings, tightly coupled to specific providers, no understanding of inference control",
+          to: "Built BaseLLM abstraction working with any provider (Ollama, OpenAI, Anthropic), full control over inference parameters, streaming, and error handling",
+          moat: "Provider abstraction expertise—ability to implement custom LLM integrations including local/on-premise models for zero API dependency",
+          stage: 1
+        },
+        {
+          title: "Module 3: Agent Architecture & Processing Loops",
+          from: "Chain prompts manually with no structured agent loop, ad-hoc code that breaks on edge cases",
+          to: "Built complete agent class with ReAct processing loop (Reason → Act → Observe), error handling, retry logic, and termination conditions for autonomous operation",
+          moat: "ReAct architecture mastery—deep understanding of loop mechanics, termination, and error recovery that enables 95%+ reliability",
+          stage: 1
+        },
+        {
+          title: "Module 4: MCP Protocol Mastery",
+          from: "Don't understand MCP or why it matters, custom tools incompatible with ecosystem standards",
+          to: "Implemented complete MCP compatibility—agents discover, connect to, and use any MCP-compatible tool server, understanding client-server architecture and protocol specifications",
+          moat: "MCP protocol expertise—positioning as expert in emerging agent infrastructure layer commanding premium compensation",
+          stage: 2
+        },
+        {
+          title: "Module 5: Research Agent Implementation",
+          from: "Basic single-shot agents with no multi-step workflow capability, can't handle complex research tasks",
+          to: "Built complete research agent with web search, data extraction, multi-source synthesis, citation tracking, and structured report generation",
+          moat: "Research workflow mastery—building agents that handle complex information gathering and synthesis workflows end-to-end",
+          stage: 2
+        },
+        {
+          title: "Module 6: Human-in-the-Loop Patterns",
+          from: "Fully autonomous agents with no human oversight or approval mechanisms, inappropriate for business-critical decisions",
+          to: "Implemented HITL patterns: approval gates, confidence thresholds, escalation workflows, and human override capabilities for production safety",
+          moat: "Production safety expertise—designing agent systems appropriate for business-critical operations with proper human oversight",
+          stage: 2
+        },
+        {
+          title: "Module 7: Memory Systems & State Management",
+          from: "Stateless agents with no memory between executions, can't learn from experience or maintain context",
+          to: "Built memory systems (episodic, semantic, procedural, shared) enabling agents to remember, learn, and improve over time",
+          moat: "Memory architecture mastery—building agents that maintain state, share context, and coordinate through shared memory",
+          stage: 3
+        },
+        {
+          title: "Module 8: Multi-Agent Coordination with Agent2Agent",
+          from: "Single-agent limitations, no ability to coordinate multiple agents, monolithic agent systems",
+          to: "Implemented Agent2Agent (A2A) communication protocols—message passing, task delegation, result aggregation, and coordination patterns (hierarchical, peer-to-peer)",
+          moat: "Multi-agent coordination mastery—building specialized agent teams that collaborate to solve complex problems no single agent can handle",
+          stage: 3
+        },
+        {
+          title: "Module 9: Production Multi-Agent Systems",
+          from: "Local-only deployments, no monitoring, no production-scale deployment experience, unpredictable production behavior",
+          to: "Production-deployed multi-agent systems with observability, monitoring, error handling, and scaling—reliable operation serving real users with 95%+ success rates",
+          moat: "Production deployment mastery—operating coordinated multi-agent systems at scale with reliability and continuous improvement",
+          stage: 3
+        }
+      ],
+      millionDollarMessages: {
+        careerAdvancers: "I help AI engineers and ML practitioners master production multi-agent systems from first principles, so they can command $250K-$400K+ salaries as irreplaceable multi-agent architects—without being dependent on frameworks that turn their skills into commodities.",
+        founders: "I help technical founders and CTOs build proprietary multi-agent infrastructure from first principles, so they can eliminate $500K-$2M/year in API costs and raise seed rounds at 10-15x revenue multiples—without hiring $300K+ ML engineers or spending 12-18 months on R&D."
+      }
+    },
+    pricingModalities: {
+      selfPaced: {
+        price: 1497,
+        description: "Self-Paced Mastery",
+        features: [
+          "All 9 modules available immediately (45+ hours)",
+          "Lifetime access to content and updates",
+          "Private Discord community (peer support)",
+          "Monthly live office hours with Q&A",
+          "9 production system templates (starter code)",
+          "GitHub repository with all implementations",
+          "Certificate of completion",
+          "Learn on your own schedule"
+        ]
+      },
+      cohort: {
+        price: 5997,
+        description: "9-Week Live Cohort",
+        features: [
+          "Weekly live workshops with Dr. Lee (3 hours each)",
+          "Cohort accountability and peer learning",
+          "Direct instructor access (24-hour response)",
+          "Weekly code reviews (instructor + peer feedback)",
+          "Pair programming sessions",
+          "Career advancement coaching",
+          "Alumni network access",
+          "Graduation certificate",
+          "Job board access (companies hiring multi-agent engineers)",
+          "Fixed start dates (4 cohorts per year)"
+        ]
+      },
+      bootcamp: {
+        price: 9997,
+        description: "5-Day Immersive Bootcamp",
+        features: [
+          "Executive format (Monday-Friday intensive)",
+          "8am-6pm daily with hands-on labs (70% building)",
+          "Build production multi-agent system in 5 days",
+          "Small group (max 15 people)",
+          "1:1 architecture review with Dr. Lee",
+          "Capstone project (deploy your custom system)",
+          "90 days post-bootcamp support",
+          "Catered meals + coffee (in-person)",
+          "Recordings of all sessions",
+          "Corporate pricing available"
+        ]
+      },
+      founders: {
+        price: 17997,
+        description: "Founder's Edition",
+        features: [
+          "Everything in 9-Week Cohort",
+          "3x additional 1:1 strategy sessions (60 min each)",
+          "Custom multi-agent architecture for your company",
+          "Business-focused capstone implementation",
+          "Pitch deck review (present your moat to VCs)",
+          "Fundraising strategy consultation",
+          "Team training support (up to 5 people)",
+          "Priority access to instructor",
+          "6 months of email support post-cohort",
+          "Introductions to VC network"
+        ]
+      }
+    },
     instructor: {
       name: "Dr. Lee",
       title: "AI Architect & Educator",
@@ -1795,150 +2170,143 @@ export const courses: Course[] = [
     id: "product-factory",
     slug: "the-ai-product-factory",
     name: "Production AI",
-    subtitle: "Ship Models That Last—Build Your Own MLOps Platform",
+    subtitle: "Build Your Own MLOps Platform—Ship ML Reliably at Scale",
     category: "Hardcore Developers",
     categoryId: "hardcore",
-    price: 1997,
-    hook: "90% of ML projects never make it to production. This course ensures yours does.",
-    description: "Delivering a successful machine learning project is hard. Most models die in notebooks. This masterclass teaches you to build a production-quality ML platform from scratch—incorporating MLOps and DevOps with a stack of proven infrastructure tools. You'll design reliable systems that streamline data workflows, improve collaboration between data and operations teams, and provide the structure needed for both training and deployment. Whether you're deploying traditional models or frontier LLMs, this course provides the crucial MLOps framework to get them into production and keep them running.",
+    price: 997,
+    hook: "Stop using AWS SageMaker's APIs. Build your own MLOps platform instead. The ONLY masterclass teaching production ML infrastructure from Kubernetes orchestration to automated deployment—own your platform, stop renting from AWS, Google, and managed services.",
+    description: "Most ML models never make it to production—they rot in Jupyter notebooks because data scientists don't understand Docker, Kubernetes, or deployment pipelines. This masterclass teaches you to build production-grade MLOps platforms from scratch—from Kubernetes orchestration and Docker containerization to automated deployment with Kubeflow, experiment tracking with MLflow, and model serving with BentoML. Master the ML platform engineering that powers Netflix, Uber, and Airbnb. For ML engineers: Command $200K-$350K salaries with production deployment expertise. For technical founders: Eliminate $300K-$800K/year in infrastructure costs and build fundable technical systems. This is not another course on using managed platforms. This is executive business education (Harvard/MIT/Stanford caliber) merged with a masterclass for tech founders and AI leaders. Using the DrLee.AI Shu-Ha-Ri learning method, you'll go from notebook scientist to platform builder in 9 transformative steps. Each module begins with a TedTalk-style presentation, then you immediately build it yourself with hands-on coding. You'll construct a complete MLOps platform with Kubernetes, orchestrate pipelines with Kubeflow, deploy models with BentoML, and monitor everything with Prometheus and Grafana—with zero dependency on AWS SageMaker or Google Vertex AI. By the end, you won't just understand how production ML works—you'll own infrastructure that becomes your competitive moat. This masterclass is for the 1% who want to BUILD production ML platforms like Netflix and Uber—not those who want to be consumers of managed services.",
     outcomes: [
-      "Set up a complete MLOps platform from scratch using open source tools",
-      "Deploy machine learning models to production with confidence",
-      "Build end-to-end data pipelines with proper orchestration",
-      "Implement experiment tracking and model versioning with MLflow",
+      "Set up a complete MLOps platform from scratch using open source tools (Kubernetes, Kubeflow, MLflow, BentoML)",
+      "Deploy machine learning models to production with <100ms latency and 99.9% uptime",
+      "Build end-to-end automated ML pipelines with Kubeflow orchestration",
+      "Implement experiment tracking and model versioning with MLflow Model Registry",
       "Create feature stores for consistent feature engineering with Feast",
-      "Orchestrate ML pipelines with Kubeflow",
-      "Deploy and serve models at scale with BentoML",
-      "Monitor model performance and detect data drift with Evidently",
-      "Implement proper CI/CD for ML systems"
+      "Orchestrate complex ML workflows with Kubeflow Pipelines and DAG execution",
+      "Deploy and serve models at scale with BentoML (handling millions of predictions/day)",
+      "Monitor model performance and detect data drift with Evidently in real-time",
+      "Implement proper CI/CD for ML systems with GitLab CI and Argo CD"
     ],
     hours: 45,
-    modules: 11,
+    modules: 9,
     technologies: ["Docker", "Kubernetes", "Kubeflow", "MLflow", "BentoML", "Evidently", "Feast", "Argo CD", "Prometheus", "Grafana"],
     curriculum: [
       {
-        title: "Module 1: Getting Started with MLOps",
+        title: "Module 1: Production ML Fundamentals & The MLOps Lifecycle",
         lessons: [
-          "Executive Overview: Why Most ML Projects Fail in Production",
-          "The ML Life Cycle: Experimentation to Production",
-          "Skills Needed for MLOps: Bridging Data Science and Engineering",
-          "Build vs. Buy: When to Build Your Own Platform",
-          "Tools and Infrastructure Overview",
-          "Introducing the ML Projects You'll Build"
+          "Executive Overview: Why 87% of ML Projects Never Reach Production",
+          "The Complete ML Lifecycle: From Data Collection to Continuous Monitoring",
+          "Skills Bridging Data Science and Infrastructure Engineering",
+          "Build vs. Buy Decision Framework for ML Platforms",
+          "MLOps Maturity Assessment: Level 0 to Level 2 Progression",
+          "DevOps vs. MLOps: Why ML Requires Different Infrastructure",
+          "Tools and Infrastructure Stack Overview: Kubernetes, Kubeflow, MLflow, BentoML"
         ]
       },
       {
-        title: "Module 2: What is MLOps?",
+        title: "Module 2: Containerization & Kubernetes Orchestration",
         lessons: [
-          "ML as a Continuous Loop: The Full Workflow",
-          "Data Collection and Exploratory Analysis",
-          "Modeling, Training, and Evaluation",
-          "Deployment, Monitoring, and Maintenance",
-          "Why Robust MLOps Matters for Business",
-          "DevOps vs. MLOps: Key Differences",
-          "MLOps Maturity Levels: Basic to Advanced"
+          "Docker Fundamentals: Writing Dockerfiles for ML Applications",
+          "Building and Optimizing Docker Images for Production",
+          "Kubernetes Architecture Deep Dive: Clusters, Nodes, Pods, and Services",
+          "Kubectl Mastery: Managing Kubernetes from Command Line",
+          "Kubernetes Objects: Deployments, Services, ConfigMaps, Secrets",
+          "Networking and Service Discovery for ML Workloads",
+          "Helm Charts: Package Management and Infrastructure as Code",
+          "CI/CD for ML: GitLab CI and Argo CD Implementation",
+          "Prometheus and Grafana: Infrastructure Monitoring Stack"
         ]
       },
       {
-        title: "Module 3: Building Applications on Kubernetes",
+        title: "Module 3: Experiment Tracking & Feature Engineering",
         lessons: [
-          "Docker Fundamentals: Writing Applications and Dockerfiles",
-          "Building and Pushing Docker Images",
-          "Kubernetes Architecture: Clusters, Nodes, and Pods",
-          "Kubectl: Managing Kubernetes from the Command Line",
-          "Kubernetes Objects: Deployments, Services, ConfigMaps",
-          "Networking and Service Discovery",
-          "Helm Charts: Package Management for Kubernetes"
+          "MLflow for Complete Experiment Tracking: Parameters, Metrics, Artifacts",
+          "Data Exploration and Analysis Best Practices",
+          "MLflow Model Registry: Versioning, Staging, and Production Promotion",
+          "Feast Feature Store: Registering and Managing Features",
+          "Feature Retrieval: Online vs. Offline Feature Stores",
+          "Real-Time Feature Serving with Feast Server",
+          "Feast UI: Feature Discovery and Governance",
+          "Integrating Experiment Tracking with Feature Engineering Workflows"
         ]
       },
       {
-        title: "Module 4: Continuous Integration and Deployment",
+        title: "Module 4: Workflow Orchestration with Kubeflow",
         lessons: [
-          "CI/CD for Machine Learning: Why It's Different",
-          "GitLab CI: Automating Build and Test Pipelines",
-          "Argo CD: GitOps for Kubernetes Deployments",
-          "Prometheus and Grafana: Infrastructure Monitoring",
-          "Building a Complete CI/CD Pipeline for ML"
+          "Why Pipeline Orchestration is Critical for Production ML",
+          "Kubeflow Architecture: Components, Pipelines, and Workflows",
+          "Building Modular Pipeline Components with Clear Input/Output Contracts",
+          "Creating ML Pipeline DAGs: Dependency Graphs and Parallel Execution",
+          "Data Passing Strategies: Small Values vs. Large Datasets",
+          "Building an Income Classifier Pipeline from Scratch",
+          "Pipeline Monitoring: Tracking Execution and Debugging Failures",
+          "Reusable Component Libraries for Team Collaboration"
         ]
       },
       {
-        title: "Module 5: Designing Reliable ML Systems",
+        title: "Module 5: Model Deployment & Serving Infrastructure",
         lessons: [
-          "MLflow for Experiment Tracking: Logging Runs and Parameters",
-          "Data Exploration Best Practices",
-          "MLflow Model Registry: Versioning and Staging",
-          "Feast as a Feature Store: Registering and Retrieving Features",
-          "Feature Server and Feast UI",
-          "Integrating Experiment Tracking with Feature Engineering"
+          "Why Model Deployment is Hard: Challenges and Solutions",
+          "BentoML Service Architecture: Services and Runners",
+          "Building Bentos: Packaging Models for Production Deployment",
+          "Loading Models with BentoML Runner from MLflow Registry",
+          "Deploying Bentos to Kubernetes at Scale",
+          "Model Serving Optimization: Latency, Throughput, and Batching",
+          "BentoML with MLflow Integration: End-to-End Workflow",
+          "KServe Alternative: When to Use Different Serving Platforms",
+          "Evidently for Data Drift Monitoring and Detection"
         ]
       },
       {
-        title: "Module 6: Orchestrating ML Pipelines",
+        title: "Module 6: Production Data Engineering for ML",
         lessons: [
-          "Why Pipeline Orchestration Matters",
-          "Kubeflow: The Task Orchestrator for ML",
-          "Kubeflow Components: Building Reusable Pipeline Steps",
-          "Building an Income Classifier Pipeline",
-          "Passing Data Between Pipeline Components",
-          "Scheduling and Monitoring Pipelines"
+          "Launching Kubeflow Notebook Servers with Custom Environments",
+          "Workspace and Data Volume Management for Collaboration",
+          "Creating Custom Notebook Docker Images with Dependencies",
+          "Efficient Data Passing: Simple Values, Paths, and Artifacts",
+          "MinIO S3-Compatible Object Storage for Training Data",
+          "Data Quality Validation and Early Failure Detection",
+          "Project: Data Preparation Pipeline for Object Detection",
+          "Project: Data Preparation Pipeline for Movie Recommender"
         ]
       },
       {
-        title: "Module 7: Productionizing ML Models",
+        title: "Module 7: Distributed Training Pipelines",
         lessons: [
-          "BentoML: A Platform for Model Deployment",
-          "Building a Bento: Packaging Models for Production",
-          "Deploying Bentos to Production",
-          "Evidently for Data Drift Monitoring",
-          "Building Drift Detection Dashboards",
-          "Integrating Drift Detection into Kubeflow Pipelines"
+          "GPU Resource Management and Scheduling in Kubernetes",
+          "Training on Custom Datasets: Data Loading and Preprocessing",
+          "Model Checkpointing and Fault Tolerance for Long Training Runs",
+          "TensorBoard Integration: Real-Time Training Visualization",
+          "Automated Hyperparameter Optimization with Kubeflow Katib",
+          "Building Modular Training Components for Multiple Architectures",
+          "Training Object Detection Models with YOLO on Custom Data",
+          "Downloading and Managing Data with MinIO in Training Pipelines"
         ]
       },
       {
-        title: "Module 8: Data Analysis and Preparation",
+        title: "Module 8: Advanced Training & Model Validation",
         lessons: [
-          "Launching Notebook Servers in Kubeflow",
-          "Workspace and Data Volume Management",
-          "Creating Custom Kubeflow Notebook Images",
-          "Data Passing: Simple Values vs. Large Datasets",
-          "Project: Data Preparation for Object Detection",
-          "Project: Data Preparation for Movie Recommender"
+          "VolumeOp for Persistent Data Storage Across Pipeline Runs",
+          "Advanced Data Splitting: Time-Based, Stratified, and K-Fold Strategies",
+          "Domain-Specific Metrics: Precision, Recall, F1, AUC-ROC, Business KPIs",
+          "MLflow Experiment Comparison: Analyzing Metrics Across Runs",
+          "Model Registry Lifecycle Management: Staging Gates and Approvals",
+          "Pre-Production Inference Testing: Validating Models Before Deployment",
+          "Creating Training and Validation Kubeflow Components",
+          "Building Complete Training Pipelines with Automated Validation"
         ]
       },
       {
-        title: "Module 9: Model Training and Validation",
+        title: "Module 9: Monitoring, Drift Detection & Explainability",
         lessons: [
-          "Training Object Detection Models with YOLO",
-          "Downloading Data with MinIO",
-          "Creating Training and Validation Components",
-          "Building and Executing Training Pipelines",
-          "VolumeOp for Persistent Data Storage",
-          "Tracking Training with TensorBoard",
-          "Experiment Tracking and Model Registry with MLflow"
-        ]
-      },
-      {
-        title: "Module 10: Model Inference and Serving",
-        lessons: [
-          "Why Model Deployment is Hard",
-          "BentoML Services and Runners",
-          "Loading Models with BentoML Runner",
-          "Building Bentos for Deployment",
-          "BentoML with MLflow Integration",
-          "Creating Inference Services with MLflow",
-          "KServe: An Alternative Serving Platform"
-        ]
-      },
-      {
-        title: "Module 11: Monitoring and Explainability",
-        lessons: [
-          "Basic Monitoring: Metrics and Health Checks",
-          "Custom Metrics for ML Systems",
-          "Logging Best Practices for Production ML",
-          "Alerting: When to Wake Someone Up",
-          "Data Drift Detection in Production",
-          "Model Explainability: Understanding Predictions",
-          "Capstone: Your Complete ML Platform in Production"
+          "Basic Monitoring with Prometheus: Request Rates, Latency, Errors",
+          "Custom ML Metrics: Prediction Distribution, Confidence Scores, Feature Statistics",
+          "Centralized Logging Infrastructure for Distributed ML Systems",
+          "Alerting Strategies: When to Notify Teams of Production Issues",
+          "Evidently Drift Detection: Automated Data and Model Drift Monitoring",
+          "Building Drift Detection Dashboards and Alerting Pipelines",
+          "Model Explainability: SHAP, LIME, and Domain-Specific Techniques",
+          "Capstone: Your Complete MLOps Platform in Production"
         ]
       }
     ],
@@ -1946,6 +2314,194 @@ export const courses: Course[] = [
       name: "Dr. Lee",
       title: "AI Architect & Educator",
       bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His approach: build the complete infrastructure yourself to truly understand production ML."
+    },
+    signatureSolution: {
+      stages: [
+        {
+          title: "PHASE 1: Foundation Infrastructure",
+          subtitle: "MLOps Foundations, Kubernetes & Feature Engineering",
+          weeks: "Weeks 1-3",
+          from: "Our ML works locally but we can't deploy it anywhere—DevOps teams reject our code as 'not production-ready'",
+          to: "We've built a complete Kubernetes-based ML infrastructure from scratch with experiment tracking, feature stores, and container orchestration",
+          moat: "Production Infrastructure Mastery",
+          moatDesc: "Only 5% of ML engineers can build Kubernetes-based ML platforms from scratch. This foundational capability separates you from notebook-only data scientists.",
+          color: "blue"
+        },
+        {
+          title: "PHASE 2: Pipeline Automation",
+          subtitle: "Kubeflow Orchestration, Deployment & Data Engineering",
+          weeks: "Weeks 4-6",
+          from: "Deploying a model takes our team 3 weeks of manual work—no automation, no consistency, constant failures",
+          to: "We deploy ML models to production automatically in under an hour using Kubeflow pipelines and BentoML serving",
+          moat: "End-to-End Automation",
+          moatDesc: "Automated ML deployment worth $500K/year in velocity. Companies that ship models daily outcompete those waiting weeks for manual deployment.",
+          color: "purple"
+        },
+        {
+          title: "PHASE 3: Operational Excellence",
+          subtitle: "Training at Scale, Validation & Production Monitoring",
+          weeks: "Weeks 7-9",
+          from: "Our models degrade silently and we find out from angry users—no monitoring, no drift detection, no observability",
+          to: "We monitor drift in real-time, retrain automatically, and maintain 99.9% uptime with comprehensive Prometheus/Grafana/Evidently monitoring",
+          moat: "Netflix-Level ML Reliability",
+          moatDesc: "Production operations at scale—the capability to serve millions of predictions per day reliably while competitors' models break in production.",
+          color: "green"
+        }
+      ],
+      steps: [
+        {
+          title: "Module 1: Production ML Fundamentals & The MLOps Lifecycle",
+          from: "I understand ML algorithms but have no idea how to deploy them to production—my models work in notebooks but DevOps rejects them",
+          to: "I've built the complete MLOps lifecycle from data ingestion through monitoring, understand maturity levels, and can design production workflows from first principles",
+          moat: "Strategic MLOps architecture knowledge—you understand WHEN and HOW to apply production practices, separating you from 90% of data scientists who only know algorithms",
+          stage: 1
+        },
+        {
+          title: "Module 2: Containerization & Kubernetes Orchestration",
+          from: "I've heard of Docker and Kubernetes but never used them—deploying my Python code to a server feels like black magic",
+          to: "I've built complete Kubernetes applications from scratch, can write Dockerfiles, deploy to clusters, manage networking, orchestrate with Helm, and implement CI/CD",
+          moat: "Container orchestration expertise—the foundation of modern ML infrastructure that 85% of data scientists lack entirely",
+          stage: 1
+        },
+        {
+          title: "Module 3: Experiment Tracking & Feature Engineering",
+          from: "I run hundreds of experiments and lose track of results—I re-engineer the same features across projects because there's no central repository",
+          to: "I've implemented MLflow for complete experiment tracking and model registry, built Feast feature stores providing consistent features across training and serving",
+          moat: "Reproducible ML systems with centralized feature management—infrastructure that prevents data leakage and ensures consistency worth millions in avoided failures",
+          stage: 1
+        },
+        {
+          title: "Module 4: Workflow Orchestration with Kubeflow",
+          from: "My ML pipelines are scripts I run manually in order—failures mean starting from scratch, no visibility into what's running",
+          to: "I've built complete Kubeflow pipelines orchestrating data preprocessing, training, validation, and deployment with automatic retries and visual DAG monitoring",
+          moat: "Workflow orchestration at scale—automated pipelines that would cost $200K/year in engineering time to build and maintain manually",
+          stage: 2
+        },
+        {
+          title: "Module 5: Model Deployment & Serving Infrastructure",
+          from: "I train models but deploying them as APIs is a multi-week DevOps nightmare—scaling is manual, latency is unpredictable, rollbacks break everything",
+          to: "I've deployed production ML serving with BentoML providing <50ms latency, automatic scaling, and instant rollbacks, integrated with MLflow model registry",
+          moat: "Production model serving expertise—the capability to serve millions of predictions per day reliably, worth $300K/year in platform costs avoided",
+          stage: 2
+        },
+        {
+          title: "Module 6: Production Data Engineering for ML",
+          from: "Data preparation is a tangled mess of notebooks—data quality issues break training, I can't efficiently pass datasets between pipeline stages",
+          to: "I've built production data pipelines with Kubeflow notebooks, MinIO object storage, data quality checks, and reusable preprocessing components",
+          moat: "Production data engineering for ML—the capability to process terabytes of data reliably for model training, worth $250K/year in data engineer hiring costs",
+          stage: 2
+        },
+        {
+          title: "Module 7: Distributed Training Pipelines",
+          from: "Training takes days on my laptop—I can't utilize GPUs efficiently, hyperparameter tuning is manual, failed runs waste hours of compute",
+          to: "I've built distributed training pipelines on Kubernetes with GPU scheduling, automated hyperparameter search, TensorBoard monitoring, and fault tolerance",
+          moat: "Distributed training infrastructure—the capability to train models 100x faster than laptop-bound data scientists, worth $400K/year in compute optimization",
+          stage: 3
+        },
+        {
+          title: "Module 8: Advanced Training & Model Validation",
+          from: "Model validation is running accuracy on a test set and calling it done—I don't understand domain-specific metrics or proper validation strategies",
+          to: "I've implemented comprehensive model validation with domain-specific metrics, stratified splitting, automated model comparison, and seamless MLflow registry integration",
+          moat: "Rigorous validation infrastructure—preventing bad model deployments that could cost millions in business impact, while accelerating iteration 5x",
+          stage: 3
+        },
+        {
+          title: "Module 9: Monitoring, Drift Detection & Explainability",
+          from: "Models degrade silently over months—users complain before we know there's a problem, no drift detection, no explainability, no alerting",
+          to: "I've implemented comprehensive ML monitoring with Prometheus, Evidently drift detection, explainability tools, and alerting—99.9% uptime with proactive issue detection",
+          moat: "Production ML observability—Netflix-level reliability worth millions in prevented downtime and customer trust",
+          stage: 3
+        }
+      ],
+      millionDollarMessages: {
+        careerAdvancers: "I help ML engineers build production-grade MLOps platforms from scratch—from Kubernetes orchestration to automated deployment—so they can command $200K-$350K roles as ML infrastructure architects without being dismissed as 'notebook scientists who can't ship to production.'",
+        founders: "I help technical founders build production MLOps platforms that eliminate $300K-$800K/year in hiring costs and create defensible infrastructure moats, so they can raise Series A with 'we ship ML reliably at scale' positioning without hearing 'your models aren't production-ready' from every technical investor."
+      }
+    },
+    pricingModalities: {
+      selfPaced: {
+        price: 997,
+        name: "Self-Paced Course",
+        description: "Complete production ML infrastructure mastery at your own pace. Build Netflix-scale MLOps platforms from Kubernetes to automated deployment.",
+        features: [
+          "All 9 modules (45+ hours of video)",
+          "Complete code repositories for every module",
+          "Downloadable infrastructure templates (Kubernetes YAML, Helm charts)",
+          "Lifetime access to all content and updates",
+          "Private Discord community access",
+          "Monthly group Q&A sessions (recorded)",
+          "Certificate of completion"
+        ],
+        paymentOptions: [
+          { label: "Full payment", amount: 997 },
+          { label: "2-payment plan", amount: 497, note: "$497 + $550 in 30 days" }
+        ]
+      },
+      cohort: {
+        price: 3997,
+        name: "9-Week Live Cohort",
+        description: "Ship production ML infrastructure in 9 weeks with live instruction, code reviews, and expert mentorship. Build what takes most teams 6-12 months.",
+        features: [
+          "Everything in Self-Paced PLUS:",
+          "9 live weekly sessions (3 hours each) with Dr. Lee",
+          "Live coding demonstrations and Q&A",
+          "Weekly homework with personalized code review",
+          "Private cohort-only Slack channel",
+          "1:1 office hours (30 minutes, 2x per cohort)",
+          "Graduation project: deploy your own production ML system",
+          "Job search support (resume review, interview prep) for engineers",
+          "Investor pitch support (technical slides, architecture diagrams) for founders",
+          "Lifetime access to all future cohort recordings"
+        ],
+        paymentOptions: [
+          { label: "Full payment", amount: 3997 },
+          { label: "3-payment plan", amount: 1399, note: "$1,399 × 3 monthly" },
+          { label: "6-payment plan", amount: 699, note: "$699 × 6 monthly" }
+        ]
+      },
+      bootcamp: {
+        price: 9997,
+        name: "5-Day Intensive Bootcamp",
+        description: "Build enterprise-grade MLOps infrastructure in 5 intensive days. What takes cohorts 9 weeks, condensed into one week of immersive implementation.",
+        features: [
+          "Everything in Cohort PLUS:",
+          "5 consecutive days, 8 hours/day (40 hours total)",
+          "Intensive hands-on implementation (70% coding, 30% instruction)",
+          "Daily 1:1 code reviews (30 minutes per day)",
+          "Architecture consultation for your specific use case",
+          "Custom infrastructure templates for your organization",
+          "Post-bootcamp implementation support (2 weeks Slack access)",
+          "Recorded sessions for your team",
+          "Production ML Certification (industry-recognized credential)"
+        ],
+        paymentOptions: [
+          { label: "Full payment", amount: 9997 },
+          { label: "3-payment plan", amount: 3499, note: "$3,499 × 3 monthly" }
+        ]
+      },
+      founders: {
+        price: 19997,
+        name: "Founder's Edition (1:1 Implementation)",
+        description: "Build your proprietary ML platform with fractional CTO-level guidance. Custom architecture design, implementation support, and strategic consulting.",
+        features: [
+          "Everything in Bootcamp PLUS:",
+          "12 weeks of 1:1 implementation support (2 hours/week, 24 hours total)",
+          "Custom ML platform architecture design for your organization",
+          "Technology stack selection consulting",
+          "Infrastructure cost optimization analysis",
+          "Hiring/team building guidance (what roles to hire, when)",
+          "Code review of your production systems (unlimited during 12 weeks)",
+          "Strategic consulting on ML platform roadmap",
+          "Investor presentation support (technical architecture slides)",
+          "Quarterly check-ins for 1 year post-program",
+          "Private advisory board access (quarterly meetups)"
+        ],
+        paymentOptions: [
+          { label: "Full payment", amount: 19997 },
+          { label: "3-payment plan", amount: 6999, note: "$6,999 × 3 monthly" },
+          { label: "6-payment plan", amount: 3499, note: "$3,499 × 6 monthly" }
+        ]
+      }
     },
     faqs: [
       {

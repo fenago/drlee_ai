@@ -154,6 +154,60 @@ function CourseHero({ course }: { course: Course }) {
                     By the end, you won't just understand how agents work—you'll <span className="font-semibold text-brand-green">own production-ready autonomous agent systems with multi-agent coordination that become your competitive moat</span>.
                   </p>
                 </>
+              ) : course.slug === 'diffusion-models' ? (
+                <>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-blue">Text-to-image generation is revolutionizing creative industries, but 95% of engineers are just API consumers.</span> This masterclass teaches you to <span className="font-semibold text-brand-blue">build production text-to-image systems from first principles</span>—capable of <span className="font-semibold text-brand-green">vision transformers, diffusion models, text conditioning with CLIP, latent diffusion optimization, and production deployment</span>. <span className="font-semibold text-brand-yellow">You won't rely on DALL-E 3, Nano Banana Pro, Flux, or any API</span>—you'll build the foundations yourself: <span className="font-semibold text-brand-green">attention mechanisms for images, DDPM, text-to-image conditioning, VAE latent compression, and TensorRT optimization</span>. By the end, you'll have a complete, working image generator and the deep understanding to fine-tune it for any domain or deploy it at production scale.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    This is not another course on using Stable Diffusion APIs or fine-tuning with DreamBooth. This is <span className="font-semibold text-brand-blue">executive technical education (Harvard/MIT/Stanford caliber)</span> merged with a masterclass for tech founders and visual AI architects. Using the <span className="font-semibold text-brand-green">DrLee.AI Shu-Ha-Ri learning method</span>, you'll go from API integrator to visual AI architect in 9 transformative modules.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    Each module begins with a <span className="font-semibold">TedTalk-style presentation</span> on architecture strategy, then you immediately <span className="font-semibold">build it yourself with hands-on coding</span>. You'll implement Vision Transformers, train DDPM from scratch, build CLIP for text-image alignment, construct latent diffusion pipelines, and deploy optimized production systems—not just call APIs.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-yellow">Different from using DALL-E/Midjourney/Replicate APIs:</span> While APIs abstract away the complexity, this course teaches you to <span className="font-semibold">build the visual AI infrastructure yourself</span>—own the diffusion models, text encoders, VAE latent compression, and deployment optimization. When your image generation fails at 2am, you'll know exactly why and how to fix it. API users are commoditized. Model builders are irreplaceable.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed">
+                    By the end, you won't just understand how text-to-image works—you'll <span className="font-semibold text-brand-green">own production-ready visual AI systems with custom fine-tuning that become your competitive moat</span>.
+                  </p>
+                </>
+              ) : course.slug === 'the-ai-product-factory' ? (
+                <>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-blue">87% of ML models never make it to production—they rot in Jupyter notebooks because data scientists don't understand Docker, Kubernetes, or deployment pipelines.</span> This masterclass teaches you to <span className="font-semibold text-brand-blue">build production-grade MLOps platforms from scratch</span>—capable of <span className="font-semibold text-brand-green">Kubernetes orchestration, automated Kubeflow pipelines, MLflow experiment tracking, BentoML model serving, and Evidently drift detection</span>. <span className="font-semibold text-brand-yellow">You won't rely on AWS SageMaker, Google Vertex AI, or any managed platform</span>—you'll build the infrastructure yourself: <span className="font-semibold text-brand-green">containerization with Docker, orchestration with Kubernetes, CI/CD pipelines, feature stores, and production monitoring</span>.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    This is not another course on using managed ML platforms or clicking through cloud consoles. This is <span className="font-semibold text-brand-blue">executive technical education (Harvard/MIT/Stanford caliber)</span> merged with a masterclass for tech founders and ML platform engineers. Using the <span className="font-semibold text-brand-green">DrLee.AI Shu-Ha-Ri learning method</span>, you'll go from notebook scientist to production ML architect in 9 transformative modules.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    Each module begins with a <span className="font-semibold">TedTalk-style presentation</span> on MLOps architecture, then you immediately <span className="font-semibold">build it yourself with hands-on coding</span>. You'll containerize ML applications, deploy to Kubernetes clusters, orchestrate training pipelines with Kubeflow, serve models with BentoML, and monitor everything with Prometheus and Grafana—not just configure cloud services.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-yellow">Different from using AWS SageMaker/Google Vertex AI:</span> While managed platforms abstract away the complexity, this course teaches you to <span className="font-semibold">build the MLOps infrastructure yourself</span>—own the deployment pipelines, monitoring systems, feature stores, and automation workflows. When your models fail at 2am, you'll know exactly why and how to fix it. Platform users are commoditized. Infrastructure builders command $250K+ salaries.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed">
+                    By the end, you won't just understand how production ML works—you'll <span className="font-semibold text-brand-green">own production-ready MLOps infrastructure serving millions of predictions per day that becomes your competitive moat</span>.
+                  </p>
+                </>
+              ) : course.slug === 'multi-agent-systems' ? (
+                <>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-blue">Agents turn LLMs into autonomous tools capable of planning and execution. Multi-agent systems use protocols like MCP and Agent2Agent to coordinate specialized agents into collaborative AI teams.</span> This masterclass teaches you to <span className="font-semibold text-brand-blue">build complete multi-agent infrastructure from scratch</span>—capable of <span className="font-semibold text-brand-green">tool orchestration, memory systems, human-in-the-loop patterns, and distributed agent coordination</span>. <span className="font-semibold text-brand-yellow">You won't rely on LangChain, AutoGPT, or any framework</span>—you'll build the foundations yourself: <span className="font-semibold text-brand-green">the agent processing loop, MCP-compatible tools, memory modules, and Agent2Agent communication protocols</span>. By the end, you'll have a complete, working multi-agent system and the deep understanding to extend it for research, business automation, or production deployment.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    This is not another course on using agent frameworks or chaining API calls. This is <span className="font-semibold text-brand-blue">executive technical education (Harvard/MIT/Stanford caliber)</span> merged with a masterclass for tech founders and autonomous systems architects. Using the <span className="font-semibold text-brand-green">DrLee.AI Shu-Ha-Ri learning method</span>, you'll go from framework-dependent to multi-agent systems architect in 9 transformative modules.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-yellow">What makes this different from the single-agent masterclass?</span> <span className="font-semibold text-brand-yellow">Single agents are powerful but limited—multi-agent systems unlock distributed intelligence, specialized expertise, and scalable coordination.</span> While "Build Your Own Autonomous AI Agent" taught you to build one autonomous agent, this masterclass teaches you to <span className="font-semibold text-brand-blue">orchestrate teams of agents that communicate, delegate, and collaborate to solve complex problems no single agent can handle</span>. You'll master <span className="font-semibold text-brand-green">MCP (Model Context Protocol) for tool ecosystems and Agent2Agent (A2A) protocols for inter-agent communication</span>—the infrastructure powering ChatGPT Teams, Claude Projects, and enterprise autonomous systems.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    Each module begins with a TedTalk-style presentation on multi-agent architecture strategy, then you immediately build it yourself with hands-on coding. You'll construct <span className="font-semibold text-brand-green">MCP-compatible tool orchestration, implement memory systems for agent context, add human-in-the-loop oversight, and deploy Agent2Agent coordination for distributed workflows</span>. No copying demos—you'll implement the complete architecture, run it in production scenarios, and understand every design decision.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed">
+                    By the end, you won't just understand how multi-agent systems work—you'll <span className="font-semibold text-brand-blue">own production-ready infrastructure</span> that becomes your <span className="font-semibold text-brand-yellow">competitive moat as an engineer (commanding $300K+ salaries) or as a founder (eliminating API costs and raising funding)</span>.
+                  </p>
+                </>
               ) : (
                 <p className="text-white/90 text-sm leading-relaxed">
                   {course.description}
@@ -180,6 +234,21 @@ function CourseHero({ course }: { course: Course }) {
                     <>
                       <div className="text-white font-medium">Framework User</div>
                       <div className="text-white/60 text-sm">$120K-$180K · Black-Box Agents</div>
+                    </>
+                  ) : course.slug === 'diffusion-models' ? (
+                    <>
+                      <div className="text-white font-medium">API Consumer</div>
+                      <div className="text-white/60 text-sm">$100K-$150K · $10K-$50K/month API costs</div>
+                    </>
+                  ) : course.slug === 'the-ai-product-factory' ? (
+                    <>
+                      <div className="text-white font-medium">Notebook Scientist</div>
+                      <div className="text-white/60 text-sm">$100K-$150K · Models rot in Jupyter</div>
+                    </>
+                  ) : course.slug === 'multi-agent-systems' ? (
+                    <>
+                      <div className="text-white font-medium">Single-Agent Builder</div>
+                      <div className="text-white/60 text-sm">$140K-$200K · Limited Coordination</div>
                     </>
                   ) : (
                     <>
@@ -208,6 +277,21 @@ function CourseHero({ course }: { course: Course }) {
                       <div className="text-brand-green font-medium">Agent Systems Architect</div>
                       <div className="text-brand-green/80 text-sm">$200K-$400K · Infrastructure Owner</div>
                     </>
+                  ) : course.slug === 'diffusion-models' ? (
+                    <>
+                      <div className="text-brand-green font-medium">Visual AI Architect</div>
+                      <div className="text-brand-green/80 text-sm">$250K-$400K · Model Builder</div>
+                    </>
+                  ) : course.slug === 'the-ai-product-factory' ? (
+                    <>
+                      <div className="text-brand-green font-medium">ML Platform Engineer</div>
+                      <div className="text-brand-green/80 text-sm">$200K-$350K · Production ML at Scale</div>
+                    </>
+                  ) : course.slug === 'multi-agent-systems' ? (
+                    <>
+                      <div className="text-brand-green font-medium">Multi-Agent Systems Architect</div>
+                      <div className="text-brand-green/80 text-sm">$280K-$450K+ · Team Coordination</div>
+                    </>
                   ) : (
                     <>
                       <div className="text-brand-green font-medium">Model Builder</div>
@@ -223,6 +307,12 @@ function CourseHero({ course }: { course: Course }) {
                   ? '9 weeks · 45 hours · Run frontier-quality models on $2K laptops'
                   : course.slug === 'agentic-systems'
                   ? '9 modules · 45 hours · Build production agent systems with 95%+ reliability'
+                  : course.slug === 'diffusion-models'
+                  ? '9 modules · 45 hours · Build text-to-image systems matching Stable Diffusion quality'
+                  : course.slug === 'multi-agent-systems'
+                  ? '9 modules · 45 hours · Coordinate agent teams solving complex distributed problems'
+                  : course.slug === 'the-ai-product-factory'
+                  ? '9 modules · 45 hours · Build MLOps platforms serving millions of predictions/day with 99.9% uptime'
                   : '9 weeks · 50 hours · Own your model weights forever'
                 }
               </div>
@@ -278,6 +368,24 @@ function CourseHero({ course }: { course: Course }) {
                   { label: "Framework Independence", value: "Zero Vendor Lock-In", icon: "💰", desc: "Own your agent infrastructure—debug at 2am, customize infinitely, no black-box mysteries" },
                   { label: "Multi-Agent Coordination", value: "Scalable Agent Teams", icon: "📈", desc: "Build specialized agent systems that collaborate via A2A protocols to solve complex problems" },
                   { label: "Complete Agent Stack", value: "Infrastructure to Production", icon: "🛡️", desc: "End-to-end expertise: ReAct → Tools → Memory → Planning → Multi-Agent → Deployment" }
+                ] : course.slug === 'diffusion-models' ? [
+                  { label: "Visual AI Mastery", value: "ViT + DDPM + CLIP", icon: "🧠", desc: "Build text-to-image systems from scratch—vision transformers, diffusion models, multimodal conditioning" },
+                  { label: "Production Quality", value: "Stable Diffusion-Level", icon: "⚡", desc: "Generate 512x512 images in <3 seconds with latent diffusion optimization and TensorRT deployment" },
+                  { label: "API Independence", value: "$0 Generation Costs", icon: "💰", desc: "Own your visual AI infrastructure—eliminate $10K-$50K/month API costs, customize infinitely" },
+                  { label: "Custom Fine-Tuning", value: "Domain-Specific Models", icon: "📈", desc: "Fine-tune on proprietary data, build visual styles competitors can't access or replicate" },
+                  { label: "Complete Visual AI Stack", value: "Architecture to Deployment", icon: "🛡️", desc: "End-to-end expertise: Transformers → Diffusion → CLIP → Latent → Production" }
+                ] : course.slug === 'multi-agent-systems' ? [
+                  { label: "Multi-Agent Coordination", value: "MCP + A2A Protocols", icon: "🧠", desc: "Orchestrate agent teams with specialized roles—build coordination patterns that solve problems no single agent can handle" },
+                  { label: "Distributed Intelligence", value: "95%+ Reliability", icon: "⚡", desc: "Deploy coordinated agent teams with shared memory, task delegation, and production-grade coordination" },
+                  { label: "Architecture Ownership", value: "Zero Framework Lock-In", icon: "💰", desc: "Own your multi-agent infrastructure—customize coordination patterns, debug complex interactions, no black-box agents" },
+                  { label: "Scalable Agent Teams", value: "10-50+ Coordinated Agents", icon: "📈", desc: "Build hierarchical, peer-to-peer, and consensus-based coordination for enterprise complexity" },
+                  { label: "Complete MAS Stack", value: "Single-Agent to Teams", icon: "🛡️", desc: "End-to-end mastery: Tools → Memory → HITL → MCP → A2A → Multi-Agent Coordination → Production" }
+                ] : course.slug === 'the-ai-product-factory' ? [
+                  { label: "MLOps Platform Mastery", value: "Kubernetes + Kubeflow", icon: "🧠", desc: "Build production ML infrastructure from scratch—Kubernetes orchestration, Kubeflow pipelines, MLflow tracking, BentoML serving" },
+                  { label: "Production Scale Deployment", value: "99.9% Uptime", icon: "⚡", desc: "Deploy ML systems serving millions of predictions/day with <100ms latency and enterprise-grade reliability" },
+                  { label: "Platform Cost Elimination", value: "$300K-$800K Saved", icon: "💰", desc: "Eliminate AWS SageMaker, Google Vertex AI costs—own your MLOps infrastructure completely" },
+                  { label: "Career Premium", value: "$100K-$200K Increase", icon: "📈", desc: "ML platform engineers earn 2-3x notebook-only data scientists with deployment expertise" },
+                  { label: "Complete MLOps Stack", value: "End-to-End Ownership", icon: "🛡️", desc: "Full mastery: Docker → Kubernetes → Kubeflow → MLflow → BentoML → Evidently → Production" }
                 ] : [
                   { label: "Knowledge Depth", value: "99th Percentile", icon: "🧠", desc: "Understand LLMs better than 90% of 'AI engineers'" },
                   { label: "Implementation Ability", value: "From Scratch", icon: "⚡", desc: "Build GPT without libraries or abstractions" },
@@ -312,7 +420,7 @@ function CourseHero({ course }: { course: Course }) {
 
 function SignatureSolution({ course }: { course: Course }) {
   // Use course-specific signature solution data if available, otherwise return null
-  if (!course.signatureSolution) {
+  if (!course.signatureSolution || !course.signatureSolution.steps || !course.signatureSolution.stages) {
     return null;
   }
 
@@ -333,6 +441,12 @@ function SignatureSolution({ course }: { course: Course }) {
               ? 'The Domain SLM Mastery Stack™'
               : course.signatureSolution && course.slug === 'agentic-systems'
               ? 'The Agent Architecture Blueprint™'
+              : course.signatureSolution && course.slug === 'diffusion-models'
+              ? 'The Visual AI Sovereignty Stack™'
+              : course.signatureSolution && course.slug === 'multi-agent-systems'
+              ? 'The Multi-Agent Coordination Mastery™'
+              : course.signatureSolution && course.slug === 'the-ai-product-factory'
+              ? 'The Production ML Sovereignty Stack™'
               : 'The LLM Sovereignty Stack™'}
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -344,6 +458,12 @@ function SignatureSolution({ course }: { course: Course }) {
               ? 'Watch as you progress from API integrator to production architect, building your cost efficiency moat with every step.'
               : course.slug === 'agentic-systems'
               ? 'Watch as you progress from framework-dependent to autonomous systems architect, building your infrastructure ownership moat with every step.'
+              : course.slug === 'diffusion-models'
+              ? 'Watch as you progress from API consumer to visual AI architect, building your proprietary generation moat with every step.'
+              : course.slug === 'multi-agent-systems'
+              ? 'Watch as you progress from single-agent builder to multi-agent systems architect, building your team coordination moat with every step.'
+              : course.slug === 'the-ai-product-factory'
+              ? 'Watch as you progress from notebook-only data scientist to ML platform engineer, building your production infrastructure moat with every step.'
               : 'Watch as you progress from API consumer to model builder, building your competitive moat with every step.'
             }
           </p>
@@ -438,6 +558,12 @@ function SignatureSolution({ course }: { course: Course }) {
               ? 'This is the guided progression that transforms API-dependent engineers into production frontier AI architects.'
               : course.slug === 'agentic-systems'
               ? 'This is the guided progression that transforms framework-dependent developers into autonomous systems architects who own their agent infrastructure.'
+              : course.slug === 'diffusion-models'
+              ? 'This is the guided progression that transforms API-dependent engineers into visual AI architects who own their image generation infrastructure.'
+              : course.slug === 'multi-agent-systems'
+              ? 'This is the guided progression that transforms single-agent builders into multi-agent systems architects who orchestrate coordinated agent teams.'
+              : course.slug === 'the-ai-product-factory'
+              ? 'This is the guided progression that transforms platform-dependent data scientists into ML platform engineers who own their production infrastructure.'
               : 'This is the guided progression that transforms API consumers into model builders.'
             }
           </p>
@@ -578,6 +704,12 @@ function SuccessMetrics({ course }: { course: Course }) {
               ? 'Real outcomes from students who mastered The Domain SLM Mastery Stack™ and eliminated API costs entirely'
               : course.slug === 'agentic-systems'
               ? 'Real outcomes from students who completed The Agent Architecture Blueprint™ and built production agent systems'
+              : course.slug === 'diffusion-models'
+              ? 'Real outcomes from students who completed The Visual AI Sovereignty Stack™ and built production image generation systems'
+              : course.slug === 'multi-agent-systems'
+              ? 'Real outcomes from students who completed The Multi-Agent Coordination Mastery™ and built coordinated agent teams'
+              : course.slug === 'the-ai-product-factory'
+              ? 'Real outcomes from students who completed The Production ML Sovereignty Stack™ and built production MLOps platforms'
               : 'Real outcomes from students who completed The LLM Sovereignty Stack™ and built their competitive moats'
             }
           </p>
@@ -595,6 +727,11 @@ function SuccessMetrics({ course }: { course: Course }) {
                 { metric: "$150K-$250K", label: "Average salary increase (reasoning premium)" },
                 { metric: "95%", label: "Report being 'irreplaceable' (reasoning expertise rare)" },
                 { metric: "90%", label: "Lead reasoning AI initiatives after completion" }
+              ] : course.slug === 'the-ai-product-factory' ? [
+                { metric: "82%", label: "Promoted to ML Platform Engineer within 12 months" },
+                { metric: "$100K-$200K", label: "Average salary increase (MLOps premium)" },
+                { metric: "93%", label: "Report deployment capabilities as career differentiator" },
+                { metric: "88%", label: "Lead production ML initiatives after completion" }
               ] : [
                 { metric: "75%", label: "Promoted to Senior+ within 12 months" },
                 { metric: "$80K-$150K", label: "Average salary increase" },
@@ -620,6 +757,11 @@ function SuccessMetrics({ course }: { course: Course }) {
                 { metric: "85%", label: "Eliminate reasoning API dependencies entirely" },
                 { metric: "75%", label: "Raise funding with proprietary reasoning moat" },
                 { metric: "2-4 months", label: "Average time to ROI on reasoning investment" }
+              ] : course.slug === 'the-ai-product-factory' ? [
+                { metric: "$300K-$800K", label: "Annual MLOps platform cost elimination" },
+                { metric: "87%", label: "Eliminate AWS SageMaker/Vertex AI dependencies" },
+                { metric: "78%", label: "Raise funding with production ML infrastructure moat" },
+                { metric: "2-5 months", label: "Average time to ROI on MLOps investment" }
               ] : [
                 { metric: "$150K/year", label: "Average API cost savings from owning model weights" },
                 { metric: "70%", label: "Eliminate third-party model dependencies entirely" },
@@ -787,6 +929,12 @@ function PricingModalities({ course }: { course: Course }) {
               ? 'All modalities include the complete Domain SLM Mastery Stack™. Choose based on your learning style and goals.'
               : course.slug === 'agentic-systems'
               ? 'All modalities include the complete Agent Architecture Blueprint™. Choose based on your learning style and goals.'
+              : course.slug === 'diffusion-models'
+              ? 'All modalities include the complete Visual AI Sovereignty Stack™. Choose based on your learning style and goals.'
+              : course.slug === 'multi-agent-systems'
+              ? 'All modalities include the complete Multi-Agent Coordination Mastery™. Choose based on your learning style and goals.'
+              : course.slug === 'the-ai-product-factory'
+              ? 'All modalities include the complete Production ML Sovereignty Stack™. Choose based on your learning style and goals.'
               : 'All modalities include the complete LLM Sovereignty Stack™. Choose based on your learning style and goals.'
             }
           </p>
