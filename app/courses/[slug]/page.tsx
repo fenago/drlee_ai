@@ -328,6 +328,8 @@ function SignatureSolution({ course }: { course: Course }) {
               ? 'The Reasoning Sovereignty Stack™'
               : course.signatureSolution && course.slug === 'small-language-models'
               ? 'The Domain SLM Mastery Stack™'
+              : course.signatureSolution && course.slug === 'agentic-systems'
+              ? 'The Agent Architecture Blueprint™'
               : 'The LLM Sovereignty Stack™'}
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -337,6 +339,8 @@ function SignatureSolution({ course }: { course: Course }) {
             Each step follows the Shu-Ha-Ri method: TedTalk inspiration → Hands-on coding → Experimentation → Innovation.
             {course.slug === 'frontier-model-architecture'
               ? 'Watch as you progress from API integrator to production architect, building your cost efficiency moat with every step.'
+              : course.slug === 'agentic-systems'
+              ? 'Watch as you progress from framework-dependent to autonomous systems architect, building your infrastructure ownership moat with every step.'
               : 'Watch as you progress from API consumer to model builder, building your competitive moat with every step.'
             }
           </p>
@@ -429,6 +433,8 @@ function SignatureSolution({ course }: { course: Course }) {
             Each step follows the <span className="font-semibold text-brand-blue">Shu-Ha-Ri cycle</span>: TedTalk inspiration → Hands-on coding → Experimentation → Innovation.
             {course.slug === 'frontier-model-architecture'
               ? 'This is the guided progression that transforms API-dependent engineers into production frontier AI architects.'
+              : course.slug === 'agentic-systems'
+              ? 'This is the guided progression that transforms framework-dependent developers into autonomous systems architects who own their agent infrastructure.'
               : 'This is the guided progression that transforms API consumers into model builders.'
             }
           </p>
