@@ -136,6 +136,21 @@ function CourseHero({ course }: { course: Course }) {
                     By the end, you won't just understand domain-specific AI—you'll <span className="font-semibold text-brand-green">own production-ready specialized models that eliminate vendor dependency, run anywhere, and become your competitive moat</span>.
                   </p>
                 </>
+              ) : course.slug === 'agentic-systems' ? (
+                <>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    This is not another course on using agent frameworks. This is <span className="font-semibold text-brand-blue">executive business education (Harvard/MIT/Stanford caliber)</span> merged with a masterclass for tech founders and autonomous systems architects. Using the <span className="font-semibold text-brand-green">DrLee.AI Shu-Ha-Ri learning method</span>, you'll go from framework-dependent to autonomous systems architect in 9 transformative modules.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    Each module begins with a <span className="font-semibold">TedTalk-style presentation</span> on architecture strategy, then you immediately <span className="font-semibold">build it yourself with hands-on coding</span>. You'll implement ReAct loops, design MCP-compliant tool orchestration, build memory systems, deploy multi-agent coordination, and create the infrastructure that powers autonomous execution—not just API calls.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-yellow">Different from using LangChain/AutoGPT:</span> While frameworks abstract away the complexity, this course teaches you to <span className="font-semibold">build the infrastructure yourself</span>—own the ReAct loops, tool orchestrators, memory modules, and multi-agent protocols. When your agent fails at 2am, you'll know exactly why and how to fix it. Framework users are commoditized. Infrastructure builders are irreplaceable.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed">
+                    By the end, you won't just understand how agents work—you'll <span className="font-semibold text-brand-green">own production-ready autonomous agent systems with multi-agent coordination that become your competitive moat</span>.
+                  </p>
+                </>
               ) : (
                 <p className="text-white/90 text-sm leading-relaxed">
                   {course.description}
@@ -157,6 +172,11 @@ function CourseHero({ course }: { course: Course }) {
                     <>
                       <div className="text-white font-medium">API Consumer</div>
                       <div className="text-white/60 text-sm">$50K-$500K/month burn · Vendor Lock-In</div>
+                    </>
+                  ) : course.slug === 'agentic-systems' ? (
+                    <>
+                      <div className="text-white font-medium">Framework User</div>
+                      <div className="text-white/60 text-sm">$120K-$180K · Black-Box Agents</div>
                     </>
                   ) : (
                     <>
@@ -180,6 +200,11 @@ function CourseHero({ course }: { course: Course }) {
                       <div className="text-brand-green font-medium">SLM Architect</div>
                       <div className="text-brand-green/80 text-sm">$0 API costs · Complete Ownership</div>
                     </>
+                  ) : course.slug === 'agentic-systems' ? (
+                    <>
+                      <div className="text-brand-green font-medium">Agent Systems Architect</div>
+                      <div className="text-brand-green/80 text-sm">$200K-$400K · Infrastructure Owner</div>
+                    </>
                   ) : (
                     <>
                       <div className="text-brand-green font-medium">Model Builder</div>
@@ -193,6 +218,8 @@ function CourseHero({ course }: { course: Course }) {
                   ? '9 weeks · 50 hours · Serve millions at 90% lower cost'
                   : course.slug === 'small-language-models'
                   ? '9 weeks · 45 hours · Run frontier-quality models on $2K laptops'
+                  : course.slug === 'agentic-systems'
+                  ? '9 modules · 45 hours · Build production agent systems with 95%+ reliability'
                   : '9 weeks · 50 hours · Own your model weights forever'
                 }
               </div>
@@ -242,6 +269,12 @@ function CourseHero({ course }: { course: Course }) {
                   { label: "Cost Elimination", value: "$50K-$500K/Month → $0", icon: "💰", desc: "Eliminate API dependency completely—run on $2K laptops" },
                   { label: "Cross-Platform Deployment", value: "Anywhere Execution", icon: "📈", desc: "Deploy on laptops, mobile, edge, Raspberry Pi, air-gapped systems" },
                   { label: "Complete AI Ownership", value: "Domain SLM Stack", icon: "🛡️", desc: "End-to-end mastery: fine-tuning → quantization → ONNX → production" }
+                ] : course.slug === 'agentic-systems' ? [
+                  { label: "Agent Architecture Mastery", value: "ReAct + MCP + A2A", icon: "🧠", desc: "Build autonomous agent infrastructure from scratch—ReAct loops, tool orchestration, multi-agent coordination" },
+                  { label: "Production Reliability", value: "95%+ Task Completion", icon: "⚡", desc: "Deploy agents with monitoring, error recovery, and production-grade reliability" },
+                  { label: "Framework Independence", value: "Zero Vendor Lock-In", icon: "💰", desc: "Own your agent infrastructure—debug at 2am, customize infinitely, no black-box mysteries" },
+                  { label: "Multi-Agent Coordination", value: "Scalable Agent Teams", icon: "📈", desc: "Build specialized agent systems that collaborate via A2A protocols to solve complex problems" },
+                  { label: "Complete Agent Stack", value: "Infrastructure to Production", icon: "🛡️", desc: "End-to-end expertise: ReAct → Tools → Memory → Planning → Multi-Agent → Deployment" }
                 ] : [
                   { label: "Knowledge Depth", value: "99th Percentile", icon: "🧠", desc: "Understand LLMs better than 90% of 'AI engineers'" },
                   { label: "Implementation Ability", value: "From Scratch", icon: "⚡", desc: "Build GPT without libraries or abstractions" },

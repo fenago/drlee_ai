@@ -1268,23 +1268,25 @@ export const courses: Course[] = [
   {
     id: "agentic",
     slug: "agentic-systems",
-    name: "Build Your Own Autonomous AI Agents",
-    subtitle: "Code Agents That Execute Tasks—Own Your Automation, Not Just Chat",
+    name: "Build Your Own Autonomous AI Agent",
+    subtitle: "The Agent Architecture Blueprint™ — From Framework Dependency to Autonomous Systems Mastery",
     category: "Hardcore Developers",
     categoryId: "hardcore",
     rarity: "Very Rare",
-    price: 2497,
-    hook: "The difference between a chatbot and an agent is execution. Agents don't just suggest—they do.",
+    price: 1997,
+    hook: "The ONLY masterclass teaching autonomous agent architecture from scratch—build the ReAct loops, tool orchestrators, memory systems, and multi-agent coordination that frameworks hide from you.",
     description: "LLMs can answer questions, but agents can complete tasks. This masterclass teaches you to build the infrastructure that transforms a language model into an autonomous system capable of using tools, maintaining memory, and executing multi-step workflows. You won't rely on frameworks—you'll build the foundations yourself: the processing loop, tool orchestration, memory modules, and human-in-the-loop patterns. By the end, you'll have a complete, working agent system and the deep understanding to extend it for research, business automation, or production deployment.",
     outcomes: [
-      "Build a complete LLM agent infrastructure from scratch: interfaces, tools, data structures, and processing loops",
-      "Implement the ReAct pattern: reasoning and acting in an iterative loop",
-      "Create tool abstractions that work with any LLM provider",
-      "Design robust tool calling with proper error handling and validation",
-      "Implement human-in-the-loop patterns for high-stakes decisions",
-      "Add memory modules to share state across tasks and sessions",
-      "Connect agents to external services via MCP compatibility",
-      "Evaluate agent performance on real-world tasks"
+      "Build autonomous agent systems from first principles (no framework dependency like LangChain/AutoGPT)",
+      "Implement ReAct loops (Thought → Action → Observation) with full transparency and control",
+      "Design MCP-compliant tool orchestration infrastructure that scales to dozens of tools",
+      "Create agentic RAG systems with specialized knowledge bases for domain expertise",
+      "Build memory systems (episodic, semantic, procedural) enabling agent learning and personalization",
+      "Implement planning and reflection capabilities for multi-step strategic execution",
+      "Deploy code-generating agents that extend their own capabilities",
+      "Build multi-agent coordination with A2A (Agent-to-Agent) communication protocols",
+      "Achieve 95%+ agent reliability with production-grade monitoring and evaluation",
+      "Deploy on-premise for enterprise compliance (SOC2, HIPAA, GDPR-ready)"
     ],
     hours: 40,
     modules: 10,
@@ -1433,7 +1435,174 @@ export const courses: Course[] = [
         question: "Do I need to take other courses first?",
         answer: "Python proficiency and basic LLM familiarity are required. The LLM course is helpful but not required—we include enough context to get started."
       }
-    ]
+    ],
+    signatureSolution: {
+      stages: [
+        {
+          title: "PHASE 1: Foundation",
+          subtitle: "Specialization & Architecture Mastery",
+          weeks: "Weeks 1-3",
+          from: "Using pre-built frameworks as black boxes, no understanding of agent internals, framework-dependent implementations",
+          to: "Architecting custom agent systems from first principles, understanding every component, owning the infrastructure",
+          moat: "Agent Architecture Expertise",
+          moatDesc: "Ability to design and build autonomous systems without framework dependency—understanding ReAct loops, tool orchestration, and memory systems at the architectural level",
+          color: "blue"
+        },
+        {
+          title: "PHASE 2: Advanced Capabilities",
+          subtitle: "Knowledge, Memory & Planning Systems",
+          weeks: "Weeks 4-6",
+          from: "Stateless agents with no learning, generic knowledge, single-shot execution",
+          to: "Agents with specialized knowledge, persistent memory, multi-step planning capabilities",
+          moat: "Advanced Agent Capabilities",
+          moatDesc: "Building agents that learn from experience, leverage domain-specific knowledge, and plan complex multi-step executions",
+          color: "purple"
+        },
+        {
+          title: "PHASE 3: Multi-Agent & Production",
+          subtitle: "Coordination, Code Generation & Scale",
+          weeks: "Weeks 7-9",
+          from: "Single-agent systems, manual code updates, local deployments only",
+          to: "Multi-agent coordination, self-improving code agents, production-scale deployments",
+          moat: "Production Agent Systems",
+          moatDesc: "Enterprise-ready multi-agent architectures with self-improvement capabilities and production deployment expertise",
+          color: "green"
+        }
+      ],
+      steps: [
+        {
+          title: "Module 1: Agent Fundamentals & LLM Architecture",
+          from: "Confusion about what 'AI agent' means, treating agents as chatbots, no framework for agent thinking",
+          to: "Clear agent architecture understanding, knowing when agents add value over LLMs, designing agent systems strategically, understanding LLM role as agent 'brain'",
+          moat: "Strategic agent architecture knowledge—ability to distinguish when autonomous systems are needed vs simple LLM calls",
+          stage: 1
+        },
+        {
+          title: "Module 2: Tool Integration & Orchestration",
+          from: "Agents that only output text, no ability to take actions, manual execution of agent suggestions, fragmented tool integrations",
+          to: "Agents that use tools autonomously, unified tool orchestration layer, automatic execution with safety, MCP-compliant tool architecture",
+          moat: "Tool orchestration expertise—ability to design unified tool interfaces that scale to dozens of tools without custom integration per tool",
+          stage: 1
+        },
+        {
+          title: "Module 3: ReAct Loop Implementation",
+          from: "One-shot LLM responses, no iterative reasoning, can't recover from errors, shallow problem-solving",
+          to: "ReAct loop (Thought → Action → Observation), multi-step autonomous execution, self-correction capability, deep problem-solving",
+          moat: "ReAct architecture mastery—ability to implement the core autonomous agent loop that enables iterative reasoning and self-correction",
+          stage: 1
+        },
+        {
+          title: "Module 4: Knowledge Augmentation with RAG",
+          from: "Agents limited to LLM training data, no domain expertise, generic responses, can't use proprietary knowledge",
+          to: "Agents with specialized knowledge bases, domain-specific expertise, context-aware responses, leveraging proprietary data",
+          moat: "Agentic RAG expertise—building knowledge systems that agents can actively query for domain-specific decision-making",
+          stage: 2
+        },
+        {
+          title: "Module 5: Memory & Continuous Learning",
+          from: "Stateless agents (no memory between executions), repeating mistakes, no personalization, can't learn from interactions",
+          to: "Agents with persistent memory, learning from experience, personalized behaviors, continuous improvement",
+          moat: "Memory architecture mastery—building agents that remember, learn, and improve over time",
+          stage: 2
+        },
+        {
+          title: "Module 6: Planning & Reflection Systems",
+          from: "Reactive agents (respond to immediate inputs), no strategic planning, trial-and-error execution, no self-improvement",
+          to: "Proactive agents with planning capabilities, multi-step strategy generation, deliberate execution, self-reflection and improvement",
+          moat: "Planning and reflection expertise—building agents that think ahead, strategize, and learn from mistakes",
+          stage: 2
+        },
+        {
+          title: "Module 7: Code Generation & Self-Improvement",
+          from: "Agents that can't modify code, static tool sets, manual feature additions, limited adaptability",
+          to: "Code-generating agents, self-improving capabilities, dynamic tool creation, adaptive agents",
+          moat: "Code generation expertise—building agents that write their own tools and extend their own capabilities",
+          stage: 3
+        },
+        {
+          title: "Module 8: Multi-Agent Coordination",
+          from: "Single-agent limitations (one agent does everything), monolithic agent systems, no specialization, poor scalability",
+          to: "Multi-agent systems with coordination, specialized agents, parallel execution, scalable agent teams",
+          moat: "Multi-agent architecture mastery—building systems where multiple specialized agents collaborate to solve complex problems",
+          stage: 3
+        },
+        {
+          title: "Module 9: Production Deployment & Monitoring",
+          from: "Local-only agents, no production deployment, no monitoring, unpredictable production behavior",
+          to: "Production-deployed agents, full observability, performance monitoring, reliable production systems",
+          moat: "Production deployment mastery—operating autonomous agent systems at scale with reliability and continuous improvement",
+          stage: 3
+        }
+      ],
+      millionDollarMessages: {
+        careerAdvancers: "I help AI engineers and ML practitioners build production-ready autonomous agent systems from first principles, so they can deploy reliable multi-agent architectures earning $200K-$400K salaries without being commoditized as framework users or stuck debugging black-box systems they don't understand.",
+        founders: "I help technical founders and CTOs build proprietary autonomous agent infrastructure from first principles, so they can raise Series A at 2-3x premium valuations with defensible moats without burning $10K-$500K/month on APIs or being dismissed by VCs as 'just an API wrapper.'"
+      }
+    },
+    pricingModalities: {
+      selfPaced: {
+        price: 1997,
+        description: "Self-Paced Mastery",
+        features: [
+          "All 9 modules available immediately (45+ hours)",
+          "Lifetime access to content and updates",
+          "Private Discord community (peer support)",
+          "Monthly live office hours with Q&A",
+          "9 production system templates (starter code)",
+          "GitHub repository with all implementations",
+          "Certificate of completion",
+          "Learn on your own schedule"
+        ]
+      },
+      cohort: {
+        price: 6997,
+        description: "9-Week Live Cohort",
+        features: [
+          "Weekly live workshops with Dr. Lee (3 hours each)",
+          "Cohort accountability and peer learning",
+          "Direct instructor access (24-hour response)",
+          "Weekly code reviews (instructor + peer feedback)",
+          "Pair programming sessions",
+          "Career advancement coaching",
+          "Alumni network access",
+          "Graduation certificate",
+          "Job board access (companies hiring agent engineers)",
+          "Fixed start dates (4 cohorts per year)"
+        ]
+      },
+      bootcamp: {
+        price: 9997,
+        description: "5-Day Immersive Bootcamp",
+        features: [
+          "Executive format (Monday-Friday intensive)",
+          "8am-6pm daily with hands-on labs (70% building)",
+          "Build production multi-agent system in 5 days",
+          "Small group (max 15 people)",
+          "1:1 architecture review with Dr. Lee",
+          "Capstone project (deploy your custom system)",
+          "90 days post-bootcamp support",
+          "Catered meals + coffee (in-person)",
+          "Recordings of all sessions",
+          "Corporate pricing available"
+        ]
+      },
+      founders: {
+        price: 19997,
+        description: "Founder's Edition (1:1 Implementation + Fractional CTO)",
+        features: [
+          "One-on-one implementation partnership",
+          "Weekly architecture sessions (2 hours private)",
+          "Custom curriculum for YOUR specific use case",
+          "Hands-on pair programming (we code together)",
+          "Production deployment support",
+          "90 days of fractional CTO access",
+          "Architecture design document (custom)",
+          "Code review (every pull request)",
+          "Team training (upskill your engineers)",
+          "Three tiers: Solo Founder ($19,997), CTO + Team ($34,997), Enterprise ($49,997)"
+        ]
+      }
+    }
   },
   {
     id: "multi-agent",
