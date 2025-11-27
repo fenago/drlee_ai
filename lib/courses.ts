@@ -27,6 +27,51 @@ export interface Course {
     question: string;
     answer: string;
   }[];
+  signatureSolution?: {
+    stages: Array<{
+      title: string;
+      subtitle: string;
+      weeks: string;
+      from: string;
+      to: string;
+      moat: string;
+      moatDesc: string;
+      color: 'blue' | 'purple' | 'green';
+    }>;
+    steps: Array<{
+      title: string;
+      from: string;
+      to: string;
+      moat: string;
+      stage: number;
+    }>;
+    millionDollarMessages?: {
+      careerAdvancers?: string;
+      founders?: string;
+    };
+  };
+  pricingModalities?: {
+    selfPaced: {
+      price: number;
+      description: string;
+      features: string[];
+    };
+    cohort: {
+      price: number;
+      description: string;
+      features: string[];
+    };
+    bootcamp: {
+      price: number;
+      description: string;
+      features: string[];
+    };
+    founders: {
+      price: number;
+      description: string;
+      features: string[];
+    };
+  };
 }
 
 export const courses: Course[] = [
@@ -35,137 +80,144 @@ export const courses: Course[] = [
     id: "llm",
     slug: "large-language-models",
     name: "Build Your Own LLM",
-    subtitle: "From Tokenization to Training: Own the Technology Behind ChatGPT",
+    subtitle: "The LLM Sovereignty Stack™ — Stop Renting AI, Start Owning It",
     category: "Hardcore Developers",
     categoryId: "hardcore",
-    rarity: "Extremely Rare",
-    price: 2997,
-    hook: "The best way to understand AI is to build it yourself.",
-    description: "This masterclass takes you inside the AI black box to build a GPT-style language model that runs on your laptop. You'll go from initial design through pretraining on a general corpus, and on to fine-tuning for specific tasks. Each stage is explained with clear visuals, diagrams, and working code. Without relying on any existing LLM libraries, you'll construct a base model, evolve it into a text classifier, and ultimately create a chatbot that follows your conversational instructions. By the end, you'll have a complete understanding of how LLMs work—because you built one yourself.",
+    rarity: "Flagship",
+    price: 1997,
+    hook: "The ONLY masterclass teaching you to build production-ready LLMs from scratch—own your technology, stop renting from OpenAI.",
+    description: "This is not another course on using APIs. This is executive business education (Harvard/MIT/Stanford caliber) merged with a masterclass for tech founders and AI leaders. Using the DrLee.AI Shu-Ha-Ri learning method, you'll go from API consumer to model builder in 9 transformative steps. Each module begins with a TedTalk-style presentation, then you immediately build it yourself with hands-on coding. You'll construct a complete GPT architecture from scratch, train on real data, fine-tune for your use cases, and deploy with zero API dependency. By the end, you won't just understand how LLMs work—you'll own production-ready models that become your competitive moat. Available in 4 modalities: 9-Week Live Cohort, 5-Day Immersive Bootcamp, Self-Paced Mastery, or Founder's Edition (1:1 mentorship/Fractional CTO).",
     outcomes: [
-      "Plan and code all the components of a GPT-style language model",
-      "Implement attention mechanisms including self-attention and multi-head attention",
-      "Build the complete transformer architecture: embeddings, normalization, feed-forward networks",
-      "Prepare datasets suitable for LLM training with proper tokenization",
-      "Pretrain your model on a general text corpus",
-      "Fine-tune for text classification and instruction-following tasks",
-      "Load pretrained weights (like GPT-2) into your custom architecture",
-      "Apply parameter-efficient fine-tuning with LoRA",
-      "Use your LLM as a personal assistant that follows your instructions"
+      "Build complete GPT architecture from scratch in PyTorch (4,000+ lines of code you understand)",
+      "Implement self-attention, causal attention, and multi-head attention mechanisms from first principles",
+      "Code the complete transformer: embeddings, layer normalization, feed-forward networks, residual connections",
+      "Tokenize text using BPE (same technique as modern ChatGPT/Claude/Gemini), create embeddings, encode positions",
+      "Train language models on 100M+ tokens using next-token prediction",
+      "Fine-tune for classification tasks (spam detection, sentiment analysis) with 95%+ accuracy",
+      "Fine-tune for instruction-following to create your own ChatGPT-style assistant",
+      "Implement LoRA for parameter-efficient fine-tuning (0.1% of parameters, 10x faster training)",
+      "Apply production training techniques: warmup, cosine decay, gradient clipping",
+      "Deploy production models with zero API costs—own your model weights forever"
     ],
-    hours: 45,
+    hours: 50,
     modules: 9,
-    technologies: ["PyTorch", "Tiktoken", "GPT-2", "LoRA", "Weights & Biases", "CUDA"],
+    technologies: ["PyTorch", "Tiktoken", "GPT-2", "LoRA", "Weights & Biases", "CUDA", "Hugging Face"],
     curriculum: [
       {
-        title: "Module 1: Understanding Large Language Models",
+        title: "Step 1: The Architecture of Intelligence",
         lessons: [
-          "Executive Overview: The Strategic Value of Understanding LLM Internals",
-          "What Is an LLM? From Pattern Matching to Language Understanding",
-          "Applications of LLMs: Where They Create Business Value",
-          "Stages of Building and Using LLMs: The Complete Pipeline",
-          "Introducing the Transformer Architecture: A Visual Overview",
-          "A Closer Look at the GPT Architecture: What Makes It Work"
+          "The Nature of Language Models: From Pattern Matching to Understanding",
+          "Real-World Applications and Possibilities: Where LLMs Create Business Value",
+          "The Three-Stage Journey: Build, Train, Deploy",
+          "Why Transformers Changed Everything: The Attention Revolution",
+          "Data: The Foundation of Intelligence",
+          "Deconstructing the GPT Blueprint: Every Component Explained",
+          "Your Roadmap to Model Ownership: What You'll Build"
         ]
       },
       {
-        title: "Module 2: Working with Text Data",
+        title: "Step 2: Text as Data",
         lessons: [
-          "Understanding Word Embeddings: How Meaning Becomes Numbers",
-          "Tokenizing Text: Breaking Language into Learnable Units",
-          "Converting Tokens into Token IDs: Building the Vocabulary",
-          "Adding Special Context Tokens: Start, End, and Padding",
-          "Byte Pair Encoding: The Tokenization Strategy Behind GPT",
-          "Data Sampling with a Sliding Window: Creating Training Examples",
-          "Creating Token Embeddings and Encoding Word Positions"
+          "Semantic Space: How Words Become Vectors",
+          "Breaking Text into Intelligent Chunks: Tokenization Mastery",
+          "Building the Model's Vocabulary: Token-to-ID Mapping",
+          "Strategic Special Tokens for Context Control",
+          "Byte Pair Encoding: The Production Standard (GPT-3/4, Claude, Llama)",
+          "Efficient Data Sampling Strategies: Sliding Windows",
+          "Learning Semantic Representations: Embedding Layers",
+          "Position Encoding: Teaching Order to Parallel Systems"
         ]
       },
       {
-        title: "Module 3: Coding Attention Mechanisms",
+        title: "Step 3: The Attention Revolution",
         lessons: [
-          "The Problem with Modeling Long Sequences",
-          "Capturing Data Dependencies with Attention Mechanisms",
-          "A Simple Self-Attention Mechanism Without Trainable Weights",
-          "Computing Attention Weights for All Input Tokens",
-          "Implementing Self-Attention with Trainable Weights",
-          "Hiding Future Words with Causal Attention",
-          "Implementing a Compact Causal Attention Class",
-          "Extending Single-Head to Multi-Head Attention"
+          "Why Sequential Models Hit a Wall: The Case for Attention",
+          "The Attention Mechanism: Weighted Relevance Explained",
+          "Self-Attention: The Simplest Form (10 Lines of Python)",
+          "Scaling Attention to Full Sequences: Batched Implementation",
+          "Queries, Keys, Values: The Trainable Triplet",
+          "Building Reusable Attention Components",
+          "Causal Masking: The Secret of Text Generation",
+          "Dropout: Preventing Attention Overfitting",
+          "Building Production Causal Attention",
+          "Why Multi-Head Attention Outperforms Single-Head",
+          "Efficient Multi-Head Implementation: Parallel Computation"
         ]
       },
       {
-        title: "Module 4: Implementing a GPT Model to Generate Text",
+        title: "Step 4: Architecting Language Models",
         lessons: [
-          "Coding the Complete LLM Architecture",
-          "Normalizing Activations with Layer Normalization",
-          "Implementing Feed Forward Networks with GELU Activations",
-          "Adding Shortcut Connections for Stable Training",
-          "Connecting Attention and Linear Layers in a Transformer Block",
-          "Assembling the Full GPT Model",
-          "Generating Text: From Model Outputs to Readable Language"
+          "Assembling the Complete Architecture: Embeddings → Transformer → Head",
+          "Layer Normalization for Training Stability",
+          "Feed-Forward Networks: The Other Half of Transformers",
+          "Residual Connections: Enabling Deep Learning",
+          "Building the Transformer Block: Modular Design",
+          "Implementing the Full GPT Model: 4,000+ Lines You Understand",
+          "Text Generation: Bringing Models to Life with Temperature Sampling"
         ]
       },
       {
-        title: "Module 5: Pretraining on Unlabeled Data",
+        title: "Step 5: Training at Scale",
         lessons: [
-          "Evaluating Generative Text Models: Metrics That Matter",
-          "Calculating the Text Generation Loss",
-          "Computing Training and Validation Set Losses",
-          "Building the Complete Training Loop",
-          "Decoding Strategies: Temperature Scaling and Top-k Sampling",
-          "Modifying the Text Generation Function for Better Outputs",
-          "Loading and Saving Model Weights in PyTorch",
-          "Loading Pretrained Weights: Using GPT-2 as a Starting Point"
+          "Why Untrained Models Generate Noise: The Need for Pretraining",
+          "The Loss Function: Measuring Learning (Cross-Entropy)",
+          "Training vs Validation: Preventing Overfitting",
+          "The Complete Training Loop: Forward, Loss, Backprop, Optimizer",
+          "Temperature: Controlling Creativity (High = Creative, Low = Deterministic)",
+          "Top-K Sampling: Quality Control for Generation",
+          "Flexible Generation Functions: Customizable Decoding",
+          "Persisting Model Weights: Deployment Readiness",
+          "Leveraging Pretrained Weights: Loading GPT-2 for Transfer Learning"
         ]
       },
       {
-        title: "Module 6: Fine-Tuning for Classification",
+        title: "Step 6: Task Specialization",
         lessons: [
-          "Different Categories of Fine-Tuning: When to Use What",
-          "Preparing a Classification Dataset",
-          "Creating Efficient Data Loaders",
-          "Initializing a Model with Pretrained Weights",
-          "Adding a Classification Head to Your LLM",
-          "Calculating Classification Loss and Accuracy",
-          "Fine-Tuning on Supervised Data",
-          "Using Your LLM as a Spam Classifier: End-to-End Example"
+          "The Fine-Tuning Landscape: Classification vs Instruction vs RLHF",
+          "Data Preparation for Classification: Labeled Datasets",
+          "Efficient Data Loading: PyTorch DataLoaders",
+          "Transfer Learning Strategy: Freeze/Unfreeze Layers",
+          "Adding Task-Specific Heads: Linear Projection Layers",
+          "Training with Supervised Signals: Cross-Entropy on Class Distributions",
+          "Fine-Tuning in Practice: 3-5 Epochs to Production",
+          "Real-World Deployment: 95%+ Accuracy on Spam Detection"
         ]
       },
       {
-        title: "Module 7: Fine-Tuning to Follow Instructions",
+        title: "Step 7: Instruction Intelligence",
         lessons: [
-          "Introduction to Instruction Fine-Tuning",
-          "Preparing a Dataset for Supervised Instruction Fine-Tuning",
-          "Organizing Data into Training Batches",
-          "Creating Data Loaders for Instruction Datasets",
-          "Loading a Pretrained LLM for Fine-Tuning",
-          "Fine-Tuning on Instruction Data",
-          "Extracting and Saving Model Responses",
-          "Evaluating Your Instruction-Following LLM"
+          "The Foundation of Helpful AI: How ChatGPT Was Created",
+          "Formatting Instruction Data: (Instruction, Input, Output) Triples",
+          "Batching Conversational Data: Padding and Attention Masks",
+          "Building Instruction Data Loaders: Custom Collate Functions",
+          "Choosing Your Starting Point: Pretrained vs From Scratch",
+          "Training Instruction-Following Behavior: Supervised Fine-Tuning",
+          "Capturing Model Responses: Generation and Evaluation",
+          "Evaluating AI Assistant Quality: Helpfulness, Accuracy, Safety",
+          "The Path to Alignment: RLHF and Beyond"
         ]
       },
       {
-        title: "Module 8: Parameter-Efficient Fine-Tuning with LoRA",
+        title: "Step 8: Production Training Excellence",
         lessons: [
-          "Introduction to LoRA: Why Full Fine-Tuning Isn't Always Necessary",
-          "The LoRA Architecture: Low-Rank Adaptation Explained",
-          "Preparing Your Dataset for LoRA Training",
-          "Initializing and Modifying the Model for LoRA",
-          "Training with LoRA: Memory-Efficient Fine-Tuning",
-          "Comparing LoRA vs. Full Fine-Tuning: Trade-offs and Results",
-          "Deploying LoRA-Adapted Models"
+          "Warm Start: Preventing Early Instability with Learning Rate Warmup",
+          "Cosine Annealing: Smooth Convergence with LR Scheduling",
+          "Gradient Clipping: Explosive Gradient Protection",
+          "The Production Training Function: Warmup + Cosine + Clipping + Logging",
+          "GPU Optimization: Making Training 10x Faster",
+          "Monitoring Training: TensorBoard and Weights & Biases"
         ]
       },
       {
-        title: "Module 9: Advanced Training Techniques and Deployment",
+        title: "Step 9: Efficient Adaptation at Scale",
         lessons: [
-          "Learning Rate Warmup: Starting Training Right",
-          "Cosine Decay: Scheduling Learning Rates for Better Convergence",
-          "Gradient Clipping: Preventing Exploding Gradients",
-          "The Complete Modified Training Function",
-          "GPU Optimization: Making Training Faster",
-          "Single-GPU and Multi-GPU Training Strategies",
-          "Capstone: Your Personal AI Assistant Running Locally"
+          "Low-Rank Adaptation Explained: How Modern ChatGPT/Gemini/Claude Fine-Tune",
+          "Preparing Data for Efficient Training: Same Data, 10x Faster",
+          "Injecting LoRA Adapters: Freezing Weights, Training Low-Rank Matrices",
+          "Training with LoRA: 0.1% Parameters, 95-100% Performance",
+          "Comparing LoRA vs Full Fine-Tuning: Cost-Benefit Analysis",
+          "Multi-Task Adaptation: Swapping LoRA Adapters for Different Tasks",
+          "Deployment Strategies: Serving Multiple Fine-Tuned Models Efficiently"
         ]
       }
     ],
@@ -176,218 +228,547 @@ export const courses: Course[] = [
     },
     faqs: [
       {
+        question: "Who is this masterclass for?",
+        answer: "This is for AI engineers earning $100K-$150K who want to command $250K-$400K salaries, and for technical founders burning $5K-$50K/month on APIs who want to own their technology. If you're tired of being an API consumer and want to become a model builder, this is for you."
+      },
+      {
+        question: "What's included in the different modalities?",
+        answer: "Self-Paced ($1,997): All 9 modules, lifetime access, community support. 9-Week Cohort ($6,997): Live workshops, direct instructor access, accountability. 5-Day Bootcamp: Intensive executive format. Founder's Edition ($19,997): 1:1 coaching, custom architecture consulting, or Fractional CTO services."
+      },
+      {
         question: "What technical background do I need?",
-        answer: "You need intermediate Python skills and some knowledge of machine learning concepts. We focus on applied implementation—building intuition through code rather than theory. No PhD required."
+        answer: "Intermediate Python skills and basic ML concepts. This is hands-on implementation using the Shu-Ha-Ri method: TedTalk-style inspiration + guided coding + experimentation. No PhD required. If you can code in Python, you're ready."
       },
       {
         question: "What hardware do I need?",
-        answer: "The LLM you create will run on any modern laptop. GPU acceleration is optional but helpful—cloud GPU options are provided for faster training. No specialized hardware required to get started."
+        answer: "Any modern laptop. GPU acceleration is optional—we provide cloud GPU options for faster training. The models you build will run locally on your machine. No specialized hardware required."
       },
       {
-        question: "Will I actually build a working language model?",
-        answer: "Yes. You'll build a complete GPT-style model from scratch, pretrain it, fine-tune it for classification, and create an instruction-following chatbot. It runs locally on your machine."
+        question: "Will I actually build a working GPT model?",
+        answer: "Yes. You'll build a complete GPT architecture from scratch (4,000+ lines of PyTorch), train on 100M+ tokens, fine-tune for classification and instruction-following, and deploy with zero API dependency. This is not a toy project—it's production-ready code."
       },
       {
         question: "How is this different from using the OpenAI API?",
-        answer: "Instead of treating the model as a black box, you'll understand every component because you built it. This gives you the knowledge to customize, optimize, and create proprietary AI systems."
+        answer: "APIs are rented capability—you own nothing. This masterclass teaches you to OWN model weights. Stop paying $50K/year to OpenAI. Build proprietary models that become your competitive moat. Understand every line of code, customize architectures, eliminate API costs forever."
       },
       {
-        question: "Can I use pretrained weights like GPT-2?",
-        answer: "Yes. You'll learn to load pretrained weights into your custom architecture, giving you a powerful starting point for fine-tuning without training from scratch."
+        question: "What's the ROI for engineers vs founders?",
+        answer: "Engineers: Avg $80K-$150K salary increase within 12 months. 75% promoted to Senior+. Command $250K-$400K as irreplaceable AI architect. Founders: Save $100K-$500K/year in API costs. Build defensible moat. Raise Series A on proprietary technology. ROI in 3-6 months."
       },
       {
-        question: "What's the business value of building my own LLM?",
-        answer: "Understanding LLM internals enables better vendor evaluation, informed build-vs-buy decisions, and the ability to create proprietary AI capabilities that differentiate your organization."
+        question: "What's the DrLee.AI Shu-Ha-Ri learning method?",
+        answer: "Shu (Learn): TedTalk-style masterclass + hands-on coding. Ha (Break): Modify architectures, experiment, adapt to your problems. Ri (Transcend): Innovate beyond what's taught, lead AI initiatives. Each module follows: Inspire → Implement → Integrate → Innovate."
+      },
+      {
+        question: "Can I load pretrained weights like GPT-2?",
+        answer: "Yes. You'll learn to load pretrained weights (GPT-2, Llama, etc.) into your custom architecture, giving you a powerful starting point for fine-tuning without training from scratch. Best of both worlds: understand the internals + leverage existing pretraining."
+      },
+      {
+        question: "What if I'm not satisfied?",
+        answer: "30-day money-back guarantee for Self-Paced and Cohort tiers. No questions asked. For Founder's Edition: 90-day satisfaction guarantee—we'll work with you until you achieve results or refund 50% (reflecting value already delivered)."
       }
-    ]
+    ],
+    signatureSolution: {
+      stages: [
+        {
+          title: "Foundation",
+          subtitle: "Shu (守) - Learn the Fundamentals",
+          weeks: "Weeks 1-3",
+          from: "What is an LLM? How does attention work? I don't understand transformers.",
+          to: "I can explain transformer architecture, code attention mechanisms from scratch, and prepare production data pipelines.",
+          moat: "Knowledge Foundation",
+          moatDesc: "Speak the language of frontier AI—explain LLM architecture to executives, engineers, and investors with clarity and confidence.",
+          color: "blue"
+        },
+        {
+          title: "Implementation",
+          subtitle: "Ha (破) - Build and Deploy",
+          weeks: "Weeks 4-6",
+          from: "I've never built a complete model from scratch. How do you train on real data?",
+          to: "I've coded a complete GPT architecture, trained it on 100M+ tokens, and fine-tuned for classification tasks.",
+          moat: "Implementation Mastery",
+          moatDesc: "Build and train models without libraries or APIs—own the complete pipeline from tokenization to deployment.",
+          color: "purple"
+        },
+        {
+          title: "Mastery",
+          subtitle: "Ri (離) - Optimize and Lead",
+          weeks: "Weeks 7-9",
+          from: "Fine-tuning is expensive. Training is unstable. I can't deploy efficiently.",
+          to: "I implement production-grade training with warmup/cosine decay/gradient clipping, use LoRA for efficient fine-tuning, and deploy instruction-following models.",
+          moat: "Production Excellence",
+          moatDesc: "Match the training techniques of OpenAI and Google—optimize for speed, stability, and efficiency at scale.",
+          color: "green"
+        }
+      ],
+      steps: [
+        {
+          title: "Step 1: The Architecture of Intelligence",
+          from: "What is an LLM and how does it actually work?",
+          to: "I can explain transformer architecture, training paradigms, and the GPT design to technical leaders, investors, and engineering teams",
+          moat: "Knowledge Moat: Speak the language of frontier AI",
+          stage: 1
+        },
+        {
+          title: "Step 2: Text as Data",
+          from: "How do models understand and process text?",
+          to: "I can tokenize text, create embeddings, encode positions, and prepare production-grade data pipelines for transformer training",
+          moat: "Data Engineering Moat: Control the entire pipeline from raw text to training-ready batches",
+          stage: 1
+        },
+        {
+          title: "Step 3: The Attention Revolution",
+          from: "Attention mechanisms are too complex to understand",
+          to: "I can code self-attention, causal attention, and multi-head attention from scratch in PyTorch—the core innovation that powers all modern AI",
+          moat: "Architectural Mastery Moat: Attention is the core innovation—master this and you can modify, optimize, and create novel architectures",
+          stage: 1
+        },
+        {
+          title: "Step 4: Architecting Language Models",
+          from: "I can't build a complete language model from scratch",
+          to: "I have coded a full GPT architecture that generates coherent text—every component, every line understood",
+          moat: "Implementation Mastery Moat: You've built GPT from scratch—no more black boxes",
+          stage: 2
+        },
+        {
+          title: "Step 5: Training at Scale",
+          from: "How do you train an LLM on massive datasets?",
+          to: "I can pretrain language models from scratch using next-token prediction on large corpora—the $100M training process, demystified",
+          moat: "Training Mastery Moat: Pretraining is the most expensive and valuable step—master this to train domain-specific models worth millions",
+          stage: 2
+        },
+        {
+          title: "Step 6: Task Specialization",
+          from: "How do you adapt LLMs for specific business tasks?",
+          to: "I can fine-tune pretrained models for classification tasks with custom heads and supervised learning—turning general models into specialized assets",
+          moat: "Specialization Moat: General models are commodities—task-specific fine-tuned models with proprietary data are defensible assets",
+          stage: 2
+        },
+        {
+          title: "Step 7: Instruction Intelligence",
+          from: "How do you make models follow instructions like ChatGPT?",
+          to: "I can fine-tune models on instruction datasets to follow user commands and respond helpfully—the secret behind conversational AI",
+          moat: "Instruction-Following Moat: This is what makes ChatGPT valuable—master this to create custom AI assistants for any domain",
+          stage: 3
+        },
+        {
+          title: "Step 8: Production Training Excellence",
+          from: "My training is slow and unstable",
+          to: "I implement production-grade training with warmup, cosine decay, and gradient clipping—techniques used by OpenAI and Google",
+          moat: "Training Excellence Moat: These techniques separate hobbyist training from production training—achieve results 10x faster with better stability",
+          stage: 3
+        },
+        {
+          title: "Step 9: Efficient Adaptation at Scale",
+          from: "Fine-tuning is too expensive with billions of parameters",
+          to: "I use LoRA to fine-tune models with 0.1% of parameters and 10x faster training—the modern standard for efficient adaptation",
+          moat: "Efficiency Moat: LoRA is how modern AI companies deploy hundreds of fine-tuned models—iterate 10x faster at 1/10th the cost",
+          stage: 3
+        }
+      ],
+      millionDollarMessages: {
+        careerAdvancers: "I help AI engineers and technical leaders build production-ready large language models from scratch, so they can command $250K-$400K salaries and become irreplaceable AI architects without depending on OpenAI's API, paying $5K-$50K/month in usage fees, or being viewed as just another 'prompt engineer' who doesn't understand how models actually work.",
+        founders: "I help technical founders and CTOs build proprietary large language models that create defensible competitive moats, so they can save $200K-$500K in API costs annually and own their model weights without being held hostage by OpenAI rate limits, vendor lock-in, or spending $300K-$500K hiring ML engineers who may not deliver."
+      }
+    },
+    pricingModalities: {
+      selfPaced: {
+        price: 1997,
+        description: "Self-Paced Mastery",
+        features: [
+          "All 9 modules available immediately",
+          "Lifetime access to content and updates",
+          "Community support and code reviews",
+          "Monthly live office hours",
+          "Learn on your own schedule"
+        ]
+      },
+      cohort: {
+        price: 6997,
+        description: "9-Week Live Cohort",
+        features: [
+          "Weekly live workshops with Dr. Lee",
+          "Cohort accountability and peer learning",
+          "Direct instructor access",
+          "Graduation certificate",
+          "Alumni network access",
+          "Fixed start dates (4 cohorts per year)"
+        ]
+      },
+      bootcamp: {
+        price: 12997,
+        description: "5-Day Immersive Bootcamp",
+        features: [
+          "Executive format (Monday-Friday intensive)",
+          "8am-6pm daily with hands-on labs",
+          "Build complete GPT in one week",
+          "Immediate feedback and support",
+          "Limited to 15 participants",
+          "Ideal for busy founders/CTOs"
+        ]
+      },
+      founders: {
+        price: 19997,
+        description: "Founder's Edition",
+        features: [
+          "One-on-one mentorship with Dr. Lee",
+          "Custom learning path for your specific needs",
+          "Build YOUR proprietary model with guidance",
+          "Fractional CTO services (for funded startups)",
+          "Architecture consulting and strategic advising",
+          "90-day satisfaction guarantee"
+        ]
+      }
+    }
   },
   {
     id: "reasoning",
     slug: "reasoning-models",
     name: "Build Your Own Reasoning Model",
-    subtitle: "Train AI That Thinks Before It Answers—No API Required",
+    subtitle: "The Reasoning Sovereignty Stack™ — Stop Renting Reasoning, Start Owning It",
     category: "Hardcore Developers",
     categoryId: "hardcore",
     rarity: "Cutting Edge",
-    price: 2497,
-    hook: "The models winning today think before they answer. Learn to build that capability.",
-    description: "Reasoning models represent a fundamental leap in AI capability—they decompose complex problems into verifiable steps, producing dramatically more reliable answers in mathematics, logic, and code. These capabilities aren't academic curiosities; they're already integrated into frontier systems and increasingly define competitive advantage. This intensive masterclass combines rigorous technical implementation with strategic business context. You'll understand not just how to build reasoning capabilities, but when and why to invest in them. Starting with a compact pre-trained model that runs on standard hardware, you'll systematically upgrade its capabilities—measuring performance at each stage, implementing inference-time scaling techniques, training with reinforcement learning, and applying distillation from larger models. The result: a complete reasoning stack you've constructed yourself, with the deep understanding to extend it for research or production applications.",
+    price: 1997,
+    hook: "The ONLY masterclass teaching you to build o1-class reasoning systems from scratch—own your reasoning technology, stop renting from OpenAI.",
+    description: "This is not another course on using reasoning APIs. This is executive business education (Harvard/MIT/Stanford caliber) merged with a masterclass for tech founders and AI leaders. Using the DrLee.AI Shu-Ha-Ri learning method, you'll go from reasoning API consumer to reasoning architect in 9 transformative steps. Each module begins with a TedTalk-style presentation, then you immediately build it yourself with hands-on coding. You'll implement process-supervised reward modeling, train reasoning through reinforcement learning, deploy inference-time compute scaling, and build the breakthrough techniques behind o1, o3, and DeepSeek-R1. By the end, you won't just understand how reasoning models work—you'll own production-ready reasoning systems that become your competitive moat. Available in 4 modalities: 9-Week Live Cohort, 5-Day Immersive Bootcamp, Self-Paced Mastery, or Founder's Edition (1:1 mentorship/Fractional CTO).",
     outcomes: [
-      "Implement core reasoning improvements for LLMs from first principles",
-      "Build complete evaluation pipelines using judgment-based and benchmark-based methods",
-      "Improve reasoning at inference time without updating model weights",
-      "Apply chain-of-thought prompting, temperature scaling, and self-consistency techniques",
-      "Use reinforcement learning to integrate external tools like calculators and code interpreters",
-      "Apply distillation techniques to learn reasoning capabilities from larger models",
-      "Understand the full reasoning model development pipeline from pre-training to deployment",
-      "Design verification systems that grade mathematical and logical correctness",
-      "Balance output diversity and coherence with advanced sampling strategies"
+      "Build complete reasoning system with process-supervised reward modeling from scratch",
+      "Implement inference-time compute scaling: best-of-N, beam search, tree search",
+      "Train reasoning models using reinforcement learning with process and outcome rewards",
+      "Code reward models that score reasoning step quality, not just final answers",
+      "Deploy tool-augmented reasoning (calculators, code interpreters, search)",
+      "Implement chain-of-thought supervision and verification systems",
+      "Distill reasoning from large models into fast, deployable student models",
+      "Evaluate reasoning quality on GSM8K, MATH, HumanEval benchmarks",
+      "Apply production techniques: KV caching, torch.compile, batched inference",
+      "Own reasoning capabilities worth $120K-$600K in API elimination annually"
     ],
-    hours: 45,
+    hours: 40,
     modules: 9,
-    technologies: ["PyTorch", "Transformers", "Qwen", "Ollama", "GRPO", "vLLM", "Weights & Biases"],
+    technologies: ["PyTorch", "Transformers", "Process Reward Models", "GRPO", "PPO", "vLLM", "Weights & Biases"],
     curriculum: [
       {
-        title: "Module 1: The Strategic Landscape of Reasoning Models",
+        title: "Step 1: The Intelligence Behind Reasoning",
         lessons: [
-          "Executive Overview: Why Reasoning Defines the Next Wave of AI Advantage",
-          "The Business Case: When Reasoning Capabilities Create Defensible Value",
-          "Defining Reasoning in LLMs: Pattern Matching vs. Multi-Step Inference",
-          "The Standard LLM Pipeline: Where Reasoning Enhancement Fits",
-          "Training vs. Inference Approaches: Strategic Trade-offs",
-          "Build vs. Buy: Making Informed Infrastructure Decisions"
+          "What Makes Reasoning Models Different from Base LLMs",
+          "The Power of Step-by-Step Thinking in o1 and o3",
+          "Process vs. Outcome Supervision: The PSRM Breakthrough",
+          "Inference-Time Compute Scaling: Why o1 Takes Time to Think",
+          "Real-World Reasoning Applications: Math, Code, Logic, Planning",
+          "The Reasoning Model Pipeline: From Base LLM to o1-Class System"
         ]
       },
       {
-        title: "Module 2: Generating Text with Pre-trained Models",
+        title: "Step 2: Text Generation Foundations",
         lessons: [
-          "Introduction to LLMs for Text Generation: Architecture Refresher",
-          "Setting Up the Development Environment: Tools and Dependencies",
-          "Hardware Requirements and Recommendations: Running on Consumer GPUs",
-          "Preparing Input Texts: Tokenization and Context Windows",
-          "Loading Pre-trained Models: Working with Open-Weight Checkpoints",
-          "The Sequential Text Generation Process: Step-by-Step Walkthrough",
-          "Coding a Minimal Text Generation Function from Scratch"
+          "Sampling Strategies for Reasoning: Temperature, Top-p, Top-k",
+          "Temperature and Creativity in Reasoning Chains",
+          "Nucleus and Top-K Sampling for Quality Control",
+          "Chain-of-Thought Data Preparation and Formatting",
+          "Best-of-N Sampling: Exploring Solution Space",
+          "Generating Diverse Reasoning Chains for Training"
         ]
       },
       {
-        title: "Module 3: Accelerating Inference for Reasoning",
+        title: "Step 3: Measuring Reasoning Quality",
         lessons: [
-          "The Inference Bottleneck: Why Speed Matters for Reasoning",
-          "Faster Inference via KV Caching: Implementation and Trade-offs",
-          "PyTorch Model Compilation: Optimizing the Computation Graph",
-          "Batching Strategies for Reasoning Workloads",
-          "Measuring and Benchmarking Inference Performance",
-          "Cost Analysis: Inference Economics for Production Reasoning Systems"
+          "Outcome-Based Evaluation: Automated Grading",
+          "Process-Based Evaluation: Scoring Reasoning Steps",
+          "Benchmark Implementation: GSM8K, MATH, HumanEval",
+          "Failure Mode Analysis: Identifying Reasoning Errors",
+          "Pass@K Metrics: Measuring with Multiple Attempts",
+          "Building Automated Evaluation Pipelines"
         ]
       },
       {
-        title: "Module 4: Evaluating Reasoning Models",
+        title: "Step 4: Scaling Intelligence at Inference Time",
         lessons: [
-          "The Evaluation Challenge: Why Traditional Metrics Fall Short",
-          "Building a Math Verifier: Extracting and Normalizing Answers",
-          "Verifying Mathematical Equivalence: Handling Edge Cases",
-          "Grading Answers: Binary Correctness vs. Partial Credit",
-          "Loading and Preparing Evaluation Datasets",
-          "Benchmark-Based Evaluation: GSM8K, MATH, and Beyond",
-          "LLM-as-a-Judge: Using Models to Evaluate Models",
-          "Comparing Models Using Preferences and Leaderboards"
+          "Best-of-N with Rewards: Quality Scaling Through Compute",
+          "Beam Search for Reasoning: Maintaining Top-K Paths",
+          "Adaptive Inference Budgets: Allocating Compute Wisely",
+          "Tree Search for Reasoning: Exploring Branching Paths",
+          "Latency-Quality Tradeoffs: Production Optimization",
+          "Implementing Efficient Inference Scaling"
         ]
       },
       {
-        title: "Module 5: Inference-Time Scaling",
+        title: "Step 5: Learning to Reason Through Reinforcement",
         lessons: [
-          "Introduction to Inference-Time Scaling: Reasoning Without Retraining",
-          "Chain-of-Thought Prompting: Generating Better Responses Step-by-Step",
-          "Understanding Token Selection: From Logits to Probabilities",
-          "Temperature Scaling: Controlling Output Diversity",
-          "Top-p (Nucleus) Sampling: Balancing Diversity and Coherence",
-          "Adding Temperature and Top-p to Your Generation Function",
-          "Self-Consistency: Improving Accuracy Through Multiple Samples",
-          "Combining Techniques: A Production-Ready Inference Pipeline"
+          "Process-Supervised Reward Modeling (PSRM): The Core Breakthrough",
+          "Outcome Reward Models: Rewarding Correct Solutions",
+          "Collecting Process Annotations: Labeling Reasoning Steps",
+          "Policy Gradient Training: REINFORCE and PPO for Reasoning",
+          "Reward Model Accuracy: Measuring and Improving Quality",
+          "Complete RL Training Loop Implementation"
         ]
       },
       {
-        title: "Module 6: Training Reasoning Models with Reinforcement Learning",
+        title: "Step 6: Knowledge Compression and Efficiency",
         lessons: [
-          "Why Reinforcement Learning? Moving Beyond Supervised Fine-Tuning",
-          "Reward Modeling: Teaching Models What Good Reasoning Looks Like",
-          "Policy Optimization: PPO and Its Variants for Language Models",
-          "Group Relative Policy Optimization (GRPO): Simplified RL for Reasoning",
-          "Integrating External Tools: Calculators, Code Interpreters, and Search",
-          "Designing Reward Functions for Mathematical Reasoning",
-          "Training Loops: Implementation and Debugging",
-          "Evaluating RL-Trained Models: Before and After Comparison"
+          "Reasoning Distillation: Transferring from Teacher to Student",
+          "Chain-of-Thought Distillation: Compressing Reasoning Patterns",
+          "Implicit Reasoning: Internal Processing Without Visible CoT",
+          "Outcome Supervision for Efficiency: Simplifying for Speed",
+          "Distillation Data Quality: Generating High-Quality Examples",
+          "Deploying Fast Reasoning Models"
         ]
       },
       {
-        title: "Module 7: Distilling Reasoning Models",
+        title: "Step 7: Advanced Reasoning Architectures",
         lessons: [
-          "Knowledge Distillation: Learning from Larger Reasoning Models",
-          "Teacher-Student Architectures for Reasoning Transfer",
-          "Generating Synthetic Reasoning Traces from Teacher Models",
-          "Fine-Tuning on Distilled Data: Best Practices",
-          "Evaluating Distilled Models: Measuring Reasoning Fidelity",
-          "The Trade-off Triangle: Size, Speed, and Reasoning Quality",
-          "Strategic Implications: When to Distill vs. Train from Scratch"
+          "Tool-Augmented Reasoning: Calculators, Code, Search Integration",
+          "Retrieval-Augmented Reasoning: Grounding in Knowledge Bases",
+          "Multi-Step Tool Chains: Agentic Reasoning Systems",
+          "Verification and Self-Correction: Automated Error Detection",
+          "Ensemble Reasoning: Combining Multiple Strategies",
+          "Building Novel Reasoning Architectures"
         ]
       },
       {
-        title: "Module 8: Advanced Reasoning Architectures",
+        title: "Step 8: Production Integration Techniques",
         lessons: [
-          "Tree of Thought: Exploring Multiple Reasoning Paths",
-          "ReAct Framework: Combining Reasoning with Action",
-          "Reflexion and Self-Correction: Learning from Mistakes",
-          "Tool-Augmented Reasoning: Extending Model Capabilities",
-          "Multi-Agent Reasoning: Debate and Verification Patterns",
-          "Implementing a Complete Reasoning Pipeline"
+          "KV Caching for Reasoning: 2-5x Latency Reduction",
+          "PyTorch Compilation: 10-30% Speedup with torch.compile()",
+          "Batched Inference: Maximizing GPU Utilization",
+          "Reasoning Monitoring: Tracking Quality in Production",
+          "Cost Optimization: Reducing Inference Costs at Scale",
+          "Building Production Serving Infrastructure"
         ]
       },
       {
-        title: "Module 9: Production Deployment and Future Directions",
+        title: "Step 9: Frontier Reasoning Capabilities",
         lessons: [
-          "Deploying Reasoning Models: Latency vs. Quality Trade-offs",
-          "Serving Reasoning Workloads at Scale",
-          "Monitoring Reasoning Quality in Production",
-          "The Frontier: What's Next in Reasoning Research",
-          "Capstone Project: Building Your Complete Reasoning Stack",
-          "From Research to Production: The Path Forward"
+          "Search-Based Reasoning (o3): Next-Generation Techniques",
+          "Recursive Reasoning: Meta-Reasoning Systems",
+          "Continuous Improvement: Production Data Feedback Loops",
+          "Domain-Specific Reasoning: Specialization Strategies",
+          "The Reasoning Frontier: Multi-Modal, Long-Horizon Planning",
+          "Staying Current in Rapidly Evolving Field"
         ]
       }
     ],
     instructor: {
       name: "Dr. Lee",
-      title: "AI Architect & Educator",
-      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His teaching philosophy: the best way to understand something is to build it yourself."
+      title: "Reasoning AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His teaching philosophy: the best way to understand something is to build it yourself. Specializes in reasoning systems, process-supervised reward modeling, and production deployment."
     },
     faqs: [
       {
-        question: "Is this just about prompt engineering?",
-        answer: "It goes far beyond prompting. While you'll learn chain-of-thought and self-consistency techniques, you'll also implement reinforcement learning training, build verification systems, and apply distillation—the full reasoning model development pipeline."
+        question: "Isn't this too advanced for me?",
+        answer: "If you understand transformers and basic RL concepts, you're ready. We build from first principles, starting with reward modeling and working up to full reasoning systems. Every concept is explained and coded step-by-step."
+      },
+      {
+        question: "Can't I just use the o1 API?",
+        answer: "You can—if you're okay with $50K/year in reasoning costs, zero differentiation, vendor lock-in, and being viewed as an API consumer instead of a reasoning architect. APIs are for prototypes. Model ownership is for production and moats."
       },
       {
         question: "What hardware do I need?",
-        answer: "The course is designed to run on consumer hardware—a standard laptop with a GPU is sufficient. We use compact base models (7B parameters or smaller) that fit in 8GB VRAM. Cloud GPU options are provided for faster training."
+        answer: "A laptop with a GPU is sufficient. We use compact base models (7B parameters or smaller) that fit in 8GB VRAM for reasoning training. Cloud GPU options are provided for faster experiments."
       },
       {
         question: "How does this differ from the Large Language Models course?",
-        answer: "The LLM course teaches you to build the base model architecture. This course assumes you have a pre-trained model and focuses on enhancing its reasoning capabilities through inference-time techniques, RL training, and distillation."
+        answer: "The LLM course teaches you to build the base model architecture. This course assumes you have a pre-trained model and focuses on adding reasoning capabilities through PSRM training, inference scaling, and distillation—the techniques that make o1 and o3 work."
       },
       {
         question: "Will I build a working reasoning model?",
-        answer: "Yes. By the end, you'll have a small but capable reasoning stack that demonstrates measurable improvements on mathematical and logical benchmarks—built entirely from scratch on your own machine."
+        answer: "Yes. By the end, you'll have a production-ready reasoning system with process-supervised reward modeling, achieving competitive performance on math and code benchmarks—built entirely from scratch."
       },
       {
         question: "What's the business case for reasoning models?",
-        answer: "Reasoning models dramatically improve reliability on complex tasks—reducing errors, enabling automation of knowledge work, and creating defensible AI capabilities. The executive context throughout the course helps you make informed build vs. buy decisions."
+        answer: "Reasoning models enable reliable automation of complex knowledge work. For engineers: command $250K-$400K salaries. For founders: eliminate $120K-$600K annual reasoning API costs and create defensible moats through proprietary reasoning."
+      },
+      {
+        question: "Is reasoning too complex to build myself?",
+        answer: "DeepSeek-R1 proved reasoning models can be built openly. We teach the exact techniques: process rewards, chain-of-thought supervision, inference scaling. If DeepSeek can do it, so can you with proper guidance."
       },
       {
         question: "Do I need to take the LLM course first?",
-        answer: "Not required, but recommended. This course includes a quick refresher on transformer architecture, but deeper understanding from the LLM course will accelerate your learning."
+        answer: "Not required, but recommended. This course includes a refresher on transformer architecture, but deeper understanding from the LLM course will accelerate your learning of reasoning concepts."
       }
-    ]
+    ],
+    signatureSolution: {
+      stages: [
+        {
+          title: "Foundation",
+          subtitle: "Understanding Core Reasoning Principles",
+          weeks: "Weeks 1-3",
+          from: "What makes o1 different? How does reasoning work? Can't explain PSRM or inference scaling.",
+          to: "I can explain reasoning architecture, process-supervised reward modeling, and evaluation methods. I understand how o1, o3, and DeepSeek-R1 work internally.",
+          moat: "Knowledge Foundation",
+          moatDesc: "Speak the language of frontier reasoning AI—communicate with researchers, engineers, and executives about reasoning capabilities. Understand what 99% of 'AI engineers' don't.",
+          color: "blue"
+        },
+        {
+          title: "Implementation",
+          subtitle: "Building Production Reasoning Systems",
+          weeks: "Weeks 4-6",
+          from: "Never trained a reasoning model. Don't know how to implement PSRM or RL training. Can't build inference scaling systems.",
+          to: "I implemented inference-time scaling, trained process reward models, applied RL for reasoning, and distilled into efficient models. I've built working reasoning systems.",
+          moat: "Implementation Mastery",
+          moatDesc: "No more black boxes in reasoning—you can code PSRM, inference scaling, and RL training from scratch. Modify and optimize reasoning systems at will.",
+          color: "purple"
+        },
+        {
+          title: "Mastery",
+          subtitle: "Leading Frontier Reasoning Initiatives",
+          weeks: "Weeks 7-9",
+          from: "Only know basic reasoning. Can't build tool-augmented systems. Don't know production optimization or frontier techniques.",
+          to: "I build tool-augmented reasoning, deploy at production scale, and implement cutting-edge techniques like o3's search. I lead reasoning AI initiatives.",
+          moat: "Production Excellence + Frontier Positioning",
+          moatDesc: "Deploy reasoning at scale with production infrastructure, implement frontier techniques before they become mainstream, and maintain edge as field evolves.",
+          color: "green"
+        }
+      ],
+      steps: [
+        {
+          title: "Step 1: The Intelligence Behind Reasoning",
+          from: "What makes o1 and reasoning models different from standard models?",
+          to: "I can explain how reasoning models work, why they outperform base models, and the architectural principles that enable step-by-step thinking",
+          moat: "Knowledge Moat: Speak the language of frontier reasoning AI",
+          stage: 1
+        },
+        {
+          title: "Step 2: Text Generation Foundations",
+          from: "How do I prepare data and generate text for reasoning tasks?",
+          to: "I can implement sampling strategies, control generation parameters, and prepare datasets for reasoning model training",
+          moat: "Data Engineering Moat: Control the generation pipeline for reasoning data",
+          stage: 1
+        },
+        {
+          title: "Step 3: Measuring Reasoning Quality",
+          from: "How do you evaluate if a reasoning model is working?",
+          to: "I can implement judgment-based and benchmark-based evaluation, measure reasoning quality, and identify failure modes",
+          moat: "Quality Assurance Moat: Objectively measure reasoning performance",
+          stage: 1
+        },
+        {
+          title: "Step 4: Scaling Intelligence at Inference Time",
+          from: "How does o1 use 'thinking time' to get better answers?",
+          to: "I can implement inference-time compute scaling with search algorithms, beam search, and best-of-N sampling",
+          moat: "Inference Mastery Moat: Control the intelligence-compute tradeoff",
+          stage: 2
+        },
+        {
+          title: "Step 5: Learning to Reason Through Reinforcement",
+          from: "How do you train models to reason step-by-step?",
+          to: "I can implement process-supervised reward models, outcome rewards, and RL training pipelines for reasoning",
+          moat: "Training Mastery Moat: Train reasoning from scratch—the most valuable skill",
+          stage: 2
+        },
+        {
+          title: "Step 6: Knowledge Compression and Efficiency",
+          from: "Can I distill reasoning from o1 into faster models?",
+          to: "I can implement distillation to transfer reasoning capabilities from large models to smaller, faster ones",
+          moat: "Efficiency Moat: Compress reasoning into fast, deployable models",
+          stage: 2
+        },
+        {
+          title: "Step 7: Advanced Reasoning Architectures",
+          from: "How can I improve reasoning beyond standard techniques?",
+          to: "I can implement tool integration, retrieval-augmented reasoning, and multi-model reasoning systems",
+          moat: "Architectural Innovation Moat: Design novel reasoning systems",
+          stage: 3
+        },
+        {
+          title: "Step 8: Production Integration Techniques",
+          from: "How do I deploy reasoning models in production?",
+          to: "I can implement efficient serving, caching, batching, and monitoring for production reasoning systems",
+          moat: "Production Excellence Moat: Deploy reasoning at scale",
+          stage: 3
+        },
+        {
+          title: "Step 9: Frontier Reasoning Capabilities",
+          from: "What's next in reasoning AI?",
+          to: "I understand cutting-edge techniques like o3-style search, recursive reasoning, and continuous improvement",
+          moat: "Frontier Position Moat: Stay at cutting edge of reasoning AI",
+          stage: 3
+        }
+      ],
+      millionDollarMessages: {
+        careerAdvancers: "I help AI engineers and technical leaders build production-ready reasoning models from scratch—the breakthrough behind o1, o3, and DeepSeek—so they can command $250K-$400K salaries and architect next-generation AI systems without being limited to API wrappers, stuck explaining 'prompt engineering' skills, or missing the reasoning revolution that's creating the next wave of $300K+ AI architect roles.",
+        founders: "I help technical founders and CTOs build proprietary reasoning models that create defensible competitive moats—like o1 but owned and customized—so they can eliminate $100K-$500K in annual API costs and own reasoning capabilities without being held hostage by OpenAI rate limits, building 'thin wrapper' businesses that VCs won't fund, or spending $300K-$500K hiring ML engineers who may not understand reasoning systems."
+      }
+    },
+    pricingModalities: {
+      selfPaced: {
+        price: 1997,
+        description: "Learn on your own schedule with lifetime access",
+        features: [
+          "All 9 modules (40+ hours)",
+          "Complete PyTorch code repositories",
+          "Reasoning datasets (math, code, logic)",
+          "Private community access",
+          "Code review from TAs (48-hour turnaround)",
+          "Monthly group office hours",
+          "Lifetime access to updates"
+        ]
+      },
+      cohort: {
+        price: 6997,
+        description: "12-week intensive with live workshops and accountability",
+        features: [
+          "Everything in Self-Paced PLUS:",
+          "Live weekly workshops (2 hours)",
+          "Real-time code reviews and feedback",
+          "Direct instructor access (office hours 2x/week)",
+          "1-on-1 kickoff and graduation calls",
+          "Cohort accountability partners",
+          "Priority support and 24-hour code review",
+          "Alumni network access"
+        ]
+      },
+      bootcamp: {
+        price: 9997,
+        description: "5-day immersive executive format",
+        features: [
+          "Monday-Friday intensive (8am-6pm)",
+          "Build complete reasoning system in one week",
+          "Hands-on labs with immediate feedback",
+          "Limited to 15 participants",
+          "All course materials included",
+          "Lifetime access to recordings",
+          "Post-bootcamp support (30 days)"
+        ]
+      },
+      founders: {
+        price: 19997,
+        description: "1:1 mentorship and custom implementation guidance",
+        features: [
+          "Everything in Cohort PLUS:",
+          "6 months of 1-on-1 coaching (60 min/month)",
+          "Direct Slack/WhatsApp instructor access",
+          "Same-day code review turnaround",
+          "Architecture review for your use case",
+          "Done-with-you: Build YOUR reasoning model",
+          "Career/investor pitch coaching",
+          "Exclusive alumni group and network"
+        ]
+      }
+    }
   },
   {
     id: "frontier-arch",
     slug: "frontier-model-architecture",
-    name: "Build Frontier AI Systems",
-    subtitle: "Replicate ChatGPT's Architecture—Own the Innovation Stack",
+    name: "Build Your Own Frontier AI",
+    subtitle: "Master Mixture-of-Experts, Advanced Attention, 64x Efficiency—Own Production-Grade AI",
     category: "Hardcore Developers",
     categoryId: "hardcore",
     rarity: "Extremely Rare",
-    price: 2997,
-    hook: "Enterprise-grade AI at startup costs. Build what the giants build.",
-    description: "The gap between a basic transformer and a frontier model like ChatGPT or Claude isn't just scale—it's architectural innovation. This masterclass reveals the breakthroughs that make modern AI possible: latent attention mechanisms that slash memory costs by 64x, sparse expert networks that activate only what's needed, and training techniques that maximize every dollar of compute. Through intuitive explanations (not equations), clear visualizations, and hands-on implementation, you'll understand why these innovations matter and how to apply them. By the end, you'll have built a laptop-scale model using the same techniques that power trillion-dollar AI systems—and you'll possess the strategic insight to make informed infrastructure decisions for your organization.",
+    price: 1997,
+    hook: "The ONLY masterclass teaching you to build production-grade frontier AI systems from scratch—cut API costs 90%, own your stack, stop renting from OpenAI.",
+    description: "This is THE FIRST and ONLY course where you build a complete production-grade frontier AI system end-to-end. Not toy examples. Not API tutorials. A real system matching modern ChatGPT/Claude/Gemini quality that serves millions of requests. This is executive business education (Harvard/MIT/Stanford caliber) merged with a tech founder masterclass. Using the DrLee.AI Shu-Ha-Ri learning method, each module follows: TedTalk → Build → Transcend. You'll master the techniques powering ALL frontier models: Mixture-of-Experts (sparse activation), Multi-Head Latent Attention (64x KV cache compression), FP8 quantization (2x speedup), Multi-Token Prediction, DualPipe parallelization, and production serving optimization. By the end, you won't just understand frontier AI—you'll have deployed a complete system serving millions of requests at 90% lower cost than APIs. Available in 4 modalities: 9-Week Live Cohort ($6,997), 5-Day Bootcamp ($9,997), Self-Paced ($1,997), or Founder's Edition with 1:1 coaching + Fractional CTO support ($19,997).",
     outcomes: [
-      "Understand the key innovations that separate frontier models from basic transformers",
-      "Implement advanced attention variants: Grouped-Query (GQA) and Multi-Head Latent Attention",
-      "Master the Key-Value cache and its critical role in inference speed and memory",
-      "Build Mixture-of-Experts layers with intelligent routing and load balancing",
-      "Apply Rotary Position Embeddings (RoPE) and understand their advantages",
-      "Design production training pipelines with multi-token prediction and efficient quantization",
-      "Execute post-training workflows: supervised fine-tuning and reinforcement learning",
-      "Evaluate trade-offs between memory, compute, and quality for strategic architecture decisions",
-      "Compress and distill large models into deployable versions"
+      "Implement Group-Query Attention (GQA) reducing KV cache 8x vs. standard attention",
+      "Build Multi-Head Latent Attention (MLA) achieving 64x KV cache compression (DeepSeek technique)",
+      "Master Mixture-of-Experts (MoE) with 8+ experts and sparse routing (powers modern ChatGPT/Claude/Gemini/Mixtral/DeepSeek)",
+      "Implement Multi-Token Prediction for richer training signals and better representations",
+      "Deploy FP8 quantization achieving 2x training speedup on H100/H200 GPUs",
+      "Build distributed training pipelines with DualPipe parallelization (90%+ GPU utilization)",
+      "Implement post-training alignment: Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO)",
+      "Master knowledge distillation compressing models 8-10x with <5% quality loss",
+      "Deploy production serving handling millions of requests with <100ms P95 latency",
+      "Reduce AI infrastructure costs 90% vs. API rental (from $500K/month → $50K/month)"
     ],
     hours: 55,
     modules: 10,
@@ -397,7 +778,7 @@ export const courses: Course[] = [
         title: "Module 1: The Strategic Landscape of Frontier AI",
         lessons: [
           "Executive Overview: What Makes a Model 'Frontier-Class'",
-          "The Innovation Gap: From GPT-2 to GPT-4 and Beyond",
+          "The Innovation Gap: From GPT-2 to Modern Frontier Models",
           "Architecture, Efficiency, and Scale: The Three Pillars",
           "Build vs. Buy: When Custom Architecture Creates Competitive Advantage",
           "What You Will Build: A Laptop-Scale Frontier Model"
@@ -525,9 +906,188 @@ export const courses: Course[] = [
       },
       {
         question: "What's the business value?",
-        answer: "Understanding frontier architecture enables informed make-vs-buy decisions, better vendor evaluation, and the ability to build proprietary AI capabilities. Each module includes strategic context for business leaders."
+        answer: "Massive cost reduction (90% vs. APIs), faster time to market, and complete control over your AI stack. Engineers command $250K-$400K salaries with this expertise. Founders reduce costs from $500K/month to $50K/month while raising at premium valuations."
+      },
+      {
+        question: "How is this different from the LLM and Reasoning courses?",
+        answer: "LLM course teaches basic transformers. Reasoning course teaches chain-of-thought and PSRM. THIS course teaches production-grade efficiency and scale: MoE, MLA, FP8, serving millions of requests. This is THE FIRST course where you build a complete end-to-end production system."
+      },
+      {
+        question: "Will this work with my existing infrastructure?",
+        answer: "Yes. Techniques are framework-agnostic (we use PyTorch for teaching). You'll learn principles that apply to any infrastructure: cloud, on-premise, or hybrid. We cover deployment strategies for all scales."
+      },
+      {
+        question: "What if I get stuck?",
+        answer: "Live Cohort includes weekly office hours and Slack access. Founder's Edition includes 1:1 coaching. Self-paced includes community access and monthly Q&A sessions. You're never alone."
       }
-    ]
+    ],
+    signatureSolution: {
+      stages: [
+        {
+          title: "Foundation",
+          subtitle: "Memory & Efficiency Fundamentals",
+          weeks: "Weeks 1-3",
+          from: "Using standard attention with massive memory waste and slow inference",
+          to: "Implementing GQA (8x compression), MLA (64x compression), and MoE (8x capacity) architectures",
+          moat: "Memory & Architecture Advantage",
+          moatDesc: "Build models with 64x better memory efficiency and 8x more capacity than competitors",
+          color: "blue"
+        },
+        {
+          title: "Implementation",
+          subtitle: "Advanced Training & Optimization",
+          weeks: "Weeks 4-6",
+          from: "Training slowly in FP32 on single GPUs with basic next-token prediction",
+          to: "Deploying FP8 training (2x speedup), DualPipe parallelization (90% utilization), and MTP for better representations",
+          moat: "Training Efficiency Moat",
+          moatDesc: "Train models 2-3x faster than competitors while achieving better quality",
+          color: "purple"
+        },
+        {
+          title: "Mastery",
+          subtitle: "Production Deployment at Scale",
+          weeks: "Weeks 7-9",
+          from: "Models that work in development but can't serve production traffic",
+          to: "Deployed systems serving millions of requests with SFT/DPO alignment, distillation, and optimized serving",
+          moat: "Production Scale Moat",
+          moatDesc: "Serve millions of requests economically—capabilities API-dependent competitors can't match",
+          color: "green"
+        }
+      ],
+      steps: [
+        {
+          title: "Memory & Attention Optimization",
+          from: "Wasting 90% of memory on KV cache with standard Multi-Head Attention",
+          to: "Implemented GQA reducing KV cache 8x, serving 8x larger batches with same memory",
+          moat: "8x better memory efficiency enables 8x more throughput per GPU",
+          stage: 0
+        },
+        {
+          title: "Multi-Head Latent Attention (MLA)",
+          from: "Still hitting memory limits even with GQA on long contexts (100K+ tokens)",
+          to: "Deployed MLA achieving 64x KV cache compression vs. standard attention",
+          moat: "Serve 256K-1M token contexts economically—impossible for API-dependent competitors",
+          stage: 0
+        },
+        {
+          title: "Mixture-of-Experts (MoE)",
+          from: "Dense models where every parameter activates—can't scale without cost explosion",
+          to: "Built MoE with 8 experts and sparse routing—8x capacity at same compute cost",
+          moat: "Match frontier model quality with 1/8th the active parameters per token",
+          stage: 0
+        },
+        {
+          title: "Multi-Token Prediction (MTP)",
+          from: "Training with single next-token prediction missing richer gradient signals",
+          to: "Implemented 4-token ahead prediction improving quality with same training data",
+          moat: "20-30% better sample efficiency—achieve same quality with less data",
+          stage: 1
+        },
+        {
+          title: "FP8 Quantization & Training",
+          from: "Training in FP16/FP32 leaving 50% of GPU performance unused",
+          to: "Deployed FP8 training achieving 2x speedup on H100 GPUs without quality loss",
+          moat: "2x faster training than competitors = half the cost or 2x iteration speed",
+          stage: 1
+        },
+        {
+          title: "Training Pipeline & Parallelization",
+          from: "Training on single GPUs hitting memory limits on large models",
+          to: "Built DualPipe distributed training with 90%+ GPU utilization across multi-node clusters",
+          moat: "Train billion-parameter models efficiently—scale impossible for small teams without this expertise",
+          stage: 1
+        },
+        {
+          title: "Post-Training & Alignment",
+          from: "Base models with poor instruction-following and unsafe outputs",
+          to: "Deployed SFT and DPO alignment creating production-ready assistants",
+          moat: "Domain-specialized models outperforming generic ChatGPT for specific use cases",
+          stage: 2
+        },
+        {
+          title: "Knowledge Distillation",
+          from: "Large models too expensive to serve at scale ($0.10 per request)",
+          to: "Distilled to 8x smaller models maintaining 95%+ quality ($0.01 per request)",
+          moat: "10x better economics—serve premium quality at commodity pricing",
+          stage: 2
+        },
+        {
+          title: "Production Deployment & Serving",
+          from: "Models that work in notebook but fail in production (high latency, low throughput)",
+          to: "Deployed complete serving infrastructure: millions of requests, <100ms latency, 99.9%+ uptime",
+          moat: "End-to-end production expertise—ship real products, not just prototypes",
+          stage: 2
+        }
+      ],
+      millionDollarMessages: {
+        careerAdvancers: "I help senior ML engineers build production-grade frontier AI systems with MoE, MLA, and 64x efficiency optimizations, so they can architect models serving millions of users and command $250K-$400K salaries without being commoditized as API integrators.",
+        founders: "I help technical founders and CTOs build owned frontier AI infrastructure with 90% cost reduction, so they can raise at premium valuations and reach profitability without burning $500K/month on API rentals."
+      }
+    },
+    pricingModalities: {
+      selfPaced: {
+        price: 1997,
+        description: "Learn at your own pace with lifetime access",
+        features: [
+          "50+ hours of video instruction",
+          "9 hands-on coding projects (complete implementations)",
+          "Complete code repositories with solutions",
+          "Private Slack community",
+          "Monthly live Q&A sessions (1 year)",
+          "Lifetime access to all updates",
+          "Certificate of completion"
+        ]
+      },
+      cohort: {
+        price: 6997,
+        description: "9-week live cohort with instructor + peers (Limited to 50 students)",
+        features: [
+          "Everything in Self-Paced (lifetime access)",
+          "27 hours of live instruction (9 weeks × 3 hours)",
+          "Weekly assignments with instructor feedback",
+          "Live coding sessions with instructor",
+          "Peer collaboration and project showcase",
+          "Private cohort Slack channel",
+          "3 months of office hours after cohort",
+          "Direct instructor access",
+          "Certificate with cohort distinction",
+          "Career support (resume review, interview prep)"
+        ]
+      },
+      bootcamp: {
+        price: 9997,
+        description: "5-day intensive (8 hours/day, in-person or virtual, max 20 students)",
+        features: [
+          "Everything in Self-Paced (lifetime access)",
+          "40 hours of intensive hands-on instruction",
+          "All 9 modules compressed into 5 days",
+          "Small group size (max 20 students)",
+          "Dedicated lab time with instructor",
+          "Meals included (if in-person)",
+          "1 month post-bootcamp office hours",
+          "Certificate of completion",
+          "LinkedIn badge and endorsement"
+        ]
+      },
+      founders: {
+        price: 19997,
+        description: "Live cohort + 1:1 coaching + Fractional CTO support (Limited to 10 students)",
+        features: [
+          "Everything in Live Cohort",
+          "6 hours of private 1:1 coaching (12 weeks)",
+          "Fractional CTO advisory and implementation support",
+          "Weekly code reviews on YOUR production system",
+          "Architecture review and optimization",
+          "Direct Slack/email access (6 months)",
+          "Guest expert sessions (Mixtral, DeepSeek teams)",
+          "Priority access to new techniques",
+          "Lifetime access to all future updates",
+          "Annual Frontier AI Summit invitation",
+          "Private mastermind (Founder's Edition alumni)",
+          "ROI Guarantee: Save $100K+ or we work with you until you do"
+        ]
+      }
+    }
   },
   {
     id: "diffusion",
@@ -709,8 +1269,8 @@ export const courses: Course[] = [
   {
     id: "agentic",
     slug: "agentic-systems",
-    name: "Build Autonomous AI Agents",
-    subtitle: "Code Agents That Execute Tasks—Not Just Chat",
+    name: "Build Your Own Autonomous AI Agents",
+    subtitle: "Code Agents That Execute Tasks—Own Your Automation, Not Just Chat",
     category: "Hardcore Developers",
     categoryId: "hardcore",
     rarity: "Very Rare",
@@ -879,8 +1439,8 @@ export const courses: Course[] = [
   {
     id: "multi-agent",
     slug: "multi-agent-systems",
-    name: "Build Multi-Agent AI Teams",
-    subtitle: "Train Agent Swarms That Collaborate and Execute at Scale",
+    name: "Build Your Own Multi-Agent AI Teams",
+    subtitle: "Train Agent Swarms That Collaborate at Scale—Own Your AI Workforce",
     category: "Hardcore Developers",
     categoryId: "hardcore",
     rarity: "Frontier AI",
@@ -1409,7 +1969,7 @@ export const courses: Course[] = [
     id: "ml-intuition",
     slug: "machine-learning-intuition",
     name: "Machine Learning Intuition",
-    subtitle: "Foundational Machine Learning for Technical Leaders",
+    subtitle: "Master ML Fundamentals—Build Models You Own from First Principles",
     category: "Hardcore Developers",
     categoryId: "hardcore",
     price: 1797,
@@ -1610,7 +2170,7 @@ export const courses: Course[] = [
     id: "dl-intuition",
     slug: "deep-learning-intuition",
     name: "Deep Learning Intuition",
-    subtitle: "Build Neural Networks from Scratch—No TensorFlow, No PyTorch",
+    subtitle: "Build Neural Networks from Scratch—Own Every Layer, No Dependencies",
     category: "Hardcore Developers",
     categoryId: "hardcore",
     price: 1997,
@@ -1856,7 +2416,7 @@ export const courses: Course[] = [
   {
     id: "slm",
     slug: "small-language-models",
-    name: "Build Domain-Specific LLMs",
+    name: "Build Your Own Domain-Specific LLMs",
     subtitle: "Train Specialized Models You Own and Control—No API Costs",
     category: "Hardcore Developers",
     categoryId: "hardcore",
@@ -2053,7 +2613,7 @@ export const courses: Course[] = [
     },
     faqs: [
       {
-        question: "Why would I use an SLM instead of GPT-4 or Claude?",
+        question: "Why would I use an SLM instead of modern ChatGPT/Claude/Gemini?",
         answer: "Cost, speed, privacy, and control. SLMs run on your hardware, don't send data to third parties, respond faster for domain-specific tasks, and cost nothing per query after deployment."
       },
       {
