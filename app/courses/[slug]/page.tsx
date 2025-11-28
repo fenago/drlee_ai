@@ -208,6 +208,42 @@ function CourseHero({ course }: { course: Course }) {
                     By the end, you won't just understand how multi-agent systems work—you'll <span className="font-semibold text-brand-blue">own production-ready infrastructure</span> that becomes your <span className="font-semibold text-brand-yellow">competitive moat as an engineer (commanding $300K+ salaries) or as a founder (eliminating API costs and raising funding)</span>.
                   </p>
                 </>
+              ) : course.slug === 'the-10x-developer' ? (
+                <>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-blue">You're watching junior developers with AI tools ship 10x faster than you can review PRs.</span> While you're manually debugging and writing boilerplate, they're building complete features in hours using <span className="font-semibold text-brand-blue">AI-augmented development infrastructure</span>. This masterclass teaches you to <span className="font-semibold text-brand-blue">build terminal-native AI systems from scratch</span>—capable of <span className="font-semibold text-brand-green">autonomous sub-agents, custom command libraries, context engineering, MCP integrations, and production CI/CD automation</span>. <span className="font-semibold text-brand-yellow">You won't rely on Copilot, Cursor, or any IDE plugin</span>—you'll build the infrastructure yourself: <span className="font-semibold text-brand-green">sub-agent orchestration, memory architectures, plugin frameworks, and headless automation pipelines</span>.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    This is not another course on "using Claude Code." This is <span className="font-semibold text-brand-blue">executive business education (Harvard/MIT/Stanford caliber)</span> merged with a masterclass for elite builders. Using the <span className="font-semibold text-brand-green">DrLee.AI Shu-Ha-Ri learning method</span>, you'll go from manual coder to AI-augmented architect in 9 transformative modules—building 6 complete React applications with sub-agents, MCP servers, and context engineering.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    Each module begins with a <span className="font-semibold">TedTalk-style presentation</span> on infrastructure strategy, then you immediately <span className="font-semibold">build it yourself with hands-on coding</span>. You'll implement terminal-native workflows, integrate MCP servers (PostgreSQL, Stripe, GitHub), orchestrate sub-agents for parallel work, build custom command libraries, develop plugin frameworks, and deploy headless AI in production CI/CD pipelines.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-yellow">Different from IDE plugins like Copilot or Cursor:</span> While autocomplete helps with code completion, this course teaches you to <span className="font-semibold">build AI infrastructure yourself</span>—own the sub-agent systems, context architectures, command libraries, and automation pipelines. When your agents fail at 2am, you'll know exactly why and how to fix it. <span className="font-semibold text-brand-green">Tool users are commoditized. Infrastructure builders earn $250K-$400K and become irreplaceable.</span>
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed">
+                    By the end, you won't just understand AI-augmented development—you'll <span className="font-semibold text-brand-green">own production-ready AI infrastructure with 10-100x productivity gains, 6 React applications, 50+ custom commands, and complete CI/CD automation that becomes your competitive moat</span>.
+                  </p>
+                </>
+              ) : course.slug === 'agentic-sdk' ? (
+                <>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-blue">Imagine having a team of expert employees who have read every book ever written, studied every case in your legal domain, analyzed every financial model, reviewed every operational framework—working together 24/7 at pennies on the dollar.</span> That's what you're building. This masterclass teaches you to take <span className="font-semibold text-brand-green">frontier AI (trained on all human knowledge)</span> and transform it into <span className="font-semibold text-brand-blue">a team of synthetic employees that collaborate</span> to provide expert decision support.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    You'll build <span className="font-semibold text-brand-green">a Legal Advisor to review contracts, a Financial Analyst to evaluate deals, an Operations Manager to optimize processes</span>—all working together seamlessly. <span className="font-semibold text-brand-yellow">But unlike consultants who just give advice, your synthetic team EXECUTES</span>—they read contracts, update your CRM, pull invoices from your accounting system, extract data automatically, and analyze deals in real-time. You're not learning to prompt better. You're learning to <span className="font-semibold text-brand-green">build an AI workforce that knows YOUR business, accesses YOUR systems, remembers every interaction, and executes decisions together as a coordinated team</span>—replacing $200K-$500K in consultant spend.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    Using the <span className="font-semibold text-brand-green">DrLee.AI Shu-Ha-Ri learning method</span>, you'll go from AI renter to AI owner in 9 transformative modules. Each module begins with a <span className="font-semibold">TedTalk-style presentation</span>, then you immediately <span className="font-semibold">build it yourself with hands-on implementation</span>. You'll create synthetic employees with perfect memory, build your specialized AI team (Legal, Finance, Operations), connect them to all your business systems, have them work together on complex workflows, and deploy a web interface for your entire organization to use.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-yellow">This is not generic AI training.</span> This is business education teaching you to harness <span className="font-semibold">the smartest technology ever created</span> for YOUR specific business. When consultants take 3 days, your synthetic team delivers in 3 minutes. When competitors rent generic AI, you own proprietary intelligence. When budgets cap headcount, your AI workforce scales infinitely—handle 10x workload at marginal cost.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed">
+                    By the end, you'll <span className="font-semibold text-brand-green">have built a production-ready team of synthetic employees working together as your personal analysts</span>—expert-level decision support across every domain, integrated with all your systems, creating defensible competitive advantages. Designed for <span className="font-semibold text-brand-blue">anyone who understands that the future belongs to those who own their intelligence infrastructure</span>.
+                  </p>
+                </>
               ) : (
                 <p className="text-white/90 text-sm leading-relaxed">
                   {course.description}
@@ -249,6 +285,16 @@ function CourseHero({ course }: { course: Course }) {
                     <>
                       <div className="text-white font-medium">Single-Agent Builder</div>
                       <div className="text-white/60 text-sm">$140K-$200K · Limited Coordination</div>
+                    </>
+                  ) : course.slug === 'the-10x-developer' ? (
+                    <>
+                      <div className="text-white font-medium">Manual Coder</div>
+                      <div className="text-white/60 text-sm">$120K-$180K · Outpaced by Juniors</div>
+                    </>
+                  ) : course.slug === 'agentic-sdk' ? (
+                    <>
+                      <div className="text-white font-medium">AI Renter</div>
+                      <div className="text-white/60 text-sm">$200K-$500K/year · Consultant Dependency</div>
                     </>
                   ) : (
                     <>
@@ -292,6 +338,16 @@ function CourseHero({ course }: { course: Course }) {
                       <div className="text-brand-green font-medium">Multi-Agent Systems Architect</div>
                       <div className="text-brand-green/80 text-sm">$280K-$450K+ · Team Coordination</div>
                     </>
+                  ) : course.slug === 'the-10x-developer' ? (
+                    <>
+                      <div className="text-brand-green font-medium">AI-Augmented Architect</div>
+                      <div className="text-brand-green/80 text-sm">$250K-$400K · 10-100x Productivity</div>
+                    </>
+                  ) : course.slug === 'agentic-sdk' ? (
+                    <>
+                      <div className="text-brand-green font-medium">AI Owner</div>
+                      <div className="text-brand-green/80 text-sm">$200K-$500K Saved · Competitive Moat</div>
+                    </>
                   ) : (
                     <>
                       <div className="text-brand-green font-medium">Model Builder</div>
@@ -313,6 +369,10 @@ function CourseHero({ course }: { course: Course }) {
                   ? '9 modules · 45 hours · Coordinate agent teams solving complex distributed problems'
                   : course.slug === 'the-ai-product-factory'
                   ? '9 modules · 45 hours · Build MLOps platforms serving millions of predictions/day with 99.9% uptime'
+                  : course.slug === 'the-10x-developer'
+                  ? '9 modules · 80 hours · Build 6 React apps with sub-agents, MCP, and context engineering'
+                  : course.slug === 'agentic-sdk'
+                  ? '9 modules · 45 hours · Build synthetic employees saving $200K-$500K annually'
                   : '9 weeks · 50 hours · Own your model weights forever'
                 }
               </div>
@@ -386,6 +446,18 @@ function CourseHero({ course }: { course: Course }) {
                   { label: "Platform Cost Elimination", value: "$300K-$800K Saved", icon: "💰", desc: "Eliminate AWS SageMaker, Google Vertex AI costs—own your MLOps infrastructure completely" },
                   { label: "Career Premium", value: "$100K-$200K Increase", icon: "📈", desc: "ML platform engineers earn 2-3x notebook-only data scientists with deployment expertise" },
                   { label: "Complete MLOps Stack", value: "End-to-End Ownership", icon: "🛡️", desc: "Full mastery: Docker → Kubernetes → Kubeflow → MLflow → BentoML → Evidently → Production" }
+                ] : course.slug === 'the-10x-developer' ? [
+                  { label: "AI Infrastructure Mastery", value: "Sub-Agents + MCP + Context", icon: "🧠", desc: "Build terminal-native AI infrastructure from scratch—sub-agent orchestration, MCP integrations, context engineering" },
+                  { label: "10-100x Productivity", value: "Autonomous Agents 24/7", icon: "⚡", desc: "Deploy sub-agents working while you sleep—research, testing, optimization running in parallel" },
+                  { label: "Tool Independence", value: "Zero IDE Lock-In", icon: "💰", desc: "Own your development infrastructure—build custom commands, plugins, automation that Copilot/Cursor can't match" },
+                  { label: "Career Premium", value: "$130K-$220K Increase", icon: "📈", desc: "AI-augmented architects earn 2x tool-user developers—$250K-$400K salaries" },
+                  { label: "Complete AI Dev Stack", value: "Infrastructure to CI/CD", icon: "🛡️", desc: "End-to-end mastery: Claude Code → MCP → Sub-Agents → Skills → Meta Agents → Orchestration → Memory → Production" }
+                ] : course.slug === 'agentic-sdk' ? [
+                  { label: "Frontier AI Workforce", value: "All Human Knowledge Working for YOU", icon: "🧠", desc: "Transform AI trained on every book, case, and model into synthetic employees that know YOUR business—expert-level decision support across legal, finance, and operations" },
+                  { label: "Agents That Execute", value: "Not Advice, ACTION", icon: "⚡", desc: "Unlike consultants who just advise, build agents with tools that read contracts, write to CRM, pull from ERP, extract invoice data, analyze deals—autonomous execution replacing manual work" },
+                  { label: "Cost Annihilation", value: "$200K-$500K Saved Annually", icon: "💰", desc: "Replace consultant spend ($5K-$50K per project) and per-seat AI subscriptions with synthetic employees you built—pennies on the dollar for unlimited usage" },
+                  { label: "Speed Dominance", value: "Minutes vs. Weeks", icon: "🚀", desc: "Comprehensive analysis in 5-10 minutes that takes consultants 3-5 days—when competitors wait for reports, you've already made the decision and moved forward" },
+                  { label: "Proprietary Intelligence Moat", value: "Competitive Advantage Competitors Can't Copy", icon: "🛡️", desc: "AI that knows YOUR processes, YOUR systems, YOUR domain expertise—sustainable competitive moat that can't be rented or replicated, only built" }
                 ] : [
                   { label: "Knowledge Depth", value: "99th Percentile", icon: "🧠", desc: "Understand LLMs better than 90% of 'AI engineers'" },
                   { label: "Implementation Ability", value: "From Scratch", icon: "⚡", desc: "Build GPT without libraries or abstractions" },
@@ -447,6 +519,10 @@ function SignatureSolution({ course }: { course: Course }) {
               ? 'The Multi-Agent Coordination Mastery™'
               : course.signatureSolution && course.slug === 'the-ai-product-factory'
               ? 'The Production ML Sovereignty Stack™'
+              : course.signatureSolution && course.slug === 'the-10x-developer'
+              ? 'The AI Infrastructure Sovereignty Stack™'
+              : course.slug === 'agentic-sdk'
+              ? 'The Synthetic Employee Framework™'
               : 'The LLM Sovereignty Stack™'}
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -464,6 +540,8 @@ function SignatureSolution({ course }: { course: Course }) {
               ? 'Watch as you progress from single-agent builder to multi-agent systems architect, building your team coordination moat with every step.'
               : course.slug === 'the-ai-product-factory'
               ? 'Watch as you progress from notebook-only data scientist to ML platform engineer, building your production infrastructure moat with every step.'
+              : course.slug === 'the-10x-developer'
+              ? 'Watch as you progress from manual coder to AI-augmented architect, building your development productivity moat with every step.'
               : 'Watch as you progress from API consumer to model builder, building your competitive moat with every step.'
             }
           </p>
@@ -564,6 +642,8 @@ function SignatureSolution({ course }: { course: Course }) {
               ? 'This is the guided progression that transforms single-agent builders into multi-agent systems architects who orchestrate coordinated agent teams.'
               : course.slug === 'the-ai-product-factory'
               ? 'This is the guided progression that transforms platform-dependent data scientists into ML platform engineers who own their production infrastructure.'
+              : course.slug === 'the-10x-developer'
+              ? 'This is the guided progression that transforms manual coders into AI-augmented architects who own their development infrastructure.'
               : 'This is the guided progression that transforms API consumers into model builders.'
             }
           </p>
@@ -710,6 +790,10 @@ function SuccessMetrics({ course }: { course: Course }) {
               ? 'Real outcomes from students who completed The Multi-Agent Coordination Mastery™ and built coordinated agent teams'
               : course.slug === 'the-ai-product-factory'
               ? 'Real outcomes from students who completed The Production ML Sovereignty Stack™ and built production MLOps platforms'
+              : course.slug === 'the-10x-developer'
+              ? 'Real outcomes from students who completed The AI Infrastructure Sovereignty Stack™ and built AI-augmented development systems'
+              : course.slug === 'agentic-sdk'
+              ? 'Real outcomes from students who completed The Synthetic Employee Framework™ and built AI-powered decision support systems'
               : 'Real outcomes from students who completed The LLM Sovereignty Stack™ and built their competitive moats'
             }
           </p>
@@ -732,6 +816,11 @@ function SuccessMetrics({ course }: { course: Course }) {
                 { metric: "$100K-$200K", label: "Average salary increase (MLOps premium)" },
                 { metric: "93%", label: "Report deployment capabilities as career differentiator" },
                 { metric: "88%", label: "Lead production ML initiatives after completion" }
+              ] : course.slug === 'the-10x-developer' ? [
+                { metric: "78%", label: "Report 10-100x productivity increase within 90 days" },
+                { metric: "$130K-$220K", label: "Average salary increase (AI infrastructure premium)" },
+                { metric: "92%", label: "Report becoming irreplaceable (infrastructure ownership)" },
+                { metric: "85%", label: "Build complete AI-augmented development systems" }
               ] : [
                 { metric: "75%", label: "Promoted to Senior+ within 12 months" },
                 { metric: "$80K-$150K", label: "Average salary increase" },
@@ -762,6 +851,11 @@ function SuccessMetrics({ course }: { course: Course }) {
                 { metric: "87%", label: "Eliminate AWS SageMaker/Vertex AI dependencies" },
                 { metric: "78%", label: "Raise funding with production ML infrastructure moat" },
                 { metric: "2-5 months", label: "Average time to ROI on MLOps investment" }
+              ] : course.slug === 'the-10x-developer' ? [
+                { metric: "10-100x", label: "Productivity increase with autonomous sub-agents" },
+                { metric: "80%", label: "Eliminate manual coding bottlenecks entirely" },
+                { metric: "70%", label: "Build features 5-10x faster with AI infrastructure" },
+                { metric: "1-3 months", label: "Average time to ROI on productivity gains" }
               ] : [
                 { metric: "$150K/year", label: "Average API cost savings from owning model weights" },
                 { metric: "70%", label: "Eliminate third-party model dependencies entirely" },
@@ -935,6 +1029,10 @@ function PricingModalities({ course }: { course: Course }) {
               ? 'All modalities include the complete Multi-Agent Coordination Mastery™. Choose based on your learning style and goals.'
               : course.slug === 'the-ai-product-factory'
               ? 'All modalities include the complete Production ML Sovereignty Stack™. Choose based on your learning style and goals.'
+              : course.slug === 'the-10x-developer'
+              ? 'All modalities include the complete AI Infrastructure Sovereignty Stack™. Choose based on your learning style and goals.'
+              : course.slug === 'agentic-sdk'
+              ? 'All modalities include the complete Synthetic Employee Framework™. Choose based on your learning style and business needs.'
               : 'All modalities include the complete LLM Sovereignty Stack™. Choose based on your learning style and goals.'
             }
           </p>

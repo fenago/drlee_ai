@@ -3718,22 +3718,264 @@ export const courses: Course[] = [
   },
   // CITIZEN DEVELOPER
   {
-    id: "agentic-automation",
-    slug: "agentic-automation",
-    name: "Agentic Automation",
-    subtitle: "Strategic Workflow Automation for Business Leaders",
+    id: "agentic-sdk",
+    slug: "agentic-sdk",
+    name: "Build Your Own Synthetic Employees",
+    subtitle: "Build Your AI Team That Works Together 24/7—Own Your Intelligence Infrastructure",
     category: "Citizen Developer",
     categoryId: "citizen",
-    price: 1497,
-    hook: "Your personal AI workforce, no coding required.",
-    description: "Build powerful automations without writing code. Connect your tools with AI orchestration.",
-    outcomes: ["Automate repetitive workflows", "Build no-code AI agents", "Connect tools with AI orchestration", "Measure and optimize automation ROI"],
-    hours: 18,
-    modules: 6,
-    technologies: ["Zapier AI", "Make.com", "n8n", "ChatGPT"],
-    curriculum: [{title: "No-Code Automation", lessons: ["Automation Fundamentals", "AI-Enhanced Workflows", "Tool Integration", "ROI Measurement"]}],
-    instructor: {name: "Dr. Lee", title: "AI Architect & Educator", bio: "Former ML lead at a Fortune 500 company."},
-    faqs: []
+    rarity: "Flagship",
+    price: 997,
+    hook: "Stop renting AI from OpenAI. Build your own team of synthetic employees—a Legal Advisor, Financial Analyst, and Operations Manager working together 24/7—that know YOUR business, connect to YOUR systems, and save $200K-$500K annually without hiring consultants or risking sensitive data with third-party services.",
+    description: "Imagine having a team of expert employees who have read every book ever written, studied every case in your legal domain, analyzed every financial model, reviewed every operational framework—working together 24/7 at pennies on the dollar. That's what you're building. This masterclass teaches you to take frontier AI (trained on all human knowledge) and transform it into a team of synthetic employees that collaborate to provide expert decision support. You'll build a Legal Advisor to review contracts, a Financial Analyst to evaluate deals, an Operations Manager to optimize processes—all working together seamlessly. But unlike consultants who just give advice, your synthetic team EXECUTES—they read contracts, update your CRM, pull invoices from your accounting system, extract data automatically, and analyze deals in real-time. You're not learning to prompt better. You're learning to build an AI workforce that knows YOUR business, accesses YOUR systems, remembers every interaction, and executes decisions together as a coordinated team—replacing $200K-$500K in consultant spend while making faster, better-informed strategic decisions. The smartest technology ever created, customized for your specific business, working as your personal team.",
+    outcomes: [
+      "Build a team of synthetic employees (Legal Advisor, Financial Analyst, Operations Manager) that collaborate to provide expert decision support",
+      "Build your AI workforce instead of renting from OpenAI ($200K-$500K annual savings)",
+      "Create agents that remember every conversation, analyze documents, and maintain perfect context across your entire business",
+      "Automatically extract data from contracts, invoices, and documents—feeding directly into your CRM and accounting systems with zero manual data entry",
+      "Connect your synthetic employees to all your business systems (CRM, accounting software, document storage)",
+      "Have multiple AI specialists work together in parallel—Legal reviews contracts while Finance analyzes deals while Operations optimizes workflows",
+      "Implement business controls: who can do what, spending limits, approval workflows, complete audit trails for compliance",
+      "Automate complete business processes from start to finish (month-end financial close, compliance reviews, deal approvals)",
+      "Deploy across your entire organization—business users can interact through web interface without technical knowledge",
+      "Scale infinitely without hiring—handle 10x workload with the same AI workforce at marginal cost"
+    ],
+    hours: 45,
+    modules: 9,
+    technologies: ["Claude Agent SDK", "TypeScript/Python", "MCP Protocol", "React", "Zod", "OAuth"],
+    curriculum: [
+      {
+        title: "Foundation - Your First Synthetic Employee",
+        lessons: [
+          "Agent SDK Overview & Installation",
+          "Building Your First Decision Support Agent",
+          "System Prompts for Business Domains",
+          "Session Management & Streaming"
+        ]
+      },
+      {
+        title: "Memory & Context - Teaching Your Employee to Remember",
+        lessons: [
+          "Implementing Session Persistence",
+          "Document Upload & Analysis (PDFs, Images)",
+          "Forking Sessions for Scenario Planning",
+          "Context Compaction Strategies"
+        ]
+      },
+      {
+        title: "Structured Intelligence - Getting Reliable Data",
+        lessons: [
+          "JSON Schema for Business Data",
+          "Zod Type Safety & Validation",
+          "Database Integration Patterns",
+          "Error Handling & Recovery"
+        ]
+      },
+      {
+        title: "Custom Capabilities - Teaching New Skills",
+        lessons: [
+          "Creating Custom MCP Tools",
+          "API Integration (CRM, ERP, Accounting)",
+          "OAuth Authentication Patterns",
+          "Building Business Intelligence Toolkit"
+        ]
+      },
+      {
+        title: "Delegation & Specialization - Building Your AI Team",
+        lessons: [
+          "Designing Specialized Subagents",
+          "Tool Restrictions for Security",
+          "Parallel Multi-Agent Orchestration",
+          "Building Role-Based Agent Libraries"
+        ]
+      },
+      {
+        title: "Control & Security - Keeping Your AI Accountable",
+        lessons: [
+          "Permission Systems & Governance",
+          "Cost Tracking & Budget Controls",
+          "Approval Workflows for Sensitive Operations",
+          "Audit Trails for Compliance"
+        ]
+      },
+      {
+        title: "Workflows & Automation - Orchestrating Complex Processes",
+        lessons: [
+          "Custom Slash Commands for Workflows",
+          "Autonomous Agent Skills",
+          "Todo Tracking for Transparency",
+          "Multi-Agent Process Orchestration"
+        ]
+      },
+      {
+        title: "Integration & Scale - Connecting to the Enterprise",
+        lessons: [
+          "Remote MCP Server Configuration",
+          "Multi-System Integration via MCP",
+          "OAuth Flows & Token Management",
+          "Resilience Patterns & Failovers"
+        ]
+      },
+      {
+        title: "Production & Mastery - Deploying for Real Business Impact",
+        lessons: [
+          "Container-Based Deployment",
+          "React UI for Business Users",
+          "Monitoring & Optimization",
+          "Self-Service Agent Platform"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Creator of 21 Masterclasses",
+      bio: "Former ML lead at Fortune 500. Built production AI systems serving millions. Creator of The Synthetic Employee Framework™ teaching 2,000+ students to build AI teams that work together—replacing consultant spend and creating sustainable competitive advantages."
+    },
+    faqs: [
+      {
+        question: "How is this different from 'Professional Vibe Coding with Claude Code'?",
+        answer: "That course is for hardcore developers building Virtual Employees for software development (code reviews, testing, etc.). THIS course is for business leaders building Synthetic Employees for decision support (financial analysis, contract review, compliance checking). Different target audience, different use cases, different outcomes."
+      },
+      {
+        question: "I'm not technical—can I really build this myself?",
+        answer: "Yes. This course is specifically designed for anyone who wants to own their intelligence infrastructure, not just developers. We provide code templates for every exercise—you'll customize them for your needs without writing from scratch. If you can use Excel and understand the problems you're trying to solve, you can build synthetic employees. Most students deploy their first agent in Week 1."
+      },
+      {
+        question: "Why build instead of using ChatGPT Teams or other AI tools?",
+        answer: "ChatGPT doesn't know YOUR business, forgets context, can't access your systems, and charges per seat. You're building OWNED intelligence that: (1) Trains on your documents/processes, (2) Remembers every interaction forever, (3) Connects to your CRM/ERP/accounting, (4) Costs ~$50/month for unlimited users vs $30-50/user/month. It's the difference between renting and owning real estate."
+      },
+      {
+        question: "What about data privacy and security?",
+        answer: "This is a KEY advantage of building your own. You deploy on YOUR infrastructure, data never leaves your control, you maintain complete audit trails, and you set granular permissions. Use it with your most sensitive contracts, financials, and client data—something you CAN'T do with ChatGPT or cloud AI services. Built-in SOC 2 compliance features."
+      },
+      {
+        question: "How long until I see ROI?",
+        answer: "Most students report measurable ROI within 60 days of completing Module 3. You'll build your first synthetic employee in Week 1 saving 2-5 hours/week. By Module 5, you'll have a specialized team saving $10K-$20K/month. Our guarantee: If you don't achieve $2K+/month savings within 60 days of Module 3, we provide 1-on-1 consulting or refund 100% plus $1,000."
+      },
+      {
+        question: "What's the total cost beyond the course?",
+        answer: "Course: $997-$9,997 one-time. After that: API costs only (~$20-$200/month depending on usage). No per-seat licensing. No vendor subscriptions. Compare to: ChatGPT Teams ($30-50/user/month), consultants ($5K-$50K per project), or hiring analysts ($200K-$300K each). Your investment pays back in 1-2 months."
+      },
+      {
+        question: "Do I need to know how to code?",
+        answer: "Basic familiarity helps but isn't required. We teach fundamentals as needed, provide complete code templates, and focus on logic over programming syntax. Many successful students hadn't coded since college (or never)—they bring domain expertise in their field, and the SDK does the heavy lifting. You provide the intelligence about what to build; the framework handles how to build it."
+      },
+      {
+        question: "Can this work for my specific industry?",
+        answer: "Yes. The Claude Agent SDK is domain-agnostic—it works for ANY industry. We have examples from legal, finance, healthcare, manufacturing, real estate, and more. The framework is universal; you customize with YOUR industry knowledge, making it MORE powerful than any pre-built solution. Your synthetic employees learn your specific terminology, processes, and compliance requirements."
+      },
+      {
+        question: "What happens after I complete the course?",
+        answer: "You'll have: (1) Production synthetic workforce deployed and generating ROI, (2) Complete codebase and infrastructure you own, (3) Knowledge to build unlimited new agents, (4) Lifetime community access, (5) Free updates forever. Many graduates join Alumni Membership ($97/month) for ongoing support, advanced workshops, and networking with other successful students."
+      },
+      {
+        question: "How is this different from hiring a data science team?",
+        answer: "Building a team costs $600K-$1.5M annually (3-5 engineers at $200K-$300K each), takes 6-12 months to hire, requires ongoing management, and knowledge leaves when they do. This course: $997-$9,997 one-time, deploy in weeks, SDK maintained by Anthropic, knowledge stays with you, infinite scale without headcount limits. You're learning to fish instead of buying fish."
+      }
+    ],
+    signatureSolution: {
+      stages: [
+        {
+          title: "PHASE 1: Foundation",
+          subtitle: "Transform Frontier AI into Your Workforce",
+          weeks: "Weeks 1-3",
+          from: "Renting generic AI that forgets context, can't access confidential data, only provides advice (no execution), per-seat costs spiraling—consultants who've read a fraction of what AI knows charging $200K-$500K annually",
+          to: "Building synthetic employees powered by AI trained on all human knowledge—perfect memory, secure confidential data processing, agents with tools that execute (not just advise), unlimited usage for pennies on the dollar",
+          moat: "Frontier AI Workforce Ownership",
+          moatDesc: "Transform the smartest technology ever created into YOUR workforce—expert-level decision support across every domain, customized for your specific business, executing autonomously with tools",
+          color: "blue"
+        },
+        {
+          title: "PHASE 2: Advanced Capabilities",
+          subtitle: "Specialized AI Teams & System Integration",
+          weeks: "Weeks 4-6",
+          from: "Isolated AI with no system access, single generalist agent trying to do everything, unrestricted permissions risking compliance, consultants charging per engagement",
+          to: "Specialized AI workforce (Legal, Finance, Operations experts) connected to ALL your systems (CRM, ERP, accounting)—reading contracts, extracting invoice data, analyzing deals in real-time with enterprise governance and audit trails",
+          moat: "Proprietary Intelligence That Executes",
+          moatDesc: "AI trained on YOUR business that doesn't just advise—it ACTS. Reads your documents, writes to your systems, executes decisions. Intelligence competitors can't replicate because it's built from your proprietary processes and data",
+          color: "purple"
+        },
+        {
+          title: "PHASE 3: Production & Scale",
+          subtitle: "Autonomous Workflows & Organizational Transformation",
+          weeks: "Weeks 7-9",
+          from: "Manual multi-step workflows eating days, personal experiments on laptop, CLI-only interfaces, limited to your personal use, no way to scale to organization",
+          to: "Autonomous end-to-end business processes (month-end close, compliance reviews, deal approvals), production platform serving entire organization with React UI, self-service portal for business users to create agents—AI workforce operating at scale",
+          moat: "Infinite Scalability Without Headcount",
+          moatDesc: "When competitors are limited by hiring budgets and consultant availability, your AI workforce scales infinitely at marginal cost—handle 10x volume without adding people, creating sustainable competitive advantage",
+          color: "green"
+        }
+      ],
+      steps: [
+        {
+          title: "Module 1: Foundation Builder—Your First Synthetic Employee",
+          from: "Renting generic AI that forgets context, can't access confidential data, only provides suggestions (no execution)—consultants who've read a tiny fraction of what AI knows yet charge $5K-$50K per engagement",
+          to: "Building your first synthetic employee powered by frontier AI trained on all human knowledge—expert across every domain (legal, finance, operations), perfect memory, works securely with your most confidential contracts and financials",
+          moat: "Frontier AI Knowledge Moat—AI that has studied every case, every model, every framework vs. consultants with limited expertise. Data Privacy Moat—use with sensitive data competitors can't. Cost Moat—unlimited usage for <$50/month vs consultant retainers",
+          stage: 1
+        },
+        {
+          title: "Module 2: Memory Master—Perfect Long-Term Memory",
+          from: "Single-use conversations starting from zero each time, repeating context endlessly, can't explore scenarios, hitting context limits",
+          to: "Synthetic employees with perfect long-term memory across unlimited sessions, remembers all previous work, compare multiple scenarios side-by-side, analyze any document (PDFs/images)",
+          moat: "Institutional Memory Moat + Scenario Planning Moat + Document Intelligence Moat—AI accumulates business knowledge while competitors start over, run parallel analyses, extract insights from documents others can't",
+          stage: 1
+        },
+        {
+          title: "Module 3: Data Structurer—Validated JSON Integration",
+          from: "Conversational responses requiring manual data entry, unreliable extraction, manual validation of every output, can't integrate with business systems",
+          to: "Validated JSON feeding directly into business systems, perfect data extraction from messy documents, automatic CRM/ERP population, zero-touch integration",
+          moat: "Automation Moat + Accuracy Moat + Integration Moat—10x faster data processing than manual entry, 99.9% extraction accuracy vs 95% human, AI-to-system pipelines competitors can't build",
+          stage: 1
+        },
+        {
+          title: "Module 4: Integration Architect—Agents with Tools That Execute",
+          from: "AI isolated from business systems, manual lookups across multiple platforms, can only provide advice (no execution)—consultants who review documents and write reports but don't DO anything",
+          to: "AGENTS with TOOLS that execute autonomously—read contracts from DocuSign, write opportunities to Salesforce, pull invoices from QuickBooks, extract data and populate systems, analyze deals in real-time and create records. Not advice, ACTION.",
+          moat: "Execution Moat—while consultants advise and competitors use AI that only talks, your agents READ, WRITE, EXTRACT, ANALYZE, and EXECUTE across all systems. Autonomous operations replacing 40-60% of manual work that competitors still do by hand",
+          stage: 2
+        },
+        {
+          title: "Module 5: Workforce Builder—Specialized AI Teams",
+          from: "Single generalist agent trying to do everything, sequential analysis taking hours, generic advice missing nuanced expertise, can't delegate to appropriate specialists",
+          to: "Specialized AI team with Legal, Finance, Operations experts working in parallel—expert-level analysis from domain specialists, parallel processing cutting time by 10x, coordinated multi-perspective insights",
+          moat: "Expertise Moat + Speed Moat + Quality Moat—deep specialists vs shallow generalists, 10x faster through parallelization, multi-expert review catches what single AI misses",
+          stage: 2
+        },
+        {
+          title: "Module 6: Governance Engineer—Enterprise Controls",
+          from: "AI with unrestricted access risking destructive operations, unpredictable API costs spiraling, no audit trail for compliance, can't enforce approval workflows",
+          to: "Enterprise-grade governance with granular permissions matching org chart, real-time cost tracking with budget alerts, complete audit logs for SOC 2 compliance, automatic approval workflows",
+          moat: "Compliance Moat + Cost Control Moat + Security Moat—audit-ready AI while competitors can't prove compliance, predictable budgets vs surprise bills, enterprise-grade controls vs consumer-grade AI",
+          stage: 2
+        },
+        {
+          title: "Module 7: Process Automator—Intelligent Workflows",
+          from: "Manual multi-step workflows requiring human coordination, repetitive monthly/quarterly processes eating days, black-box AI with no visibility, manual exception handling derailing automation",
+          to: "Intelligent end-to-end automation with transparent progress tracking, complete business processes running autonomously (month-end close, compliance reviews, deal approvals), intelligent exception handling",
+          moat: "Operational Speed Moat + Scalability Moat + Reliability Moat—24-hour processes done in 2 hours, handle 10x volume without hiring, zero human errors in automated processes",
+          stage: 3
+        },
+        {
+          title: "Module 8: Enterprise Integrator—Unified Intelligence Platform",
+          from: "Disconnected tools and siloed data across 10+ systems, manual data aggregation for cross-functional insights, can't get answers requiring multiple system queries, integrations taking 6-12 months",
+          to: "Unified intelligence platform connecting every business system, single question pulling from all relevant systems, real-time cross-functional business intelligence, new integrations deployed in hours",
+          moat: "Data Access Moat + Integration Speed Moat + Insight Depth Moat—unified intelligence vs siloed reports, hours to add systems vs months, cross-functional analysis competitors can't match",
+          stage: 3
+        },
+        {
+          title: "Module 9: Platform Operator—Production Deployment",
+          from: "Personal AI experiments on laptop, can't scale beyond your personal use, no professional interface for business stakeholders, downtime and performance issues, can't monitor systematically",
+          to: "Production platform serving entire organization with enterprise SLAs, polished React UI for non-technical users, enterprise-grade reliability and monitoring, self-service portal for business teams to create agents",
+          moat: "Platform Moat + User Experience Moat + Organizational Moat—owned infrastructure vs vendor dependency, custom interfaces vs generic chat, company-wide adoption creating switching costs",
+          stage: 3
+        }
+      ],
+      millionDollarMessages: {
+        careerAdvancers: "I help anyone build their own team of AI-powered synthetic employees that work together to provide expert decision support across their domain, so they can make faster data-driven decisions saving $200K-$500K annually without hiring expensive consultants, waiting weeks for analysis, or risking sensitive data with third-party AI services.",
+        founders: "I help people build proprietary synthetic employee teams from first principles, so they can achieve sustainable competitive advantage through owned AI that knows their specific domain without burning $200K-$500K annually on consultants, being limited by vendor platforms, or struggling with data privacy compliance."
+      }
+    }
   },
   {
     id: "predictive-insight",
@@ -3768,24 +4010,6 @@ export const courses: Course[] = [
     modules: 5,
     technologies: ["Optimizely", "VWO", "Google Optimize", "Mixpanel"],
     curriculum: [{title: "Experimentation", lessons: ["Experiment Design", "Statistical Analysis", "Result Interpretation", "Organizational Culture"]}],
-    instructor: {name: "Dr. Lee", title: "AI Architect & Educator", bio: "Former ML lead at a Fortune 500 company."},
-    faqs: []
-  },
-  {
-    id: "agentic-sdk",
-    slug: "agentic-sdk",
-    name: "Agentic SDK",
-    subtitle: "Custom AI Agent Development for Business Automation",
-    category: "Citizen Developer",
-    categoryId: "citizen",
-    price: 1997,
-    hook: "Scale your team without scaling headcount.",
-    description: "Design and deploy AI agents that work like virtual employees.",
-    outcomes: ["Design AI agent architectures", "Build custom agent tools", "Orchestrate multi-agent workflows", "Deploy and monitor agents"],
-    hours: 22,
-    modules: 7,
-    technologies: ["OpenAI API", "Claude API", "LangChain", "Zapier"],
-    curriculum: [{title: "Agent Development", lessons: ["Agent Design Patterns", "Tool Building", "Workflow Orchestration", "Production Deployment"]}],
     instructor: {name: "Dr. Lee", title: "AI Architect & Educator", bio: "Former ML lead at a Fortune 500 company."},
     faqs: []
   },
