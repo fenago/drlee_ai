@@ -474,6 +474,12 @@ function CourseHero({ course }: { course: Course }) {
                   { label: "Cost Annihilation", value: "$200K-$500K Saved Annually", icon: "💰", desc: "Replace consultant spend ($5K-$50K per project) and per-seat AI subscriptions with synthetic employees you built—pennies on the dollar for unlimited usage" },
                   { label: "Speed Dominance", value: "Minutes vs. Weeks", icon: "🚀", desc: "Comprehensive analysis in 5-10 minutes that takes consultants 3-5 days—when competitors wait for reports, you've already made the decision and moved forward" },
                   { label: "Proprietary Intelligence Moat", value: "Competitive Advantage Competitors Can't Copy", icon: "🛡️", desc: "AI that knows YOUR processes, YOUR systems, YOUR domain expertise—sustainable competitive moat that can't be rented or replicated, only built" }
+                ] : course.slug === 'ai-alignment' ? [
+                  { label: "RLHF Pipeline Mastery", value: "99% of ML Engineers Can't Build This", icon: "🧠", desc: "Implement complete RLHF from scratch—preference data, reward models, PPO/GRPO, DPO—expertise that separates $180K API users from $350K+ alignment architects" },
+                  { label: "Safety Infrastructure", value: "Prevent Catastrophic Failures", icon: "🛡️", desc: "Build constitutional AI and safety monitoring that catches alignment failures BEFORE they reach users—avoiding disasters that destroy competitor products" },
+                  { label: "API Cost Elimination", value: "$500K-$2M Saved Annually", icon: "💰", desc: "Own aligned models instead of renting from OpenAI—founders eliminate $50K/month API spend while building defensible moats investors fund" },
+                  { label: "Regulatory Advantage", value: "Compliant When Mandates Arrive", icon: "⚖️", desc: "When AI safety regulations become law, you're already compliant—competitors scramble, you ship confidently with stakeholder trust" },
+                  { label: "Career Premium", value: "$180K → $350K-$500K", icon: "📈", desc: "Alignment specialists at Anthropic/OpenAI/DeepMind earn 2-3x ML generalists—irreplaceable expertise as alignment becomes critical for all AI" }
                 ] : [
                   { label: "Knowledge Depth", value: "99th Percentile", icon: "🧠", desc: "Understand LLMs better than 90% of 'AI engineers'" },
                   { label: "Implementation Ability", value: "From Scratch", icon: "⚡", desc: "Build GPT without libraries or abstractions" },

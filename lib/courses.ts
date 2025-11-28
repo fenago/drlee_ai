@@ -3971,6 +3971,105 @@ export const courses: Course[] = [
         answer: "Alignment specialists command $300K-$500K vs. $180K-$220K for ML generalists. The salary premium alone pays back the course investment 20x-100x in Year 1. Plus you become irreplaceable as alignment becomes critical for all AI deployment."
       }
     ],
+    signatureSolution: {
+      stages: [
+        {
+          title: "PHASE 1: Alignment Foundations",
+          subtitle: "From Unpredictable AI to Controlled Behavior",
+          weeks: "Weeks 1-3",
+          from: "Models generate toxic content, ignore instructions, produce unpredictable outputs—treating alignment as optional",
+          to: "Building complete RLHF pipelines from scratch—reward models, preference data, policy optimization—with production safety",
+          moat: "RLHF Pipeline Expertise",
+          moatDesc: "Ability to build and deploy reinforcement learning from human feedback systems that 99% of ML engineers can't—transforming unpredictable models into controllable, safe AI",
+          color: "blue"
+        },
+        {
+          title: "PHASE 2: Advanced Alignment Techniques",
+          subtitle: "From Basic Training to Constitutional AI",
+          weeks: "Weeks 4-6",
+          from: "Using black-box API fine-tuning with no control, reward hacking failures, expensive alignment iterations",
+          to: "Implementing DPO, constitutional AI, and RLVR for reasoning—owning the complete alignment stack with cost-efficient techniques",
+          moat: "Direct Alignment Mastery",
+          moatDesc: "Expertise in DPO (Direct Preference Optimization) and constitutional AI that enables rapid alignment iterations without expensive reward model training",
+          color: "purple"
+        },
+        {
+          title: "PHASE 3: Production Deployment & Safety",
+          subtitle: "From Lab Experiments to Trusted Production AI",
+          weeks: "Weeks 7-9",
+          from: "Models fail in production, no evaluation framework, manual safety monitoring, reactive incident response",
+          to: "Production-grade alignment with comprehensive evaluation suites, safety monitoring, and continuous verification systems",
+          moat: "Production Alignment Systems",
+          moatDesc: "Enterprise-ready safety infrastructure that ensures AI behaves correctly in production—avoiding catastrophic failures that destroy competitor products",
+          color: "green"
+        }
+      ],
+      steps: [
+        {
+          title: "Module 1: Alignment Foundations",
+          from: "Treating alignment as optional, believing supervision is enough, viewing safety as post-deployment concern",
+          to: "Understanding alignment as critical production requirement, knowing why supervised learning fails for safety, treating alignment as core architecture",
+          moat: "Strategic alignment thinking—recognizing when models need alignment vs. fine-tuning, understanding the alignment problem space",
+          stage: 1
+        },
+        {
+          title: "Module 2: Preference Intelligence",
+          from: "Using simple labels (good/bad), treating all feedback equally, manually collecting preferences at small scale",
+          to: "Building reward models from pairwise comparisons, understanding Bradley-Terry loss, implementing process vs. outcome reward models",
+          moat: "Reward modeling expertise—ability to train models that predict human preferences, the foundation of all RLHF",
+          stage: 1
+        },
+        {
+          title: "Module 3: Training Dynamics",
+          from: "Models collapse during training, overfitting to reward signal, unstable policy updates destroying model quality",
+          to: "Implementing KL regularization, using reference models for stability, applying rejection sampling and instruction tuning",
+          moat: "Stable alignment training—preventing mode collapse and reward hacking that causes 90% of alignment projects to fail",
+          stage: 1
+        },
+        {
+          title: "Module 4: Policy Optimization",
+          from: "Black-box understanding of PPO, can't debug alignment failures, dependent on HuggingFace trainers",
+          to: "Implementing PPO and GRPO from scratch in PyTorch, understanding clipping and GAE, debugging gradient issues",
+          moat: "Policy optimization mastery—building PPO/GRPO implementations from first principles, not relying on abstracted frameworks",
+          stage: 2
+        },
+        {
+          title: "Module 5: Direct Alignment",
+          from: "Expensive two-stage RLHF (reward model + policy training), long iteration cycles, high compute costs",
+          to: "Implementing DPO for single-stage alignment, understanding when to use DPO vs. PPO, hybrid approaches",
+          moat: "DPO expertise—faster, cheaper alignment iterations that reduce training costs by 50-70% compared to traditional RLHF",
+          stage: 2
+        },
+        {
+          title: "Module 6: Constitutional AI",
+          from: "Manually reviewing every output, can't scale safety monitoring, dependent on human labelers for all feedback",
+          to: "Building constitutional AI systems with AI feedback, automated red-teaming, recursive self-improvement loops",
+          moat: "Scalable safety systems—using AI to monitor AI, enabling alignment at scale without proportional human labor",
+          stage: 2
+        },
+        {
+          title: "Module 7: Reasoning & Inference Scaling",
+          from: "Models that pattern-match without reasoning, can't solve complex math/code problems, limited to training data",
+          to: "Training reasoning models using RLVR (verifiable rewards), implementing process reward models, deploying test-time compute",
+          moat: "Reasoning alignment expertise—building models that think before answering like DeepSeek R1 and o1, not just recall patterns",
+          stage: 3
+        },
+        {
+          title: "Module 8: Production Deployment",
+          from: "Lab-only alignment with no production validation, reactive failure response, manual quality monitoring",
+          to: "Building comprehensive evaluation suites, detecting over-optimization, implementing continuous alignment monitoring",
+          moat: "Production safety infrastructure—systems that catch alignment failures before they reach users, not after disasters",
+          stage: 3
+        },
+        {
+          title: "Module 9: Advanced Techniques",
+          from: "One-time alignment with static behavior, manual data collection for every iteration, no feedback loops",
+          to: "Automated synthetic data generation, continuous alignment from user feedback, self-improving safety systems",
+          moat: "Autonomous alignment systems—infrastructure that continuously improves model alignment from production feedback, compounding safety",
+          stage: 3
+        }
+      ]
+    },
     pricingModalities: {
       selfPaced: {
         price: 1497,
