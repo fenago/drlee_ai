@@ -6,14 +6,14 @@ import Link from "next/link";
 
 // Categories
 const categories = [
-  { id: "all", name: "All Masterclasses", count: 21 },
-  { id: "hardcore", name: "Hardcore Developers", count: 14 },
-  { id: "citizen", name: "Citizen Developer", count: 7 },
+  { id: "all", name: "All Masterclasses", count: 15 },
+  { id: "hardcore", name: "Hardcore Developers", count: 11 },
+  { id: "citizen", name: "Citizen Developer", count: 4 },
 ];
 
-// All 21 courses - synced with lib/courses.ts
+// All 15 courses - synced with lib/courses.ts
 const courses = [
-  // HARDCORE DEVELOPERS (14)
+  // HARDCORE DEVELOPERS (11)
   {
     id: "llm",
     name: "Build Your Own LLM",
@@ -110,28 +110,6 @@ const courses = [
     slug: "graphrag",
   },
   {
-    id: "ml-intuition",
-    name: "Machine Learning Intuition",
-    subtitle: "Master ML Fundamentals—Build Models You Own from First Principles",
-    category: "hardcore",
-    description: "No PhD required. Just high school algebra and a desire to understand how ML actually works.",
-    hours: 35,
-    modules: 13,
-    price: { selfPaced: 697, cohort: 2997, founder: 7997 },
-    slug: "machine-learning-intuition",
-  },
-  {
-    id: "dl-intuition",
-    name: "Deep Learning Intuition",
-    subtitle: "Build Neural Networks from Scratch—Own Every Layer, No Dependencies",
-    category: "hardcore",
-    description: "Understand every detail of training neural networks. No frameworks, no magic—just clarity.",
-    hours: 40,
-    modules: 16,
-    price: { selfPaced: 897, cohort: 3497, founder: 9997 },
-    slug: "deep-learning-intuition",
-  },
-  {
     id: "slm",
     name: "Build Your Own Domain Specific Small Language Model (SLM)",
     subtitle: "Train Specialized Models You Own and Control—No API Costs",
@@ -165,52 +143,8 @@ const courses = [
     price: { selfPaced: 697, cohort: 2497, founder: 6997 },
     slug: "the-10x-developer",
   },
-  {
-    id: "automated-insights",
-    name: "Automated Insights",
-    subtitle: "AI-Driven Analytics for Strategic Decision-Making",
-    category: "hardcore",
-    description: "Cut your analysis time by 75%. Do more work, faster, with better results.",
-    hours: 35,
-    modules: 8,
-    price: { selfPaced: 897, cohort: 3497, founder: 8997 },
-    slug: "automated-insights",
-  },
 
-  // CITIZEN DEVELOPER (7)
-  {
-    id: "agentic-automation",
-    name: "Agentic Automation",
-    subtitle: "Strategic Workflow Automation for Business Leaders",
-    category: "citizen",
-    description: "Your personal AI workforce, no coding required. Automate repetitive workflows.",
-    hours: 18,
-    modules: 6,
-    price: { selfPaced: 697, cohort: 2497, founder: 6997 },
-    slug: "agentic-automation",
-  },
-  {
-    id: "predictive-insight",
-    name: "Predictive Insight",
-    subtitle: "Data-Driven Forecasting for Strategic Decisions",
-    category: "citizen",
-    description: "Predict the future with your data. Make better decisions without complex math.",
-    hours: 16,
-    modules: 6,
-    price: { selfPaced: 497, cohort: 1997, founder: 4997 },
-    slug: "predictive-insight",
-  },
-  {
-    id: "decision-engine",
-    name: "The Decision Engine",
-    subtitle: "Experimental Design for Evidence-Based Strategy",
-    category: "citizen",
-    description: "Stop guessing. Start knowing. One validated decision can pay for this 1000x over.",
-    hours: 15,
-    modules: 5,
-    price: { selfPaced: 697, cohort: 2497, founder: 6997 },
-    slug: "the-decision-engine",
-  },
+  // CITIZEN DEVELOPER (4)
   {
     id: "agentic-sdk",
     name: "Build Your Own Synthetic Employees",
