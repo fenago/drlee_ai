@@ -7,13 +7,13 @@ import Link from "next/link";
 // Categories
 const categories = [
   { id: "all", name: "All Masterclasses", count: 15 },
-  { id: "hardcore", name: "Hardcore Developers", count: 11 },
-  { id: "citizen", name: "Citizen Developer", count: 4 },
+  { id: "hardcore", name: "Hardcore Developers", count: 12 },
+  { id: "citizen", name: "Citizen Developer", count: 3 },
 ];
 
 // All 15 courses - synced with lib/courses.ts
 const courses = [
-  // HARDCORE DEVELOPERS (11)
+  // HARDCORE DEVELOPERS (12)
   {
     id: "llm",
     name: "Build Your Own LLM",
@@ -143,8 +143,20 @@ const courses = [
     price: { selfPaced: 697, cohort: 2497, founder: 6997 },
     slug: "the-10x-developer",
   },
+  {
+    id: "ai-alignment",
+    name: "AI Alignment and RLHF",
+    subtitle: "The AI Alignment Mastery System™ — Build Models That Do What You Want",
+    category: "hardcore",
+    rarity: "High Demand",
+    description: "Master RLHF, DPO, and constitutional AI to build aligned models that reliably do what they're supposed to—the expertise separating $180K API users from $350K alignment architects.",
+    hours: 45,
+    modules: 9,
+    price: { selfPaced: 1497, cohort: 5997, founder: 17997 },
+    slug: "ai-alignment",
+  },
 
-  // CITIZEN DEVELOPER (4)
+  // CITIZEN DEVELOPER (3)
   {
     id: "agentic-sdk",
     name: "Build Your Own Synthetic Employees",
@@ -168,17 +180,6 @@ const courses = [
     modules: 11,
     price: { selfPaced: 1497, cohort: 5997, founder: 17997 },
     slug: "vibe-marketing",
-  },
-  {
-    id: "ai-native-university",
-    name: "The AI-Native University",
-    subtitle: "Transforming Educational Institutions with AI Infrastructure",
-    category: "citizen",
-    description: "Lead the future of education. Design AI-enhanced curricula and policies.",
-    hours: 24,
-    modules: 8,
-    price: { selfPaced: 997, cohort: 3997, founder: 9997 },
-    slug: "the-ai-native-university",
   },
   {
     id: "token-economy",

@@ -3393,24 +3393,6 @@ export const courses: Course[] = [
     faqs: []
   },
   {
-    id: "ai-native-university",
-    slug: "the-ai-native-university",
-    name: "The AI-Native University",
-    subtitle: "Transforming Educational Institutions with AI Infrastructure",
-    category: "Citizen Developer",
-    categoryId: "citizen",
-    price: 1997,
-    hook: "Lead the future of education.",
-    description: "Transform educational institutions with AI-enhanced curricula and ethical policies.",
-    outcomes: ["Design AI-enhanced curricula", "Implement ethical AI policies", "Train faculty on AI tools", "Measure learning outcomes"],
-    hours: 24,
-    modules: 8,
-    technologies: ["LMS Integration", "AI Assessment", "Adaptive Learning", "Analytics"],
-    curriculum: [{title: "Educational Transformation", lessons: ["AI Curriculum Design", "Policy Development", "Faculty Training", "Outcome Measurement"]}],
-    instructor: {name: "Dr. Lee", title: "AI Architect & Educator", bio: "Former ML lead at a Fortune 500 company."},
-    faqs: []
-  },
-  {
     id: "token-economy",
     slug: "the-token-economy",
     name: "The Token Economy",
@@ -3793,6 +3775,268 @@ export const courses: Course[] = [
           "Custom MCP servers for your company tools",
           "Enterprise security and compliance configuration",
           "Long-term partnership opportunities available"
+        ]
+      }
+    }
+  },
+  {
+    id: "ai-alignment",
+    slug: "ai-alignment",
+    name: "AI Alignment and RLHF",
+    subtitle: "The AI Alignment Mastery System™ — Build Models That Do What You Want",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "High Demand",
+    price: 1497,
+    hook: "Master RLHF, DPO, and constitutional AI to build aligned models that reliably do what they're supposed to—the expertise separating $180K API users from $350K alignment architects.",
+    description: "Powerful AI models are useless if they're unpredictable, unsafe, or uncontrollable. This masterclass teaches you reinforcement learning from human feedback (RLHF), direct preference optimization (DPO), constitutional AI, and modern alignment techniques used by Anthropic, OpenAI, and DeepMind. Unlike other RLHF courses teaching superficial HuggingFace API calls, this is executive business education (Harvard/MIT/Stanford caliber) merged with hands-on implementation. Using the DrLee.AI Shu-Ha-Ri learning method, you'll build complete alignment pipelines from scratch: collect preference data, train reward models, implement PPO and DPO, create constitutional AI systems, and deploy reasoning models using RLVR. Each module begins with TED-talk style instruction, then you immediately build it yourself. By the end, you'll deploy production-aligned models stakeholders trust—owning the critical capability that's transforming $180K ML engineers into $350K+ alignment specialists. Available in 4 modalities: 9-Week Live Cohort, 5-Day Immersive Bootcamp, Self-Paced Mastery, or Founder's Edition (1:1 mentorship/Fractional CTO). This masterclass builds on LLM foundations to teach the next critical layer: making those models safe, controllable, and aligned with human values. Unlike the LLM course which teaches model architecture and pretraining, this focuses exclusively on post-training alignment techniques that make models production-ready.",
+    outcomes: [
+      "Implement complete RLHF pipeline: preference data collection → reward model → PPO training → aligned model",
+      "Build reward models from human preferences using Bradley-Terry loss and pairwise comparisons",
+      "Train policies with Proximal Policy Optimization (PPO) and Group Relative Policy Optimization (GRPO)",
+      "Implement Direct Preference Optimization (DPO) for simpler alignment without reward models",
+      "Create constitutional AI systems using AI feedback and self-improvement loops",
+      "Train reasoning models like DeepSeek R1 using reinforcement learning from verifiable rewards (RLVR)",
+      "Apply instruction tuning, rejection sampling, and KL regularization for stable training",
+      "Build process reward models and outcome reward models for step-by-step verification",
+      "Implement tool use and function calling with Model Context Protocol (MCP)",
+      "Deploy production-aligned AI with evaluation suites, over-optimization detection, and safety monitoring",
+      "Debug reward hacking, mode collapse, and alignment failures in production systems",
+      "Design synthetic data generation and constitutional principles for scalable alignment"
+    ],
+    hours: 45,
+    modules: 9,
+    technologies: ["Python", "PyTorch", "HuggingFace Transformers", "Weights & Biases", "OpenAI Gym", "Anthropic Constitutional AI"],
+    curriculum: [
+      {
+        title: "Module 1: Alignment Foundations",
+        lessons: [
+          "Introduction: Why Alignment is Critical for Production AI",
+          "The Alignment Problem: Helpful, Honest, Harmless (HHH)",
+          "Historical Evolution: 2018 Origins to ChatGPT Era to DeepSeek R1",
+          "Core Definitions: Preferences, Rewards, Policies, Values",
+          "Language Modeling Overview and Post-Training Pipeline",
+          "The Problem Formulation: RLHF vs. Supervised Learning",
+          "Canonical Training Recipes: InstructGPT, Tülu 3, DeepSeek R1",
+          "Setting Up Your Complete RLHF Development Environment"
+        ]
+      },
+      {
+        title: "Module 2: Preference Intelligence",
+        lessons: [
+          "The Nature of Preferences: Why Preferences > Labels",
+          "Bias in Preference Data and Mitigation Strategies",
+          "Collecting Preference Data: Interface Design and Annotation",
+          "Rankings vs. Ratings: K-wise Comparisons",
+          "Structured Preference Data for Multi-Turn Conversations",
+          "Training Reward Models with Bradley-Terry Loss",
+          "Reward Model Architectures and Variants",
+          "Outcome Reward Models vs. Process Reward Models vs. Value Functions",
+          "Generative Reward Modeling for Explanations"
+        ]
+      },
+      {
+        title: "Module 3: Training Dynamics",
+        lessons: [
+          "KL Divergence Penalties: Preventing Model Collapse",
+          "Reference Models and Stable Training",
+          "Implementing KL Regularization in Policy Optimization",
+          "Pretraining Gradients and Regularization Techniques",
+          "Chat Templates and the Structure of Instructions",
+          "Best Practices of Instruction Tuning",
+          "Rejection Sampling: Data-Efficient Improvement",
+          "Best-of-N Sampling for Inference-Time Quality"
+        ]
+      },
+      {
+        title: "Module 4: Policy Optimization",
+        lessons: [
+          "Policy Gradient Algorithms: REINFORCE Foundation",
+          "Vanilla Policy Gradient Implementation",
+          "Proximal Policy Optimization (PPO) Mechanics",
+          "Implementing PPO from Scratch with Clipping",
+          "Group Relative Policy Optimization (GRPO)",
+          "Generalized Advantage Estimation (GAE) for Credit Assignment",
+          "Comparing PPO vs. GRPO for Language Models",
+          "Loss Aggregation, Asynchronicity, and Distributed Training",
+          "Debugging Gradient Explosion and Training Instabilities"
+        ]
+      },
+      {
+        title: "Module 5: Direct Alignment",
+        lessons: [
+          "Direct Preference Optimization (DPO): Eliminating Reward Models",
+          "How DPO Works: Mathematical Derivation",
+          "Implementing DPO Loss Function from Scratch",
+          "Numerical Concerns and DPO Weaknesses",
+          "DPO Alternatives: IPO, KTO, and Other Direct Methods",
+          "Online RL (PPO) vs. Offline (DPO): When to Use Each",
+          "Hybrid Approaches Combining DPO and PPO",
+          "Production DPO Pipelines at Scale"
+        ]
+      },
+      {
+        title: "Module 6: Constitutional AI",
+        lessons: [
+          "Constitutional AI Principles and Methodology",
+          "AI Feedback for Scalable Alignment",
+          "Using LLMs as Judges for Preference Generation",
+          "Designing Constitutional Principles for Your Use Case",
+          "Implementing Multi-Turn Constitutional AI Training",
+          "Automated Red-Teaming with AI Feedback",
+          "Recursive Self-Improvement Loops",
+          "Debugging AI Feedback Biases and Failure Modes"
+        ]
+      },
+      {
+        title: "Module 7: Reasoning and Inference Scaling",
+        lessons: [
+          "Why Reasoning Requires RL, Not Just Supervised Learning",
+          "The Origins of DeepSeek R1 and OpenAI o1",
+          "Verifiable Rewards vs. Preference-Based Rewards",
+          "Implementing Verifiable Reward Functions for Math/Coding",
+          "Training Reasoning Models with Outcome-Based RL",
+          "Building Process Reward Models for Step-by-Step Verification",
+          "Chain-of-Thought Reasoning and Inference-Time Scaling",
+          "Test-Time Compute: Improving Outputs with Search",
+          "Debugging Reward Hacking in Reasoning Tasks"
+        ]
+      },
+      {
+        title: "Module 8: Production Deployment",
+        lessons: [
+          "Function Calling and Tool Use for Agentic Behavior",
+          "Model Context Protocol (MCP) Implementation",
+          "Multi-Step Reasoning with Tool Orchestration",
+          "Modern Evaluation Beyond Static Benchmarks",
+          "Contamination Risks and Proper Holdout Sets",
+          "Detecting Over-Optimization and Proxy Reward Issues",
+          "Qualitative Over-Optimization: Sycophancy and Refusal",
+          "Building Comprehensive Evaluation Suites",
+          "Production Alignment Monitoring and Continuous Verification"
+        ]
+      },
+      {
+        title: "Module 9: Advanced Techniques",
+        lessons: [
+          "Synthetic Data Generation for Alignment at Scale",
+          "Distilling Alignment from Large Models to Smaller Ones",
+          "Style and Information Control: Chattiness vs. Conciseness",
+          "Model Character and Personality Training",
+          "Product UX and Alignment Integration",
+          "Model Specifications and Character Design",
+          "Building Autonomous Data Generation Pipelines",
+          "Product-Driven Alignment Iterations",
+          "Creating Feedback Loops: Users → Alignment → Deployment",
+          "Capstone: Deploy Your Complete Aligned AI System"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Alignment Architect & Educator",
+      bio: "Former alignment lead at a frontier AI company, Dr. Lee has trained hundreds of engineers to build production-aligned AI systems from first principles. His philosophy: understanding RLHF beats using HuggingFace APIs, and anyone can learn alignment with hands-on implementation."
+    },
+    faqs: [
+      {
+        question: "Do I need RL background for this course?",
+        answer: "No RL prerequisite required. We teach reinforcement learning from scratch specifically for alignment. If you understand supervised learning and backpropagation, you're ready. All RL concepts are built step-by-step."
+      },
+      {
+        question: "How is this different from the LLM masterclass?",
+        answer: "The LLM course teaches transformer architecture, pretraining, and tokenization—building the model. This course teaches post-training alignment: RLHF, DPO, constitutional AI—making models safe and controllable. They're complementary: LLM builds the engine, Alignment adds steering and safety."
+      },
+      {
+        question: "Will I just use HuggingFace's RLHF trainer?",
+        answer: "No. You'll implement PPO, DPO, and reward models from scratch in PyTorch to understand every component. Then you'll learn to use frameworks effectively, not blindly. Understanding comes from building."
+      },
+      {
+        question: "Can I align models without massive compute?",
+        answer: "Yes. We teach techniques that work on consumer GPUs and cloud instances. Reward models train on single GPUs. PPO/DPO fine-tuning works with small models (1B-7B parameters). You don't need GPT-4 scale compute to learn alignment."
+      },
+      {
+        question: "Is this relevant for my industry (healthcare/finance/legal)?",
+        answer: "Absolutely. Regulated industries need alignment more than anyone. We cover constitutional AI for compliance, preference data for domain expertise, and safety monitoring for production deployment. The techniques transfer to any domain."
+      },
+      {
+        question: "Will this help me get hired at Anthropic/OpenAI/DeepMind?",
+        answer: "This course teaches the exact techniques used at frontier labs. You'll build portfolio projects (RLHF pipelines, DPO implementations, constitutional AI systems) that demonstrate alignment expertise. Combined with our career support, alumni have landed roles at top AI companies."
+      },
+      {
+        question: "How long until I can deploy aligned models in production?",
+        answer: "By end of Week 5 (cohort) or Day 3 (bootcamp), you'll have a working DPO pipeline. By end of course, you'll deploy complete alignment systems. Self-paced students typically achieve production deployment within 60-90 days."
+      },
+      {
+        question: "What's the ROI for my career?",
+        answer: "Alignment specialists command $300K-$500K vs. $180K-$220K for ML generalists. The salary premium alone pays back the course investment 20x-100x in Year 1. Plus you become irreplaceable as alignment becomes critical for all AI deployment."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: {
+        price: 1497,
+        description: "Self-Paced Mastery (Complete at Your Own Speed)",
+        features: [
+          "All 9 modules (45 hours of video content)",
+          "100+ video lessons (TED-talk style instruction)",
+          "50+ Jupyter notebooks with full implementations",
+          "Complete code templates (PPO, DPO, reward models, constitutional AI)",
+          "Quizzes and self-assessments",
+          "Private Discord community access",
+          "Course materials updated for life",
+          "Certificate of completion",
+          "Build and deploy complete RLHF pipeline (capstone project)"
+        ]
+      },
+      cohort: {
+        price: 5997,
+        description: "9-Week Live Cohort (Structured Transformation)",
+        features: [
+          "Everything in Self-Paced PLUS:",
+          "18 live sessions (2× weekly for 9 weeks)",
+          "Live Q&A with Dr. Lee during each session",
+          "Code reviews and personalized feedback",
+          "Weekly implementation workshops",
+          "Study groups and peer collaboration",
+          "Private mentorship Slack channel",
+          "Career support (resume, interviews, placement)",
+          "Capstone project with instructor review",
+          "Lifetime access to alumni network",
+          "Certificate of completion (verified)",
+          "Early bird pricing: $4,797 (save $1,200)"
+        ]
+      },
+      bootcamp: {
+        price: 6997,
+        description: "5-Day Intensive Bootcamp (Rapid Immersion)",
+        features: [
+          "All 9 modules compressed into intensive 5-day format",
+          "Daily live sessions (8am-5pm, 40 hours total)",
+          "Hands-on labs each afternoon",
+          "Real-time debugging and implementation",
+          "Build complete alignment pipeline in 5 days",
+          "30-day post-bootcamp support",
+          "All course materials and recordings",
+          "Certificate of completion",
+          "Networking with cohort peers",
+          "Optional team rates available"
+        ]
+      },
+      founders: {
+        price: 17997,
+        description: "Founder's Edition (1:1 Implementation + Fractional CTO)",
+        features: [
+          "Everything in Cohort/Bootcamp PLUS:",
+          "6 private 1-on-1 sessions with Dr. Lee (90 min each)",
+          "Custom alignment strategy for your specific use case",
+          "Complete code review of your production pipeline",
+          "Architecture design session for your AI product",
+          "Direct Slack/email access to Dr. Lee",
+          "Monthly lifetime office hours (30-min check-ins)",
+          "Introductions to hiring managers at Anthropic/OpenAI/DeepMind",
+          "VC introduction for AI safety-focused startups",
+          "Fractional CTO guidance on AI strategy",
+          "Custom deliverables: Alignment roadmap, tech audit, deployment plan",
+          "Optional: $4,997/month retainer for ongoing support"
         ]
       }
     }

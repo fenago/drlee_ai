@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import HeaderNew from '@/components/landing/HeaderNew';
 import Footer from '@/components/Footer';
+import CourseBreadcrumb from '@/components/CourseBreadcrumb';
 import { getCourseBySlug, getAllCourseSlugs, Course } from '@/lib/courses';
 
 type Props = {
@@ -43,13 +44,7 @@ function CourseHero({ course }: { course: Course }) {
           {/* Left content */}
           <div>
             {/* Breadcrumb */}
-            <div className="flex items-center gap-2 text-sm text-white/50 mb-6">
-              <Link href="/" className="hover:text-white transition-colors">Home</Link>
-              <span>/</span>
-              <Link href="/#catalog" className="hover:text-white transition-colors">Catalog</Link>
-              <span>/</span>
-              <span className="text-white/70">{course.category}</span>
-            </div>
+            <CourseBreadcrumb category={course.category} />
 
             {/* Badges */}
             <div className="flex flex-wrap gap-2 mb-6">
@@ -242,6 +237,27 @@ function CourseHero({ course }: { course: Course }) {
                   </p>
                   <p className="text-white/90 text-sm leading-relaxed">
                     By the end, you'll <span className="font-semibold text-brand-green">have built a production-ready team of synthetic employees working together as your personal analysts</span>—expert-level decision support across every domain, integrated with all your systems, creating defensible competitive advantages. Designed for <span className="font-semibold text-brand-blue">anyone who understands that the future belongs to those who own their intelligence infrastructure</span>.
+                  </p>
+                </>
+              ) : course.slug === 'ai-alignment' ? (
+                <>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-blue">Powerful AI models are useless if they're unpredictable, unsafe, or uncontrollable.</span> This masterclass teaches you to <span className="font-semibold text-brand-blue">build alignment systems from scratch</span>—capable of <span className="font-semibold text-brand-green">reinforcement learning from human feedback (RLHF), direct preference optimization (DPO), constitutional AI, and production safety deployment</span>. <span className="font-semibold text-brand-yellow">You won't rely on HuggingFace Trainer APIs or black-box RLHF services</span>—you'll build the foundations yourself: <span className="font-semibold text-brand-green">preference data collection, reward models, PPO/GRPO policy optimization, DPO direct alignment, and reasoning with RLVR</span>.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    This is not another course on calling OpenAI's fine-tuning API. This is <span className="font-semibold text-brand-blue">executive business education (Harvard/MIT/Stanford caliber)</span> merged with a masterclass for tech founders and alignment architects. Using the <span className="font-semibold text-brand-green">DrLee.AI Shu-Ha-Ri learning method</span>, you'll go from API consumer to alignment specialist in 9 transformative modules.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    Each module begins with a <span className="font-semibold">TedTalk-style presentation</span> on alignment strategy, then you immediately <span className="font-semibold">build it yourself with hands-on coding</span>. You'll implement complete RLHF pipelines, train reward models from preferences, optimize policies with PPO and DPO, create constitutional AI systems, deploy reasoning models using RLVR, and build production safety systems—not just call APIs.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-yellow">Different from our LLM course:</span> While "Build Your Own LLM" teaches you to construct base transformer models, this course focuses on <span className="font-semibold">making those models safe, controllable, and aligned with human values</span>—the post-training techniques that transform raw models into production-ready systems like ChatGPT and Claude.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-yellow">Different from our Reasoning course:</span> While "Build Your Own Reasoning Model" teaches models to think step-by-step, this course teaches <span className="font-semibold">how to align any model behavior through human feedback and constitutional principles</span>—the fundamental safety layer that prevents toxic outputs, ensures controllability, and builds stakeholder trust.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed">
+                    By the end, you won't just understand how RLHF works—you'll <span className="font-semibold text-brand-green">own production-ready alignment systems with reward models, policy optimization, and constitutional AI that become your competitive moat as an engineer (commanding $300K-$500K salaries) or as a founder (deploying AI stakeholders trust)</span>.
                   </p>
                 </>
               ) : (
