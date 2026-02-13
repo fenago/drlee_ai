@@ -6,12 +6,12 @@ import Link from "next/link";
 
 // Categories
 const categories = [
-  { id: "all", name: "All Masterclasses", count: 15 },
+  { id: "all", name: "All Masterclasses", count: 16 },
   { id: "hardcore", name: "Hardcore Developers", count: 12 },
-  { id: "citizen", name: "Citizen Developer", count: 3 },
+  { id: "citizen", name: "Citizen Developer", count: 4 },
 ];
 
-// All 15 courses - synced with lib/courses.ts
+// All 16 courses - synced with lib/courses.ts
 const courses = [
   // HARDCORE DEVELOPERS (12)
   {
@@ -193,6 +193,18 @@ const courses = [
     price: { selfPaced: 997, cohort: 3997, founder: 9997 },
     slug: "the-token-economy",
   },
+  {
+    id: "ai-decision-makers",
+    name: "AI for Decision Makers",
+    subtitle: "Lead Smarter. Decide Faster. Amplify What Matters.",
+    category: "citizen",
+    rarity: "Flagship",
+    description: "A 2-day hands-on experience that gives organizational leaders the clarity, confidence, and practical tools to use AI as a force multiplier for the decisions that drive your mission forward.",
+    hours: 16,
+    modules: 9,
+    price: { selfPaced: 1497, cohort: 3997, founder: 14997 },
+    slug: "ai-for-decision-makers",
+  },
 ];
 
 const rarityColors: Record<string, string> = {
@@ -229,7 +241,7 @@ export default function CatalogNew() {
           className="text-center mb-12"
         >
           <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 text-sm font-medium mb-6">
-            21 Masterclasses Across 2 Categories
+            16 Masterclasses Across 2 Categories
           </span>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
             Choose Your Path to{" "}

@@ -1,4 +1,4 @@
-// Course data for all 22 masterclasses
+// Course data for all 16 masterclasses
 export interface Course {
   id: string;
   slug: string;
