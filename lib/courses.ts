@@ -1370,7 +1370,6 @@ export const courses: Course[] = [
     pricingModalities: {
       selfPaced: {
         price: 1997,
-        name: "Self-Paced Course",
         description: "Complete text-to-image generation mastery at your own pace. Build DALL-E 3, Nano Banana Pro, Flux, and modern diffusion systems from first principles.",
         features: [
           "All 9 modules (45+ hours of video)",
@@ -1380,16 +1379,11 @@ export const courses: Course[] = [
           "Monthly live office hours",
           "All future updates included",
           "Certificate of completion"
-        ],
-        paymentOptions: [
-          { label: "Full payment", amount: 1997 },
-          { label: "2-payment plan", amount: 997, note: "$997 + $1,050 in 30 days" }
         ]
       },
       cohort: {
         price: 6997,
-        name: "9-Week Live Cohort",
-        description: "9-week live cohort with Dr. Lee. Build production text-to-image systems with weekly workshops, code reviews, and direct instructor access.",
+        description: "9-Week Live Cohort",
         features: [
           "Everything in Self-Paced PLUS:",
           "9 weekly 3-hour live workshops",
@@ -1401,23 +1395,11 @@ export const courses: Course[] = [
           "Alumni network (500+ engineers and founders)",
           "Cohort session recordings",
           "Resume/LinkedIn review (engineers) or pitch deck review (founders)"
-        ],
-        paymentOptions: [
-          { label: "Full payment", amount: 6647, note: "Save 5% = $350" },
-          { label: "3-payment plan", amount: 2332, note: "$2,332/month x 3 (0% interest)" },
-          { label: "6-payment plan", amount: 1195, note: "$1,195/month x 6 (add 3% = $7,207 total)" }
-        ],
-        schedule: [
-          "Q1 Cohort: Starts January 14, 2025",
-          "Q2 Cohort: Starts April 8, 2025",
-          "Q3 Cohort: Starts July 15, 2025",
-          "Q4 Cohort: Starts October 7, 2025"
         ]
       },
       bootcamp: {
         price: 9997,
-        name: "5-Day Intensive Bootcamp",
-        description: "Executive format for senior engineers and CTOs. Build and deploy a complete production text-to-image system in 5 intensive days.",
+        description: "5-Day Intensive Bootcamp",
         features: [
           "5 full days (Monday-Friday, 8am-6pm)",
           "50 hours of instruction + hands-on building",
@@ -1429,23 +1411,11 @@ export const courses: Course[] = [
           "Catered meals + networking dinner",
           "Lifetime access to self-paced course",
           "Certificate of completion"
-        ],
-        paymentOptions: [
-          { label: "Full payment", amount: 9497, note: "Save 5% = $500" },
-          { label: "3-payment plan", amount: 3415, note: "$3,415/month x 3 (0% interest)" },
-          { label: "Corporate pricing", note: "Available for teams of 3+ (contact for quote)" }
-        ],
-        schedule: [
-          "Q1 Intensive: February 24-28, 2025 (San Francisco)",
-          "Q2 Intensive: May 19-23, 2025 (New York)",
-          "Q3 Intensive: August 18-22, 2025 (Austin)",
-          "Q4 Intensive: November 10-14, 2025 (Virtual)"
         ]
       },
       founders: {
         price: 19997,
-        name: "Founder's Edition",
-        description: "Everything in 9-Week Cohort + Founder-specific support. Build proprietary visual AI for your startup with custom architecture guidance and 6 months of ongoing consultation.",
+        description: "Founder's Edition",
         features: [
           "Everything in 9-Week Cohort PLUS:",
           "3 additional 1:1 sessions with Dr. Lee (60 min each)",
@@ -1458,17 +1428,6 @@ export const courses: Course[] = [
           "Priority response time (<12 hours)",
           "Hiring support (job descriptions, interview questions)",
           "Case study feature opportunity"
-        ],
-        paymentOptions: [
-          { label: "Full payment", amount: 18997, note: "Save 5% = $1,000" },
-          { label: "3-payment plan", amount: 6865, note: "$6,865/month x 3 (0% interest)" },
-          { label: "6-payment plan", amount: 3499, note: "$3,499/month x 6 (0% interest)" }
-        ],
-        idealFor: [
-          "Technical founders building AI-first companies",
-          "CTOs at startups preparing for Series A",
-          "Founders who raised seed and need technical differentiation",
-          "Solo technical founders wanting fractional CTO guidance"
         ]
       }
     }
@@ -2421,7 +2380,6 @@ export const courses: Course[] = [
     pricingModalities: {
       selfPaced: {
         price: 997,
-        name: "Self-Paced Course",
         description: "Complete production ML infrastructure mastery at your own pace. Build Netflix-scale MLOps platforms from Kubernetes to automated deployment.",
         features: [
           "All 9 modules (45+ hours of video)",
@@ -2431,16 +2389,11 @@ export const courses: Course[] = [
           "Private Discord community access",
           "Monthly group Q&A sessions (recorded)",
           "Certificate of completion"
-        ],
-        paymentOptions: [
-          { label: "Full payment", amount: 997 },
-          { label: "2-payment plan", amount: 497, note: "$497 + $550 in 30 days" }
         ]
       },
       cohort: {
         price: 3997,
-        name: "9-Week Live Cohort",
-        description: "Ship production ML infrastructure in 9 weeks with live instruction, code reviews, and expert mentorship. Build what takes most teams 6-12 months.",
+        description: "9-Week Live Cohort",
         features: [
           "Everything in Self-Paced PLUS:",
           "9 live weekly sessions (3 hours each) with Dr. Lee",
@@ -2452,17 +2405,11 @@ export const courses: Course[] = [
           "Job search support (resume review, interview prep) for engineers",
           "Investor pitch support (technical slides, architecture diagrams) for founders",
           "Lifetime access to all future cohort recordings"
-        ],
-        paymentOptions: [
-          { label: "Full payment", amount: 3997 },
-          { label: "3-payment plan", amount: 1399, note: "$1,399 × 3 monthly" },
-          { label: "6-payment plan", amount: 699, note: "$699 × 6 monthly" }
         ]
       },
       bootcamp: {
         price: 9997,
-        name: "5-Day Intensive Bootcamp",
-        description: "Build enterprise-grade MLOps infrastructure in 5 intensive days. What takes cohorts 9 weeks, condensed into one week of immersive implementation.",
+        description: "5-Day Intensive Bootcamp",
         features: [
           "Everything in Cohort PLUS:",
           "5 consecutive days, 8 hours/day (40 hours total)",
@@ -2473,16 +2420,11 @@ export const courses: Course[] = [
           "Post-bootcamp implementation support (2 weeks Slack access)",
           "Recorded sessions for your team",
           "Production ML Certification (industry-recognized credential)"
-        ],
-        paymentOptions: [
-          { label: "Full payment", amount: 9997 },
-          { label: "3-payment plan", amount: 3499, note: "$3,499 × 3 monthly" }
         ]
       },
       founders: {
         price: 19997,
-        name: "Founder's Edition (1:1 Implementation)",
-        description: "Build your proprietary ML platform with fractional CTO-level guidance. Custom architecture design, implementation support, and strategic consulting.",
+        description: "Founder's Edition (1:1 Implementation)",
         features: [
           "Everything in Bootcamp PLUS:",
           "12 weeks of 1:1 implementation support (2 hours/week, 24 hours total)",
@@ -2495,11 +2437,6 @@ export const courses: Course[] = [
           "Investor presentation support (technical architecture slides)",
           "Quarterly check-ins for 1 year post-program",
           "Private advisory board access (quarterly meetups)"
-        ],
-        paymentOptions: [
-          { label: "Full payment", amount: 19997 },
-          { label: "3-payment plan", amount: 6999, note: "$6,999 × 3 monthly" },
-          { label: "6-payment plan", amount: 3499, note: "$3,499 × 6 monthly" }
         ]
       }
     },
