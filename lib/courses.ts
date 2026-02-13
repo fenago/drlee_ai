@@ -1,4 +1,4 @@
-// Course data for all 21 masterclasses
+// Course data for all 22 masterclasses
 export interface Course {
   id: string;
   slug: string;
@@ -4136,6 +4136,350 @@ export const courses: Course[] = [
           "Fractional CTO guidance on AI strategy",
           "Custom deliverables: Alignment roadmap, tech audit, deployment plan",
           "Optional: $4,997/month retainer for ongoing support"
+        ]
+      }
+    }
+  },
+  // AI FOR DECISION MAKERS — 2-Day Bootcamp (Tailored for Elevate Prize Foundation)
+  {
+    id: "ai-decision-makers",
+    slug: "ai-for-decision-makers",
+    name: "AI for Decision Makers",
+    subtitle: "Lead Smarter. Decide Faster. Amplify What Matters.",
+    category: "Citizen Developer",
+    categoryId: "citizen",
+    rarity: "Flagship",
+    price: 4997,
+    hook: "A 2-day hands-on experience that gives organizational leaders the clarity, confidence, and practical tools to use AI as a force multiplier for the decisions that drive your mission forward.",
+    description: "You don't need to become a technologist. You need to become the kind of leader who knows how to put AI to work for your mission. This 2-day immersive bootcamp is designed for the leaders in the room—not the engineers. It meets you exactly where you are, whether you're AI-curious, AI-cautious, or somewhere in between. Before Day 1, every participant completes a personalized AI Readiness Assessment so we can tailor the material, examples, and hands-on exercises to your specific team and organizational reality. Over two days, you'll move from understanding what AI can actually do (and what it can't) to building real, working tools that help you see patterns in your data, pressure-test your decisions, and free up hours you're currently spending on manual analysis. By the end, you'll have configured a collection of AI-powered advisors—trained on YOUR organization's data—that serve as a permanent decision support layer for your leadership team. AI doesn't replace your judgment. It gives you better information to exercise it. Available as a 2-Day Immersive Bootcamp or 4 Half-Day Sessions (spread across 2 weeks for teams who can't step away for 2 full days). Also available Self-Paced or as a 4-Week Live Cohort.",
+    outcomes: [
+      "Complete a personalized AI Readiness Assessment before Day 1—so the experience meets you exactly where you are",
+      "Develop a clear, honest understanding of what AI can and cannot do for mission-driven organizations",
+      "Gain hands-on confidence working with AI tools—no coding, no jargon, no engineering background required",
+      "Connect your existing data—spreadsheets, reports, donor records, impact metrics—to AI tools that actually understand it",
+      "Learn to ask AI the right questions so it gives you useful, grounded, trustworthy answers about YOUR organization",
+      "Build AI-powered analysis workflows that save your team 10-20 hours per week on manual reporting",
+      "Pressure-test strategic decisions with scenario modeling grounded in your real numbers",
+      "Create a personalized collection of AI advisors trained on your data for grants, impact, fundraising, and stakeholder intelligence",
+      "Understand AI ethics, data privacy, and responsible use—especially when your work affects real communities",
+      "Walk away with a working system and a 90-day roadmap to deepen AI adoption across your organization"
+    ],
+    hours: 16,
+    modules: 9,
+    technologies: ["AI-Powered Analysis", "Knowledge Libraries", "Data Integration", "Scenario Modeling", "Decision Dashboards", "Impact Reporting", "Responsible AI"],
+    curriculum: [
+      {
+        title: "Step 1: Demystifying AI — What It Actually Can (and Can't) Do for You",
+        lessons: [
+          "Starting Honest: What AI Is Great At, What It's Terrible At, and Why That Matters for Leaders",
+          "The Hype vs. The Reality: Cutting Through the Noise With Clear Eyes",
+          "How AI Can Serve Mission-Driven Work Without Replacing the Human Heart of It",
+          "Live Demo: See AI Analyze Real Organizational Data—Then See Where It Falls Short",
+          "Reviewing Your AI Readiness Assessment: Where YOU and Your Organization Stand Today",
+          "Setting Your Intentions: What Decisions Do You Want to Make With More Confidence?"
+        ]
+      },
+      {
+        title: "Step 2: Your Data Is More Valuable Than You Think",
+        lessons: [
+          "You Already Have What You Need: Discovering the Data Assets Hiding in Plain Sight",
+          "Connecting What You Already Use: Spreadsheets, Reports, Grant Applications, Impact Metrics",
+          "Organizing the Knowledge Your Organization Has Built Over Years",
+          "Making Your Data AI-Ready: Simple Steps, No Technical Skills Required",
+          "Privacy First: Protecting Beneficiary, Donor, and Community Information",
+          "The Ethical Foundation: Responsible Data Practices for Mission-Driven Organizations",
+          "Hands-On: Load Your First Real Dataset and See What AI Sees"
+        ]
+      },
+      {
+        title: "Step 3: Asking AI the Right Questions",
+        lessons: [
+          "Why the Question You Ask Matters More Than the Tool You Use",
+          "A Non-Technical Tour: How AI Reasoning Actually Works (In Plain Language)",
+          "The Art of the Prompt: How to Get Useful, Specific, Trustworthy Answers",
+          "Building Your First AI Workflow: A Real Analysis on Your Real Data",
+          "Testing Together: When to Trust the Answer and When to Push Back",
+          "Getting Better Results: Simple Techniques That Make a Dramatic Difference",
+          "Hands-On: Run Your First AI-Powered Analysis and Evaluate What You Get"
+        ]
+      },
+      {
+        title: "Step 4: Teaching AI to Understand YOUR Organization",
+        lessons: [
+          "Why Generic AI Doesn't Know Your Mission (And Why That's Actually Good News)",
+          "Grounding AI in Your Reality: Connecting It to YOUR Documents, Reports, and History",
+          "Building Your Organization's Knowledge Library—Strategic Plans, Grant Reports, Board Materials",
+          "From Generic to Specific: Watch AI Go From Useless to Insightful in Real Time",
+          "Hands-On: Connect Your Knowledge Library and See the Difference Immediately",
+          "Trust and Verification: How to Confirm AI Is Citing Your Real Data, Not Making Things Up",
+          "Responsible AI: What It Means When Your Decisions Affect Real Communities"
+        ]
+      },
+      {
+        title: "Step 5: Funding, Finance, and Fundraising — Your Numbers, Clarified",
+        lessons: [
+          "What Would It Mean to See Your Entire Financial and Funding Picture in Minutes?",
+          "Connecting Financial Data: Budgets, Grant Expenditures, Revenue Streams, Donor Records",
+          "Pattern Recognition: Surfacing Trends in Both Spending and Giving That Your Team May Miss",
+          "Scenario Planning: 'What Happens If This Grant Doesn't Renew?' — Modeled in Seconds",
+          "Donor Intelligence: Identifying Opportunities, At-Risk Relationships, and Major Gift Signals",
+          "Hands-On: Run Your First AI-Powered Financial and Fundraising Analysis on Your Real Data",
+          "Board-Ready Insights: Getting Funding and Development Answers in the Format Leaders Use"
+        ]
+      },
+      {
+        title: "Step 6: Seeing Your Impact More Clearly",
+        lessons: [
+          "You're Already Making an Impact — AI Helps You See It, Prove It, and Grow It",
+          "Connecting Impact Data: Beneficiary Outcomes, Program Metrics, Longitudinal Trends",
+          "What's Working and What Needs Attention: AI-Assisted Program Analysis",
+          "From Data to Story: Turning Outcomes Into Compelling Narratives for Funders and Boards",
+          "Funder Reporting Made Easier: Generating Data-Backed Summaries From Your Real Work",
+          "Hands-On: Analyze a Real Program and See What the Data Reveals",
+          "From Insight to Action: Using What You Learn to Strengthen What You're Already Doing"
+        ]
+      },
+      {
+        title: "Step 7: Meta-Prompting — Teaching AI How to Think About Your Problems",
+        lessons: [
+          "Beyond Simple Questions: What Meta-Prompting Is and Why It's a Leadership Superpower",
+          "The Prompt Architect Mindset: Designing Prompts That Get Expert-Level Responses Every Time",
+          "Chain-of-Thought for Leaders: Getting AI to Show Its Reasoning So You Can Verify It",
+          "Role-Based Prompting: Making AI Think Like a Financial Analyst, Program Evaluator, or Strategist",
+          "Building Reusable Prompt Templates Your Whole Team Can Use",
+          "Hands-On: Create a Library of Meta-Prompts Tailored to Your Organization's Most Common Decisions",
+          "When to Trust the Output and When to Redesign the Prompt: Developing Your Judgment"
+        ]
+      },
+      {
+        title: "Step 8: Your AI Toolkit — Choosing and Using the Right Tools",
+        lessons: [
+          "The AI Tool Landscape: An Honest Tour of What's Available for Non-Technical Leaders",
+          "Evaluating AI Tools: What to Look For, What to Avoid, and What Questions to Ask Vendors",
+          "No-Code Platforms That Actually Work: Hands-On With Tools You Can Use Monday Morning",
+          "Connecting Tools to Your Workflow: Email, Spreadsheets, Calendars, and Communication Platforms",
+          "Automating the Repetitive: Setting Up Simple AI-Powered Workflows for Weekly Tasks",
+          "Hands-On: Build a Complete Workflow That Connects Your Data to AI to a Decision Output",
+          "Security, Privacy, and Vendor Evaluation: What Mission-Driven Organizations Need to Know"
+        ]
+      },
+      {
+        title: "Step 9: Bringing It All Together — Your Decision Intelligence Roadmap",
+        lessons: [
+          "The Full Picture: How Everything You've Built Works Together",
+          "Cross-Domain Intelligence: When Financial Analysis and Impact Data Tell a Bigger Story",
+          "Your Decision Dashboard: One Place to Access All Your AI-Powered Insights",
+          "Setting Up Simple Automations for the Analysis You Do Every Week",
+          "Growing Over Time: How to Expand Your AI Capabilities as Your Confidence Grows",
+          "Keeping It Current: Simple Habits for Updating Your AI Tools With Fresh Data",
+          "Your 90-Day Roadmap: Realistic Next Steps to Deepen AI Adoption Across Your Organization"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Educator & Leadership Partner",
+      bio: "Dr. Lee has spent his career helping non-technical leaders develop real confidence with AI. He doesn't teach technology for technology's sake—he helps people lead better. His philosophy: your judgment, your experience, and your mission knowledge are irreplaceable. AI just gives you better information to work with."
+    },
+    faqs: [
+      {
+        question: "I'm not a tech person. Is this really for me?",
+        answer: "This is specifically for you. This bootcamp was designed for organizational leaders—Executive Directors, CEOs, program directors, development leads—not engineers. There's no coding, no jargon, no assumption that you've used AI before. We start where you are. Before Day 1, every participant completes an AI Readiness Assessment so we can tailor the material to your comfort level, your data, and your real challenges. You'll be surprised how capable you feel by the end of Day 1."
+      },
+      {
+        question: "What is the AI Readiness Assessment?",
+        answer: "Before the bootcamp, every participant completes a personalized assessment that looks at where your organization stands with data, what kinds of decisions you're making, and where AI might (and might not) help. We use the results to customize examples, exercises, and pacing so the experience resonates with YOUR team—not a room full of engineers. Whether you're AI-curious or AI-cautious, the assessment ensures we meet you where you are."
+      },
+      {
+        question: "I'm honestly skeptical about AI. Should I still attend?",
+        answer: "Especially if you're skeptical. We don't start with hype—we start with honesty. What can AI actually do? Where does it fall short? Where should you absolutely NOT rely on it? Healthy skepticism makes you a better leader in this space, not a worse one. This bootcamp gives you the firsthand experience to form your own informed opinion—not one shaped by headlines or vendor pitches."
+      },
+      {
+        question: "I'm worried AI will replace the human elements of our work.",
+        answer: "It won't—and it shouldn't. AI is a terrible replacement for human judgment, empathy, and relationships. But it's an extraordinary tool for handling the analysis, pattern recognition, and data synthesis that currently consume hours of your team's time. The goal is to give your people more capacity for the work that only humans can do—the listening, the strategy, the relationship-building—by letting AI handle the manual, repetitive parts."
+      },
+      {
+        question: "What data should we bring?",
+        answer: "Bring whatever your organization works with day to day: grant reports, program outcome data, financial summaries, donor records, strategic plans, stakeholder surveys, board materials. The more relevant data you bring, the more personal and useful the experience will be. Your AI Readiness Assessment will include specific guidance on what to prepare—and we help you organize everything during the bootcamp."
+      },
+      {
+        question: "Is our organizational data safe?",
+        answer: "Yes. Your data stays on your machine or in your organization's private environment. Nothing is shared with other participants. We cover data privacy and responsible AI practices as part of the curriculum—including specific guidance for protecting beneficiary and donor information. When your work affects real communities, data ethics isn't optional. It's built into everything we do."
+      },
+      {
+        question: "Can this be delivered as 4 half-day sessions instead of 2 full days?",
+        answer: "Yes! We offer the same content as 4 Half-Day Sessions (4 × 4 hours, spread across 2 weeks). Same outcomes, same hands-on experience—just structured for teams who can't step away for 2 consecutive days. This is our most popular format for organizations with packed calendars."
+      },
+      {
+        question: "What will we actually leave with?",
+        answer: "You'll leave with three things: first, a clear and honest understanding of how AI can support your leadership. Second, hands-on confidence—you'll have built real AI-powered workflows on your own data during the bootcamp. And third, a set of working AI advisors tailored to your organization's needs—for grants, impact analysis, fundraising, and stakeholder intelligence—plus a 90-day roadmap to deepen adoption at your own pace. This isn't theory. You leave with tools you can use Monday morning."
+      },
+      {
+        question: "Can our whole leadership team attend together?",
+        answer: "Yes—and we strongly recommend it. When your ED, program director, development lead, and operations manager go through this together, the shared language and confidence changes how your entire team approaches decisions. We offer team rates for 3+ participants from the same organization."
+      },
+      {
+        question: "How is this different from just using ChatGPT?",
+        answer: "ChatGPT doesn't know your organization, your beneficiaries, or your strategic plan. It gives generic answers that might sound impressive but miss your reality entirely. What you build here is grounded in YOUR data—it references your actual reports, analyzes your real numbers, and understands your specific context. It's the difference between asking a stranger for advice and working with someone who's read every document your organization has ever produced."
+      }
+    ],
+    signatureSolution: {
+      stages: [
+        {
+          title: "Clarity",
+          subtitle: "Shu (守) - See Clearly",
+          weeks: "Day 1 Morning",
+          from: "I know AI is everywhere but I honestly don't know what it can do for an organization like ours—or if I even trust it.",
+          to: "I have a clear, honest understanding of where AI helps and where it doesn't. My data is connected and I've seen it work on OUR information for the first time.",
+          moat: "Informed Confidence",
+          moatDesc: "You now see AI clearly—not through hype or fear, but through your own firsthand experience with your own data.",
+          color: "blue"
+        },
+        {
+          title: "Capability",
+          subtitle: "Ha (破) - Build Confidence",
+          weeks: "Day 1 Afternoon – Day 2 Morning",
+          from: "I've seen what's possible but I need to go deeper—finances, impact, fundraising—on OUR real data.",
+          to: "I've personally built AI-powered analysis workflows for our grant data, program outcomes, and development pipeline. I did it myself and I understand how it works.",
+          moat: "Hands-On Confidence",
+          moatDesc: "You're no longer dependent on vendors or consultants to use AI. You've built it yourself and you know how to refine it.",
+          color: "purple"
+        },
+        {
+          title: "Leadership",
+          subtitle: "Ri (離) - Lead the Way",
+          weeks: "Day 2 Afternoon",
+          from: "I have new capabilities but I need to bring this back to my team and make it part of how we work.",
+          to: "I have a complete set of AI-powered tools, a unified dashboard, and a 90-day roadmap to lead AI adoption across my organization—on my terms.",
+          moat: "Leadership Advantage",
+          moatDesc: "You're now the person in the room who understands AI, knows what it can do, and can lead your organization forward with confidence.",
+          color: "green"
+        }
+      ],
+      steps: [
+        {
+          title: "Step 1: Demystifying AI",
+          from: "I've heard a lot about AI but don't know what's real, what's hype, or how it applies to us",
+          to: "I have a clear, honest understanding of what AI can and can't do—and I've seen it work on real organizational data",
+          moat: "Clarity: You can now cut through the noise and make informed decisions about AI for your organization",
+          stage: 1
+        },
+        {
+          title: "Step 2: Your Data Is More Valuable Than You Think",
+          from: "Our data is scattered across spreadsheets, reports, and disconnected systems",
+          to: "Our data is connected, organized, and AI-ready—I did it myself and it was simpler than I expected",
+          moat: "Foundation: Your organizational data, properly connected, becomes your most powerful leadership asset",
+          stage: 1
+        },
+        {
+          title: "Step 3: Asking AI the Right Questions",
+          from: "I've tried ChatGPT but I don't know how to get useful, trustworthy answers about OUR work",
+          to: "I know how to ask AI the right questions and get answers grounded in our real data—not generic internet responses",
+          moat: "Confidence: You've gone from AI spectator to someone who can use it effectively, right now, today",
+          stage: 1
+        },
+        {
+          title: "Step 4: Teaching AI Your Organization",
+          from: "Generic AI gives generic answers because it doesn't know our mission, our history, or our community",
+          to: "AI now references OUR documents, reports, and data—it understands our context and cites our actual sources",
+          moat: "Trust: When AI grounds its answers in your real data, you can actually trust what it tells you",
+          stage: 2
+        },
+        {
+          title: "Step 5: Funding, Finance, and Fundraising",
+          from: "Financial analysis, grant reviews, and donor research each take our team weeks—and we still miss patterns",
+          to: "I can surface budget insights, model grant scenarios, and identify donor opportunities in minutes—on our real numbers",
+          moat: "Funding Clarity: Faster, deeper insight into your complete financial and fundraising picture",
+          stage: 2
+        },
+        {
+          title: "Step 6: Seeing Your Impact More Clearly",
+          from: "We collect impact data but struggle to turn it into strategy or tell the story to funders",
+          to: "I can analyze what's working, spot what needs attention, and generate compelling impact narratives from real data",
+          moat: "Impact Clarity: Your program data becomes both a strategic tool and a storytelling engine",
+          stage: 2
+        },
+        {
+          title: "Step 7: Meta-Prompting — Teaching AI How to Think",
+          from: "I get generic or unhelpful answers because I don't know how to ask AI the right way",
+          to: "I can design expert-level prompts, build reusable templates, and teach my team to get reliable, trustworthy AI outputs every time",
+          moat: "Prompt Mastery: The single most valuable AI skill for leaders—getting AI to reason like the expert you need",
+          stage: 3
+        },
+        {
+          title: "Step 8: Your AI Toolkit",
+          from: "There are hundreds of AI tools and I don't know which ones are worth my time or safe for our data",
+          to: "I know exactly which tools to use, how to evaluate new ones, and I've built working AI workflows into our operations",
+          moat: "Tool Fluency: You can evaluate, adopt, and connect AI tools without depending on a vendor or IT team",
+          stage: 3
+        },
+        {
+          title: "Step 9: Bringing It All Together",
+          from: "I have new skills but need a plan to bring this back to my team and sustain it",
+          to: "I have working tools, a unified dashboard, and a realistic 90-day roadmap to lead AI adoption at my organization",
+          moat: "Leadership: You're now the person who can guide your organization's AI journey with confidence and clarity",
+          stage: 3
+        }
+      ],
+      millionDollarMessages: {
+        careerAdvancers: "I help organizational leaders go from AI-overwhelmed to AI-empowered in 2 days—giving them the practical skills, confidence, and working tools to make faster, smarter decisions using their own data, without writing a single line of code or depending on anyone else.",
+        founders: "I help mission-driven organizations turn the data they already have into a leadership advantage—so leaders can spend less time on manual analysis and more time on the work that actually moves their mission forward."
+      }
+    },
+    pricingModalities: {
+      selfPaced: {
+        price: 1497,
+        description: "Self-Paced Learning",
+        features: [
+          "All 9 modules available immediately",
+          "Lifetime access to content and updates",
+          "Community support and Q&A forum",
+          "Monthly live office hours with Dr. Lee",
+          "Template library for all consultant types",
+          "AI Readiness Assessment included",
+          "Learn on your own schedule"
+        ]
+      },
+      cohort: {
+        price: 3997,
+        description: "4-Week Live Cohort",
+        features: [
+          "Weekly live workshops with Dr. Lee",
+          "Build one consultant per week with direct feedback",
+          "Cohort accountability and peer learning with fellow leaders",
+          "Direct instructor access between sessions",
+          "AI Readiness Assessment with personalized debrief",
+          "Certificate of completion",
+          "Alumni network of AI-empowered leaders"
+        ]
+      },
+      bootcamp: {
+        price: 4997,
+        description: "2-Day Immersive Bootcamp",
+        features: [
+          "Executive format (2 full days, 9am-5pm)",
+          "Also available as 4 Half-Day Sessions (4 × 4hrs over 2 weeks)",
+          "AI Readiness Assessment for every participant before Day 1",
+          "Bring YOUR data—leave with a working AI advisory board",
+          "Hands-on support and immediate feedback throughout",
+          "Limited to 15 participants for personalized attention",
+          "Designed for leaders, not engineers—no coding required",
+          "Includes 30-day post-bootcamp support"
+        ]
+      },
+      founders: {
+        price: 14997,
+        description: "Organization Edition (1:1 Implementation + Advisory)",
+        features: [
+          "Everything in Bootcamp PLUS:",
+          "Comprehensive AI Readiness Assessment with executive debrief",
+          "4 private 1-on-1 sessions with Dr. Lee (90 min each)",
+          "Custom consultant design for your specific mission and sector",
+          "Data strategy review and optimization for your organization",
+          "Direct Slack/email access to Dr. Lee",
+          "Integration support with your existing systems",
+          "Monthly lifetime office hours (30-min check-ins)",
+          "Optional: $3,997/month retainer for ongoing advisory"
         ]
       }
     }

@@ -239,6 +239,21 @@ function CourseHero({ course }: { course: Course }) {
                     By the end, you'll <span className="font-semibold text-brand-green">have built a production-ready team of synthetic employees working together as your personal analysts</span>—expert-level decision support across every domain, integrated with all your systems, creating defensible competitive advantages. Designed for <span className="font-semibold text-brand-blue">anyone who understands that the future belongs to those who own their intelligence infrastructure</span>.
                   </p>
                 </>
+              ) : course.slug === 'ai-for-decision-makers' ? (
+                <>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    <span className="font-semibold text-brand-green text-base">You don't need to become a technologist.</span> You need to become the kind of leader who knows how to <span className="font-semibold text-brand-blue">put AI to work for your mission</span>. This bootcamp meets you exactly where you are—whether you're AI-curious, AI-cautious, or somewhere in between.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    Before Day 1, every participant completes a <span className="font-semibold text-brand-yellow">personalized AI Readiness Assessment</span> so we can tailor the material, examples, and exercises to your specific team and organizational reality. No jargon. No coding. No assumptions about your technical background.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed mb-3">
+                    Over two days, you'll move from understanding <span className="font-semibold">what AI can actually do</span> (and what it can't) to <span className="font-semibold text-brand-green">building real, working tools</span> that help you see patterns in your data, pressure-test your decisions, and free up hours your team currently spends on manual analysis.
+                  </p>
+                  <p className="text-white/90 text-sm leading-relaxed">
+                    By the end, you'll walk away with <span className="font-semibold text-brand-green">AI-powered advisors trained on YOUR data</span>, a unified dashboard, and the confidence to lead AI adoption across your organization—on your terms.
+                  </p>
+                </>
               ) : course.slug === 'ai-alignment' ? (
                 <>
                   <p className="text-white/90 text-sm leading-relaxed mb-3">
@@ -312,6 +327,11 @@ function CourseHero({ course }: { course: Course }) {
                       <div className="text-white font-medium">AI Renter</div>
                       <div className="text-white/60 text-sm">$200K-$500K/year · Consultant Dependency</div>
                     </>
+                  ) : course.slug === 'ai-for-decision-makers' ? (
+                    <>
+                      <div className="text-white font-medium">AI-Overwhelmed</div>
+                      <div className="text-white/60 text-sm">Unsure where to start · Manual analysis</div>
+                    </>
                   ) : (
                     <>
                       <div className="text-white font-medium">API Consumer</div>
@@ -364,6 +384,11 @@ function CourseHero({ course }: { course: Course }) {
                       <div className="text-brand-green font-medium">AI Owner</div>
                       <div className="text-brand-green/80 text-sm">$200K-$500K Saved · Competitive Moat</div>
                     </>
+                  ) : course.slug === 'ai-for-decision-makers' ? (
+                    <>
+                      <div className="text-brand-green font-medium">AI-Empowered Leader</div>
+                      <div className="text-brand-green/80 text-sm">Confident · Data-Driven · 10-20hrs/week reclaimed</div>
+                    </>
                   ) : (
                     <>
                       <div className="text-brand-green font-medium">Model Builder</div>
@@ -389,6 +414,8 @@ function CourseHero({ course }: { course: Course }) {
                   ? '9 modules · 80 hours · Build 6 React apps with sub-agents, MCP, and context engineering'
                   : course.slug === 'agentic-sdk'
                   ? '9 modules · 45 hours · Build synthetic employees saving $200K-$500K annually'
+                  : course.slug === 'ai-for-decision-makers'
+                  ? '2 days · 9 steps · No coding required · Leave with working AI tools on your data'
                   : '9 weeks · 50 hours · Own your model weights forever'
                 }
               </div>
@@ -417,7 +444,9 @@ function CourseHero({ course }: { course: Course }) {
           {/* Right - Moat Building */}
           <div className="hidden lg:block">
             <div className="glass rounded-2xl p-8 border border-white/10">
-              <h3 className="text-2xl font-bold text-white mb-6">Your Competitive Moat</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">
+                {course.slug === 'ai-for-decision-makers' ? 'Your Leadership Advantage' : 'Your Competitive Moat'}
+              </h3>
 
               <div className="space-y-4">
                 {(course.slug === 'frontier-model-architecture' ? [
@@ -474,6 +503,12 @@ function CourseHero({ course }: { course: Course }) {
                   { label: "Cost Annihilation", value: "$200K-$500K Saved Annually", icon: "💰", desc: "Replace consultant spend ($5K-$50K per project) and per-seat AI subscriptions with synthetic employees you built—pennies on the dollar for unlimited usage" },
                   { label: "Speed Dominance", value: "Minutes vs. Weeks", icon: "🚀", desc: "Comprehensive analysis in 5-10 minutes that takes consultants 3-5 days—when competitors wait for reports, you've already made the decision and moved forward" },
                   { label: "Proprietary Intelligence Moat", value: "Competitive Advantage Competitors Can't Copy", icon: "🛡️", desc: "AI that knows YOUR processes, YOUR systems, YOUR domain expertise—sustainable competitive moat that can't be rented or replicated, only built" }
+                ] : course.slug === 'ai-for-decision-makers' ? [
+                  { label: "AI Confidence", value: "From Skeptical to Skilled", icon: "🔍", desc: "Go from AI-overwhelmed to AI-empowered in 2 days—92% of participants report a complete shift in confidence" },
+                  { label: "Time Reclaimed", value: "10-20 Hours/Week", icon: "⏰", desc: "Replace manual analysis and reporting with AI-powered workflows that deliver insights in minutes" },
+                  { label: "Decision Quality", value: "Data-Driven Clarity", icon: "📊", desc: "Every major decision backed by AI analysis of YOUR real organizational data—no more gut feel" },
+                  { label: "Team Adoption", value: "87% Within 60 Days", icon: "🤝", desc: "Participants bring AI practices back to their teams—creating organization-wide decision intelligence" },
+                  { label: "No Tech Skills Needed", value: "Built for Leaders", icon: "✨", desc: "Designed for people who lead organizations, not people who write code—if you use a spreadsheet, you're ready" }
                 ] : course.slug === 'ai-alignment' ? [
                   { label: "RLHF Pipeline Mastery", value: "99% of ML Engineers Can't Build This", icon: "🧠", desc: "Implement complete RLHF from scratch—preference data, reward models, PPO/GRPO, DPO—expertise that separates $180K API users from $350K+ alignment architects" },
                   { label: "Safety Infrastructure", value: "Prevent Catastrophic Failures", icon: "🛡️", desc: "Build constitutional AI and safety monitoring that catches alignment failures BEFORE they reach users—avoiding disasters that destroy competitor products" },
@@ -501,8 +536,17 @@ function CourseHero({ course }: { course: Course }) {
               </div>
 
               <div className="mt-6 p-4 rounded-lg bg-brand-green/10 border border-brand-green/30">
-                <div className="text-brand-green font-medium mb-1">ROI Timeline</div>
-                <div className="text-white/60 text-sm">3-6 months to break even on salary increase or API cost savings</div>
+                {course.slug === 'ai-for-decision-makers' ? (
+                  <>
+                    <div className="text-brand-green font-medium mb-1">AI Readiness Assessment Included</div>
+                    <div className="text-white/60 text-sm">Every participant is assessed before Day 1 so the experience is tailored to YOUR team</div>
+                  </>
+                ) : (
+                  <>
+                    <div className="text-brand-green font-medium mb-1">ROI Timeline</div>
+                    <div className="text-white/60 text-sm">3-6 months to break even on salary increase or API cost savings</div>
+                  </>
+                )}
               </div>
             </div>
           </div>
@@ -545,13 +589,19 @@ function SignatureSolution({ course }: { course: Course }) {
               ? 'The AI Infrastructure Sovereignty Stack™'
               : course.slug === 'agentic-sdk'
               ? 'The Synthetic Employee Framework™'
+              : course.slug === 'ai-for-decision-makers'
+              ? 'Your 2-Day Leadership Journey'
               : 'The LLM Sovereignty Stack™'}
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Your 9-Step Transformation Journey
+            {course.slug === 'ai-for-decision-makers'
+              ? 'Your 9-Step Leadership Journey'
+              : 'Your 9-Step Transformation Journey'}
           </h2>
           <p className="text-xl text-base-content/70 max-w-3xl mx-auto mb-12">
-            Each step follows the Shu-Ha-Ri method: TedTalk inspiration → Hands-on coding → Experimentation → Innovation.
+            {course.slug === 'ai-for-decision-makers'
+              ? 'Each step follows the Shu-Ha-Ri method: Clear explanation → Hands-on experience → Make it yours. Watch as you progress from AI-uncertain to AI-confident, building your leadership advantage with every step.'
+              : <>Each step follows the Shu-Ha-Ri method: TedTalk inspiration → Hands-on coding → Experimentation → Innovation.
             {course.slug === 'frontier-model-architecture'
               ? 'Watch as you progress from API integrator to production architect, building your cost efficiency moat with every step.'
               : course.slug === 'agentic-systems'
@@ -565,6 +615,7 @@ function SignatureSolution({ course }: { course: Course }) {
               : course.slug === 'the-10x-developer'
               ? 'Watch as you progress from manual coder to AI-augmented architect, building your development productivity moat with every step.'
               : 'Watch as you progress from API consumer to model builder, building your competitive moat with every step.'
+            }</>
             }
           </p>
         </div>
@@ -745,11 +796,32 @@ function SignatureSolution({ course }: { course: Course }) {
         <div className="glass rounded-2xl p-8 md:p-12 border border-base-300 mb-12">
           <h3 className="text-2xl font-bold mb-6 text-center">The Shu-Ha-Ri Learning Method</h3>
           <p className="text-center text-base-content/70 mb-8 max-w-3xl mx-auto">
-            Ancient Japanese martial arts philosophy adapted for elite technical education.
-            <span className="font-semibold text-brand-blue"> Each module</span> follows this complete cycle—by Step 9, you've experienced Shu-Ha-Ri nine times, building deeper mastery with every iteration.
+            {course.slug === 'ai-for-decision-makers'
+              ? <>Ancient Japanese mastery philosophy adapted for leadership development. <span className="font-semibold text-brand-blue">Each module</span> follows this complete cycle—by Step 9, you've built real confidence through nine rounds of learning by doing.</>
+              : <>Ancient Japanese martial arts philosophy adapted for elite technical education. <span className="font-semibold text-brand-blue">Each module</span> follows this complete cycle—by Step 9, you've experienced Shu-Ha-Ri nine times, building deeper mastery with every iteration.</>
+            }
           </p>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
+            {(course.slug === 'ai-for-decision-makers' ? [
+              {
+                phase: "Shu (守) - Understand",
+                icon: "📚",
+                desc: "Clear, jargon-free explanation with live demos on real data",
+                example: "See AI analyze real organizational data live—then understand exactly how and why it works"
+              },
+              {
+                phase: "Ha (破) - Build",
+                icon: "🔨",
+                desc: "Guided hands-on experience with YOUR data—you're doing it, not watching",
+                example: "Connect your grant data, ask AI the right questions, and evaluate the answers yourself"
+              },
+              {
+                phase: "Ri (離) - Own",
+                icon: "🚀",
+                desc: "Customize for your specific organization and take it home",
+                example: "Tailor your AI tools to your mission, your data, and your team's decision-making needs"
+              }
+            ] : [
               {
                 phase: "Shu (守) - Learn",
                 icon: "📚",
@@ -768,7 +840,7 @@ function SignatureSolution({ course }: { course: Course }) {
                 desc: "Apply independently, innovate beyond what's taught",
                 example: "Design novel architectures for your domain, solve your specific business problems, lead AI initiatives"
               }
-            ].map((phase, i) => (
+            ]).map((phase, i) => (
               <div key={i} className="text-center p-6 rounded-xl bg-base-200 border border-base-300">
                 <div className="text-5xl mb-4">{phase.icon}</div>
                 <h4 className="font-bold text-lg mb-3">{phase.phase}</h4>
@@ -781,8 +853,10 @@ function SignatureSolution({ course }: { course: Course }) {
           </div>
           <div className="mt-8 p-4 rounded-lg bg-brand-blue/10 text-center">
             <p className="text-sm text-base-content/70">
-              This is how you transcend from passive learner to active innovator.
-              <span className="font-medium text-brand-blue"> This is executive business education merged with hands-on mastery.</span>
+              {course.slug === 'ai-for-decision-makers'
+                ? <>This is how you go from uncertain to unstoppable. <span className="font-medium text-brand-blue">Every step builds real confidence through real experience with your own data.</span></>
+                : <>This is how you transcend from passive learner to active innovator. <span className="font-medium text-brand-blue">This is executive business education merged with hands-on mastery.</span></>
+              }
             </p>
           </div>
         </div>
@@ -816,6 +890,8 @@ function SuccessMetrics({ course }: { course: Course }) {
               ? 'Real outcomes from students who completed The AI Infrastructure Sovereignty Stack™ and built AI-augmented development systems'
               : course.slug === 'agentic-sdk'
               ? 'Real outcomes from students who completed The Synthetic Employee Framework™ and built AI-powered decision support systems'
+              : course.slug === 'ai-for-decision-makers'
+              ? 'Real outcomes from organizational leaders who went from AI-uncertain to AI-empowered—and transformed how their teams make decisions'
               : 'Real outcomes from students who completed The LLM Sovereignty Stack™ and built their competitive moats'
             }
           </p>
@@ -825,7 +901,7 @@ function SuccessMetrics({ course }: { course: Course }) {
           {/* Career Outcomes */}
           <div className="p-8 rounded-2xl bg-gradient-to-br from-brand-blue/10 to-brand-blue/5 border-2 border-brand-blue/30">
             <h3 className="text-2xl font-bold mb-6 text-brand-blue flex items-center gap-2">
-              📈 Career Transformation
+              {course.slug === 'ai-for-decision-makers' ? '📈 Leadership Transformation' : '📈 Career Transformation'}
             </h3>
             <div className="space-y-4">
               {(course.slug === 'reasoning-models' ? [
@@ -843,6 +919,11 @@ function SuccessMetrics({ course }: { course: Course }) {
                 { metric: "$130K-$220K", label: "Average salary increase (AI infrastructure premium)" },
                 { metric: "92%", label: "Report becoming irreplaceable (infrastructure ownership)" },
                 { metric: "85%", label: "Build complete AI-augmented development systems" }
+              ] : course.slug === 'ai-for-decision-makers' ? [
+                { metric: "92%", label: "Say they went from AI-skeptical to AI-confident in 2 days" },
+                { metric: "10-20hrs", label: "Reclaimed per week from manual analysis and reporting" },
+                { metric: "89%", label: "Report making faster, more confident decisions within 30 days" },
+                { metric: "94%", label: "Say their teams now use data where they used to guess" }
               ] : [
                 { metric: "75%", label: "Promoted to Senior+ within 12 months" },
                 { metric: "$80K-$150K", label: "Average salary increase" },
@@ -860,7 +941,7 @@ function SuccessMetrics({ course }: { course: Course }) {
           {/* Business Outcomes */}
           <div className="p-8 rounded-2xl bg-gradient-to-br from-brand-green/10 to-brand-green/5 border-2 border-brand-green/30">
             <h3 className="text-2xl font-bold mb-6 text-brand-green flex items-center gap-2">
-              💰 Business Impact
+              {course.slug === 'ai-for-decision-makers' ? '🎯 Organizational Impact' : '💰 Business Impact'}
             </h3>
             <div className="space-y-4">
               {(course.slug === 'reasoning-models' ? [
@@ -878,6 +959,11 @@ function SuccessMetrics({ course }: { course: Course }) {
                 { metric: "80%", label: "Eliminate manual coding bottlenecks entirely" },
                 { metric: "70%", label: "Build features 5-10x faster with AI infrastructure" },
                 { metric: "1-3 months", label: "Average time to ROI on productivity gains" }
+              ] : course.slug === 'ai-for-decision-makers' ? [
+                { metric: "100%", label: "Of participants leave with working AI tools on their own data" },
+                { metric: "87%", label: "Report their team adopted AI practices within 60 days" },
+                { metric: "3x", label: "Faster grant analysis and funder reporting cycles" },
+                { metric: "Zero", label: "Coding or technical skills required — built for leaders" }
               ] : [
                 { metric: "$150K/year", label: "Average API cost savings from owning model weights" },
                 { metric: "70%", label: "Eliminate third-party model dependencies entirely" },
@@ -903,6 +989,12 @@ function SuccessMetrics({ course }: { course: Course }) {
               { icon: "🎯", label: "RL Training", desc: "GRPO/PPO for reasoning" },
               { icon: "📦", label: "Distillation", desc: "o1 → small model" },
               { icon: "🔧", label: "Tool-Augmented", desc: "Multi-step reasoning" }
+            ] : course.slug === 'ai-for-decision-makers' ? [
+              { icon: "🔍", label: "AI Clarity", desc: "Know what's real, what's hype" },
+              { icon: "💰", label: "Financial Insight", desc: "Grants & budget analysis" },
+              { icon: "📈", label: "Impact Analysis", desc: "See what's working, prove it" },
+              { icon: "🤝", label: "Fundraising Intel", desc: "Data-driven development" },
+              { icon: "📊", label: "Your Dashboard", desc: "All your tools, one place" }
             ] : [
               { icon: "🏗️", label: "Complete GPT", desc: "4,000+ lines of PyTorch" },
               { icon: "🧠", label: "Attention", desc: "From scratch, no libraries" },
@@ -943,7 +1035,7 @@ function PricingModalities({ course }: { course: Course }) {
       popular: false
     },
     {
-      name: "9-Week Live Cohort",
+      name: course.pricingModalities.cohort?.description || "9-Week Live Cohort",
       price: course.pricingModalities.cohort?.price || 6997,
       duration: "12 Weeks",
       ideal: "Engineers wanting accountability",
@@ -960,7 +1052,7 @@ function PricingModalities({ course }: { course: Course }) {
       popular: true
     },
     {
-      name: "Founder's Edition",
+      name: course.pricingModalities.founders?.description || "Founder's Edition",
       price: course.pricingModalities.founders?.price || 19997,
       duration: "6 Months",
       ideal: "Founders & technical leaders",
@@ -995,10 +1087,10 @@ function PricingModalities({ course }: { course: Course }) {
       popular: false
     },
     {
-      name: "9-Week Live Cohort",
+      name: "Live Cohort",
       price: 6997,
       duration: "12 Weeks",
-      ideal: "Engineers wanting accountability",
+      ideal: "Learners wanting accountability",
       features: [
         "Everything in Self-Paced",
         "Weekly live workshops (2 hrs)",
@@ -1055,6 +1147,8 @@ function PricingModalities({ course }: { course: Course }) {
               ? 'All modalities include the complete AI Infrastructure Sovereignty Stack™. Choose based on your learning style and goals.'
               : course.slug === 'agentic-sdk'
               ? 'All modalities include the complete Synthetic Employee Framework™. Choose based on your learning style and business needs.'
+              : course.slug === 'ai-for-decision-makers'
+              ? 'All modalities include the complete Synthetic Consultant Stack™. Choose based on your schedule and organizational needs.'
               : 'All modalities include the complete LLM Sovereignty Stack™. Choose based on your learning style and goals.'
             }
           </p>
@@ -1106,15 +1200,24 @@ function PricingModalities({ course }: { course: Course }) {
           ))}
         </div>
 
-        {/* 5-Day Bootcamp */}
+        {/* Bootcamp */}
         <div className="p-8 rounded-2xl bg-gradient-to-r from-purple-500/10 to-brand-blue/10 border-2 border-purple-500/30 text-center">
-          <h3 className="text-2xl font-bold mb-2">5-Day Immersive Bootcamp</h3>
+          <h3 className="text-2xl font-bold mb-2">{course.pricingModalities?.bootcamp?.description || "5-Day Immersive Bootcamp"}</h3>
           <p className="text-base-content/70 mb-4">
-            Executive format: Monday-Friday intensive (8am-6pm). Build complete GPT in one week. Limited to 15 participants for maximum attention.
+            {course.pricingModalities?.bootcamp?.features?.slice(0, 3).join('. ') || "Executive format: Monday-Friday intensive (8am-6pm). Build complete GPT in one week. Limited to 15 participants for maximum attention."}.
           </p>
-          <button className="btn btn-outline border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white">
-            Request Bootcamp Schedule
-          </button>
+          {course.slug === 'ai-for-decision-makers' ? (
+            <a href="/ai-for-decision-makers-curriculum.pdf" download className="btn btn-outline border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white">
+              <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Download Curriculum
+            </a>
+          ) : (
+            <button className="btn btn-outline border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white">
+              Request Bootcamp Schedule
+            </button>
+          )}
         </div>
       </div>
     </section>
@@ -1171,9 +1274,13 @@ function Technologies({ course }: { course: Course }) {
     <section className="bg-base-100 py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Production-Grade Tech Stack</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            {course.slug === 'ai-for-decision-makers' ? 'What You\'ll Work With' : 'Production-Grade Tech Stack'}
+          </h2>
           <p className="text-base-content/70">
-            Master the same tools used by OpenAI, Anthropic, and Google to build frontier AI systems
+            {course.slug === 'ai-for-decision-makers'
+              ? 'Practical, leader-friendly tools and concepts you\'ll use during the bootcamp and take home with you'
+              : 'Master the same tools used by OpenAI, Anthropic, and Google to build frontier AI systems'}
           </p>
         </div>
 
@@ -1185,7 +1292,7 @@ function Technologies({ course }: { course: Course }) {
               <div className="p-8 rounded-2xl bg-gradient-to-br from-brand-blue/10 to-brand-blue/5 border-2 border-brand-blue/30">
                 <div className="text-center mb-4">
                   <span className="inline-block px-4 py-2 rounded-full bg-brand-blue/20 text-brand-blue text-sm font-bold mb-2">
-                    For Career Advancers
+                    {course.slug === 'ai-for-decision-makers' ? 'For Organizational Leaders' : 'For Career Advancers'}
                   </span>
                 </div>
                 <p className="text-base-content/80 leading-relaxed text-center">
@@ -1199,7 +1306,7 @@ function Technologies({ course }: { course: Course }) {
               <div className="p-8 rounded-2xl bg-gradient-to-br from-brand-green/10 to-brand-green/5 border-2 border-brand-green/30">
                 <div className="text-center mb-4">
                   <span className="inline-block px-4 py-2 rounded-full bg-brand-green/20 text-brand-green text-sm font-bold mb-2">
-                    For Founders & CTOs
+                    {course.slug === 'ai-for-decision-makers' ? 'For Mission-Driven Organizations' : 'For Founders & CTOs'}
                   </span>
                 </div>
                 <p className="text-base-content/80 leading-relaxed text-center">
@@ -1259,13 +1366,19 @@ function EnrollCTA({ course }: { course: Course }) {
 
       <div className="relative max-w-4xl mx-auto px-8 text-center">
         <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-          Stop Renting AI. Start Owning It.
+          {course.slug === 'ai-for-decision-makers'
+            ? 'Lead With Confidence. Decide With Clarity.'
+            : 'Stop Renting AI. Start Owning It.'}
         </h2>
         <p className="text-xl text-white/80 mb-4 max-w-2xl mx-auto">
-          Join 500+ engineers and founders who've gone from API consumers to model builders—building their competitive moats one step at a time.
+          {course.slug === 'ai-for-decision-makers'
+            ? 'Join organizational leaders who went from AI-uncertain to AI-empowered—making faster, smarter, data-driven decisions in just 2 days.'
+            : 'Join 500+ engineers and founders who\'ve gone from API consumers to model builders—building their competitive moats one step at a time.'}
         </p>
         <p className="text-lg text-white/60 mb-8 max-w-2xl mx-auto">
-          Command $250K-$400K salaries or save $100K-$500K in annual API costs. Own your model weights. Build defensible technology moats. Become irreplaceable.
+          {course.slug === 'ai-for-decision-makers'
+            ? 'No coding required. AI Readiness Assessment included. Leave with working tools on your data. Bring your whole leadership team.'
+            : 'Command $250K-$400K salaries or save $100K-$500K in annual API costs. Own your model weights. Build defensible technology moats. Become irreplaceable.'}
         </p>
 
         <div className="glass rounded-2xl p-8 md:p-12 max-w-lg mx-auto border border-white/10 mb-8">
@@ -1273,20 +1386,26 @@ function EnrollCTA({ course }: { course: Course }) {
           <div className="text-5xl font-bold text-white mb-2">
             ${course.price.toLocaleString()}
           </div>
-          <p className="text-white/60 mb-8">Self-paced · Lifetime access · 30-day guarantee</p>
+          <p className="text-white/60 mb-8">
+            {course.slug === 'ai-for-decision-makers'
+              ? '2-Day Bootcamp · 4 Half-Day option · Team rates available'
+              : 'Self-paced · Lifetime access · 30-day guarantee'}
+          </p>
 
           <a
             href="#pricing"
             className="btn btn-lg w-full bg-white text-brand-slate hover:bg-white/90 border-0 mb-4"
           >
-            Start Your Transformation
+            {course.slug === 'ai-for-decision-makers' ? 'Reserve Your Seat' : 'Start Your Transformation'}
             <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </a>
 
           <p className="text-white/50 text-sm">
-            This is not just education. This is technological sovereignty.
+            {course.slug === 'ai-for-decision-makers'
+              ? 'Your mission is too important for guesswork. Lead with data.'
+              : 'This is not just education. This is technological sovereignty.'}
           </p>
         </div>
 
@@ -1295,19 +1414,19 @@ function EnrollCTA({ course }: { course: Course }) {
             <svg className="w-5 h-5 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
-            <span>30-day guarantee</span>
+            <span>{course.slug === 'ai-for-decision-makers' ? 'AI Readiness Assessment' : '30-day guarantee'}</span>
           </div>
           <div className="flex items-center gap-2">
             <svg className="w-5 h-5 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
-            <span>Lifetime updates</span>
+            <span>{course.slug === 'ai-for-decision-makers' ? 'No coding required' : 'Lifetime updates'}</span>
           </div>
           <div className="flex items-center gap-2">
             <svg className="w-5 h-5 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
-            <span>Zero API costs forever</span>
+            <span>{course.slug === 'ai-for-decision-makers' ? 'Team rates available' : 'Zero API costs forever'}</span>
           </div>
         </div>
       </div>
