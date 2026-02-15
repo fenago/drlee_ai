@@ -11,6 +11,8 @@ const navItems = [
   { href: "/#intrapreneurs", label: "For Careers" },
   { href: "/#entrepreneurs", label: "For Founders" },
   { href: "/#catalog", label: "Masterclasses" },
+  { href: "/assessment", label: "Assessment" },
+  { href: "/corporate-training", label: "Training" },
   { href: "/#pricing", label: "Pricing" },
 ];
 
