@@ -1,212 +1,399 @@
-export interface AssessmentQuestion {
+export type QuestionType = "text" | "single-choice" | "multi-choice";
+
+// AI Maturity Model — 11 levels (0-10) grouped into 4 tiers
+export interface MaturityLevel {
+  level: number;
+  name: string;
+  description: string;
+  tier: "Foundational" | "Operational" | "Strategic" | "Visionary";
+}
+
+export const maturityLevels: MaturityLevel[] = [
+  { level: 0, name: "Unaware", description: "No understanding of AI concepts or applications. Organization has not considered AI in any capacity.", tier: "Foundational" },
+  { level: 1, name: "Aware", description: "Basic awareness of AI exists. Leadership has discussed AI conceptually but no concrete steps have been taken.", tier: "Foundational" },
+  { level: 2, name: "Exploring", description: "Actively researching AI possibilities. Some team members experimenting with consumer AI tools individually.", tier: "Foundational" },
+  { level: 3, name: "Experimenting", description: "Running initial AI pilots. Small teams testing specific use cases with measurable but limited results.", tier: "Foundational" },
+  { level: 4, name: "Implementing", description: "Deploying AI solutions in specific departments. Formal budget allocated and initial KPIs being tracked.", tier: "Operational" },
+  { level: 5, name: "Integrating", description: "AI embedded into multiple workflows across departments. Cross-functional AI initiatives with dedicated teams.", tier: "Operational" },
+  { level: 6, name: "Optimizing", description: "Continuously improving AI systems based on performance data. AI governance policies in place and scaling rapidly.", tier: "Operational" },
+  { level: 7, name: "Scaling", description: "AI is a core part of business strategy. Organization-wide adoption with sophisticated measurement frameworks.", tier: "Strategic" },
+  { level: 8, name: "Leading", description: "Industry-leading AI capabilities. Creating competitive moats through proprietary AI systems and data advantages.", tier: "Strategic" },
+  { level: 9, name: "Innovating", description: "Pushing boundaries of what's possible with AI. Developing novel applications that redefine industry standards.", tier: "Visionary" },
+  { level: 10, name: "Transforming", description: "AI is fundamental to the organization's identity. Business model is AI-native with self-improving systems.", tier: "Visionary" },
+];
+
+export const maturityTiers = {
+  Foundational: { range: "0-3", color: "from-amber-500 to-orange-500", description: "Building awareness and running first experiments" },
+  Operational: { range: "4-6", color: "from-blue-500 to-indigo-500", description: "Deploying, integrating, and optimizing AI across the business" },
+  Strategic: { range: "7-8", color: "from-purple-500 to-violet-500", description: "AI as a core strategic differentiator" },
+  Visionary: { range: "9-10", color: "from-emerald-500 to-teal-500", description: "Redefining what's possible with AI-native operations" },
+} as const;
+
+export function getMaturityLevel(score: number): MaturityLevel {
+  const clamped = Math.max(0, Math.min(10, Math.round(score)));
+  return maturityLevels[clamped];
+}
+
+export function getMaturityTier(level: number): keyof typeof maturityTiers {
+  if (level <= 3) return "Foundational";
+  if (level <= 6) return "Operational";
+  if (level <= 8) return "Strategic";
+  return "Visionary";
+}
+
+export interface QuestionOption {
+  label: string;
+  value: string;
+}
+
+export interface UnifiedQuestion {
   id: string;
+  phase: 1 | 2 | 3 | 4 | 5;
+  type: QuestionType;
   questionText: string;
   subtitle?: string;
-  placeholder: string;
+  placeholder?: string;
+  options?: QuestionOption[];
   probes?: string[];
+  maxSelections?: number;
   category: string;
 }
 
-export const individualQuestions: AssessmentQuestion[] = [
+export interface Phase {
+  number: 1 | 2 | 3 | 4 | 5;
+  title: string;
+  subtitle: string;
+  icon: string;
+}
+
+export const phases: Phase[] = [
   {
-    id: "ind-ai-tools",
-    questionText:
-      "What AI tools have you personally used this week? Not your team — you specifically.",
-    subtitle: "Be honest. This is between you and the assessment.",
-    placeholder:
-      "e.g., ChatGPT for drafting emails, nothing specific, Copilot for coding...",
-    probes: ["Which ones? How often?", "Paid or free versions?"],
-    category: "Current Usage",
+    number: 1,
+    title: "Personal AI Maturity",
+    subtitle: "Let's understand where you are personally with AI.",
+    icon: "user",
   },
   {
-    id: "ind-sophistication",
+    number: 2,
+    title: "Organizational AI Maturity",
+    subtitle:
+      "Now let's look at how AI has been adopted across your organization.",
+    icon: "building",
+  },
+  {
+    number: 3,
+    title: "Pain Points",
+    subtitle: "Let's identify what's eating your time and costing you money.",
+    icon: "alert",
+  },
+  {
+    number: 4,
+    title: "Business Context",
+    subtitle: "Tell us about your business so we can tailor our analysis.",
+    icon: "briefcase",
+  },
+  {
+    number: 5,
+    title: "Core Workflows",
+    subtitle:
+      "Finally, let's map where AI could add the most value in your business.",
+    icon: "workflow",
+  },
+];
+
+export const unifiedQuestions: UnifiedQuestion[] = [
+  // ── Phase 1: Personal AI Maturity ──
+  {
+    id: "personal-tool-usage",
+    phase: 1,
+    type: "single-choice",
     questionText:
-      "What is the most sophisticated thing you have done with AI that genuinely changed how you work?",
-    subtitle: "Not something you tried once — something that stuck.",
+      "Which best describes your personal AI usage right now, {name}?",
+    category: "Personal AI Maturity",
+    options: [
+      { label: "I haven't really used AI tools yet", value: "none" },
+      {
+        label: "I've tried ChatGPT or similar a few times",
+        value: "exploring",
+      },
+      { label: "I use AI tools weekly for specific tasks", value: "regular" },
+      { label: "AI is embedded in my daily workflow", value: "advanced" },
+      {
+        label: "I build custom AI solutions and automations",
+        value: "builder",
+      },
+    ],
+  },
+  {
+    id: "personal-sophistication",
+    phase: 1,
+    type: "text",
+    questionText:
+      "What's the most impressive thing you've done with AI that actually stuck in your workflow?",
+    subtitle: "Not something you tried once — something that changed how you work.",
     placeholder:
-      "e.g., Built a custom GPT for deal analysis, automated my reporting...",
+      "e.g., Built a custom GPT for deal analysis, automated my weekly reporting, nothing yet...",
     probes: [
       "Did it save you time or money?",
       "Is it still part of your workflow?",
     ],
-    category: "Sophistication Level",
+    category: "Personal AI Maturity",
   },
   {
-    id: "ind-barriers",
+    id: "personal-barriers",
+    phase: 1,
+    type: "multi-choice",
     questionText:
-      "What has been the biggest barrier to you getting more invested in AI? Time? Knowledge? Trust? Something else?",
-    placeholder:
-      "e.g., I don't have time to learn, I don't trust the outputs, I don't know where to start...",
-    probes: [
-      "Is it the learning curve?",
-      "Bad experiences?",
-      "Not seeing the ROI?",
+      "What's been your biggest barrier to going deeper with AI?",
+    subtitle: "Select up to 3.",
+    maxSelections: 3,
+    category: "Personal AI Maturity",
+    options: [
+      { label: "Not enough time to learn", value: "time" },
+      { label: "Don't know where to start", value: "direction" },
+      { label: "Don't trust the outputs", value: "trust" },
+      { label: "Can't see the ROI for my role", value: "roi" },
+      { label: "Bad experiences / frustrating tools", value: "experience" },
+      { label: "My organization hasn't prioritized it", value: "org" },
+      { label: "Honestly, it's intimidating", value: "intimidation" },
     ],
-    category: "Barriers",
   },
+
+  // ── Phase 2: Organizational AI Maturity ──
   {
-    id: "ind-private-learning",
+    id: "org-adoption-level",
+    phase: 2,
+    type: "single-choice",
     questionText:
-      "If you could have an AI expert sit with you privately for two hours — no team, no judgment — what would you want to learn?",
-    subtitle: "What would you be embarrassed to ask publicly?",
-    placeholder:
-      "e.g., How to actually use AI beyond chatting, how to build agents, basics I've been too busy to learn...",
-    probes: [
-      "What do you feel you should already know?",
-      "What feels intimidating?",
+      "What percentage of your team is genuinely AI-capable right now?",
+    subtitle:
+      "Not interested, not dabbling — actually using AI independently.",
+    category: "Organizational AI Maturity",
+    options: [
+      { label: "Less than 10% — a few curious individuals", value: "nascent" },
+      { label: "10-25% — pockets of adoption", value: "emerging" },
+      {
+        label: "25-50% — growing adoption with some champions",
+        value: "developing",
+      },
+      { label: "50-75% — most teams are using AI", value: "established" },
+      {
+        label: "75%+ — AI is embedded in most workflows",
+        value: "leading",
+      },
     ],
-    category: "Learning Gaps",
   },
   {
-    id: "ind-business-context",
+    id: "org-strategy",
+    phase: 2,
+    type: "single-choice",
     questionText:
-      "Describe your current business or role. What are you responsible for? What does a typical high-stakes week look like?",
+      "How would you describe your organization's AI strategy?",
+    category: "Organizational AI Maturity",
+    options: [
+      { label: "We don't have one — it's ad hoc", value: "none" },
+      {
+        label: "We're exploring — lots of talk, few pilots",
+        value: "exploring",
+      },
+      {
+        label: "We have pilots running but no scaled deployment",
+        value: "piloting",
+      },
+      {
+        label: "We have a formal strategy with budget and KPIs",
+        value: "formal",
+      },
+      { label: "AI is a core part of our business strategy", value: "core" },
+    ],
+  },
+  {
+    id: "org-knowledge",
+    phase: 2,
+    type: "text",
+    questionText:
+      "If your top three people left tomorrow, how much of how your business actually operates is documented vs. living in their heads?",
     placeholder:
-      "e.g., I run a 50-person sales team, manage $20M portfolio, oversee product development...",
+      "e.g., Most processes are tribal knowledge, SOPs are outdated, critical knowledge is concentrated in 2-3 people...",
+    probes: ["What's your bus factor?", "What would break first?"],
+    category: "Organizational AI Maturity",
+  },
+
+  // ── Phase 3: Pain Points ──
+  {
+    id: "pain-personal-time",
+    phase: 3,
+    type: "text",
+    questionText:
+      "What repetitive work eats hours of your week that shouldn't require your attention?",
+    subtitle:
+      "Think about what you did this week that felt like a waste of your talent.",
+    placeholder:
+      "e.g., Reviewing reports, formatting presentations, filtering emails, manual data entry...",
+    probes: ["What do you dread doing?", "What would you automate if you could?"],
+    category: "Pain Points",
+  },
+  {
+    id: "pain-business-critical",
+    phase: 3,
+    type: "multi-choice",
+    questionText: "Which of these business pain points keep you up at night?",
+    subtitle: "Select your top 3.",
+    maxSelections: 3,
+    category: "Pain Points",
+    options: [
+      {
+        label: "Inconsistent quality / errors in deliverables",
+        value: "quality",
+      },
+      {
+        label: "Slow decision-making due to scattered data",
+        value: "decisions",
+      },
+      {
+        label: "Key-person dependencies (single points of failure)",
+        value: "keyman",
+      },
+      { label: "Customer experience gaps", value: "cx" },
+      {
+        label: "Can't scale without proportionally scaling headcount",
+        value: "scaling",
+      },
+      { label: "Falling behind competitors", value: "competitive" },
+      {
+        label: "Wasted spend on tools that don't integrate",
+        value: "tools",
+      },
+      { label: "Compliance / risk management gaps", value: "compliance" },
+    ],
+  },
+  {
+    id: "pain-cost-inaction",
+    phase: 3,
+    type: "single-choice",
+    questionText:
+      "If a competitor started using AI to do what you do 3x faster with more accuracy, how would that change your position?",
+    category: "Pain Points",
+    options: [
+      {
+        label: "It would be devastating — we'd lose clients fast",
+        value: "critical",
+      },
+      {
+        label: "It would be concerning — we'd need to respond quickly",
+        value: "high",
+      },
+      {
+        label: "It would matter, but our relationships protect us for now",
+        value: "moderate",
+      },
+      {
+        label: "Our industry is slow to change — it wouldn't hit us for years",
+        value: "low",
+      },
+    ],
+  },
+  {
+    id: "pain-uncomfortable-truth",
+    phase: 3,
+    type: "text",
+    questionText:
+      "What's the uncomfortable truth about your readiness for AI that people think but don't say out loud?",
+    subtitle: "This is the question that matters most. Be brutally honest.",
+    placeholder:
+      "e.g., Most of us are pretending we understand AI, leadership is resistant, we're years behind...",
     probes: [
-      "What decisions keep you up at night?",
+      "What's the real blocker?",
+      "Is it cultural, technical, or strategic?",
+    ],
+    category: "Pain Points",
+  },
+
+  // ── Phase 4: Business Context ──
+  {
+    id: "context-business",
+    phase: 4,
+    type: "text",
+    questionText:
+      "Describe your business or role in a sentence or two. What are you responsible for?",
+    placeholder:
+      "e.g., I run a 50-person sales team at a SaaS company, manage a $20M real estate portfolio, oversee product development at a fintech startup...",
+    probes: [
+      "What does a high-stakes week look like?",
       "Where does your time actually go?",
     ],
     category: "Business Context",
   },
   {
-    id: "ind-bottlenecks",
+    id: "context-industry",
+    phase: 4,
+    type: "single-choice",
+    questionText: "What industry are you in?",
+    category: "Business Context",
+    options: [
+      { label: "Technology / SaaS", value: "tech" },
+      { label: "Financial Services / Real Estate", value: "finance" },
+      { label: "Healthcare / Life Sciences", value: "health" },
+      { label: "Professional Services / Consulting", value: "services" },
+      { label: "Education / Nonprofit", value: "education" },
+      { label: "Manufacturing / Supply Chain", value: "manufacturing" },
+      { label: "Media / Marketing / Creative", value: "media" },
+      { label: "Government / Public Sector", value: "government" },
+      { label: "Other", value: "other" },
+    ],
+  },
+
+  // ── Phase 5: Core Workflows ──
+  {
+    id: "context-workflows",
+    phase: 5,
+    type: "text",
     questionText:
-      "What repetitive work eats hours of your day that should not require the attention it gets from you?",
+      "Describe 2-3 critical business workflows that are high-volume, error-prone, or require expensive expertise.",
     subtitle:
-      "Think about what you did this week that felt like a waste of your talent.",
+      "Think about the processes with the most manual handoffs or where errors cost you the most.",
     placeholder:
-      "e.g., Reviewing reports, formatting presentations, filtering emails, manual data entry...",
+      "e.g., Client onboarding takes 3 weeks and involves 5 handoffs, our quarterly reporting requires pulling data from 8 systems manually...",
     probes: [
-      "What takes too long?",
-      "What do you dread doing?",
-      "What would you automate if you could?",
+      "What processes have the most manual handoffs?",
+      "Where do errors cost you the most?",
     ],
-    category: "Automation Opportunities",
+    category: "Core Workflows",
   },
   {
-    id: "ind-data-landscape",
+    id: "context-dream-automation",
+    phase: 5,
+    type: "text",
     questionText:
-      "Where does your critical business knowledge live? In documents? Spreadsheets? People's heads? All of the above?",
+      "If you could wave a magic wand and have AI handle one thing perfectly starting tomorrow, what would it be?",
     placeholder:
-      "e.g., Mostly in my head and scattered across emails, some in Notion, critical stuff in Excel...",
-    probes: [
-      "If you were gone for a month, what would break?",
-      "What is not documented?",
-    ],
-    category: "Data & Knowledge",
+      "e.g., Automatically qualify and route all inbound leads, generate board-ready reports from raw data, handle first-pass document review...",
+    category: "Core Workflows",
   },
   {
-    id: "ind-uncomfortable-truth",
+    id: "context-biggest-bottleneck",
+    phase: 5,
+    type: "text",
     questionText:
-      "What is the uncomfortable truth about your industry's or your own readiness for AI that people think but don't say out loud?",
-    subtitle: "This is the question that matters most. Be brutally honest.",
+      "What's the single biggest bottleneck or process failure that costs your business the most time or money?",
     placeholder:
-      "e.g., Most of us are pretending we understand AI, the decision-makers are too old to adapt, we're years behind...",
+      "e.g., Deal evaluation is all in the founder's head, customer support takes 48 hours to resolve, manual invoice reconciliation...",
     probes: [
-      "What are your competitors doing that you are not?",
-      "What would happen if a competitor adopted AI and you did not?",
+      "How much time or money does this cost?",
+      "What have you tried to fix it?",
     ],
-    category: "Honest Reality",
+    category: "Core Workflows",
   },
 ];
 
-export const organizationalQuestions: AssessmentQuestion[] = [
-  {
-    id: "org-team-capability",
-    questionText:
-      "What percentage of your team is genuinely AI-capable right now? Not interested, not dabbling — actually using AI independently to improve their work.",
-    subtitle: "Give us a real number, not an aspirational one.",
-    placeholder:
-      "e.g., Maybe 10%, most people are curious but not using it, a few power users...",
-    probes: [
-      "Are they self-taught or trained?",
-      "Is there a champion driving adoption?",
-    ],
-    category: "Team Capability",
-  },
-  {
-    id: "org-documented-knowledge",
-    questionText:
-      "If your top three people left tomorrow, how much of how your organization actually operates is documented versus exists in their heads?",
-    placeholder:
-      "e.g., Most processes are tribal knowledge, SOPs are outdated, critical knowledge is in 2-3 people's heads...",
-    probes: [
-      "What is your bus factor?",
-      "Are processes documented or just known?",
-    ],
-    category: "Knowledge Management",
-  },
-  {
-    id: "org-tool-landscape",
-    questionText:
-      "Walk me through your technology stack. CRM, project management, communication, data, analytics. How many tools and how well do they talk to each other?",
-    placeholder:
-      "e.g., Salesforce, Slack, Google Workspace, custom Excel models, nothing is integrated...",
-    probes: [
-      "What data gets manually moved between systems?",
-      "Any shadow IT?",
-    ],
-    category: "Tool Landscape",
-  },
-  {
-    id: "org-single-failure",
-    questionText:
-      "Where is your single biggest point of failure? The thing that only one person knows how to do, or the process that would break everything if it stopped.",
-    placeholder:
-      "e.g., Our head of ops is the only one who understands the pricing model, deal evaluation is all in the founder's head...",
-    probes: ["What if that person was unavailable for a month?"],
-    category: "Single Points of Failure",
-  },
-  {
-    id: "org-automate-wishes",
-    questionText:
-      "Name three things where you think: 'My god, if I could automate this, it would change everything.'",
-    subtitle:
-      "Don't filter yourself. What would genuinely transform your operations?",
-    placeholder:
-      "e.g., Client reporting, invoice processing, lead qualification, onboarding new team members...",
-    probes: [
-      "What is manual that shouldn't be?",
-      "What would free up the most senior time?",
-    ],
-    category: "Automation Priorities",
-  },
-  {
-    id: "org-error-patterns",
-    questionText:
-      "Where do errors, quality issues, or costly mistakes most commonly show up in your organization? How do you catch them — proactively or when something goes wrong?",
-    placeholder:
-      "e.g., Data entry errors catch us quarterly, estimation mistakes cost us projects, QA is always reactive...",
-    probes: [
-      "What is the cost of these errors?",
-      "How do you discover them today?",
-    ],
-    category: "Error Patterns",
-  },
-  {
-    id: "org-competitive-pressure",
-    questionText:
-      "If a competitor started using AI to do what you do but three times faster and with more accuracy, how would that change your competitive position?",
-    placeholder:
-      "e.g., It would be devastating, we'd lose clients fast, honestly we'd be fine because our relationships matter more...",
-    probes: [
-      "Is this already happening?",
-      "What is your current information advantage?",
-    ],
-    category: "Competitive Pressure",
-  },
-  {
-    id: "org-uncomfortable-truth",
-    questionText:
-      "What is the uncomfortable truth about your organization's AI readiness that your leadership team thinks but does not say out loud?",
-    subtitle: "This answer drives the most valuable part of your report.",
-    placeholder:
-      "e.g., We talk about AI transformation but nobody actually knows what to do, leadership is resistant, we're years behind...",
-    probes: [
-      "What is the real blocker?",
-      "Is it cultural, technical, or strategic?",
-    ],
-    category: "Honest Organizational Reality",
-  },
-];
+// Helper to get questions for a specific phase
+export function getQuestionsForPhase(
+  phaseNumber: number
+): UnifiedQuestion[] {
+  return unifiedQuestions.filter((q) => q.phase === phaseNumber);
+}
+
+// ── Backward-compatible exports for legacy AssessmentForm ──
+export type AssessmentQuestion = UnifiedQuestion;
+export const individualQuestions: UnifiedQuestion[] = [];
+export const organizationalQuestions: UnifiedQuestion[] = [];

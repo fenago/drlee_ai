@@ -61,6 +61,7 @@ export default function HeaderNew() {
                 src="/DrLeeAI_Logo.png"
                 alt={config.appName}
                 className="h-10 w-auto dark:invert dark:brightness-200"
+                style={{ width: "auto", height: "auto" }}
                 priority
                 width={160}
                 height={40}

@@ -36,6 +36,8 @@ module.exports = {
         'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
         'slide-up': 'slide-up 0.5s ease-out',
         'fade-in': 'fade-in 0.5s ease-out',
+        'gradient-shift': 'gradient-shift 15s ease infinite',
+        'pulse-subtle': 'pulse-subtle 2s ease-in-out infinite',
       },
       keyframes: {
         opacity: {
@@ -124,6 +126,15 @@ module.exports = {
         'fade-in': {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' }
+        },
+        'gradient-shift': {
+          '0%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+          '100%': { 'background-position': '0% 50%' }
+        },
+        'pulse-subtle': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.7' }
         },
       },
     },

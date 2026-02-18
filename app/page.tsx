@@ -1,101 +1,70 @@
 "use client";
 
 import { Suspense } from "react";
-import dynamic from "next/dynamic";
-
-// New landing page components
 import HeaderNew from "@/components/landing/HeaderNew";
-import HeroNew from "@/components/landing/HeroNew";
-import ProblemNew from "@/components/landing/ProblemNew";
-import SolutionNew from "@/components/landing/SolutionNew";
-import DualAvatar from "@/components/landing/DualAvatar";
-import CatalogNew from "@/components/landing/CatalogNew";
-import BundlesNew from "@/components/landing/BundlesNew";
-import AssessmentNew from "@/components/landing/AssessmentNew";
-import CTANew from "@/components/landing/CTANew";
-
-// Keep existing components that work well
-import Pricing from "@/components/Pricing";
-import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 
-// Dynamic import for backgrounds to reduce initial bundle
-const ParticlesBackground = dynamic(
-  () => import("@/components/backgrounds/ParticlesBackground").then((mod) => mod.ParticlesBackground),
-  { ssr: false }
-);
-
-const VortexBackground = dynamic(
-  () => import("@/components/backgrounds/VortexBackground").then((mod) => mod.VortexBackground),
-  { ssr: false }
-);
-
-// Loading placeholder
-function LoadingPlaceholder() {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-white dark:bg-slate-950">
-      <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
-    </div>
-  );
-}
+// V2 landing page sections
+import HeroV2 from "@/components/landing/v2/HeroV2";
+import ProblemSection from "@/components/landing/v2/ProblemSection";
+import ThreePillars from "@/components/landing/v2/ThreePillars";
+import StatsSection from "@/components/landing/v2/StatsSection";
+import JourneyTimeline from "@/components/landing/v2/JourneyTimeline";
+import ReportPreview from "@/components/landing/v2/ReportPreview";
+import ComparisonTable from "@/components/landing/v2/ComparisonTable";
+import AudienceSection from "@/components/landing/v2/AudienceSection";
+import AboutDrLee from "@/components/landing/v2/AboutDrLee";
+import FAQSection from "@/components/landing/v2/FAQSection";
+import TrainingComparison from "@/components/landing/v2/TrainingComparison";
+import MaturityLevels from "@/components/landing/v2/MaturityLevels";
+import FinalCTA from "@/components/landing/v2/FinalCTA";
 
 export default function Home() {
   return (
     <>
-      <Suspense fallback={<LoadingPlaceholder />}>
+      <Suspense>
         <HeaderNew />
       </Suspense>
 
       <main>
-        {/* Hero with animated background - uses theme to switch between particles/vortex */}
-        <div className="relative">
-          {/* Light mode: Particles */}
-          <div className="block dark:hidden">
-            <Suspense fallback={<div className="min-h-screen bg-[#FAFAFC]" />}>
-              <ParticlesBackground>
-                <HeroNew />
-              </ParticlesBackground>
-            </Suspense>
-          </div>
+        {/* Section 1: Hero */}
+        <HeroV2 />
 
-          {/* Dark mode: Vortex */}
-          <div className="hidden dark:block">
-            <Suspense fallback={<div className="min-h-screen bg-[#0A0A14]" />}>
-              <VortexBackground>
-                <HeroNew />
-              </VortexBackground>
-            </Suspense>
-          </div>
-        </div>
+        {/* Section 2: The Problem (Pain Points) */}
+        <ProblemSection />
 
-        {/* Problem Section - Why you need this */}
-        <ProblemNew />
+        {/* Section 3: Three Pillars — Diagnose, Educate, Implement */}
+        <ThreePillars />
 
-        {/* Solution Section - Our methodology */}
-        <SolutionNew />
+        {/* Section 4: By The Numbers */}
+        <StatsSection />
 
-        {/* Path Assessment - Help users choose */}
-        <AssessmentNew />
+        {/* Section 5: Your Complete Journey (6-Step Path) */}
+        <JourneyTimeline />
 
-        {/* Dual Avatar Sections - For both audiences */}
-        <DualAvatar />
+        {/* Section 6: What You'll Get (Report Preview) */}
+        <ReportPreview />
 
-        {/* Course Catalog */}
-        <CatalogNew />
+        {/* Section 7: Why This Approach Works (Comparison) */}
+        <ComparisonTable />
 
-        {/* Bundle Savings */}
-        <BundlesNew />
+        {/* Section 8: Training Comparison — Traditional vs DrLee.ai */}
+        <TrainingComparison />
 
-        {/* Pricing */}
-        <section id="pricing">
-          <Pricing />
-        </section>
+        {/* Section 9: AI Maturity Levels Framework */}
+        <MaturityLevels />
 
-        {/* FAQ */}
-        <FAQ />
+        {/* Section 10: Who This Is For */}
+        <AudienceSection />
 
-        {/* Final CTA */}
-        <CTANew />
+        {/* Section 11: About Dr. Lee */}
+        <AboutDrLee />
+
+        {/* Section 12: FAQ */}
+        <FAQSection />
+
+        {/* Section 13: Final CTA */}
+        <FinalCTA />
       </main>
 
       <Footer />
