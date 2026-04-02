@@ -172,22 +172,22 @@ export default function HeroNew() {
           className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
         >
           <Link
-            href="#assessment"
+            href="#intrapreneurs"
             className="group relative px-8 py-4 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20"
           >
             <span className="relative z-10 flex items-center justify-center gap-2">
-              Discover Your AI Reality Gap
+              I Want to Advance My Career
               <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </span>
           </Link>
           <Link
-            href="#catalog"
+            href="#entrepreneurs"
             className="group relative px-8 py-4 rounded-full bg-transparent border-2 border-slate-300 dark:border-white/20 text-slate-900 dark:text-white font-semibold text-lg transition-all duration-300 hover:border-slate-900 dark:hover:border-white hover:scale-105"
           >
             <span className="flex items-center justify-center gap-2">
-              Explore Our Courses
+              I Want to Build My Company
               <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

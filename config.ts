@@ -63,7 +63,7 @@ const config = {
       {
         priceId:
           process.env.NODE_ENV === "development"
-            ? "price_dev_founders_edition"
+            ? "price_1O5KtcAxyNprDp7iftKnrrpw"
             : "price_789",
         name: "Founder's Edition",
         description: "For serious founders building AI companies",

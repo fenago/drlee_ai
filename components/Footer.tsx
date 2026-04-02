@@ -52,7 +52,6 @@ const Footer = () => {
                 alt={`${config.appName} logo`}
                 priority={true}
                 className="h-12 w-auto invert brightness-200"
-                style={{ width: "auto", height: "auto" }}
                 width={180}
                 height={48}
               />
