@@ -14,13 +14,12 @@ const Footer = () => {
     curriculum: [
       { label: "Hardcore Developers", href: "/#catalog" },
       { label: "Citizen Developer", href: "/#catalog" },
-      { label: "All Courses", href: "/#catalog" },
+      { label: "All 21 Courses", href: "/#catalog" },
       { label: "Bundles", href: "/#pricing" },
-      { label: "AI Readiness Assessment", href: "/assessment" },
+      { label: "Take Assessment", href: "/#assessment" },
     ],
     company: [
       { label: "About", href: "/#solution" },
-      { label: "Corporate Training", href: "/corporate-training" },
       { label: "Learning Modalities", href: "/modalities" },
       { label: "Financing Options", href: "/financing" },
       { label: "Pricing", href: "/#pricing" },
