@@ -78,7 +78,7 @@ export default function CTANew() {
           className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-8 border-t border-white/10"
         >
           {[
-            { value: "26", label: "Masterclasses" },
+            { value: "32", label: "Masterclasses" },
             { value: "500+", label: "Hours of Content" },
             { value: "$1M+", label: "Student Outcomes" },
           ].map((stat, i) => (

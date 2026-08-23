@@ -4420,7 +4420,2423 @@ export const courses: Course[] = [
         ]
       }
     }
-  }
+  },
+  // NEW MASTERCLASSES — 2026 CATALOG EXPANSION
+  {
+    id: "context-engine",
+    slug: "context-engine",
+    name: "Master Context Engineering",
+    subtitle: "Stop AI Hallucinations at the Source — the #1 Skill Behind Reliable AI",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "Cutting Edge",
+    price: 1497,
+    hook: "Your agents don't fail because the model is weak. They fail because you fed them the wrong context. Master the discipline behind every great AI system.",
+    description: "Prompt engineering was the warm-up. Context engineering is the real game: the discipline of selecting, organizing, compressing, and prioritizing exactly what enters the context window—and what stays out. With million-token contexts and autonomous agents, sloppy context means hallucinations, brittle agents, and unpredictable output. In this masterclass you'll engineer the complete context stack from first principles: instruction design and agent skills, retrieval grounding, MCP tool integration, memory and state, and multi-agent context coordination. Each module starts with a TedTalk-style deep dive, then you build the system yourself. By the end, you'll think like a context system designer—knowing exactly what gets retrieved just-in-time, what becomes persistent memory, and why your agents suddenly stopped hallucinating.",
+    outcomes: [
+      "Design the full context stack: instructions, retrieval, tools, memory, and state as one coherent system",
+      "Engineer system prompts, agent skills, and instruction artifacts that survive contact with production",
+      "Build RAG grounding pipelines that select and filter context instead of dumping documents",
+      "Integrate tools through MCP so agents discover capabilities without context bloat",
+      "Implement memory hierarchies: sliding windows, compaction, summarization, and persistent state",
+      "Coordinate context across multi-agent systems without cross-contamination",
+      "Apply compression and prioritization strategies for million-token context windows",
+      "Ship production context systems with observability into every token the model sees"
+    ],
+    hours: 35,
+    modules: 7,
+    technologies: ["Python", "MCP", "DSPy", "LangChain", "LlamaIndex", "Vector Databases", "Claude API", "OpenAI API"],
+    curriculum: [
+      {
+        title: "Module 1: The Context Revolution",
+        lessons: [
+          "Why Context Beats Prompts: The Discipline Nobody Named Until Now",
+          "Anatomy of a Context Window: What the Model Actually Sees",
+          "The Cost of Bad Context: Hallucinations, Brittle Agents, Unpredictable Output",
+          "From Prompts to Workflows to Agents: Why Automation Is Non-Negotiable",
+          "The Context Engineering Stack: Your Roadmap for This Masterclass"
+        ]
+      },
+      {
+        title: "Module 2: Instruction Architecture & Agent Skills",
+        lessons: [
+          "System Prompts as Code: Designing Instructions with Engineering Rigor",
+          "Agent Skills: Packaging Expertise the Model Can Load On Demand",
+          "Instruction Artifacts: Versioning, Testing, and Reusing Your Instructions",
+          "Instruction Hierarchies: What Wins When Instructions Conflict",
+          "Hands-On: Build a Skill-Driven Instruction Layer for Your Agent"
+        ]
+      },
+      {
+        title: "Module 3: Grounding with Retrieval",
+        lessons: [
+          "RAG as Context Selection: Retrieval Is a Filter, Not a Firehose",
+          "Chunking, Embedding, and Indexing for Precision Retrieval",
+          "Content Filtering and Reranking: Only the Relevant Survives",
+          "Advanced RAG Patterns: Query Transformation and Hybrid Search",
+          "Hands-On: Build a Grounding Pipeline That Kills Hallucinations"
+        ]
+      },
+      {
+        title: "Module 4: Tools Through MCP",
+        lessons: [
+          "Function Calling from First Principles: APIs, Services, and Code",
+          "The Model Context Protocol: Standardized Tool Discovery",
+          "The CLI as a Tool Surface: Direct System Interaction",
+          "Tool Context Budgeting: Exposing Capability Without Bloat",
+          "Hands-On: Wire Your Agent into the MCP Ecosystem"
+        ]
+      },
+      {
+        title: "Module 5: Memory & State",
+        lessons: [
+          "Short-Term vs Long-Term Memory: What to Keep, What to Forget",
+          "Context Growth Management: Sliding Windows, Compaction, Summarization",
+          "Persistent State: Sessions, Profiles, and Knowledge That Survives Restarts",
+          "Memory Retrieval: Bringing the Right Past into the Present",
+          "Hands-On: Add a Memory Hierarchy to Your Context Engine"
+        ]
+      },
+      {
+        title: "Module 6: Multi-Agent Context Coordination",
+        lessons: [
+          "Context Isolation: Why Agents Poison Each Other's Windows",
+          "Shared Context Stores: Blackboards, Artifacts, and Handoffs",
+          "Orchestration Patterns: Who Knows What, and When",
+          "Context Routing: Delivering the Right Slice to the Right Agent",
+          "Hands-On: Coordinate Context Across a Research Agent Team"
+        ]
+      },
+      {
+        title: "Module 7: Production Context Systems",
+        lessons: [
+          "Context Observability: Tracing Every Token into the Window",
+          "Evaluating Context Quality: Relevance, Freshness, and Efficiency Metrics",
+          "Cost Engineering: Caching, Compression, and Token Budgets at Scale",
+          "Failure Modes: Context Poisoning, Drift, and Silent Truncation",
+          "Capstone: Ship a Production-Grade Context Engine End to End"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "How is this different from prompt engineering?",
+        answer: "Prompt engineering is writing better sentences. Context engineering is systems design: programmatically selecting, retrieving, compressing, and prioritizing everything that enters the model's window—instructions, retrieved knowledge, tool results, memory, and state. Prompts are one input; you'll engineer the whole pipeline."
+      },
+      {
+        question: "Do I need to have taken the agent masterclasses first?",
+        answer: "No, but they pair perfectly. This masterclass is the connective tissue between Build Your Own Autonomous AI Agent and Build Your Own Multi-Agent AI Teams—the layer that determines whether those systems are reliable or brittle. Intermediate Python is the only hard requirement."
+      },
+      {
+        question: "Which frameworks and models do you use?",
+        answer: "You'll build the core mechanisms from first principles, then see how tools like DSPy, LangChain, and LlamaIndex implement them—working against frontier models from Anthropic, OpenAI, and Google. You learn the discipline, not a framework, so your skills survive every new release."
+      },
+      {
+        question: "What will I have built by the end?",
+        answer: "A complete, production-grade context engine: instruction and skill layer, retrieval grounding, MCP tool integration, memory hierarchy, multi-agent context coordination, and observability. It's infrastructure you can drop under any agent you ever build."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: {
+        price: 1497,
+        description: "Self-Paced Mastery",
+        features: [
+          "All 7 modules available immediately",
+          "Lifetime access to content and updates",
+          "Community support and code reviews",
+          "Monthly live office hours",
+          "Learn on your own schedule"
+        ]
+      },
+      cohort: {
+        price: 5997,
+        description: "7-Week Live Cohort",
+        features: [
+          "Weekly live workshops with Dr. Lee",
+          "Cohort accountability and peer learning",
+          "Direct instructor access",
+          "Graduation certificate",
+          "Alumni network access"
+        ]
+      },
+      bootcamp: {
+        price: 10997,
+        description: "4-Day Immersive Bootcamp",
+        features: [
+          "Executive intensive format",
+          "Hands-on labs with immediate feedback",
+          "Build your context engine in one week",
+          "Limited to 15 participants"
+        ]
+      },
+      founders: {
+        price: 17997,
+        description: "Founder's Edition",
+        features: [
+          "One-on-one mentorship with Dr. Lee",
+          "Context architecture review for YOUR product",
+          "Custom implementation guidance",
+          "90-day satisfaction guarantee"
+        ]
+      }
+    }
+  },
+  {
+    id: "gpu-kernels",
+    slug: "gpu-kernels",
+    name: "Make AI Run 10x Faster",
+    subtitle: "Write the GPU Code Frontier Labs Fight to Hire — No CUDA Required",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "Extremely Rare",
+    price: 1997,
+    hook: "Everyone can call PyTorch. Almost nobody can write the kernels underneath it. Build FlashAttention from scratch—in Python—and join the rarest tier of AI engineers.",
+    description: "The deepest moat in AI isn't the model—it's the kernel layer that makes models fast. Until recently that meant years of CUDA and C++. Triton changed everything: an open-source, Python-based GPU language built into PyTorch 2 and backed by NVIDIA, Intel, and AMD. In this masterclass, you'll go from zero GPU programming experience to writing production-grade kernels: memory coalescing, tiling, shared memory, reductions, and fusion—then build the kernels that power modern AI, including FlashAttention, native sparse attention, and sparse matrix multiplication. You'll profile real workloads, find real bottlenecks, and integrate your kernels end-to-end into PyTorch. This is how you make training and inference 10x faster—and how you become the engineer nobody can replace.",
+    outcomes: [
+      "Understand how GPUs actually execute code: blocks, warps, memory hierarchies, and occupancy",
+      "Write production-grade Triton kernels with the block-level programming model—no CUDA required",
+      "Master core optimizations: memory coalescing, tiling, shared memory, reductions, and fusion",
+      "Build FlashAttention from scratch and understand why it changed transformer economics",
+      "Implement Native Sparse Attention and sparse matrix multiplication kernels",
+      "Profile real workloads, identify bottlenecks, and prove your speedups with data",
+      "Integrate custom kernels into PyTorch models end to end",
+      "Wrap kernels for production: testing, autotuning, and deployment"
+    ],
+    hours: 40,
+    modules: 8,
+    technologies: ["Triton", "PyTorch 2", "CUDA", "NVIDIA Nsight", "FlashAttention", "Python"],
+    curriculum: [
+      {
+        title: "Module 1: How GPUs Actually Work",
+        lessons: [
+          "The GPU Mental Model: Thousands of Threads, One Goal",
+          "Memory Hierarchies: Global, Shared, Registers—and Why They Rule Performance",
+          "Why Frameworks Hit a Wall: The Case for Custom Kernels",
+          "Triton vs CUDA: Block-Level Programming Explained",
+          "Setting Up Your Kernel Development Environment"
+        ]
+      },
+      {
+        title: "Module 2: Your First Triton Kernels",
+        lessons: [
+          "Anatomy of a Triton Kernel: Programs, Blocks, and Pointers",
+          "Vector Addition to Softmax: The Foundational Patterns",
+          "Masking and Boundary Conditions Done Right",
+          "Benchmarking Honestly: Measuring Against PyTorch Baselines",
+          "Hands-On: Ship Your First Kernel That Beats the Baseline"
+        ]
+      },
+      {
+        title: "Module 3: Memory Coalescing & Tiling",
+        lessons: [
+          "Why Memory Access Patterns Make or Break Performance",
+          "Coalescing: Aligning Threads with Memory Transactions",
+          "Tiling: Decomposing Big Problems into Fast Blocks",
+          "Matrix Multiplication: The Canonical Tiled Kernel",
+          "Hands-On: Build a Tiled MatMul That Rivals cuBLAS"
+        ]
+      },
+      {
+        title: "Module 4: Shared Memory & Reductions",
+        lessons: [
+          "Shared Memory: The Programmable Cache",
+          "Reduction Patterns: Sums, Maxes, and Normalizations at Speed",
+          "Numerical Stability in Parallel Reductions",
+          "LayerNorm and RMSNorm Kernels from Scratch",
+          "Hands-On: Build the Normalization Kernels Inside Every LLM"
+        ]
+      },
+      {
+        title: "Module 5: Kernel Fusion",
+        lessons: [
+          "Why Fusion Wins: Eliminating Round-Trips to Global Memory",
+          "Fusing Elementwise Chains: Bias, Activation, Dropout in One Pass",
+          "On-Chip Fused Operations for Transformer Blocks",
+          "When NOT to Fuse: Register Pressure and Occupancy Tradeoffs",
+          "Hands-On: Fuse a Transformer Sub-Block and Measure the Win"
+        ]
+      },
+      {
+        title: "Module 6: Build FlashAttention from Scratch",
+        lessons: [
+          "Why Naive Attention Is Memory-Bound: The O(N²) Problem",
+          "The FlashAttention Insight: Tiling + Online Softmax",
+          "Implementing the Forward Pass Block by Block",
+          "Handling Causal Masking Efficiently",
+          "Hands-On: Your FlashAttention vs PyTorch SDPA—Head to Head"
+        ]
+      },
+      {
+        title: "Module 7: Sparse Attention & Sparse Compute",
+        lessons: [
+          "Native Sparse Attention: The Frontier of Efficient Transformers",
+          "Sparse Matrix Multiplication Kernels",
+          "Block-Sparse Patterns: Trading Density for Speed",
+          "Where Sparsity Pays Off in Real Models",
+          "Hands-On: Implement Native Sparse Attention"
+        ]
+      },
+      {
+        title: "Module 8: Profiling & Production Integration",
+        lessons: [
+          "Profiling Real Workloads: Finding the Actual Bottleneck",
+          "Autotuning: Letting Triton Search the Configuration Space",
+          "Integrating Custom Kernels into PyTorch Models End to End",
+          "Testing and Wrapping Kernels for Production",
+          "Capstone: Accelerate a Real Model with Your Own Kernel Suite"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "Do I need GPU programming experience?",
+        answer: "No. This masterclass assumes zero GPU programming background. Triton's block-level model in Python removes the thread-wrangling that makes CUDA brutal for beginners. If you can write NumPy-style Python, you can learn to write kernels."
+      },
+      {
+        question: "Do I need my own GPU?",
+        answer: "A consumer NVIDIA card (or a cloud GPU) is enough for every exercise. We provide cloud GPU setup guides, and the profiling techniques you learn transfer directly to datacenter hardware."
+      },
+      {
+        question: "Why learn kernels when frameworks keep improving?",
+        answer: "Because kernel engineers are the scarcest talent in AI. Frameworks are built ON kernels—Triton is literally inside PyTorch 2. When your model is memory-bound and the framework has nothing left to give, the engineer who can write a fused kernel is the one who ships. That skill commands frontier-lab compensation."
+      },
+      {
+        question: "How does this connect to the other masterclasses?",
+        answer: "It's the layer beneath everything else in the catalog. Build Your Own LLM teaches the architecture; Build Your Own Frontier AI teaches efficiency at the model level; this masterclass teaches the silicon level—the kernels that make attention, normalization, and MoE actually fast."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: {
+        price: 1997,
+        description: "Self-Paced Mastery",
+        features: [
+          "All 8 modules available immediately",
+          "Lifetime access to content and updates",
+          "Community support and code reviews",
+          "Monthly live office hours",
+          "Cloud GPU setup guides included"
+        ]
+      },
+      cohort: {
+        price: 6997,
+        description: "8-Week Live Cohort",
+        features: [
+          "Weekly live workshops with Dr. Lee",
+          "Kernel code reviews and profiling sessions",
+          "Direct instructor access",
+          "Graduation certificate",
+          "Alumni network access"
+        ]
+      },
+      bootcamp: {
+        price: 12997,
+        description: "5-Day Immersive Bootcamp",
+        features: [
+          "Executive intensive format",
+          "Build FlashAttention in one week",
+          "Live profiling labs on real hardware",
+          "Limited to 15 participants"
+        ]
+      },
+      founders: {
+        price: 19997,
+        description: "Founder's Edition",
+        features: [
+          "One-on-one mentorship with Dr. Lee",
+          "Kernel-level optimization of YOUR workload",
+          "Inference cost reduction roadmap",
+          "90-day satisfaction guarantee"
+        ]
+      }
+    }
+  },
+  {
+    id: "evaluation-stack",
+    slug: "evaluation-stack",
+    name: "Prove Your AI Works",
+    subtitle: "Master AI Evaluation — the Skill Every Enterprise Is Desperate to Hire",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "High Demand",
+    price: 1197,
+    hook: "Every AI team ships on vibes until the day it costs them. The engineers who can PROVE their AI works are the ones enterprises fight to hire.",
+    description: "All software is broken—AI systems most of all. The difference between teams that improve and teams that guess is evaluation. This masterclass turns the foundational research on judging AI systems into working infrastructure you build yourself. You'll trace the full progression: surface metrics like BLEU and ROUGE, semantic similarity with BERTScore and COMET, and judgment-based evaluation with LLM-as-a-judge. You'll detect and quantify hallucinations, then close the loop from evaluation to alignment with RLHF, constitutional AI, and red teaming. Evaluation becomes a design constraint, not an afterthought—and you become the engineer who can look at any AI system and say, with evidence, exactly where it fails and how to fix it.",
+    outcomes: [
+      "Treat evaluation as a design constraint that shapes every AI system you build",
+      "Implement the classic metrics—BLEU, ROUGE, and exact-match—and know precisely when they lie",
+      "Deploy semantic evaluation with BERTScore and COMET for meaning-level comparison",
+      "Build LLM-as-a-judge pipelines with calibration, bias controls, and rubric design",
+      "Detect and quantify hallucinations with reproducible measurement",
+      "Close the loop from evaluation to alignment: RLHF, constitutional AI, and red teaming",
+      "Choose the right metric for any task—and defend that choice to stakeholders",
+      "Build evaluation infrastructure that survives model upgrades and vendor swaps"
+    ],
+    hours: 30,
+    modules: 8,
+    technologies: ["Python", "Hugging Face", "BERTScore", "COMET", "OpenAI API", "Claude API", "pytest", "Weights & Biases"],
+    curriculum: [
+      {
+        title: "Module 1: Evaluation as a Design Constraint",
+        lessons: [
+          "Why All AI Systems Are Broken—and Why That's Your Opportunity",
+          "The Evaluation Taxonomy: Reference-Based, Reference-Free, Judgment-Based",
+          "Failure Modes: How Teams Ship on Vibes and Pay Later",
+          "Designing Systems Backward from Their Evaluation",
+          "Your Evaluation Stack Roadmap"
+        ]
+      },
+      {
+        title: "Module 2: Surface Metrics That Started It All",
+        lessons: [
+          "BLEU: N-Gram Precision and Its Blind Spots",
+          "ROUGE: Recall-Oriented Evaluation for Summarization",
+          "Exact Match, F1, and Token-Level Scoring",
+          "When Surface Metrics Work—and When They Actively Mislead",
+          "Hands-On: Build a Surface-Metric Harness from Scratch"
+        ]
+      },
+      {
+        title: "Module 3: Semantic Similarity",
+        lessons: [
+          "From Strings to Meaning: Why Embeddings Changed Evaluation",
+          "BERTScore: Token-Level Semantic Matching",
+          "COMET: Learned Metrics That Track Human Judgment",
+          "Calibrating Semantic Metrics for Your Domain",
+          "Hands-On: Semantic Evaluation of a Real Generation Task"
+        ]
+      },
+      {
+        title: "Module 4: LLM-as-a-Judge",
+        lessons: [
+          "Judgment-Based Evaluation: The Modern Standard",
+          "Rubric Design: Turning Quality into Scoreable Criteria",
+          "Judge Biases: Position, Verbosity, Self-Preference—and How to Control Them",
+          "Calibrating Judges Against Human Labels",
+          "Hands-On: Build a Calibrated LLM Judge Pipeline"
+        ]
+      },
+      {
+        title: "Module 5: Hallucination Detection & Quantification",
+        lessons: [
+          "A Taxonomy of Hallucinations: Factual, Contextual, Logical",
+          "Detection Strategies: Grounding Checks and Claim Verification",
+          "Quantifying Hallucination Rates Reproducibly",
+          "Tracking Hallucination Across Model and Prompt Changes",
+          "Hands-On: Build a Hallucination Detector for a RAG System"
+        ]
+      },
+      {
+        title: "Module 6: From Evaluation to Alignment",
+        lessons: [
+          "Closing the Loop: Evaluation Data as Training Signal",
+          "RLHF in Practice: Preference Data and Reward Models",
+          "Constitutional AI: Principles as Scalable Oversight",
+          "Choosing Your Alignment Strategy by Failure Mode",
+          "Hands-On: Turn Eval Failures into an Alignment Dataset"
+        ]
+      },
+      {
+        title: "Module 7: Red Teaming",
+        lessons: [
+          "Adversarial Evaluation: Finding Failures Before Users Do",
+          "Systematic Red Team Design: Coverage, Not Anecdotes",
+          "Automated Adversarial Probing",
+          "From Red Team Findings to Regression Suites",
+          "Hands-On: Red Team a Production Assistant"
+        ]
+      },
+      {
+        title: "Module 8: Evaluation Infrastructure That Lasts",
+        lessons: [
+          "Eval Suites as Code: Versioned, Repeatable, CI-Integrated",
+          "Building Golden Datasets That Stay Golden",
+          "Metrics Dashboards and Regression Alerts",
+          "Timeless Practices That Survive Every Model Release",
+          "Capstone: Ship a Complete Evaluation Stack for a Real System"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "Why is evaluation suddenly such a big deal?",
+        answer: "Because every company shipped AI features in the last two years and almost none can prove they work. Evaluation engineering is now one of the most requested skills in enterprise AI hiring—the person who owns the eval stack owns the roadmap."
+      },
+      {
+        question: "How does this relate to the AI Alignment and RLHF masterclass?",
+        answer: "They're two halves of a reliability track. This masterclass is measurement: metrics, judges, hallucination detection, red teaming. AI Alignment and RLHF goes deep on the training side. Take this one first if you want the loop: measure, then align."
+      },
+      {
+        question: "Is this only for people training their own models?",
+        answer: "No—it's equally valuable if you build on APIs. Evaluation is how you compare vendors, catch regressions when models silently update, and prove your prompts and pipelines actually improved. It's the skill that survives every model release."
+      },
+      {
+        question: "What will I have built by the end?",
+        answer: "A complete evaluation stack: surface and semantic metric harnesses, a calibrated LLM-as-a-judge pipeline, a hallucination detector, a red-team regression suite, and CI-integrated eval infrastructure with dashboards."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: {
+        price: 1197,
+        description: "Self-Paced Mastery",
+        features: [
+          "All 8 modules available immediately",
+          "Lifetime access to content and updates",
+          "Community support and code reviews",
+          "Monthly live office hours"
+        ]
+      },
+      cohort: {
+        price: 4997,
+        description: "8-Week Live Cohort",
+        features: [
+          "Weekly live workshops with Dr. Lee",
+          "Eval suite reviews on your real systems",
+          "Direct instructor access",
+          "Graduation certificate",
+          "Alumni network access"
+        ]
+      },
+      bootcamp: {
+        price: 8997,
+        description: "4-Day Immersive Bootcamp",
+        features: [
+          "Executive intensive format",
+          "Build your eval stack in one week",
+          "Live red-teaming labs",
+          "Limited to 15 participants"
+        ]
+      },
+      founders: {
+        price: 12997,
+        description: "Founder's Edition",
+        features: [
+          "One-on-one mentorship with Dr. Lee",
+          "Evaluation architecture for YOUR product",
+          "Custom golden dataset design",
+          "90-day satisfaction guarantee"
+        ]
+      }
+    }
+  },
+  {
+    id: "bulletproof-ai",
+    slug: "bulletproof-ai",
+    name: "From Prototype to Production",
+    subtitle: "The Reliability Engineering That Turns AI Demos Into Products You Can Trust",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "High Demand",
+    price: 1497,
+    hook: "The demo took a weekend. Production is where AI products die. Learn the reliability engineering that separates prototypes from products.",
+    description: "Every team has a promising AI prototype. Almost none can grow it into a product that survives real users, real data, and real compliance. This masterclass teaches AI reliability as an engineering discipline across six dimensions—accuracy and grounding, safe agency, graceful failure, consistency, fairness, and operational efficiency—organized into a three-layer framework: Reliable Outputs (prompts, RAG, model customization), Reliable Agents (memory, tool use, orchestration), and Reliable Operations (deployment, monitoring, responsible AI). You'll measure everything with fine-grained, LLM-native rubrics like Grounding Defect Rate, Hallucination Severity Score, and FActScore—auditing not just outputs but the entire step-by-step reasoning trajectory of autonomous agents. You'll build real projects, including a multi-agent travel planner and a medical assistant, using industry standards like LangGraph and MCP, and finish with reference architectures and decision checklists you'll reuse for every system you ever ship.",
+    outcomes: [
+      "Engineer reliability across six dimensions: grounding, safe agency, graceful failure, consistency, fairness, efficiency",
+      "Apply the three-layer framework: Reliable Outputs, Reliable Agents, Reliable Operations",
+      "Eliminate hallucinations with grounded prompting, RAG, and model customization",
+      "Measure quality with LLM-native rubrics: Grounding Defect Rate, Hallucination Severity Score, FActScore",
+      "Audit the full reasoning trajectory of autonomous agents, not just their final answers",
+      "Set safe parameters for agent memory, tool usage, and orchestration",
+      "Implement semantic caching, multi-model fallbacks, and graceful degradation",
+      "Deploy with monitoring and compliance patterns for standards like HIPAA and GDPR"
+    ],
+    hours: 40,
+    modules: 11,
+    technologies: ["LangGraph", "MCP", "Python", "Vector Databases", "OpenAI API", "Claude API", "Observability Tools"],
+    curriculum: [
+      {
+        title: "Module 1: The Six Dimensions of AI Reliability",
+        lessons: [
+          "Why 90% of AI Prototypes Never Become Products",
+          "Defining Reliability: Accuracy, Safe Agency, Graceful Failure, Consistency, Fairness, Efficiency",
+          "The Three-Layer Framework: Outputs, Agents, Operations",
+          "You Cannot Improve What You Do Not Measure",
+          "Auditing a Fragile Prototype: Your Baseline"
+        ]
+      },
+      {
+        title: "Module 2: Reliable Outputs—Prompt Engineering for Consistency",
+        lessons: [
+          "Well-Engineered Prompts vs Lucky Prompts",
+          "Structured Outputs and Schema Enforcement",
+          "Determinism Controls: Temperature, Seeds, and Sampling",
+          "Prompt Regression Testing",
+          "Hands-On: Stabilize an Inconsistent Assistant"
+        ]
+      },
+      {
+        title: "Module 3: Reliable Outputs—Grounding with RAG",
+        lessons: [
+          "Grounding Outputs in Real Business Data",
+          "Retrieval Quality: The Root of Most Hallucinations",
+          "Citation and Attribution Patterns",
+          "Grounding Defect Rate: Measuring What Slipped Through",
+          "Hands-On: Ground a Q&A System and Prove It"
+        ]
+      },
+      {
+        title: "Module 4: Reliable Outputs—Model Customization",
+        lessons: [
+          "When Prompting Isn't Enough: The Customization Decision",
+          "Fine-Tuning for Consistency and Domain Fit",
+          "Model Compression and Quantization Without Quality Loss",
+          "Version Pinning and Upgrade Discipline",
+          "Hands-On: Customize a Model for a Reliability Target"
+        ]
+      },
+      {
+        title: "Module 5: LLM-Native Evaluation Rubrics",
+        lessons: [
+          "Beyond Accuracy: Fine-Grained Quality Measurement",
+          "Hallucination Severity Score: Not All Errors Are Equal",
+          "FActScore: Auditing Factual Precision Claim by Claim",
+          "Building Rubrics Your Whole Team Can Run",
+          "Hands-On: Score a Real System Across All Rubrics"
+        ]
+      },
+      {
+        title: "Module 6: Reliable Agents—Memory",
+        lessons: [
+          "Agent Memory as a Reliability Surface",
+          "Memory Corruption, Staleness, and Contamination",
+          "Bounding What Agents Remember and Retrieve",
+          "Testing Memory Behavior Over Long Horizons",
+          "Hands-On: Harden an Agent's Memory Layer"
+        ]
+      },
+      {
+        title: "Module 7: Reliable Agents—Safe Tool Use",
+        lessons: [
+          "Tools Are Where Agents Touch the Real World",
+          "Permission Boundaries and Blast-Radius Design",
+          "Validating Tool Inputs and Outputs",
+          "Human Approval Gates for Consequential Actions",
+          "Hands-On: Add Safety Rails to a Tool-Using Agent"
+        ]
+      },
+      {
+        title: "Module 8: Reliable Agents—Orchestration",
+        lessons: [
+          "Safe, Consistent Multi-Step Workflows with LangGraph",
+          "MCP Integration Without Losing Control",
+          "Trajectory Evaluation: Auditing Every Step, Not Just the Answer",
+          "Failure Recovery in Multi-Agent Flows",
+          "Hands-On: Build the Multi-Agent Travel Planner"
+        ]
+      },
+      {
+        title: "Module 9: Reliable Operations—Deployment",
+        lessons: [
+          "Semantic Caching: Faster and Cheaper Without Staleness",
+          "Multi-Model Fallbacks: Surviving Provider Outages",
+          "Graceful Degradation Under Load",
+          "Cost Engineering as a Reliability Practice",
+          "Hands-On: Deploy with Caching and Fallbacks"
+        ]
+      },
+      {
+        title: "Module 10: Reliable Operations—Monitoring & Responsible AI",
+        lessons: [
+          "Production Monitoring for AI-Specific Failures",
+          "Drift Detection and Regression Alerts",
+          "Fairness Auditing in Production",
+          "Compliance Patterns: HIPAA, GDPR, and Enterprise Standards",
+          "Hands-On: Build the Monitoring Layer"
+        ]
+      },
+      {
+        title: "Module 11: Capstone—The Medical Assistant",
+        lessons: [
+          "Applying All Three Layers to a High-Stakes Domain",
+          "Reference Architecture Walkthrough",
+          "Decision Checklists for Every Future System",
+          "Capstone: Ship a Compliant, Monitored, Trustworthy Assistant",
+          "Your Reliability Playbook Going Forward"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "How is this different from Prove Your AI Works?",
+        answer: "Prove Your AI Works teaches measurement as a discipline—metrics, judges, red teaming. From Prototype to Production is the systems course: it uses those measurements inside a full reliability framework covering prompts, RAG, agents, deployment, monitoring, and compliance. Together they form the complete reliability track."
+      },
+      {
+        question: "Is this for API-based apps or self-hosted models?",
+        answer: "Both. The three-layer framework applies whether you call Claude or serve your own weights. Multi-model fallbacks, semantic caching, and trajectory auditing matter in every architecture."
+      },
+      {
+        question: "What real projects will I build?",
+        answer: "A multi-agent travel planner (orchestration and trajectory auditing) and a medical assistant (grounding, compliance, and monitoring in a high-stakes domain)—plus the reusable reference architecture and checklists you'll apply to your own systems."
+      },
+      {
+        question: "Do I need agent-building experience first?",
+        answer: "Basic familiarity with LLM apps is enough. If you've taken Build Your Own Autonomous AI Agent, you'll move faster through the agent modules, but everything is built up from working code."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: {
+        price: 1497,
+        description: "Self-Paced Mastery",
+        features: [
+          "All 11 modules available immediately",
+          "Lifetime access to content and updates",
+          "Community support and code reviews",
+          "Monthly live office hours"
+        ]
+      },
+      cohort: {
+        price: 5997,
+        description: "10-Week Live Cohort",
+        features: [
+          "Weekly live workshops with Dr. Lee",
+          "Reliability audits of your real systems",
+          "Direct instructor access",
+          "Graduation certificate",
+          "Alumni network access"
+        ]
+      },
+      bootcamp: {
+        price: 10997,
+        description: "5-Day Immersive Bootcamp",
+        features: [
+          "Executive intensive format",
+          "Harden a real system in one week",
+          "Live incident-response simulations",
+          "Limited to 15 participants"
+        ]
+      },
+      founders: {
+        price: 17997,
+        description: "Founder's Edition",
+        features: [
+          "One-on-one mentorship with Dr. Lee",
+          "Reliability audit of YOUR production system",
+          "Compliance architecture guidance",
+          "90-day satisfaction guarantee"
+        ]
+      }
+    }
+  },
+  {
+    id: "agent-playbook",
+    slug: "agent-playbook",
+    name: "The Agent Playbook",
+    subtitle: "20+ Battle-Tested Design Patterns—Stop Building Agents by Trial and Error",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "Cutting Edge",
+    price: 1197,
+    hook: "Most agents are built by trial and error. Yours won't be. Master the pattern language that turns agent-building from guesswork into engineering.",
+    description: "AI agents are showing up everywhere—and most of them are duct tape. This masterclass gives you what the field has been missing: a durable engineering vocabulary of 20+ composable, production-tested design patterns for building agents that are reliable, efficient, controllable, and easy to reason about. Every pattern follows a rigorous template—named problem, clear solution, benefits, drawbacks, variants, and composition rules—so patterns click together like well-designed APIs. You'll learn to read an underperforming agent, pinpoint exactly which quality is missing, and reach for the specific pattern that fixes it. You'll lower per-run costs without redesigning, add human-in-the-loop control where it matters, and build self-improving agents that auto-tune their own prompts. Frameworks age in months; design intuition outlasts every model release.",
+    outcomes: [
+      "Master 20+ composable agent design patterns with a shared engineering vocabulary",
+      "Diagnose underperforming agents and map each symptom to its corrective pattern",
+      "Design agent architectures deliberately instead of by accretion",
+      "Cut per-run costs with reliability and cost-optimization patterns—no redesign required",
+      "Apply human-in-the-loop patterns that add control without killing autonomy",
+      "Build self-improving agents that auto-tune their own prompts",
+      "Compose patterns into transparent, testable, deployment-ready applications",
+      "Develop design intuition that outlasts every framework and model release"
+    ],
+    hours: 30,
+    modules: 7,
+    technologies: ["Python", "LLM APIs", "MCP", "Agent Frameworks (framework-agnostic)", "Evaluation Harnesses"],
+    curriculum: [
+      {
+        title: "Module 1: Why Patterns—The End of Trial and Error",
+        lessons: [
+          "The State of Agent Building: Everyone Improvising",
+          "What a Design Pattern Is (and Isn't) for Agents",
+          "The Pattern Template: Problem, Solution, Tradeoffs, Composition Rules",
+          "Reading Agent Flow Diagrams Fluently",
+          "How to Diagnose an Agent Like an Architect"
+        ]
+      },
+      {
+        title: "Module 2: Composable Agent Patterns",
+        lessons: [
+          "The Core Pattern Set: The Building Blocks of Every Agent",
+          "Composition Rules: Which Patterns Click Together—and Which Clash",
+          "Worked Examples: Assembling Agents from Named Parts",
+          "Variants: Adapting Patterns to Your Constraints",
+          "Hands-On: Rebuild a Duct-Tape Agent with Named Patterns"
+        ]
+      },
+      {
+        title: "Module 3: Designing Agent Architectures",
+        lessons: [
+          "From Patterns to Architecture: Structuring Whole Systems",
+          "Choosing Control Flow: Loops, Routers, and Pipelines",
+          "State and Data Flow Across Pattern Boundaries",
+          "Architecture Reviews: Reasoning About Agents on Paper",
+          "Hands-On: Design an Architecture Before Writing a Line of Code"
+        ]
+      },
+      {
+        title: "Module 4: Reliability & Cost Optimization Patterns",
+        lessons: [
+          "Where Agent Costs Actually Come From",
+          "Patterns That Cut Cost per Run Without Redesign",
+          "Reliability Patterns: Retries, Verification, and Guarded Execution",
+          "The Reliability-Cost-Latency Triangle",
+          "Hands-On: Halve an Agent's Cost While Raising Its Success Rate"
+        ]
+      },
+      {
+        title: "Module 5: Human-in-the-Loop Patterns",
+        lessons: [
+          "Autonomy Is a Dial, Not a Switch",
+          "Approval Gates, Escalation, and Steering Patterns",
+          "Designing Interfaces Humans Actually Use",
+          "When to Remove the Human: Graduation Criteria",
+          "Hands-On: Add Control to an Agent Without Killing Its Value"
+        ]
+      },
+      {
+        title: "Module 6: Self-Improving Agents",
+        lessons: [
+          "Agents That Learn from Their Own Runs",
+          "Auto-Tuning Prompts from Outcome Data",
+          "Guardrails for Self-Modification",
+          "Measuring Improvement Honestly",
+          "Hands-On: Build an Agent That Optimizes Itself"
+        ]
+      },
+      {
+        title: "Module 7: Production-Ready Applications",
+        lessons: [
+          "Composing the Full Pattern Stack for Deployment",
+          "Transparency and Testability as First-Class Requirements",
+          "Pattern-Level Observability",
+          "Capstone: Ship a Production Agent Built Entirely from Named Patterns",
+          "Your Pattern Library Going Forward"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "How is this different from Build Your Own Autonomous AI Agent?",
+        answer: "That masterclass teaches you to build the machinery—ReAct loops, tools, memory—from scratch. The Agent Playbook is the senior-engineer sequel: the design vocabulary for architecting, diagnosing, and optimizing agents. Build the machine first, then learn to design with it."
+      },
+      {
+        question: "Is this tied to a specific framework?",
+        answer: "No—deliberately. Patterns are framework-agnostic by design. Whether you build on raw APIs, your own infrastructure from our other masterclasses, or a commercial framework, the patterns and their composition rules apply unchanged."
+      },
+      {
+        question: "I already have agents in production. Is this still useful?",
+        answer: "That's exactly who it's for. You'll learn to read an underperforming agent, name the missing quality, and apply the specific corrective pattern—including cost patterns that typically cut per-run spend dramatically without a redesign."
+      },
+      {
+        question: "What will I have by the end?",
+        answer: "A working pattern library in code, a production agent composed entirely from named patterns, and the architectural vocabulary to design and review agent systems the way senior engineers review distributed systems."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: {
+        price: 1197,
+        description: "Self-Paced Mastery",
+        features: [
+          "All 7 modules available immediately",
+          "Lifetime access to content and updates",
+          "Community support and code reviews",
+          "Monthly live office hours"
+        ]
+      },
+      cohort: {
+        price: 4997,
+        description: "7-Week Live Cohort",
+        features: [
+          "Weekly live workshops with Dr. Lee",
+          "Architecture reviews of your agents",
+          "Direct instructor access",
+          "Graduation certificate",
+          "Alumni network access"
+        ]
+      },
+      bootcamp: {
+        price: 8997,
+        description: "4-Day Immersive Bootcamp",
+        features: [
+          "Executive intensive format",
+          "Pattern-driven rebuild of a real agent",
+          "Live design review sessions",
+          "Limited to 15 participants"
+        ]
+      },
+      founders: {
+        price: 12997,
+        description: "Founder's Edition",
+        features: [
+          "One-on-one mentorship with Dr. Lee",
+          "Architecture review of YOUR agent systems",
+          "Cost optimization roadmap",
+          "90-day satisfaction guarantee"
+        ]
+      }
+    }
+  },
+  {
+    id: "agent-matrix",
+    slug: "agent-architecture-matrix",
+    name: "The Agent Architecture Matrix",
+    subtitle: "7 Cognitive Functions × 6 Topologies—Design, Budget, and Govern Agents That Actually Ship",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "Very Rare",
+    price: 1197,
+    hook: "What do you do with an agent that 'almost works'? Most engineers guess. You'll diagnose it on a matrix and fix it systematically.",
+    description: "Agents promise to automate work at unprecedented scale—but where do you start? How do you budget dev time and token spend? How do you scale a multi-agent system that's grown organically? This masterclass teaches a systematic two-axis framework: seven cognitive functions (perception, memory, reasoning, action, reflection, collaboration, governance) crossed with six topologies (chain, route, parallel, orchestrate, hierarchy, loop), yielding 27 reusable patterns stress-tested by thousands of engineers shipping production agents in banks, manufacturers, and AI startups. You'll learn to establish architectures that manage cost and take governance seriously from day one, impose certainty on the non-deterministic behavior of LLM-driven agents through harness design, and apply everything in a full capstone: building a production code-review agent. You'll stop asking 'which tools?' and start asking the questions that actually determine whether agents ship.",
+    outcomes: [
+      "Apply the two-axis framework: 7 cognitive functions × 6 topologies = a complete design space",
+      "Diagnose any agent by locating its weakness on the matrix",
+      "Master all 27 reusable patterns, stress-tested in banks, manufacturers, and AI startups",
+      "Budget dev time and token spend before you build—not after the bill arrives",
+      "Design governance into agent architectures from day one",
+      "Impose reliability on non-deterministic LLM behavior through harness design",
+      "Choose topologies deliberately: chain, route, parallel, orchestrate, hierarchy, loop",
+      "Build a complete production code-review agent as your capstone"
+    ],
+    hours: 30,
+    modules: 7,
+    technologies: ["Python", "LLM APIs", "MCP", "Git Integrations", "CI/CD", "Observability Tools"],
+    curriculum: [
+      {
+        title: "Module 1: The Agent Paradigm Shift",
+        lessons: [
+          "From Deterministic Code to Non-Deterministic Systems",
+          "Why 'Almost Works' Is the Default—and What to Do About It",
+          "The Engineer's New Role: Harness Designer",
+          "Where Agent Projects Die: Budget, Governance, and Scale",
+          "The Case for a Systematic Framework"
+        ]
+      },
+      {
+        title: "Module 2: The Two-Axis Framework",
+        lessons: [
+          "Axis One: The Seven Cognitive Functions",
+          "Axis Two: The Six Topologies",
+          "The Matrix: 27 Patterns from Two Axes",
+          "Locating Any Agent Problem on the Matrix",
+          "Hands-On: Map an Existing Agent onto the Framework"
+        ]
+      },
+      {
+        title: "Module 3: Cognitive Functions in Depth",
+        lessons: [
+          "Perception: What the Agent Sees and How",
+          "Memory and Reasoning: The Thinking Core",
+          "Action and Reflection: Doing and Self-Correcting",
+          "Collaboration and Governance: Working with Others, Staying in Bounds",
+          "Hands-On: Implement Each Function as a Swappable Component"
+        ]
+      },
+      {
+        title: "Module 4: Topologies in Depth",
+        lessons: [
+          "Chain and Route: Sequential and Conditional Flows",
+          "Parallel and Orchestrate: Concurrency and Coordination",
+          "Hierarchy and Loop: Delegation and Iteration",
+          "Choosing (and Changing) Topologies as Systems Grow",
+          "Hands-On: Rebuild One Workflow in Three Topologies and Compare"
+        ]
+      },
+      {
+        title: "Module 5: Cost Management in AI Development",
+        lessons: [
+          "Token Economics: Where Agent Spend Actually Goes",
+          "Budgeting Dev Time and Runtime Cost per Pattern",
+          "Cost-Aware Architecture: Cheap Paths First, Expensive Paths Gated",
+          "Monitoring Spend in Production",
+          "Hands-On: Put a Real Agent on a Budget"
+        ]
+      },
+      {
+        title: "Module 6: Governance Patterns",
+        lessons: [
+          "Governance from Day One—Not Bolted On Later",
+          "Certainty Harnesses: Constraining Non-Deterministic Behavior",
+          "Audit Trails, Permissions, and Policy Enforcement",
+          "Governance Patterns from Banks and Regulated Industries",
+          "Hands-On: Wrap an Agent in a Governance Harness"
+        ]
+      },
+      {
+        title: "Module 7: Capstone—Build a Code-Review Agent",
+        lessons: [
+          "Designing the Agent on the Matrix Before Coding",
+          "Implementing Perception, Reasoning, and Action for Code Review",
+          "Adding Reflection, Cost Controls, and Governance",
+          "Evaluating Review Quality Against Human Baselines",
+          "Capstone: Ship Your Production Code-Review Agent"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "How does this differ from The Agent Playbook?",
+        answer: "The Agent Playbook is a pattern catalog—composable solutions to specific problems. The Agent Architecture Matrix is a design framework—a systematic method for structuring, budgeting, and governing whole systems. The Playbook gives you vocabulary; the Matrix gives you method. Serious agent architects want both."
+      },
+      {
+        question: "Is the framework practical or academic?",
+        answer: "Ruthlessly practical. The 27 patterns have been stress-tested at scale by engineers shipping production agents in banks, manufacturers, and AI startups. Every module ends with hands-on implementation, and the capstone is a working code-review agent."
+      },
+      {
+        question: "Why so much emphasis on cost and governance?",
+        answer: "Because that's where agent projects actually die. Teams can prototype an agent in a weekend; they fail when token spend surprises finance or when compliance asks who approved the agent's actions. This masterclass makes both first-class architectural concerns from day one."
+      },
+      {
+        question: "What background do I need?",
+        answer: "Intermediate Python and basic familiarity with LLM APIs. If you've built any agent—even a fragile one—you'll get dramatically more from the diagnosis-oriented modules."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: {
+        price: 1197,
+        description: "Self-Paced Mastery",
+        features: [
+          "All 7 modules available immediately",
+          "Lifetime access to content and updates",
+          "Community support and code reviews",
+          "Monthly live office hours"
+        ]
+      },
+      cohort: {
+        price: 4997,
+        description: "7-Week Live Cohort",
+        features: [
+          "Weekly live workshops with Dr. Lee",
+          "Matrix-based reviews of your agents",
+          "Direct instructor access",
+          "Graduation certificate",
+          "Alumni network access"
+        ]
+      },
+      bootcamp: {
+        price: 8997,
+        description: "4-Day Immersive Bootcamp",
+        features: [
+          "Executive intensive format",
+          "Design and ship the code-review agent in one week",
+          "Live governance workshops",
+          "Limited to 15 participants"
+        ]
+      },
+      founders: {
+        price: 12997,
+        description: "Founder's Edition",
+        features: [
+          "One-on-one mentorship with Dr. Lee",
+          "Framework applied to YOUR agent roadmap",
+          "Cost and governance architecture review",
+          "90-day satisfaction guarantee"
+        ]
+      }
+    }
+  },
+  {
+    id: "model-surgery",
+    slug: "model-surgery",
+    name: "Model Surgery",
+    subtitle: "Prune, Distill, and Rewire Open Models—Cut 90% of the Cost, Keep the Intelligence",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "Extremely Rare",
+    price: 1497,
+    hook: "General-purpose models carry billions of parameters you're paying for and never using. Learn to cut them out—surgically.",
+    description: "Every general-purpose LLM ships with vast neural machinery your use case never touches—and you pay for it in latency, memory, and cost on every single call. This masterclass turns the latest research on structural model optimization into production practice. You'll perform hands-on surgery on open models like Llama-3, Gemma, and Qwen: pruning unnecessary components, distilling knowledge into smaller students, and applying specialized fine-tuning to create cost-effective local SLMs optimized for YOUR domain and business goals. You'll combine behavioral analysis with structural modification—identifying exactly which parts of a model contribute to your goals and removing the ones that don't—and even apply fair pruning to reduce bias at the neuron level, improving ethics and efficiency in the same operation. This is model ownership at its deepest: not just training weights, but reshaping the architecture itself.",
+    outcomes: [
+      "Perform structural surgery on open models: Llama-3, Gemma, and Qwen",
+      "Apply universal techniques for customizing model architecture to business goals",
+      "Build end-to-end rearchitecting pipelines from analysis to deployment",
+      "Use behavioral analysis to find which components actually serve your use case",
+      "Prune unnecessary neural components and distill knowledge into smaller students",
+      "Replace external LLM APIs with local SLMs you fully own",
+      "Apply fair pruning to reduce bias at the neuron level",
+      "Deploy rearchitected models that cost less, run faster, and answer better in your domain"
+    ],
+    hours: 40,
+    modules: 10,
+    technologies: ["PyTorch", "Hugging Face Transformers", "Llama-3", "Gemma", "Qwen", "Quantization Tools", "Distillation Frameworks"],
+    curriculum: [
+      {
+        title: "Module 1: Why Rearchitect—The Case for Model Surgery",
+        lessons: [
+          "What You're Really Paying For in a General-Purpose Model",
+          "The Optimization Landscape: Fine-Tuning vs Pruning vs Distillation",
+          "From Research Papers to Production Practice",
+          "Setting Surgical Goals: Cost, Latency, Accuracy, Fairness",
+          "Your Operating Room: Tooling and Model Setup"
+        ]
+      },
+      {
+        title: "Module 2: Universal Architecture Customization",
+        lessons: [
+          "Inside the Patient: Layers, Heads, and MLP Blocks",
+          "Techniques That Work Across Model Families",
+          "Measuring Component Contribution",
+          "Safe Modification: Change, Test, Verify",
+          "Hands-On: Your First Structural Modification"
+        ]
+      },
+      {
+        title: "Module 3: End-to-End Rearchitecting Pipelines",
+        lessons: [
+          "The Full Pipeline: Analyze → Modify → Recover → Evaluate",
+          "Recovery Training: Healing the Model After Surgery",
+          "Reproducibility: Pipelines You Can Run Again",
+          "Regression Testing Structural Changes",
+          "Hands-On: Build Your Rearchitecting Pipeline"
+        ]
+      },
+      {
+        title: "Module 4: Model Cleanup—Bias & Explainability",
+        lessons: [
+          "What Model Cleanup Reveals About Behavior",
+          "Improving Explainability Through Structure",
+          "Locating Bias in Neural Components",
+          "Cleanup as a Trust-Building Practice",
+          "Hands-On: Clean Up an Open Model and Document the Gains"
+        ]
+      },
+      {
+        title: "Module 5: Replacing External LLMs with Local SLMs",
+        lessons: [
+          "The API Replacement Decision: Economics and Risk",
+          "Sizing the Local Model for Your Task",
+          "Migration Strategy: Parallel Running and Cutover",
+          "Proving Parity: Evaluation Before You Switch",
+          "Hands-On: Replace an API Call with a Model You Own"
+        ]
+      },
+      {
+        title: "Module 6: Specialized Fine-Tuning Techniques",
+        lessons: [
+          "Fine-Tuning as Part of the Surgical Toolkit",
+          "Domain Specialization on Modified Architectures",
+          "Combining Structural Change with Targeted Training",
+          "Avoiding Catastrophic Forgetting After Surgery",
+          "Hands-On: Specialize Your Rearchitected Model"
+        ]
+      },
+      {
+        title: "Module 7: Pruning & Knowledge Distillation",
+        lessons: [
+          "Pruning Strategies: Width, Depth, and Structured Sparsity",
+          "Knowledge Distillation: Teacher-Student Transfer",
+          "How Much Can You Cut? Finding the Efficiency Frontier",
+          "Combining Pruning and Distillation for Maximum Compression",
+          "Hands-On: Distill a Pruned Model That Keeps Its Skills"
+        ]
+      },
+      {
+        title: "Module 8: Behavioral Analysis & Structural Modification",
+        lessons: [
+          "Watching the Model Think: Behavioral Probing",
+          "Mapping Behavior to Structure",
+          "Removing What Doesn't Serve Your Goals",
+          "Verifying Behavior Is Preserved Where It Matters",
+          "Hands-On: Behavior-Guided Surgery on a Real Model"
+        ]
+      },
+      {
+        title: "Module 9: Fair Pruning",
+        lessons: [
+          "Bias Lives in Neurons: The Fair Pruning Insight",
+          "Identifying Bias-Carrying Components",
+          "Pruning for Fairness AND Efficiency Simultaneously",
+          "Measuring Bias Reduction Rigorously",
+          "Hands-On: Apply Fair Pruning to an Open Model"
+        ]
+      },
+      {
+        title: "Module 10: Cost-Effective Deployment & The Road Ahead",
+        lessons: [
+          "Serving Your Rearchitected Models in Production",
+          "Quantization as the Final Compression Step",
+          "Total Cost of Ownership: Proving the 90% Savings",
+          "Future Directions in Structural Optimization",
+          "Capstone: Ship a Surgically Optimized Model End to End"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "How is this different from Fine-Tune Your Own Models?",
+        answer: "Fine-tuning changes what weights say; model surgery changes what architecture exists. This masterclass operates a level deeper—pruning components, distilling into smaller students, and structurally rewiring open models. Fine-tuning is one tool in the surgical kit here, not the whole discipline."
+      },
+      {
+        question: "What models will I operate on?",
+        answer: "Popular open models: Llama-3, Gemma, and Qwen families. The techniques are universal, so they transfer to new open-weight releases as they appear."
+      },
+      {
+        question: "What hardware do I need?",
+        answer: "A single consumer GPU (or affordable cloud equivalent) handles the course exercises—working on smaller open models is exactly the point. The economics of surgery mean you need LESS hardware than standard fine-tuning workflows."
+      },
+      {
+        question: "What is fair pruning?",
+        answer: "A technique for identifying and removing bias-carrying components at the neuron level—reducing model bias and model size in the same operation. You'll implement it hands-on and measure both the fairness and efficiency gains."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: {
+        price: 1497,
+        description: "Self-Paced Mastery",
+        features: [
+          "All 10 modules available immediately",
+          "Lifetime access to content and updates",
+          "Community support and code reviews",
+          "Monthly live office hours"
+        ]
+      },
+      cohort: {
+        price: 5997,
+        description: "9-Week Live Cohort",
+        features: [
+          "Weekly live workshops with Dr. Lee",
+          "Surgery reviews on your target models",
+          "Direct instructor access",
+          "Graduation certificate",
+          "Alumni network access"
+        ]
+      },
+      bootcamp: {
+        price: 10997,
+        description: "5-Day Immersive Bootcamp",
+        features: [
+          "Executive intensive format",
+          "Prune and distill a real model in one week",
+          "Live behavioral-analysis labs",
+          "Limited to 15 participants"
+        ]
+      },
+      founders: {
+        price: 17997,
+        description: "Founder's Edition",
+        features: [
+          "One-on-one mentorship with Dr. Lee",
+          "Surgical optimization plan for YOUR models",
+          "API-replacement cost analysis",
+          "90-day satisfaction guarantee"
+        ]
+      }
+    }
+  },
+  {
+    id: "ai-red-team",
+    slug: "ai-red-team",
+    name: "Build Your Own AI Red Team",
+    subtitle: "AI-Powered Security Agents—Understand Tomorrow's Attacks, Automate Today's Defenses",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "Very Rare",
+    price: 1497,
+    hook: "Attackers are already weaponizing AI agents. The security professionals who understand how—and can build the same capabilities under proper authorization—are the ones every enterprise fights to hire.",
+    description: "AI is transforming how offensive security work is designed, executed, and analyzed—on both sides of the fight. This masterclass, built for authorized security professionals, teaches you to build AI agents and multi-agent pipelines that support reconnaissance, triage, vulnerability discovery, reporting, and red-team/blue-team workflows. You'll create intelligent agents that automate parts of security testing while preserving safety, auditability, and human oversight. You'll build your first security agent, structure agentic workflows around artifacts and pipelines, and use AI to interpret results, prioritize findings, and slash manual triage. Throughout, the emphasis is on governance, authorization controls, resilience, and transparency—understanding not just where AI adds value in security work, but where it introduces operational and security risk. You'll finish with a clear framework for integrating AI into day-to-day security work responsibly.",
+    outcomes: [
+      "Build AI agents for authorized offensive security workflows from first principles",
+      "Use LLMs for reconnaissance, triage, and vulnerability discovery",
+      "Design multi-agent security pipelines with orchestration and shared artifacts",
+      "Automate reporting and reduce manual triage with AI assistance",
+      "Engineer authorization controls, audit trails, and human oversight into every agent",
+      "Analyze failure modes, resilience, and auditing in agentic security systems",
+      "Understand AI-powered attacks well enough to defend against them",
+      "Integrate AI into red-team and blue-team workflows responsibly"
+    ],
+    hours: 35,
+    modules: 8,
+    technologies: ["Python", "LLM APIs", "MCP", "Security Tooling", "Multi-Agent Frameworks", "Audit Logging"],
+    curriculum: [
+      {
+        title: "Module 1: AI in Offensive Security",
+        lessons: [
+          "How AI Is Reshaping Offensive and Defensive Security",
+          "Authorization First: The Ethics and Legality of AI Security Work",
+          "Where AI Adds Value—and Where It Adds Risk",
+          "The Agentic Security Workflow at a Glance",
+          "Your Responsible-AI Security Roadmap"
+        ]
+      },
+      {
+        title: "Module 2: Building Your First Security Agent",
+        lessons: [
+          "Why One-Off LLM Calls Break Down in Dynamic Environments",
+          "The Anatomy of a Security Agent",
+          "Guardrails and Scope Enforcement from Line One",
+          "Logging Everything: Auditability by Design",
+          "Hands-On: Build a Scoped, Auditable Security Agent"
+        ]
+      },
+      {
+        title: "Module 3: LLMs for Reconnaissance",
+        lessons: [
+          "Automating Recon with Language Models",
+          "Structuring and Enriching Recon Data",
+          "Rate Limits, Noise, and Staying in Scope",
+          "Turning Raw Recon into Actionable Signal",
+          "Hands-On: Build a Recon Agent"
+        ]
+      },
+      {
+        title: "Module 4: Triage & Vulnerability Discovery",
+        lessons: [
+          "AI-Assisted Triage: Prioritizing What Matters",
+          "Vulnerability Discovery with LLM Reasoning",
+          "Reducing False Positives Without Missing Real Issues",
+          "Confidence Scoring and Human Escalation",
+          "Hands-On: Build a Triage and Discovery Agent"
+        ]
+      },
+      {
+        title: "Module 5: Artifacts & Pipelines",
+        lessons: [
+          "Artifacts: The Shared Memory of Agentic Security Work",
+          "Structuring Multi-Step Security Pipelines",
+          "Passing State Safely Between Stages",
+          "Reproducible, Reviewable Workflows",
+          "Hands-On: Build an Artifact-Driven Pipeline"
+        ]
+      },
+      {
+        title: "Module 6: Multi-Agent Security Pipelines",
+        lessons: [
+          "Orchestrating Specialized Security Agents",
+          "Coordination Patterns for Recon, Triage, and Reporting",
+          "Shared Artifacts Across an Agent Team",
+          "Preventing Cross-Agent Scope Creep",
+          "Hands-On: Orchestrate a Multi-Agent Security Pipeline"
+        ]
+      },
+      {
+        title: "Module 7: Reporting & Blue-Team Workflows",
+        lessons: [
+          "AI-Assisted Reporting That Humans Trust",
+          "From Findings to Prioritized Remediation",
+          "Feeding Offensive Findings into Blue-Team Defenses",
+          "Communicating Risk to Non-Technical Stakeholders",
+          "Hands-On: Automate a Security Report"
+        ]
+      },
+      {
+        title: "Module 8: Failure Modes, Resilience & Governance",
+        lessons: [
+          "How Agentic Security Systems Fail",
+          "Resilience and Recovery in Automated Testing",
+          "Auditing Agent Decisions After the Fact",
+          "The Governance Framework for AI in Security Work",
+          "Capstone: Ship an Authorized, Auditable Security Pipeline"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "Is this masterclass ethical / legal to take?",
+        answer: "Yes—it is built for authorized security professionals doing sanctioned work: pentesting engagements, red-team/blue-team exercises, and defensive research. Every module emphasizes authorization controls, scope enforcement, auditability, and human oversight. It is not a guide to unauthorized attacks."
+      },
+      {
+        question: "Who is this for?",
+        answer: "Security engineers, pentesters, and red/blue-team members who want to understand AI-powered attacks and safely automate parts of their authorized workflows. Intermediate Python and a security background are assumed."
+      },
+      {
+        question: "How does this connect to the agent masterclasses?",
+        answer: "It applies the agent-building skills from Build Your Own Autonomous AI Agent and the coordination patterns from the multi-agent courses to the security domain—with governance and auditability elevated to first-class requirements."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: { price: 1497, description: "Self-Paced Mastery", features: ["All 8 modules available immediately", "Lifetime access to content and updates", "Community support and code reviews", "Monthly live office hours"] },
+      cohort: { price: 5997, description: "8-Week Live Cohort", features: ["Weekly live workshops with Dr. Lee", "Reviews of your authorized security agents", "Direct instructor access", "Graduation certificate", "Alumni network access"] },
+      bootcamp: { price: 10997, description: "5-Day Immersive Bootcamp", features: ["Executive intensive format", "Build a security pipeline in one week", "Live governance and scoping labs", "Limited to 15 participants"] },
+      founders: { price: 17997, description: "Founder's Edition", features: ["One-on-one mentorship with Dr. Lee", "Security agent architecture for YOUR team", "Governance and authorization design review", "90-day satisfaction guarantee"] }
+    }
+  },
+  {
+    id: "digital-twin",
+    slug: "digital-twin",
+    name: "Build Your Own Digital Twin",
+    subtitle: "From Sensors to Simulation—Create Living Virtual Replicas of Real-World Systems",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "High Demand",
+    price: 1497,
+    hook: "The physical world is going virtual. Learn to build the living, sensor-fed replicas that let companies test, monitor, and predict without touching the real thing.",
+    description: "A digital twin is a living virtual replica of a real-world system—fed by sensors, updated in real time, and rich enough to simulate, monitor, and predict. In this hands-on masterclass you'll build one end to end, drawing on software development, data science, robotics, and visual design. You'll map real-world opportunities to data, extract knowledge from legacy documents with OCR, deploy IoT sensor networks, manage real-time data streams, and build visual and geometric models of physical systems. Then you'll layer machine learning on top to make your twin predictive—and secure the whole environment for production. This is a different kind of AI course: one that reaches out of the datacenter and into factories, buildings, and machines.",
+    outcomes: [
+      "Build a complete digital twin from real-world system to living virtual replica",
+      "Map business opportunities to the data that powers a twin",
+      "Extract knowledge from legacy documents using OCR",
+      "Deploy IoT sensor networks that feed your twin",
+      "Manage real-time data streams at scale",
+      "Build visual and geometric models of physical systems",
+      "Apply machine learning to make the twin predictive",
+      "Secure the digital twin environment for production"
+    ],
+    hours: 40,
+    modules: 10,
+    technologies: ["Python", "IoT Sensors", "MQTT", "OCR", "3D Modeling", "Time-Series Databases", "Machine Learning", "Computer Vision"],
+    curriculum: [
+      {
+        title: "Module 1: Introduction to Digital Twins",
+        lessons: [
+          "What a Digital Twin Really Is—and Isn't",
+          "Where Twins Create Value: Industry, Buildings, Machines",
+          "The Anatomy of a Living Replica",
+          "Software, Data, Robotics, and Design Together",
+          "Your Digital Twin Roadmap"
+        ]
+      },
+      {
+        title: "Module 2: Building a Digital Twin",
+        lessons: [
+          "From Physical System to Virtual Model",
+          "Choosing What to Represent—and at What Fidelity",
+          "The Twin Architecture: Data In, Insight Out",
+          "Your First Minimal Twin",
+          "Hands-On: Stand Up a Basic Twin"
+        ]
+      },
+      {
+        title: "Module 3: Opportunity-to-Data Mapping",
+        lessons: [
+          "Starting from the Business Opportunity",
+          "Mapping Outcomes to Required Data",
+          "Identifying Data Sources and Gaps",
+          "The Data Chain That Powers the Twin",
+          "Hands-On: Build an Opportunity-to-Data Map"
+        ]
+      },
+      {
+        title: "Module 4: Legacy Document Extraction with OCR",
+        lessons: [
+          "The Hidden Data in Legacy Documents",
+          "OCR Fundamentals for Real Documents",
+          "Structuring Extracted Content",
+          "Feeding Legacy Knowledge into the Twin",
+          "Hands-On: Extract and Integrate Document Data"
+        ]
+      },
+      {
+        title: "Module 5: Deploying IoT Sensor Networks",
+        lessons: [
+          "Sensors: The Twin's Connection to Reality",
+          "Designing a Sensor Network",
+          "Protocols and Connectivity (MQTT and Friends)",
+          "Reliability and Calibration",
+          "Hands-On: Deploy a Sensor Network"
+        ]
+      },
+      {
+        title: "Module 6: Managing Real-Time Data Streams",
+        lessons: [
+          "Streaming Architecture for Live Twins",
+          "Ingesting and Buffering High-Volume Data",
+          "Time-Series Storage and Querying",
+          "Handling Late, Missing, and Noisy Data",
+          "Hands-On: Build a Real-Time Streaming Pipeline"
+        ]
+      },
+      {
+        title: "Module 7: Visual Modeling Techniques",
+        lessons: [
+          "Making the Twin Visible: 2D, 3D, and Geometric Models",
+          "Mapping Sensor Data onto Visual Models",
+          "Interactive Twin Dashboards",
+          "Design Principles for Operator Trust",
+          "Hands-On: Build a Visual Twin Interface"
+        ]
+      },
+      {
+        title: "Module 8: Data Integration Techniques",
+        lessons: [
+          "Fusing Data from Many Sources",
+          "Reconciling Conflicting Signals",
+          "Building a Unified Twin Data Model",
+          "APIs for Twin Consumers",
+          "Hands-On: Integrate Multiple Data Sources"
+        ]
+      },
+      {
+        title: "Module 9: Machine Learning for Digital Twins",
+        lessons: [
+          "From Monitoring to Prediction",
+          "Anomaly Detection on Twin Data",
+          "Predictive Maintenance Models",
+          "Simulation and What-If Analysis",
+          "Hands-On: Make Your Twin Predictive"
+        ]
+      },
+      {
+        title: "Module 10: Securing the Digital Twin",
+        lessons: [
+          "The Attack Surface of a Connected Twin",
+          "Securing Sensors, Streams, and Models",
+          "Access Control and Data Privacy",
+          "Monitoring the Twin for Compromise",
+          "Capstone: Ship a Secure, Predictive Digital Twin"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "Do I need hardware or IoT experience?",
+        answer: "No prior IoT experience required. You'll learn sensor networks and streaming from the ground up, and exercises can be done with simulated sensors if you don't have physical hardware. Intermediate Python is the main prerequisite."
+      },
+      {
+        question: "How is this different from the rest of the catalog?",
+        answer: "Most of the catalog lives in the datacenter. This masterclass reaches into the physical world—factories, buildings, machines—combining IoT, real-time data, visualization, and ML. It's a distinct vertical for engineers who want to bridge software and physical systems."
+      },
+      {
+        question: "What will I have built by the end?",
+        answer: "A complete, secured digital twin: sensor network, real-time streaming pipeline, visual model, integrated data sources, and predictive ML layer—applied to a real or simulated physical system."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: { price: 1497, description: "Self-Paced Mastery", features: ["All 10 modules available immediately", "Lifetime access to content and updates", "Community support and code reviews", "Monthly live office hours"] },
+      cohort: { price: 5997, description: "9-Week Live Cohort", features: ["Weekly live workshops with Dr. Lee", "Reviews of your twin architecture", "Direct instructor access", "Graduation certificate", "Alumni network access"] },
+      bootcamp: { price: 10997, description: "5-Day Immersive Bootcamp", features: ["Executive intensive format", "Build a working twin in one week", "Live sensor and streaming labs", "Limited to 15 participants"] },
+      founders: { price: 17997, description: "Founder's Edition", features: ["One-on-one mentorship with Dr. Lee", "Digital twin design for YOUR system", "Deployment and security roadmap", "90-day satisfaction guarantee"] }
+    }
+  },
+  {
+    id: "ai-data-engineer",
+    slug: "ai-native-data-engineer",
+    name: "The AI-Native Data Engineer",
+    subtitle: "Put LLMs to Work Inside Your Pipelines—Automate the Grind, Own the Insight",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "High Demand",
+    price: 997,
+    hook: "Every model you build is only as good as the data feeding it. Learn to weave LLMs directly into your pipelines and turn data engineering's grind into an unfair advantage.",
+    description: "Data engineering is the unglamorous foundation every AI system stands on—and it's ripe for reinvention. This masterclass is a fast, hands-on guide to integrating large language models directly into your data workflows. You'll go far beyond copy-pasting prompts: you'll craft smarter prompts for data tasks, use AI to write, debug, and optimize SQL and Python faster, embed LLMs at the API level inside pipelines for automation and enrichment, clean and transform messy real-world data with AI, and build agentic workflows that capture and scale subject-matter expertise. Everything is illustrated with instantly-familiar SQL and Python use cases, so you can apply it Monday morning. This is the data course the rest of the catalog depends on.",
+    outcomes: [
+      "Integrate LLMs directly into data workflows at the API level",
+      "Craft prompts that get reliable results on real data tasks",
+      "Use AI to write, debug, and optimize SQL and Python faster",
+      "Embed AI into pipelines for automation, analysis, and enrichment",
+      "Clean, transform, and extract insight from messy real-world data with AI",
+      "Build agentic data workflows that capture subject-matter expertise",
+      "Boost pipeline performance and efficiency, not just developer speed",
+      "Ship AI-augmented data pipelines to production"
+    ],
+    hours: 25,
+    modules: 7,
+    technologies: ["Python", "SQL", "LLM APIs", "Pandas", "Data Pipelines", "Agentic Frameworks"],
+    curriculum: [
+      {
+        title: "Module 1: Introduction to AI Data Engineering",
+        lessons: [
+          "Why Data Engineering Is Being Reinvented by AI",
+          "Beyond the Coding Assistant: LLMs Inside Pipelines",
+          "The AI-Native Data Stack",
+          "Where AI Helps—and Where It Hurts—in Data Work",
+          "Your AI Data Engineering Roadmap"
+        ]
+      },
+      {
+        title: "Module 2: AI and Data Workflows",
+        lessons: [
+          "Mapping the Modern Data Workflow",
+          "Identifying High-Leverage Automation Points",
+          "API-Level Integration vs Manual Prompting",
+          "Cost and Latency in AI-Augmented Pipelines",
+          "Hands-On: Instrument a Workflow with an LLM"
+        ]
+      },
+      {
+        title: "Module 3: Crafting Smarter Prompts for Data",
+        lessons: [
+          "Prompting for Structured, Reliable Data Output",
+          "Schema-Constrained Generation",
+          "Prompt Patterns for Transformation and Enrichment",
+          "Guarding Against Silent Data Errors",
+          "Hands-On: Build a Prompt Library for Data Tasks"
+        ]
+      },
+      {
+        title: "Module 4: AI for SQL and Python",
+        lessons: [
+          "Generating and Debugging SQL with AI",
+          "Optimizing Queries with LLM Assistance",
+          "Writing and Refactoring Python Data Code Faster",
+          "Verifying AI-Generated Code Before It Ships",
+          "Hands-On: Accelerate a Real SQL/Python Task"
+        ]
+      },
+      {
+        title: "Module 5: Integrating AI into Pipelines",
+        lessons: [
+          "Embedding LLM Calls at the API Level",
+          "Automation, Analysis, and Enrichment in Flight",
+          "Batching, Caching, and Rate Management",
+          "Error Handling for AI Steps in Pipelines",
+          "Hands-On: Add an AI Enrichment Stage to a Pipeline"
+        ]
+      },
+      {
+        title: "Module 6: Data Cleaning with AI",
+        lessons: [
+          "The Never-Ending Chore: Cleaning Messy Data",
+          "AI-Driven Standardization and Deduplication",
+          "Extracting Structure from Unstructured Data",
+          "Validating AI-Cleaned Data",
+          "Hands-On: Clean a Real Messy Dataset with AI"
+        ]
+      },
+      {
+        title: "Module 7: Building Agentic Data Workflows",
+        lessons: [
+          "From Steps to Agents: Autonomous Data Workflows",
+          "Capturing Subject-Matter Expertise in Agents",
+          "Scaling Expert Workflows Across the Team",
+          "Monitoring Agentic Pipelines",
+          "Capstone: Ship an Agentic Data Pipeline"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "Is this just 'use ChatGPT to write SQL'?",
+        answer: "No. That's one small piece. The core of this masterclass is integrating LLMs at the API level inside your pipelines—automating transformation, enrichment, and cleaning, and building agentic workflows that scale expertise. It's engineering, not copy-paste."
+      },
+      {
+        question: "Why should a model-builder care about data engineering?",
+        answer: "Because every model in this catalog is only as good as its data. This masterclass fills the one gap the rest of the catalog assumes away: the pipelines that produce clean, enriched, training-ready data."
+      },
+      {
+        question: "What do I need to know already?",
+        answer: "Working SQL and Python. If you can write a query and a data script, you're ready. No ML background required."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: { price: 997, description: "Self-Paced Mastery", features: ["All 7 modules available immediately", "Lifetime access to content and updates", "Community support and code reviews", "Monthly live office hours"] },
+      cohort: { price: 3997, description: "7-Week Live Cohort", features: ["Weekly live workshops with Dr. Lee", "Pipeline reviews on your real data", "Direct instructor access", "Graduation certificate", "Alumni network access"] },
+      bootcamp: { price: 6997, description: "4-Day Immersive Bootcamp", features: ["Executive intensive format", "Build an AI pipeline in one week", "Live data-cleaning labs", "Limited to 15 participants"] },
+      founders: { price: 9997, description: "Founder's Edition", features: ["One-on-one mentorship with Dr. Lee", "Pipeline architecture for YOUR data stack", "Automation opportunity audit", "90-day satisfaction guarantee"] }
+    }
+  },
+  {
+    id: "decode-codebase",
+    slug: "decode-any-codebase",
+    name: "Decode Any Codebase with AI",
+    subtitle: "10 Timeless Mental Models to Map, Understand, and Ship Into Any Codebase in Hours",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "Medium",
+    price: 697,
+    hook: "Working with code you didn't write is now the default. Learn the AI-driven process that maps any unfamiliar codebase in under an hour—and ships a real change the same day.",
+    description: "Whether it's a legacy monster or an AI-generated project, 'code you didn't write' is now most of your job. Standard profilers, debuggers, and static analysis make understanding it slow and painful. This masterclass teaches an efficient, AI-driven process to make sense of any software project in hours—complete with prompts, workflow pipelines, and ten timeless mental models. You'll map an unfamiliar codebase on a single page in under an hour, reverse-engineer a product's intent from its schema and git history, and decode backend, frontend, ML, and infrastructure code using universal patterns. Every technique is visual-first: you'll generate ERDs, sequence diagrams, component trees, and architecture maps with a single prompt. The goal isn't to let AI think for you—it's to build the architectural thinking that makes you dangerous, then ship a real, tested PR to an unfamiliar repo.",
+    outcomes: [
+      "Map any unfamiliar codebase on one page in under an hour",
+      "Reverse-engineer a product's intent from its schema and git history",
+      "Decode backend, frontend, ML, and infrastructure code with universal patterns",
+      "Generate ERDs, sequence diagrams, and architecture maps with one prompt",
+      "Master 10 timeless mental models that work on any language at any scale",
+      "Interrogate AI output and catch its confident nonsense",
+      "Build a reusable Codebase Knowledge Builder workflow",
+      "Ship a real, tested PR to an unfamiliar open-source repo"
+    ],
+    hours: 20,
+    modules: 7,
+    technologies: ["AI Coding Assistants", "Git", "Mermaid", "Static Analysis", "Prompt Workflows"],
+    curriculum: [
+      {
+        title: "Module 1: The Architectural Thinking Advantage",
+        lessons: [
+          "Why 'Code You Didn't Write' Is the New Default",
+          "AI as a Comprehension Tool, Not a Crutch",
+          "The 10 Mental Models Overview",
+          "Asking Sharper Questions, Demanding Concrete Outputs",
+          "Your Codebase-Cracking Roadmap"
+        ]
+      },
+      {
+        title: "Module 2: The One-Page Codebase Map",
+        lessons: [
+          "Mapping an Unfamiliar Codebase Fast",
+          "Finding the Entry Points and Core Flows",
+          "Generating an Architecture Map with One Prompt",
+          "Separating Signal from Noise",
+          "Hands-On: Map a Real Repo in Under an Hour"
+        ]
+      },
+      {
+        title: "Module 3: Reverse-Engineering Intent",
+        lessons: [
+          "Reading a Product's Purpose from Its Schema",
+          "Mining Git History for Design Decisions",
+          "Reconstructing the 'Why' Behind the Code",
+          "Generating ERDs from a Database",
+          "Hands-On: Reverse-Engineer a Product's Intent"
+        ]
+      },
+      {
+        title: "Module 4: Decoding Backend & Data Code",
+        lessons: [
+          "Universal Backend Patterns",
+          "Tracing Requests End to End",
+          "Understanding Data Models and Migrations",
+          "Generating Sequence Diagrams with AI",
+          "Hands-On: Decode a Backend Service"
+        ]
+      },
+      {
+        title: "Module 5: Decoding Frontend, ML & Infra Code",
+        lessons: [
+          "Frontend Patterns and Component Trees",
+          "Making Sense of ML Code and Pipelines",
+          "Reading Infrastructure and Configuration",
+          "Generating Component Trees and DAGs",
+          "Hands-On: Decode a Frontend and an ML Module"
+        ]
+      },
+      {
+        title: "Module 6: The Codebase Knowledge Builder",
+        lessons: [
+          "Turning Ad-Hoc Exploration into a Workflow",
+          "Building a Reusable Knowledge Builder Pipeline",
+          "Creating an Agent Skill File for a Codebase",
+          "Keeping the Map Fresh as Code Changes",
+          "Hands-On: Build Your Knowledge Builder Workflow"
+        ]
+      },
+      {
+        title: "Module 7: Ship a Real Change",
+        lessons: [
+          "From Understanding to Contribution",
+          "Scoping a Safe First Change",
+          "Writing Tests That Prove It's Safe",
+          "Opening a Real PR to an Unfamiliar Repo",
+          "Capstone: Ship a Tested PR to an Open-Source Project"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "How is this different from Professional Vibe Coding with Claude Code?",
+        answer: "That masterclass is about building AI-augmented development infrastructure to write code faster. This one is about comprehension—using AI to understand code you didn't write, map it, and safely ship into it. Writing vs understanding: two different superpowers."
+      },
+      {
+        question: "Is this tied to a specific language or AI tool?",
+        answer: "No. The ten mental models are language-agnostic and work on any codebase at any scale. Techniques are demonstrated on real open-source projects across multiple stacks, using whichever AI coding assistant you prefer."
+      },
+      {
+        question: "What will I walk away with?",
+        answer: "A repeatable process, a prompt library, a reusable Codebase Knowledge Builder workflow, and a real tested PR shipped to an unfamiliar open-source repository."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: { price: 697, description: "Self-Paced Mastery", features: ["All 7 modules available immediately", "Lifetime access to content and updates", "Community support and code reviews", "Monthly live office hours"] },
+      cohort: { price: 2497, description: "7-Week Live Cohort", features: ["Weekly live workshops with Dr. Lee", "Live codebase-cracking sessions", "Direct instructor access", "Graduation certificate", "Alumni network access"] },
+      bootcamp: { price: 4997, description: "3-Day Immersive Bootcamp", features: ["Executive intensive format", "Crack and contribute to a real repo", "Live PR review", "Limited to 15 participants"] },
+      founders: { price: 6997, description: "Founder's Edition", features: ["One-on-one mentorship with Dr. Lee", "Onboarding workflow for YOUR codebase", "Team knowledge-transfer playbook", "90-day satisfaction guarantee"] }
+    }
+  },
+  {
+    id: "ship-ready",
+    slug: "ship-ready-ai-development",
+    name: "Ship-Ready: Full-Spectrum AI Development",
+    subtitle: "Beyond Vibe Coding—Turn AI-Generated Code Into Production Systems You Can Trust",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "Medium",
+    price: 997,
+    hook: "AI-generated code that 'just works' is often hiding technical debt, unverifiable logic, and slow-burn bugs. Learn the full-spectrum process that turns vibe coding into engineering.",
+    description: "Generating code with AI feels effortless—but generation is only one part of software engineering. A production-grade pipeline includes specification, testing, validation, refactoring, optimization, and deployment. This masterclass teaches the end-to-end process of taking AI-assisted coding all the way to trustworthy, shipped software. You'll build a mental model for this full-spectrum approach, master agentic coding best practices, accelerate the modernization of legacy applications, and use AI for evaluation, validation, and refactoring—not just first-draft generation. You'll learn to install the checks and guardrails that catch the most common AI-coding failures from specification through production, and to use LLMs and agents to test, improve, and deploy more efficiently. This is how you get the speed of AI without the slow-burn bugs that rot a codebase.",
+    outcomes: [
+      "Build a mental model for full-spectrum, AI-infused development",
+      "Master agentic coding best practices from spec to deployment",
+      "Install checks and guardrails that catch common AI-coding failures",
+      "Use AI for evaluation, validation, and refactoring—not just generation",
+      "Accelerate modernization of legacy applications with AI",
+      "Detect and pay down hidden technical debt in AI-generated code",
+      "Apply AI to team setup and cross-functional work",
+      "Test, improve, and deploy applications more efficiently with LLMs and agents"
+    ],
+    hours: 25,
+    modules: 8,
+    technologies: ["AI Coding Agents", "CI/CD", "Testing Frameworks", "Static Analysis", "Refactoring Tools", "Git"],
+    curriculum: [
+      {
+        title: "Module 1: Beyond Generation—The Full Spectrum",
+        lessons: [
+          "Why 'It Just Works' Is a Trap",
+          "The Full-Spectrum Development Pipeline",
+          "A Mental Model for AI-Infused Engineering",
+          "The Hidden Costs of Vibe-Coded Software",
+          "Your Ship-Ready Roadmap"
+        ]
+      },
+      {
+        title: "Module 2: Agentic Coding Best Practices",
+        lessons: [
+          "Working With Coding Agents, Not Against Them",
+          "Scoping Tasks Agents Can Actually Complete",
+          "Context and Instructions for Reliable Output",
+          "Observability for Headless Agents",
+          "Hands-On: Drive an Agent Through a Real Task"
+        ]
+      },
+      {
+        title: "Module 3: Specification & Guardrails",
+        lessons: [
+          "Specifying Before You Generate",
+          "Guardrails from Specification Through Production",
+          "Catching AI's Most Common Failure Modes",
+          "Encoding Standards the Agent Must Follow",
+          "Hands-On: Add Guardrails to an AI Workflow"
+        ]
+      },
+      {
+        title: "Module 4: AI-Assisted Testing & Validation",
+        lessons: [
+          "Using AI to Generate Meaningful Tests",
+          "Validating AI-Written Logic",
+          "Property-Based and Adversarial Testing with AI",
+          "Proving Correctness, Not Just Coverage",
+          "Hands-On: Build an AI-Assisted Test Suite"
+        ]
+      },
+      {
+        title: "Module 5: Refactoring & Optimization",
+        lessons: [
+          "AI-Assisted Refactoring at Scale",
+          "Finding and Fixing Technical Debt",
+          "Performance Optimization with AI",
+          "Keeping Behavior Stable While Improving Code",
+          "Hands-On: Refactor an AI-Generated Module"
+        ]
+      },
+      {
+        title: "Module 6: Modernizing Legacy Applications",
+        lessons: [
+          "Accelerating Legacy Modernization with AI",
+          "Understanding Before Rewriting",
+          "Incremental Migration Strategies",
+          "De-Risking Big Changes",
+          "Hands-On: Modernize a Legacy Component"
+        ]
+      },
+      {
+        title: "Module 7: AI in Teams & Cross-Functional Work",
+        lessons: [
+          "AI in Team Setup and Workflow Design",
+          "Standardizing AI Practices Across a Team",
+          "Cross-Functional Collaboration with AI",
+          "Measuring Team-Level Productivity Gains",
+          "Hands-On: Design an AI-Augmented Team Workflow"
+        ]
+      },
+      {
+        title: "Module 8: Deployment & Production",
+        lessons: [
+          "AI-Assisted Deployment Pipelines",
+          "Monitoring AI-Built Systems in Production",
+          "Incident Response for AI-Generated Code",
+          "Sustaining Quality Over Time",
+          "Capstone: Ship an AI-Built Feature to Production"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "How is this different from Professional Vibe Coding with Claude Code?",
+        answer: "That masterclass gets you generating code fast with AI-augmented infrastructure. Ship-Ready is the discipline layer on top: specification, testing, validation, refactoring, and deployment that turn fast generation into trustworthy production software. Speed first, then the process that makes speed safe."
+      },
+      {
+        question: "Is this framework- or tool-specific?",
+        answer: "No. The full-spectrum process applies to any AI coding assistant and any stack. You'll use CI/CD, testing, and refactoring tools, but the practices transfer across tools and languages."
+      },
+      {
+        question: "Who is this for?",
+        answer: "Engineers and teams already using AI to write code who keep getting bitten by hidden bugs and technical debt. If you can generate code with AI but aren't sure you can trust it in production, this is for you."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: { price: 997, description: "Self-Paced Mastery", features: ["All 8 modules available immediately", "Lifetime access to content and updates", "Community support and code reviews", "Monthly live office hours"] },
+      cohort: { price: 3997, description: "8-Week Live Cohort", features: ["Weekly live workshops with Dr. Lee", "Reviews of your AI-development pipeline", "Direct instructor access", "Graduation certificate", "Alumni network access"] },
+      bootcamp: { price: 6997, description: "4-Day Immersive Bootcamp", features: ["Executive intensive format", "Ship an AI-built feature in one week", "Live guardrail and testing labs", "Limited to 15 participants"] },
+      founders: { price: 9997, description: "Founder's Edition", features: ["One-on-one mentorship with Dr. Lee", "AI-development process design for YOUR team", "Quality and guardrail audit", "90-day satisfaction guarantee"] }
+    }
+  },
+  {
+    id: "rlhf",
+    slug: "human-feedback-alignment",
+    name: "Teach Your AI What Humans Want",
+    subtitle: "The RLHF Post-Training Stack™ — Build the Alignment Layer Behind Every Frontier Model",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "Cutting Edge",
+    price: 1497,
+    hook: "Pretraining gives a model knowledge. RLHF gives it judgment. Master the post-training layer that turned raw language models into assistants people actually trust.",
+    description: "Reinforcement Learning from Human Feedback is how a capable-but-unruly base model becomes a helpful, harmless, honest assistant. It's the technique that made ChatGPT feel different—and the post-training layer every frontier lab now depends on. This masterclass takes you inside RLHF from first principles: why it emerged to solve hard-to-specify problems, how to collect and model human preferences, how to train reward models, and how to optimize policies with the full post-training toolkit. You'll work through preference data, reward modeling, policy optimization, synthetic data generation, and modern alternatives like DPO—then wire it all into a working post-training pipeline. This is the deep, build-it-yourself companion to alignment: not the philosophy of alignment, but the machinery that produces it.",
+    outcomes: [
+      "Understand why RLHF emerged to solve hard-to-specify, preference-driven problems",
+      "Collect, curate, and model human preference data",
+      "Train reward models that capture what humans actually want",
+      "Optimize policies with reinforcement learning from a reward signal",
+      "Generate and use synthetic data to scale human feedback",
+      "Apply modern alternatives like DPO and understand the tradeoffs",
+      "Run safety regressions throughout the post-training loop",
+      "Assemble a complete, working RLHF post-training pipeline"
+    ],
+    hours: 40,
+    modules: 9,
+    technologies: ["PyTorch", "Hugging Face TRL", "Transformers", "Reward Models", "DPO", "PPO", "Weights & Biases"],
+    curriculum: [
+      {
+        title: "Module 1: Why RLHF Exists",
+        lessons: [
+          "The Hard-to-Specify Problem: When You Can't Write the Reward",
+          "From Base Model to Assistant: The Post-Training Layer",
+          "How RLHF Changed What AI Feels Like",
+          "The RLHF Pipeline at a Glance",
+          "Your Post-Training Roadmap"
+        ]
+      },
+      {
+        title: "Module 2: Human Preferences as Data",
+        lessons: [
+          "What Counts as a Preference: Pairwise, Ranked, and Rated",
+          "Designing Preference Collection That Isn't Noise",
+          "Annotator Guidelines and Inter-Rater Reliability",
+          "Preference Data Quality Gates",
+          "Hands-On: Build a Preference Dataset"
+        ]
+      },
+      {
+        title: "Module 3: Reward Modeling",
+        lessons: [
+          "Turning Preferences into a Scalar Reward",
+          "Training a Reward Model from Pairwise Data",
+          "Reward Model Evaluation and Calibration",
+          "Reward Hacking: How Models Game the Signal",
+          "Hands-On: Train Your First Reward Model"
+        ]
+      },
+      {
+        title: "Module 4: Policy Optimization Foundations",
+        lessons: [
+          "RL for Language Models: The Core Loop",
+          "PPO and the Post-Training Objective",
+          "KL Penalties: Staying Close to the Base Model",
+          "Stability Techniques for RL Fine-Tuning",
+          "Hands-On: Optimize a Policy Against Your Reward Model"
+        ]
+      },
+      {
+        title: "Module 5: Direct Preference Optimization",
+        lessons: [
+          "DPO: Skipping the Reward Model",
+          "When DPO Beats Full RLHF—and When It Doesn't",
+          "Implementing DPO End to End",
+          "Comparing DPO and PPO Head to Head",
+          "Hands-On: Align a Model with DPO"
+        ]
+      },
+      {
+        title: "Module 6: Synthetic Data for Feedback",
+        lessons: [
+          "Scaling Beyond Human Labels with Synthetic Data",
+          "AI Feedback: RLAIF and Constitutional Approaches",
+          "Quality Control for Synthetic Preferences",
+          "Blending Human and Synthetic Signal",
+          "Hands-On: Generate and Validate Synthetic Preferences"
+        ]
+      },
+      {
+        title: "Module 7: Instruction & Post-Training Recipes",
+        lessons: [
+          "Supervised Fine-Tuning as the Foundation",
+          "Sequencing SFT, Reward Modeling, and RL",
+          "Post-Training Recipes Used by Frontier Labs",
+          "Ablations: Knowing Which Step Did What",
+          "Hands-On: Run a Full SFT-to-RLHF Sequence"
+        ]
+      },
+      {
+        title: "Module 8: Safety in the Loop",
+        lessons: [
+          "Safety Regressions at Every Post-Training Step",
+          "Red Teaming the Aligned Model",
+          "Measuring Helpfulness vs Harmlessness Tradeoffs",
+          "Guardrails Against Alignment Regressions",
+          "Hands-On: Add Safety Regressions to Your Pipeline"
+        ]
+      },
+      {
+        title: "Module 9: The Complete Post-Training Pipeline",
+        lessons: [
+          "Assembling Preferences, Reward, Policy, and Safety",
+          "Evaluating the Aligned Model End to End",
+          "Deploying and Monitoring an RLHF'd Model",
+          "Timeless Practices as Methods Evolve",
+          "Capstone: Ship a Working RLHF Pipeline"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "How is this different from AI Alignment and RLHF?",
+        answer: "AI Alignment and RLHF is the broad alignment course—DPO, constitutional AI, and the theory of building models that do what you want. This masterclass is a deep, hands-on build of the RLHF post-training pipeline specifically: preference data, reward modeling, policy optimization, synthetic feedback, and safety regressions. Think of it as the machine-room companion to the alignment course."
+      },
+      {
+        question: "Do I need to have trained a model before?",
+        answer: "You should be comfortable with PyTorch and fine-tuning. If you've taken Build Your Own LLM or Fine-Tune Your Own Models, you're well prepared. RLHF sits on top of a base or instruction-tuned model, which you'll start from."
+      },
+      {
+        question: "Is RLHF still relevant with DPO around?",
+        answer: "Yes—and you'll learn both. DPO simplifies parts of the pipeline but doesn't replace understanding reward modeling and policy optimization. You'll implement both and learn exactly when each wins."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: { price: 1497, description: "Self-Paced Mastery", features: ["All 9 modules available immediately", "Lifetime access to content and updates", "Community support and code reviews", "Monthly live office hours"] },
+      cohort: { price: 5997, description: "9-Week Live Cohort", features: ["Weekly live workshops with Dr. Lee", "Pipeline reviews on your models", "Direct instructor access", "Graduation certificate", "Alumni network access"] },
+      bootcamp: { price: 10997, description: "5-Day Immersive Bootcamp", features: ["Executive intensive format", "Build an RLHF pipeline in one week", "Live reward-modeling labs", "Limited to 15 participants"] },
+      founders: { price: 17997, description: "Founder's Edition", features: ["One-on-one mentorship with Dr. Lee", "Post-training strategy for YOUR model", "Custom reward-model design", "90-day satisfaction guarantee"] }
+    }
+  },
+  {
+    id: "private-ai-lab",
+    slug: "private-ai-lab",
+    name: "Your Private AI Lab",
+    subtitle: "Run Powerful AI Entirely on Your Own Machine—Free Forever, Zero Data Leaving",
+    category: "Citizen Developer",
+    categoryId: "citizen",
+    rarity: "Flagship",
+    price: 497,
+    hook: "Stop paying subscription fees and sending your data to the cloud. Build your own private, offline ChatGPT—running 100% on your own machine.",
+    description: "Forget subscription fees, privacy worries, and cloud dependency. This masterclass shows you exactly how to build and run a ChatGPT-style assistant entirely on your own computer—free forever, with zero data ever leaving your machine. Using open-source models, Ollama, Python, and Streamlit, every module builds toward one goal: your own private AI app, running fully offline. You'll install and manage models like Llama, Gemma, Qwen, and Mistral, set up a clean Python environment, and master Streamlit's elegant Python-only UI. You'll customize AI behavior with system prompts, temperature tuning, and model files to create your own AI personalities—and verify true privacy by watching the network stay silent while your assistant runs. No data science required; just a desire to own your AI instead of renting it.",
+    outcomes: [
+      "Install and run open models—Llama, Gemma, Qwen, Mistral—on your own machine",
+      "Build a complete ChatGPT-like chatbot with Streamlit",
+      "Add streaming responses, conversation memory, and model selection",
+      "Customize AI personalities with system prompts, temperature, and model files",
+      "Run AI fully offline with verifiable, provable privacy",
+      "Set up a clean local Python + Ollama environment from scratch",
+      "Troubleshoot memory errors, port conflicts, and common local-LLM issues",
+      "Own your AI assistant with zero subscription fees and zero cloud dependency"
+    ],
+    hours: 15,
+    modules: 7,
+    technologies: ["Ollama", "Python", "Streamlit", "Llama", "Gemma", "Qwen", "Mistral"],
+    curriculum: [
+      {
+        title: "Module 1: Your Own AI, No Cloud Required",
+        lessons: [
+          "Why Run AI Locally: Cost, Privacy, Control",
+          "How Local Models Work",
+          "Meet the Open Models: Llama, Gemma, Qwen, Mistral",
+          "What You'll Build: A Private ChatGPT",
+          "Setting Expectations for Local Hardware"
+        ]
+      },
+      {
+        title: "Module 2: Installing and Running Models",
+        lessons: [
+          "Installing Ollama",
+          "Downloading and Managing Multiple Models",
+          "Running Your First Local Prompt",
+          "Comparing Models for Speed and Quality",
+          "Hands-On: Run Four Models Locally"
+        ]
+      },
+      {
+        title: "Module 3: Your Python Environment",
+        lessons: [
+          "Setting Up Python the Professional Way",
+          "Homebrew, VS Code, and a Clean Workspace",
+          "Talking to Ollama from Python",
+          "Your First Programmatic Chat",
+          "Hands-On: Script a Conversation"
+        ]
+      },
+      {
+        title: "Module 4: Building the Chatbot UI",
+        lessons: [
+          "Streamlit: Beautiful UIs in Pure Python",
+          "Building a Chat Interface in ~70 Lines",
+          "Wiring the UI to Your Local Model",
+          "Layout and Polish",
+          "Hands-On: Build Your ChatGPT-Style App"
+        ]
+      },
+      {
+        title: "Module 5: Streaming, Memory & Model Selection",
+        lessons: [
+          "Streaming Responses Token by Token",
+          "Adding Conversation Memory",
+          "Letting Users Switch Models Live",
+          "Managing State in Streamlit",
+          "Hands-On: Add the Pro Features"
+        ]
+      },
+      {
+        title: "Module 6: Custom AI Personalities",
+        lessons: [
+          "System Prompts: Shaping Behavior",
+          "Temperature and Sampling for Tone",
+          "Ollama Modelfiles: Your Own Custom Models",
+          "Building a Themed Assistant",
+          "Hands-On: Create Your Own AI Personality"
+        ]
+      },
+      {
+        title: "Module 7: Verifiable Privacy & Troubleshooting",
+        lessons: [
+          "Proving Nothing Leaves Your Machine",
+          "Running Fully Offline",
+          "Troubleshooting Memory Errors and Port Conflicts",
+          "Keeping Your Private AI Running",
+          "Capstone: Ship Your Private AI Assistant"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "Do I need to be a programmer?",
+        answer: "No data science and only light Python are required. This is a Citizen Developer masterclass—every step is guided, from installing tools to shipping the app. If you can follow a recipe, you can build your private AI."
+      },
+      {
+        question: "Do I need a Mac?",
+        answer: "The workflow is demonstrated on macOS with Ollama, but the same tools (Ollama, Python, Streamlit) run on Windows and Linux. The concepts and code transfer directly."
+      },
+      {
+        question: "Is the AI really private?",
+        answer: "Yes—and you'll prove it. A whole module is devoted to verifying that nothing leaves your machine, running the assistant fully offline with the network disconnected."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: { price: 497, description: "Self-Paced Mastery", features: ["All 7 modules available immediately", "Lifetime access to content and updates", "Community support", "Monthly live office hours"] },
+      cohort: { price: 1997, description: "7-Week Live Cohort", features: ["Weekly live workshops with Dr. Lee", "Setup help and code reviews", "Direct instructor access", "Graduation certificate", "Alumni network access"] },
+      bootcamp: { price: 3997, description: "2-Day Immersive Bootcamp", features: ["Hands-on weekend intensive", "Build your private AI in a weekend", "Live troubleshooting", "Limited to 20 participants"] },
+      founders: { price: 6997, description: "Organization Edition", features: ["One-on-one setup with Dr. Lee", "Private AI deployment for your team", "Privacy and compliance walkthrough", "90-day satisfaction guarantee"] }
+    }
+  },
+  {
+    id: "image-studio",
+    slug: "ai-image-studio",
+    name: "Your Own AI Image Studio",
+    subtitle: "Make Stunning Images with Stable Diffusion—On Your Machine, On Your Terms",
+    category: "Citizen Developer",
+    categoryId: "citizen",
+    rarity: "High Demand",
+    price: 497,
+    hook: "Anyone can make damn fine images with Stable Diffusion—no data science required. Learn to get exactly the image you want, running on your own machine.",
+    description: "You don't need a PhD to create striking, professional images with AI. This practical, entertaining masterclass teaches you to get the images you want out of Stable Diffusion without the jargon and technical ceremony. You'll write prompts that actually work, use custom models to dramatically improve your results, and tune Stable Diffusion until your images are just right. You'll work from both the command line and the Web UI, automate workflows with the Hugging Face Diffusers library, and even build your own custom image tools. Along the way you'll learn just enough about LoRAs and fine-tuning models to personalize the studio for your own style. This is the Citizen Developer companion to the hardcore diffusion course: less theory, more damn fine images—fast.",
+    outcomes: [
+      "Write image-generation prompts that actually produce what you want",
+      "Use custom models to dramatically improve image quality",
+      "Tune Stable Diffusion to get images just right",
+      "Work fluently from both the command line and the Web UI",
+      "Automate image workflows with the Hugging Face Diffusers library",
+      "Personalize the studio with LoRAs and lightweight fine-tuning",
+      "Create high-resolution images and custom tools",
+      "Run your own private image studio on your own machine"
+    ],
+    hours: 15,
+    modules: 7,
+    technologies: ["Stable Diffusion", "Hugging Face Diffusers", "Web UI", "LoRA", "Python", "ControlNet"],
+    curriculum: [
+      {
+        title: "Module 1: Introduction to Stable Diffusion",
+        lessons: [
+          "What Stable Diffusion Does—Without the Jargon",
+          "Getting It Running on Your Machine",
+          "Your First Generated Images",
+          "How the Pieces Fit Together",
+          "Your Image Studio Roadmap"
+        ]
+      },
+      {
+        title: "Module 2: Writing Effective Prompts",
+        lessons: [
+          "Prompts That Work vs Prompts That Don't",
+          "Structure, Detail, and Style Keywords",
+          "Negative Prompts and Steering",
+          "Iterating Toward the Image in Your Head",
+          "Hands-On: Build a Prompt Playbook"
+        ]
+      },
+      {
+        title: "Module 3: Custom Models",
+        lessons: [
+          "Why Custom Models Change Everything",
+          "Finding and Installing Model Checkpoints",
+          "Matching Models to Styles",
+          "Managing a Model Library",
+          "Hands-On: Transform Your Images with Custom Models"
+        ]
+      },
+      {
+        title: "Module 4: Tuning Stable Diffusion",
+        lessons: [
+          "Steps, Guidance, and Samplers Explained Simply",
+          "Resolution and Aspect Ratios",
+          "Seeds and Reproducibility",
+          "Dialing In the Look You Want",
+          "Hands-On: Tune a Scene to Perfection"
+        ]
+      },
+      {
+        title: "Module 5: Command Line & Web UI Workflows",
+        lessons: [
+          "The Web UI: Power Without Code",
+          "The Command Line: Speed and Control",
+          "Choosing the Right Tool for the Job",
+          "Organizing Your Outputs",
+          "Hands-On: Build a Two-Track Workflow"
+        ]
+      },
+      {
+        title: "Module 6: Automating with Hugging Face Diffusers",
+        lessons: [
+          "Generating Images from Python",
+          "Batch Generation and Variations",
+          "Building Repeatable Pipelines",
+          "Just Enough LoRA and Fine-Tuning",
+          "Hands-On: Automate a Batch of Images"
+        ]
+      },
+      {
+        title: "Module 7: Build Your Own Tools",
+        lessons: [
+          "Wrapping Your Workflow in a Custom Tool",
+          "High-Resolution and Upscaling",
+          "Personalizing the Studio to Your Style",
+          "Sharing and Reusing Your Tools",
+          "Capstone: Ship Your Own Image Studio"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "How is this different from Build Your Own Image Generator?",
+        answer: "Build Your Own Image Generator is the hardcore course—you build diffusion models from scratch and understand the math. Your Own AI Image Studio is the Citizen Developer companion: you use Stable Diffusion expertly to create images, without building the model. Creation vs construction."
+      },
+      {
+        question: "Do I need a powerful GPU?",
+        answer: "A consumer GPU helps, and we cover cloud options if your machine is modest. The course focuses on getting great results with the hardware you have."
+      },
+      {
+        question: "Do I need to code?",
+        answer: "Only lightly. Much of the course uses the Web UI, and the Python automation modules are fully guided. It's built for creators, not engineers."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: { price: 497, description: "Self-Paced Mastery", features: ["All 7 modules available immediately", "Lifetime access to content and updates", "Community support", "Monthly live office hours"] },
+      cohort: { price: 1997, description: "7-Week Live Cohort", features: ["Weekly live workshops with Dr. Lee", "Image critiques and prompt reviews", "Direct instructor access", "Graduation certificate", "Alumni network access"] },
+      bootcamp: { price: 3997, description: "2-Day Immersive Bootcamp", features: ["Hands-on weekend intensive", "Build your image studio in a weekend", "Live prompt-and-tune sessions", "Limited to 20 participants"] },
+      founders: { price: 6997, description: "Studio Edition", features: ["One-on-one mentorship with Dr. Lee", "Custom studio setup for your brand style", "LoRA training walkthrough", "90-day satisfaction guarantee"] }
+    }
+  },
+  {
+    id: "llm-customization",
+    slug: "make-the-model-yours",
+    name: "Make the Model Yours",
+    subtitle: "The Complete Customization Playbook — Turn a Generic LLM Into Your Business's Unfair Advantage",
+    category: "Hardcore Developers",
+    categoryId: "hardcore",
+    rarity: "High Demand",
+    price: 1497,
+    hook: "A generic model is a commodity your competitors rent too. Learn to turn an open-weights model into one that knows your business, runs on your budget, and stays reliable in production.",
+    description: "Most teams reach for fine-tuning the moment a model underperforms—and waste weeks and GPUs doing the wrong thing. This masterclass is the complete customization playbook: a decision framework that tells you exactly when to prompt, when to reach for RAG, when to use LoRA or QLoRA, when full fine-tuning is worth it, and when to distill or align with DPO—weighed against real cost, latency, privacy, and ROI. One running example, an enterprise IT help desk, carries through every chapter so you can compare techniques head to head on the same problem. Everything is reproducible on affordable hardware: you'll train LoRA and QLoRA adapters on a modest card and run full fine-tuning on a single 24GB GPU. And because most fine-tuned models fail months after launch, not at launch, you'll build the production layer other courses skip entirely—a model and data registry, drift detection with canary prompts, rollback procedures, a red-team safety monitor, and an outcome-based retraining cadence. You'll walk away swapping generic LLMs for ones that know your business, respect your budget, run on your infrastructure, and stay reliable in the wild.",
+    outcomes: [
+      "Master a decision framework for choosing between prompting, RAG, LoRA/QLoRA, SFT, distillation, and DPO",
+      "Weigh cost, latency, privacy, and ROI to pick the right technique for each problem",
+      "Train LoRA and QLoRA adapters end to end on a modest consumer GPU",
+      "Run full supervised fine-tuning on a single 24GB card",
+      "Build a training-data pipeline with quality gates and lineage tracking",
+      "Distill smaller, cheaper student models and align them with DPO",
+      "Ship production ops: model/data registry, drift detection, canary prompts, and rollback",
+      "Run a red-team safety monitor and an outcome-based retraining cadence"
+    ],
+    hours: 35,
+    modules: 8,
+    technologies: ["PyTorch", "Hugging Face", "PEFT", "LoRA", "QLoRA", "DPO", "Qwen", "bitsandbytes"],
+    curriculum: [
+      {
+        title: "Module 1: The Customization Decision Framework",
+        lessons: [
+          "The Adaptation Spectrum: Prompting → RAG → LoRA/QLoRA → SFT → Distillation → DPO",
+          "The $5K Mistake: Fine-Tuning When You Should Have Prompted",
+          "Weighing Cost, Latency, Privacy, and ROI",
+          "Build-vs-Buy Decisions with Real Numbers",
+          "Your Customization Roadmap"
+        ]
+      },
+      {
+        title: "Module 2: The Running Example & Honest Baselines",
+        lessons: [
+          "Meet the Enterprise IT Help Desk (Our Case Study Throughout)",
+          "Defining Success Before You Touch a GPU",
+          "Establishing Baselines You Can Beat",
+          "Reproducibility: Matching the Book's Numbers on Your Machine",
+          "Hands-On: Set Up Your Baseline and Metrics"
+        ]
+      },
+      {
+        title: "Module 3: Prompting & RAG First",
+        lessons: [
+          "The Cheapest Win: Getting More from Prompting",
+          "When RAG Beats Fine-Tuning",
+          "Grounding the Help Desk in Real Documentation",
+          "Knowing When Adaptation Isn't Needed at All",
+          "Hands-On: Solve the Problem Without Fine-Tuning First"
+        ]
+      },
+      {
+        title: "Module 4: LoRA & QLoRA on a Single GPU",
+        lessons: [
+          "Parameter-Efficient Fine-Tuning Explained",
+          "LoRA End to End on a Modest Card",
+          "QLoRA: Fine-Tuning Quantized Models Cheaply",
+          "Reading the Training Logs—Including the Runs That Fail",
+          "Hands-On: Train a LoRA Adapter for the Help Desk"
+        ]
+      },
+      {
+        title: "Module 5: Full Supervised Fine-Tuning",
+        lessons: [
+          "When PEFT Isn't Enough: The Case for Full SFT",
+          "Full Fine-Tuning on a Single 24GB GPU",
+          "Managing Memory, Batch Size, and Stability",
+          "Comparing Full SFT vs LoRA on the Same Task",
+          "Hands-On: Full Fine-Tune and Compare Head to Head"
+        ]
+      },
+      {
+        title: "Module 6: Building a Training-Data Pipeline",
+        lessons: [
+          "Data Quality Is the Whole Game",
+          "Curating Real Data with Quality Gates",
+          "Generating Teacher-Model Outputs at Scale",
+          "Lineage Tracking: Knowing Where Every Example Came From",
+          "Hands-On: Build a Data Pipeline with Quality Gates"
+        ]
+      },
+      {
+        title: "Module 7: Distillation & Preference Alignment",
+        lessons: [
+          "Distilling a Smaller, Cheaper Student from a Stronger Teacher",
+          "Preference Alignment with DPO",
+          "Running Safety Regressions at Every Step",
+          "Scaling the Same Recipe from a 4B Model to Frontier",
+          "Hands-On: Distill and Align a Deployable Student"
+        ]
+      },
+      {
+        title: "Module 8: Production Ops—Where Models Really Fail",
+        lessons: [
+          "Why Fine-Tuned Models Fail Months After Launch, Not At Launch",
+          "The Model and Data Registry",
+          "Drift Detection with Canary Prompts",
+          "Rollback Procedures and a Red-Team Safety Monitor",
+          "Capstone: Ship a Customized Model with a Full Production Layer"
+        ]
+      }
+    ],
+    instructor: {
+      name: "Dr. Lee",
+      title: "AI Architect & Educator",
+      bio: "Former ML lead at a Fortune 500 company, Dr. Lee has trained hundreds of engineers to build AI from first principles. His philosophy: the best way to understand something is to build it yourself."
+    },
+    faqs: [
+      {
+        question: "How is this different from Fine-Tune Your Own Models?",
+        answer: "Fine-Tune Your Own Models is the hands-on weights course: LoRA, QLoRA, and full fine-tuning, deep and focused. Make the Model Yours is the strategic playbook around it—a decision framework for the whole adaptation spectrum (prompting, RAG, fine-tuning, distillation, DPO) plus the production ops layer that keeps a customized model alive: registries, drift detection, canary prompts, rollback, and safety monitoring. One teaches the technique; this one teaches which technique, when, and how to run it in production."
+      },
+      {
+        question: "What hardware do I need?",
+        answer: "Everything is reproducible on affordable, accessible hardware. You'll train LoRA and QLoRA adapters on a modest consumer card and run full fine-tuning on a single 24GB GPU such as an RTX 4090 or A30. No datacenter required, and cloud GPU options are included."
+      },
+      {
+        question: "Will the techniques scale beyond small models?",
+        answer: "Yes. The methods scale unchanged from a small model on your workstation to frontier models on a cluster. You'll learn on affordable hardware, but the decision framework and production practices apply at any scale."
+      },
+      {
+        question: "Who is this for?",
+        answer: "Engineers and technical founders who need a model that knows their business without burning budget on the wrong approach—and who need it to stay reliable in production. Intermediate Python and comfort with PyTorch are assumed."
+      }
+    ],
+    pricingModalities: {
+      selfPaced: { price: 1497, description: "Self-Paced Mastery", features: ["All 8 modules available immediately", "Lifetime access to content and updates", "Community support and code reviews", "Monthly live office hours"] },
+      cohort: { price: 5997, description: "8-Week Live Cohort", features: ["Weekly live workshops with Dr. Lee", "Customization reviews on your real use case", "Direct instructor access", "Graduation certificate", "Alumni network access"] },
+      bootcamp: { price: 10997, description: "5-Day Immersive Bootcamp", features: ["Executive intensive format", "Customize and ship a model in one week", "Live decision-framework and ops labs", "Limited to 15 participants"] },
+      founders: { price: 17997, description: "Founder's Edition", features: ["One-on-one mentorship with Dr. Lee", "Customization strategy for YOUR business model", "Production ops and safety review", "90-day satisfaction guarantee"] }
+    }
+  },
 ];
 
 export function getCourseBySlug(slug: string): Course | undefined {

@@ -242,7 +242,7 @@ const questions: Question[] = [
     options: [
       {
         label: "Full Curriculum Access",
-        description: "I want access to everything - all 21 masterclasses",
+        description: "I want access to everything - all 32 masterclasses",
         tags: ["full-catalog", "all-access"],
       },
       {
@@ -396,7 +396,7 @@ const paths: Record<string, Path> = {
     id: "full-stack-ai",
     title: "Full Stack AI Leader",
     subtitle: "Master Everything We Teach",
-    description: "You want comprehensive AI mastery. With access to all 21 masterclasses, you'll have the complete toolkit—from deep technical implementation to operational automation to emerging domains like Web3.",
+    description: "You want comprehensive AI mastery. With access to all 32 masterclasses, you'll have the complete toolkit—from deep technical implementation to operational automation to emerging domains like Web3.",
     color: "from-slate-700 to-slate-900",
     bundle: {
       name: "Full Catalog Access",
