@@ -164,6 +164,29 @@ export default function HeroNew() {
           </span>
         </motion.div>
 
+        {/* Primary product CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.5 }}
+          className="flex flex-col items-center gap-3 mb-8"
+        >
+          <Link
+            href="/catalog"
+            className="group relative px-10 py-5 rounded-full bg-gradient-to-r from-blue-600 to-emerald-500 text-white font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/30"
+          >
+            <span className="relative z-10 flex items-center justify-center gap-2">
+              Browse All 32 Masterclasses
+              <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </Link>
+          <p className="text-sm text-slate-500 dark:text-white/50 max-w-md text-center">
+            AI-personalized to your knowledge gaps. Every masterclass ends with a custom deliverable you build and own.
+          </p>
+        </motion.div>
+
         {/* Dual CTA - For both avatars */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -10,7 +10,7 @@ import { useTheme, ThemeToggle } from "@/components/ThemeProvider";
 const navItems = [
   { href: "/#intrapreneurs", label: "For Careers" },
   { href: "/#entrepreneurs", label: "For Founders" },
-  { href: "/#catalog", label: "Masterclasses" },
+  { href: "/catalog", label: "Masterclasses" },
   { href: "/#pricing", label: "Pricing" },
 ];
 
@@ -94,7 +94,7 @@ export default function HeaderNew() {
           <div className="hidden lg:flex items-center gap-4">
             <ThemeToggle />
             <a
-              href="/#catalog"
+              href="/catalog"
               className="group relative px-6 py-2.5 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold text-sm overflow-hidden transition-all hover:scale-105"
             >
               <motion.span
@@ -183,7 +183,7 @@ export default function HeaderNew() {
                 className="pt-4"
               >
                 <a
-                  href="/#catalog"
+                  href="/catalog"
                   onClick={() => setIsOpen(false)}
                   className="block w-full text-center px-6 py-3 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold"
                 >

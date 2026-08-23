@@ -5,14 +5,15 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 // Categories
-const categories = [
+export const categories = [
   { id: "all", name: "All Masterclasses", count: 32 },
   { id: "hardcore", name: "Hardcore Developers", count: 26 },
   { id: "citizen", name: "Citizen Developer", count: 6 },
 ];
 
-// All 16 courses - synced with lib/courses.ts
-const courses = [
+// All masterclasses - synced with lib/courses.ts. Exported so the
+// dedicated /catalog hub renders the same source of truth.
+export const courses = [
   // HARDCORE DEVELOPERS (12)
   {
     id: "llm",
@@ -399,7 +400,7 @@ const courses = [
   },
 ];
 
-const rarityColors: Record<string, string> = {
+export const rarityColors: Record<string, string> = {
   "Extremely Rare": "bg-purple-500/10 text-purple-600 dark:text-purple-400",
   "Cutting Edge": "bg-red-500/10 text-red-600 dark:text-red-400",
   "Frontier AI": "bg-orange-500/10 text-orange-600 dark:text-orange-400",
@@ -595,6 +596,19 @@ export default function CatalogNew() {
             </button>
           </motion.div>
         )}
+
+        {/* Full catalog hub link */}
+        <div className="mt-6 text-center">
+          <Link
+            href="/catalog"
+            className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:gap-3 transition-all"
+          >
+            Browse the full catalog — all 32 masterclasses, filterable
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </Link>
+        </div>
       </div>
     </section>
   );

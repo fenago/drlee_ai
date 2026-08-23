@@ -1434,6 +1434,72 @@ function EnrollCTA({ course }: { course: Course }) {
   );
 }
 
+function MasterclassExperience({ course }: { course: Course }) {
+  const steps = [
+    {
+      n: "01",
+      badge: "Before You Start",
+      title: "Pre-Masterclass Assessment",
+      desc: "You begin with an AI-driven assessment that maps what you already know against everything this masterclass covers. We pinpoint your knowledge gaps up front—so your time goes only where it moves the needle.",
+      accent: "text-brand-blue",
+      ring: "border-brand-blue/30",
+    },
+    {
+      n: "02",
+      badge: "During",
+      title: "An AI-Personalized Path",
+      desc: "Your results reshape the masterclass around you. The AI aligns the material, examples, and pace to close your specific gaps—so a fixed curriculum becomes a path built for exactly one person: you.",
+      accent: "text-purple-400",
+      ring: "border-purple-400/30",
+    },
+    {
+      n: "03",
+      badge: "Your Outcome",
+      title: "A Custom Deliverable You Own",
+      desc: `You don't leave with a certificate—you leave with a real, working artifact built for your goals. In "${course.name}," that means a deliverable you can ship, show, and build on. Something you made, not just something you watched.`,
+      accent: "text-emerald-400",
+      ring: "border-emerald-400/30",
+    },
+  ];
+
+  return (
+    <section className="bg-base-200 py-20 md:py-28" id="masterclass-experience">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="text-center mb-14 max-w-3xl mx-auto">
+          <div className="inline-block px-4 py-2 rounded-full bg-brand-blue/10 text-brand-blue text-sm font-medium mb-4">
+            Why It&apos;s a Masterclass, Not a Course
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            AI Hyper-Personalizes Your Experience
+          </h2>
+          <p className="text-lg opacity-70">
+            This isn&apos;t a one-size-fits-all course. It&apos;s assessed to your gaps, adapted to you,
+            and finished with a custom deliverable you build and own.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {steps.map((s) => (
+            <div
+              key={s.n}
+              className={`relative rounded-2xl bg-base-100 border ${s.ring} p-8`}
+            >
+              <div className="flex items-center justify-between mb-5">
+                <span className={`text-5xl font-black ${s.accent} opacity-30`}>{s.n}</span>
+                <span className={`px-3 py-1 rounded-full text-xs font-semibold bg-base-200 ${s.accent}`}>
+                  {s.badge}
+                </span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3">{s.title}</h3>
+              <p className="opacity-70 leading-relaxed">{s.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default async function CoursePage({ params }: Props) {
   const { slug } = await params;
   const course = getCourseBySlug(slug);
@@ -1449,6 +1515,7 @@ export default async function CoursePage({ params }: Props) {
       </Suspense>
       <main className="pt-16">
         <CourseHero course={course} />
+        <MasterclassExperience course={course} />
         <SignatureSolution course={course} />
         <SuccessMetrics course={course} />
         <PricingModalities course={course} />

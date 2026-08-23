@@ -9,6 +9,7 @@ import HeroNew from "@/components/landing/HeroNew";
 import ProblemNew from "@/components/landing/ProblemNew";
 import SolutionNew from "@/components/landing/SolutionNew";
 import DualAvatar from "@/components/landing/DualAvatar";
+import HowItWorks from "@/components/landing/HowItWorks";
 import CatalogNew from "@/components/landing/CatalogNew";
 import BundlesNew from "@/components/landing/BundlesNew";
 import AssessmentNew from "@/components/landing/AssessmentNew";
@@ -71,20 +72,23 @@ export default function Home() {
         {/* Problem Section - Why you need this */}
         <ProblemNew />
 
+        {/* How the Masterclass Works - the personalization differentiator */}
+        <HowItWorks />
+
+        {/* Course Catalog - surfaced high so the product isn't buried */}
+        <CatalogNew />
+
         {/* Solution Section - Our methodology */}
         <SolutionNew />
-
-        {/* Path Assessment - Help users choose */}
-        <AssessmentNew />
 
         {/* Dual Avatar Sections - For both audiences */}
         <DualAvatar />
 
-        {/* Course Catalog */}
-        <CatalogNew />
-
         {/* Bundle Savings */}
         <BundlesNew />
+
+        {/* Path Assessment - for those still choosing */}
+        <AssessmentNew />
 
         {/* Pricing */}
         <section id="pricing">
