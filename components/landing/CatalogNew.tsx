@@ -11,6 +11,60 @@ export const categories = [
   { id: "citizen", name: "Citizen Developer", count: 6 },
 ];
 
+// Curated tracks — group the masterclasses into an intentional curriculum
+// instead of one flat wall. Order tells a learning arc. Every course id
+// below must exist in `courses`; the /catalog hub validates the mapping.
+export const tracks = [
+  {
+    id: "build",
+    name: "Build Frontier Models From Scratch",
+    description: "Construct the core models behind modern AI—LLMs, reasoning, frontier architectures, and image generation—line by line.",
+    courseIds: ["llm", "reasoning", "frontier-arch", "diffusion"],
+  },
+  {
+    id: "own",
+    name: "Own, Optimize & Customize Models",
+    description: "Turn open models into lean, private, domain-specific assets you own and run cheaply.",
+    courseIds: ["fine-tuning", "llm-customization", "slm", "model-surgery", "gpu-kernels"],
+  },
+  {
+    id: "agents",
+    name: "Agents & Autonomous Systems",
+    description: "Design agents that reason, use tools, remember, and collaborate—reliably, at scale.",
+    courseIds: ["agentic", "multi-agent", "agent-playbook", "agent-matrix", "context-engine"],
+  },
+  {
+    id: "data",
+    name: "Data & Knowledge Systems",
+    description: "Feed your AI the right knowledge with graph retrieval and AI-native data pipelines.",
+    courseIds: ["graphrag", "ai-data-engineer"],
+  },
+  {
+    id: "trust",
+    name: "Trust, Reliability & Alignment",
+    description: "Prove it works, keep it aligned, and ship AI that survives real users and real stakes.",
+    courseIds: ["evaluation-stack", "bulletproof-ai", "product-factory", "ai-alignment", "rlhf"],
+  },
+  {
+    id: "dev",
+    name: "AI-Assisted Development",
+    description: "Build software dramatically faster—and understand any codebase—with AI in the loop.",
+    courseIds: ["10x-developer", "decode-codebase", "ship-ready"],
+  },
+  {
+    id: "specialized",
+    name: "Specialized & Applied",
+    description: "Focused builds for high-value domains: security red-teaming and living digital twins.",
+    courseIds: ["ai-red-team", "digital-twin"],
+  },
+  {
+    id: "citizen",
+    name: "For Builders & Leaders — No PhD Required",
+    description: "Own AI outcomes without deep ML: synthetic teammates, private assistants, marketing, and decisions.",
+    courseIds: ["agentic-sdk", "vibe-marketing", "token-economy", "ai-decision-makers", "private-ai-lab", "image-studio"],
+  },
+];
+
 // All masterclasses - synced with lib/courses.ts. Exported so the
 // dedicated /catalog hub renders the same source of truth.
 export const courses = [
@@ -603,7 +657,7 @@ export default function CatalogNew() {
             href="/catalog"
             className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:gap-3 transition-all"
           >
-            Browse the full catalog — all 32 masterclasses, filterable
+            Browse the full catalog — all 32 masterclasses, organized by track
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
