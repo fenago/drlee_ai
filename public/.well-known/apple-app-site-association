@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["949QZBXNL9.ai.drlee.app"],
+        "components": [{ "/": "/app*", "comment": "Get the app page and shared masterclass links" }],
+        "appID": "949QZBXNL9.ai.drlee.app",
+        "paths": ["/app*"]
+      }
+    ]
+  }
+}

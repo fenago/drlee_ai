@@ -23,13 +23,15 @@ const Footer = () => {
       { label: "Learning Modalities", href: "/modalities" },
       { label: "Financing Options", href: "/financing" },
       { label: "Pricing", href: "/#pricing" },
-      { label: "Blog", href: "/blog" },
+      { label: "Get the App", href: "/app" },
+      { label: "Support", href: "/support" },
       { label: "Contact", href: `mailto:${config.resend.supportEmail}` },
     ],
     legal: [
       { label: "Terms of Service", href: "/tos" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Refund Policy", href: "/tos" },
+      { label: "Delete Account", href: "/delete-account" },
     ],
   };
 

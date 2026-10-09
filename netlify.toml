@@ -1,0 +1,16 @@
+# Only adds response headers; build settings stay in the Netlify UI.
+
+# iOS universal links: Apple requires the AASA file (no extension) to be served as JSON.
+[[headers]]
+  for = "/.well-known/apple-app-site-association"
+  [headers.values]
+    Content-Type = "application/json"
+
+# Android App Links.
+# TODO(owner): add the app signing key SHA-256 fingerprint (Play Console > Setup > App signing)
+# to public/.well-known/assetlinks.json -> sha256_cert_fingerprints. It is empty until then,
+# so Android links open in the browser instead of the app.
+[[headers]]
+  for = "/.well-known/assetlinks.json"
+  [headers.values]
+    Content-Type = "application/json"
