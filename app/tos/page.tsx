@@ -36,7 +36,7 @@ const TOS = () => {
         >
           {`Last updated: October 9, 2026
 
-These Terms of Service ("Terms") are an agreement between you and [LEGAL ENTITY NAME] ("DrLee.ai", "we", "us" or "our"). They govern your use of the website at https://drlee.ai (the "Website") and the DrLee.ai mobile app for iOS and Android (the "App"), together the "Service".
+These Terms of Service ("Terms") are an agreement between you and Learning Science Inc. ("DrLee.ai", "we", "us" or "our"). They govern your use of the website at https://drlee.ai (the "Website") and the DrLee.ai mobile app for iOS and Android (the "App"), together the "Service".
 
 By creating an account or using the Service, you agree to these Terms and to our Privacy Policy at https://drlee.ai/privacy-policy. If you do not agree, do not use the Service.
 
@@ -161,7 +161,7 @@ Some jurisdictions do not allow certain disclaimers or limits, so some of the ab
 
 14. Governing law and disputes
 
-These Terms are governed by the laws of [GOVERNING LAW STATE], United States, without regard to its conflict-of-law rules. Any dispute arising from these Terms or the Service will be resolved in the state or federal courts located in [VENUE COUNTY AND STATE], and you and we consent to the jurisdiction of those courts. Before filing a claim, please contact us at support@drlee.ai so we can try to resolve it informally.
+These Terms are governed by the laws of the State of Florida, United States, without regard to its conflict-of-law rules. Any dispute arising from these Terms or the Service will be resolved in the state or federal courts located in Broward County, Florida, and you and we consent to the jurisdiction of those courts. Before filing a claim, please contact us at support@drlee.ai so we can try to resolve it informally.
 
 
 15. Changes to these Terms
@@ -176,8 +176,8 @@ These Terms, together with the Privacy Policy and any terms shown at checkout, a
 
 17. Contact us
 
-[LEGAL ENTITY NAME]
-[MAILING ADDRESS]
+Learning Science Inc.
+7027 Broward Blvd #744, Plantation, FL 33317, United States
 Email: support@drlee.ai`}
         </pre>
       </div>

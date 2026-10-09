@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
         >
           {`Last updated: October 9, 2026
 
-This Privacy Policy explains how [LEGAL ENTITY NAME] ("DrLee.ai", "we", "us" or "our") collects, uses, shares and protects personal information when you use:
+This Privacy Policy explains how Learning Science Inc. ("DrLee.ai", "we", "us" or "our") collects, uses, shares and protects personal information when you use:
 
 - the website at https://drlee.ai (the "Website"), and
 - the DrLee.ai mobile app for iOS and Android (the "App").
@@ -134,7 +134,7 @@ The Website uses cookies that are needed to keep you signed in and to complete c
 
 6. How long we keep information
 
-We keep your account information and content for as long as your account is active. When you delete your account, we delete your account and associated data as described in section 7. We may keep limited records for longer where we must, for example purchase and tax records, records needed to resolve disputes or enforce our Terms, or information about accounts removed for abuse. Data in backups is overwritten on a rolling basis within [BACKUP RETENTION PERIOD].
+We keep your account information and content for as long as your account is active. When you delete your account, we delete your account and associated data as described in section 7. We may keep limited records for longer where we must, for example purchase and tax records, records needed to resolve disputes or enforce our Terms, or information about accounts removed for abuse. Data in backups is overwritten on a rolling basis within 7 days.
 
 Video files you download for offline viewing in the App are stored only on your device. You can remove them in the App or by deleting the App.
 
@@ -189,8 +189,8 @@ We may update this policy from time to time. When we do, we will change the "Las
 
 If you have questions about this policy or your information, contact us at:
 
-[LEGAL ENTITY NAME]
-[MAILING ADDRESS]
+Learning Science Inc.
+7027 Broward Blvd #744, Plantation, FL 33317, United States
 Email: support@drlee.ai`}
         </pre>
       </div>
