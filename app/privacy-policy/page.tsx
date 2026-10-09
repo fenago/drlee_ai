@@ -97,7 +97,7 @@ We do not sell your personal information, and we do not share it for cross-conte
 
 The App includes an AI assistant and study tools (such as summaries, outlines and flashcards). Before you use them for the first time, the App asks for your consent.
 
-When you use these features, we send your question or request, together with the relevant lesson text, notes or documents you have added, to an AI provider to generate a response. Depending on the feature, the provider may be OpenAI, Google (Gemini) or Anthropic. These providers process the data to return a response to us. We use them under their business or API terms, and we do not use your AI data for advertising.
+When you use these features, we send your question or request, together with the relevant lesson text, notes or documents you have added, to our AI provider, Anthropic (maker of Claude), to generate a response. Anthropic processes the data to return a response to us. We use them under their business or API terms, and we do not use your AI data for advertising.
 
 AI responses are generated automatically and can be inaccurate. Please do not include sensitive personal information in your prompts, notes or uploaded documents.
 
@@ -108,7 +108,7 @@ We share personal information only with service providers that help us run the S
 
 - Supabase: App account, sign-in, database and file storage (hosted in the United States).
 - Mux: video hosting, streaming and playback analytics.
-- OpenAI, Google (Gemini) and Anthropic: processing AI assistant and study tool requests.
+- Anthropic: processing AI assistant and study tool requests.
 - Expo (and Apple Push Notification service or Google Firebase Cloud Messaging): delivering push notifications.
 - Sentry: crash reporting, when enabled.
 - Stripe: payment processing on the Website.
